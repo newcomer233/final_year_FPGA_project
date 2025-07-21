@@ -1,0 +1,2 @@
+ADC_CONFIG_ILA.v,verilog,xil_defaultlib,../../../../final_prj_pl.gen/sources_1/ip/ADC_CONFIG_ILA/sim/ADC_CONFIG_ILA.v,incdir="../../../../final_prj_pl.gen/sources_1/ip/ADC_CONFIG_ILA/hdl/verilog"
+glbl.v,Verilog,xil_defaultlib,glbl.v

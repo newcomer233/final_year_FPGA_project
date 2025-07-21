@@ -1,0 +1,2 @@
+top_vio.v,verilog,xil_defaultlib,../../../../final_prj_pl.gen/sources_1/ip/top_vio/sim/top_vio.v,incdir="../../../../final_prj_pl.gen/sources_1/ip/IMU_TOP_VIO/hdl/verilog"incdir="../../../../final_prj_pl.gen/sources_1/ip/IMU_TOP_VIO/hdl"incdir="../../../../final_prj_pl.gen/sources_1/ip/ADC_TOP_VIO/hdl/verilog"incdir="../../../../final_prj_pl.gen/sources_1/ip/ADC_TOP_VIO/hdl"incdir="../../../../final_prj_pl.gen/sources_1/ip/top_vio/hdl/verilog"incdir="../../../../final_prj_pl.gen/sources_1/ip/top_vio/hdl"
+glbl.v,Verilog,xil_defaultlib,glbl.v

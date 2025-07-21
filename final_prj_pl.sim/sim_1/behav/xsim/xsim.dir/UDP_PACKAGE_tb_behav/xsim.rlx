@@ -1,0 +1,12 @@
+
+{ 
+    crc :  17607999648592910054  , 
+    ccp_crc :  0  , 
+    cmdline : " --incr --debug typical --relax --mt 16 -L xil_defaultlib -L fifo_generator_v13_2_12 -L lib_pkg_v1_0_4 -L lib_cdc_v1_0_3 -L axi_lite_ipif_v3_0_4 -L interrupt_control_v3_1_5 -L axi_iic_v2_1_10 -L gigantic_mux -L xlconcat_v2_1_6 -L axis_infrastructure_v1_1_1 -L axis_register_slice_v1_1_34 -L axis_dwidth_converter_v1_1_33 -L xbip_utils_v3_0_14 -L mult_gen_v12_0_22 -L tri_mode_ethernet_mac_v9_0_37 -L axis_data_fifo_v2_0_16 -L util_vector_logic_v2_0_4 -L proc_sys_reset_v5_0_16 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot UDP_PACKAGE_tb_behav xil_defaultlib.UDP_PACKAGE_tb xil_defaultlib.glbl" , 
+    buildDate : "Mar  6 2025" , 
+    buildTime : "19:11:35" , 
+    linkCmd : "D:\\Xilinx\\Vivado\\2024.2\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/UDP_PACKAGE_tb_behav/xsimk.exe\"   \"xsim.dir/UDP_PACKAGE_tb_behav/obj/xsim_0.win64.obj\" \"xsim.dir/UDP_PACKAGE_tb_behav/obj/xsim_1.win64.obj\" -L\"D:\\Xilinx\\Vivado\\2024.2\\lib\\win64.o\" -lxv_simulator_kernel   -lxv_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

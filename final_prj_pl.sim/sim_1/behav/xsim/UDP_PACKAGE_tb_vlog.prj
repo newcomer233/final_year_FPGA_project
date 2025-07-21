@@ -1,0 +1,89 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../final_prj_pl.gen/sources_1/bd/RGMII/ipshared/434f/hdl" --include "../../../../final_prj_pl.ip_user_files/ipstatic/hdl" \
+"../../../../final_prj_pl.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" \
+"../../../../final_prj_pl.gen/sources_1/ip/AXI2BRAM/AXI2BRAM_sim_netlist.v" \
+"../../../../final_prj_pl.gen/sources_1/ip/ila_2/sim/ila_2.v" \
+"../../../../final_prj_pl.gen/sources_1/ip/I2C_FIFO/sim/I2C_FIFO.v" \
+"../../../../final_prj_pl.gen/sources_1/ip/spi_tx_fifo/spi_tx_fifo_sim_netlist.v" \
+"../../../../final_prj_pl.gen/sources_1/ip/spi_rx_fifo/spi_rx_fifo_sim_netlist.v" \
+"../../../../final_prj_pl.gen/sources_1/ip/ADC_test_vio/ADC_test_vio_sim_netlist.v" \
+"../../../../final_prj_pl.gen/sources_1/ip/ADC_CONFIG_ILA/sim/ADC_CONFIG_ILA.v" \
+"../../../../final_prj_pl.gen/sources_1/ip/ADC_TOP_VIO/sim/ADC_TOP_VIO.v" \
+"../../../../final_prj_pl.gen/sources_1/ip/ADC_READ_ILA/sim/ADC_READ_ILA.v" \
+"../../../../final_prj_pl.gen/sources_1/ip/spi_rx_fifo_16bit/sim/spi_rx_fifo_16bit.v" \
+"../../../../final_prj_pl.gen/sources_1/ip/IMU_test_vio/sim/IMU_test_vio.v" \
+"../../../../final_prj_pl.gen/sources_1/ip/imu_read_ila/sim/imu_read_ila.v" \
+"../../../../final_prj_pl.gen/sources_1/ip/IMU_CONFIG_ILA/sim/IMU_CONFIG_ILA.v" \
+"../../../../final_prj_pl.ip_user_files/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_ila_0_0/sim/PPG_I2C_PHY_ila_0_0.v" \
+"../../../../final_prj_pl.ip_user_files/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_system_ila_0_0/bd_0/ip/ip_0/sim/bd_d1f0_ila_lib_0.v" \
+"../../../../final_prj_pl.ip_user_files/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_system_ila_0_0/bd_0/ip/ip_1/bd_d1f0_g_inst_0_gigantic_mux.v" \
+"../../../../final_prj_pl.ip_user_files/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_system_ila_0_0/bd_0/ip/ip_1/sim/bd_d1f0_g_inst_0.v" \
+"../../../../final_prj_pl.ip_user_files/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_system_ila_0_0/bd_0/ip/ip_2/sim/bd_d1f0_slot_0_aw_0.v" \
+"../../../../final_prj_pl.ip_user_files/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_system_ila_0_0/bd_0/ip/ip_3/sim/bd_d1f0_slot_0_w_0.v" \
+"../../../../final_prj_pl.ip_user_files/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_system_ila_0_0/bd_0/ip/ip_4/sim/bd_d1f0_slot_0_b_0.v" \
+"../../../../final_prj_pl.ip_user_files/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_system_ila_0_0/bd_0/ip/ip_5/sim/bd_d1f0_slot_0_ar_0.v" \
+"../../../../final_prj_pl.ip_user_files/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_system_ila_0_0/bd_0/ip/ip_6/sim/bd_d1f0_slot_0_r_0.v" \
+"../../../../final_prj_pl.ip_user_files/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_system_ila_0_0/bd_0/sim/bd_d1f0.v" \
+"../../../../final_prj_pl.ip_user_files/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_system_ila_0_0/sim/PPG_I2C_PHY_system_ila_0_0.v" \
+"../../../../final_prj_pl.gen/sources_1/ip/I2C_test_vio/sim/I2C_test_vio.v" \
+"../../../../final_prj_pl.gen/sources_1/ip/udp_config_vio/sim/udp_config_vio.v" \
+"../../../../final_prj_pl.gen/sources_1/ip/axis_eth_head_convertor/sim/axis_eth_head_convertor.v" \
+"../../../../final_prj_pl.gen/sources_1/ip/slave_map/slave_map_sim_netlist.v" \
+"../../../../final_prj_pl.srcs/sources_1/new/ADC_CONFIG.v" \
+"../../../../final_prj_pl.srcs/sources_1/new/ADC_TOP.v" \
+"../../../../final_prj_pl.srcs/sources_1/new/I2C_APP.v" \
+"../../../../final_prj_pl.srcs/sources_1/new/I2C_CONFIG.v" \
+"../../../../final_prj_pl.srcs/sources_1/new/I2C_LINK.v" \
+"../../../../final_prj_pl.srcs/sources_1/new/I2C_PHY.v" \
+"../../../../final_prj_pl.srcs/sources_1/new/PHY_LINK.v" \
+"../../../../final_prj_pl.srcs/sources_1/new/SPI_PHY.v" \
+"../../../../final_prj_pl.srcs/sources_1/new/ADC_TOP_test.v" \
+"../../../../final_prj_pl.srcs/sources_1/new/IMU_TOP_test.v" \
+"../../../../final_prj_pl.srcs/sources_1/new/ADC_SPI_PHY.v" \
+"../../../../final_prj_pl.srcs/sources_1/new/ADC_SPI_LINK.v" \
+"../../../../final_prj_pl.srcs/sources_1/new/ADC_READ.v" \
+"../../../../final_prj_pl.srcs/sources_1/new/IMU_SPI_PHY.v" \
+"../../../../final_prj_pl.srcs/sources_1/new/IMU_SPI_LINK.v" \
+"../../../../final_prj_pl.srcs/sources_1/new/IMU_TOP.v" \
+"../../../../final_prj_pl.srcs/sources_1/new/IMU_CONFIG.v" \
+"../../../../final_prj_pl.srcs/sources_1/new/IMU_READ.v" \
+"../../../../final_prj_pl.gen/sources_1/ip/IMU_TOP_VIO/sim/IMU_TOP_VIO.v" \
+"../../../../final_prj_pl.ip_user_files/bd/PPG_I2C_PHY/sim/PPG_I2C_PHY.v" \
+"../../../../final_prj_pl.gen/sources_1/bd/PPG_I2C_PHY/hdl/PPG_I2C_PHY_wrapper.v" \
+"../../../../final_prj_pl.gen/sources_1/ip/ila_0/sim/ila_0.v" \
+"../../../../final_prj_pl.srcs/sources_1/new/I2C_TOP.v" \
+"../../../../final_prj_pl.srcs/sources_1/new/I2C_RW_CTRL.v" \
+"../../../../final_prj_pl.srcs/sources_1/new/I2C_CONFIG_READ.v" \
+"../../../../final_prj_pl.srcs/sources_1/new/SENSOR_TOP.v" \
+"../../../../final_prj_pl.srcs/sources_1/new/I2C_TOP_test.v" \
+"../../../../final_prj_pl.srcs/sources_1/new/TOP.v" \
+"../../../../final_prj_pl.ip_user_files/bd/RGMII/sim/RGMII.v" \
+"../../../../final_prj_pl.ip_user_files/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/synth/common/RGMII_tri_mode_ethernet_mac_0_0_block_sync_block.v" \
+"../../../../final_prj_pl.ip_user_files/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/synth/RGMII_tri_mode_ethernet_mac_0_0_axi4_lite_ipif_wrapper.v" \
+"../../../../final_prj_pl.ip_user_files/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/synth/RGMII_tri_mode_ethernet_mac_0_0_clk_en_gen.v" \
+"../../../../final_prj_pl.ip_user_files/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/synth/physical/RGMII_tri_mode_ethernet_mac_0_0_rgmii_v2_0_if.v" \
+"../../../../final_prj_pl.ip_user_files/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/synth/statistics/RGMII_tri_mode_ethernet_mac_0_0_vector_decode.v" \
+"../../../../final_prj_pl.ip_user_files/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/synth/RGMII_tri_mode_ethernet_mac_0_0_block.v" \
+"../../../../final_prj_pl.ip_user_files/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/synth/RGMII_tri_mode_ethernet_mac_0_0.v" \
+"../../../../final_prj_pl.ip_user_files/bd/RGMII/ip/RGMII_axis_data_fifo_0_0/sim/RGMII_axis_data_fifo_0_0.v" \
+"../../../../final_prj_pl.ip_user_files/bd/RGMII/ip/RGMII_axis_TX_data_fifo_0/sim/RGMII_axis_TX_data_fifo_0.v" \
+"../../../../final_prj_pl.ip_user_files/bd/RGMII/ip/RGMII_util_vector_logic_0_0/sim/RGMII_util_vector_logic_0_0.v" \
+"../../../../final_prj_pl.ip_user_files/bd/RGMII/ip/RGMII_util_vector_logic_0_1/sim/RGMII_util_vector_logic_0_1.v" \
+"../../../../final_prj_pl.ip_user_files/bd/RGMII/ip/RGMII_system_ila_0_0/bd_0/ip/ip_0/sim/bd_bb77_ila_lib_0.v" \
+"../../../../final_prj_pl.ip_user_files/bd/RGMII/ip/RGMII_system_ila_0_0/bd_0/ip/ip_1/bd_bb77_g_inst_0_gigantic_mux.v" \
+"../../../../final_prj_pl.ip_user_files/bd/RGMII/ip/RGMII_system_ila_0_0/bd_0/ip/ip_1/sim/bd_bb77_g_inst_0.v" \
+"../../../../final_prj_pl.ip_user_files/bd/RGMII/ip/RGMII_system_ila_0_0/bd_0/sim/bd_bb77.v" \
+"../../../../final_prj_pl.ip_user_files/bd/RGMII/ip/RGMII_system_ila_0_0/sim/RGMII_system_ila_0_0.v" \
+"../../../../final_prj_pl.ip_user_files/bd/RGMII/ip/RGMII_vio_0_0/sim/RGMII_vio_0_0.v" \
+"../../../../final_prj_pl.gen/sources_1/bd/RGMII/hdl/RGMII_wrapper.v" \
+"../../../../final_prj_pl.srcs/sources_1/new/UDP_PACKAGE.v" \
+"../../../../final_prj_pl.srcs/sources_1/new/UDP_CONFIG.v" \
+"../../../../final_prj_pl.srcs/sources_1/new/axi4lite_process.v" \
+"../../../../final_prj_pl.srcs/sources_1/new/UDP_TOP.v" \
+"../../../../final_prj_pl.srcs/sim_1/new/UDP_PACKAGE_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

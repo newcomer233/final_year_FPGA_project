@@ -1,0 +1,6 @@
+vhdl xil_defaultlib  \
+"../../../bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/synth/RGMII_tri_mode_ethernet_mac_0_0_axi4_lite_ipif_top.vhd" \
+"../../../bd/RGMII/ip/RGMII_rst_TEMAC_125M_0/sim/RGMII_rst_TEMAC_125M_0.vhd" \
+
+# Do not sort compile order
+nosort

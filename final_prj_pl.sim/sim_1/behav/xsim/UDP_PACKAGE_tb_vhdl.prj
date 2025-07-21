@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../final_prj_pl.ip_user_files/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_util_ds_buf_0_1/util_ds_buf.vhd" \
+"../../../../final_prj_pl.ip_user_files/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_util_ds_buf_0_1/sim/PPG_I2C_PHY_util_ds_buf_0_1.vhd" \
+"../../../../final_prj_pl.ip_user_files/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_axi_iic_0_0/sim/PPG_I2C_PHY_axi_iic_0_0.vhd" \
+"../../../../final_prj_pl.ip_user_files/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_util_ds_buf_0_0/util_ds_buf.vhd" \
+"../../../../final_prj_pl.ip_user_files/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_util_ds_buf_0_0/sim/PPG_I2C_PHY_util_ds_buf_0_0.vhd" \
+"../../../../final_prj_pl.ip_user_files/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/synth/RGMII_tri_mode_ethernet_mac_0_0_axi4_lite_ipif_top.vhd" \
+"../../../../final_prj_pl.ip_user_files/bd/RGMII/ip/RGMII_rst_TEMAC_125M_0/sim/RGMII_rst_TEMAC_125M_0.vhd" \
+
+# Do not sort compile order
+nosort

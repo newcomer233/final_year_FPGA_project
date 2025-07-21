@@ -1,0 +1,9 @@
+xpm_cdc.sv,systemverilog,xpm,D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,incdir="../../../ipstatic/hdl"incdir="../../../ipstatic/hdl"
+xpm_fifo.sv,systemverilog,xpm,D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv,incdir="../../../ipstatic/hdl"incdir="../../../ipstatic/hdl"
+xpm_memory.sv,systemverilog,xpm,D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,incdir="../../../ipstatic/hdl"incdir="../../../ipstatic/hdl"
+xpm_VCOMP.vhd,vhdl,xpm,D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_VCOMP.vhd,incdir="../../../ipstatic/hdl"incdir="../../../ipstatic/hdl"
+axis_infrastructure_v1_1_vl_rfs.v,verilog,axis_infrastructure_v1_1_1,../../../ipstatic/hdl/axis_infrastructure_v1_1_vl_rfs.v,incdir="../../../ipstatic/hdl"incdir="../../../ipstatic/hdl"
+axis_register_slice_v1_1_vl_rfs.v,verilog,axis_register_slice_v1_1_34,../../../ipstatic/hdl/axis_register_slice_v1_1_vl_rfs.v,incdir="../../../ipstatic/hdl"incdir="../../../ipstatic/hdl"
+axis_dwidth_converter_v1_1_vl_rfs.v,verilog,axis_dwidth_converter_v1_1_33,../../../ipstatic/hdl/axis_dwidth_converter_v1_1_vl_rfs.v,incdir="../../../ipstatic/hdl"incdir="../../../ipstatic/hdl"
+axis_eth_head_convertor.v,verilog,xil_defaultlib,../../../../final_prj_pl.gen/sources_1/ip/axis_eth_head_convertor/sim/axis_eth_head_convertor.v,incdir="../../../ipstatic/hdl"incdir="../../../ipstatic/hdl"
+glbl.v,Verilog,xil_defaultlib,glbl.v

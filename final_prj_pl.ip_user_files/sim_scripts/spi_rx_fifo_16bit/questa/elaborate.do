@@ -1,0 +1,1 @@
+vopt -l elaborate.log +acc=npr -suppress 10016  -L xil_defaultlib -L xpm -L fifo_generator_v13_2_12 -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.spi_rx_fifo_16bit xil_defaultlib.glbl -o spi_rx_fifo_16bit_opt

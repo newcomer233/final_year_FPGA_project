@@ -1,0 +1,2 @@
+data_to_udp_fifo_widcov.v,verilog,xil_defaultlib,../../../../final_prj_pl.gen/sources_1/ip/data_to_udp_fifo_widcov/sim/data_to_udp_fifo_widcov.v,incdir="../../../ipstatic/hdl"incdir="../../../ipstatic/hdl"
+glbl.v,Verilog,xil_defaultlib,glbl.v

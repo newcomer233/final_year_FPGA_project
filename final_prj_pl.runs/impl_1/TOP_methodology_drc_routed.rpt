@@ -1,0 +1,514 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2.2 (win64) Build 6060944 Thu Mar 06 19:10:01 MST 2025
+| Date         : Mon Jul 21 13:53:28 2025
+| Host         : LAPTOP-VEGJAO5A running 64-bit major release  (build 9200)
+| Command      : report_methodology -file TOP_methodology_drc_routed.rpt -pb TOP_methodology_drc_routed.pb -rpx TOP_methodology_drc_routed.rpx
+| Design       : TOP
+| Device       : xczu9eg-ffvb1156-2-i
+| Speed File   : -2
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 74
++-----------+------------------+-------------------------------------------------------------------------------------------------------+--------+
+| Rule      | Severity         | Description                                                                                           | Checks |
++-----------+------------------+-------------------------------------------------------------------------------------------------------+--------+
+| TIMING-6  | Critical Warning | No common primary clock between related clocks                                                        | 2      |
+| TIMING-7  | Critical Warning | No common node between related clocks                                                                 | 2      |
+| LUTAR-1   | Warning          | LUT drives async reset alert                                                                          | 8      |
+| TIMING-9  | Warning          | Unknown CDC Logic                                                                                     | 1      |
+| TIMING-18 | Warning          | Missing input or output delay                                                                         | 28     |
+| TIMING-47 | Warning          | False path, asynchronous clock group or max delay datapath only constraint between synchronous clocks | 8      |
+| XDCB-5    | Warning          | Runtime inefficient way to find pin objects                                                           | 22     |
+| RTGT-1    | Advisory         | RAM retargeting possibility                                                                           | 3      |
++-----------+------------------+-------------------------------------------------------------------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-6#1 Critical Warning
+No common primary clock between related clocks  
+The clocks rgmii_rxc and eth_125M_system_clock are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks rgmii_rxc] -to [get_clocks eth_125M_system_clock]
+Related violations: <none>
+
+TIMING-6#2 Critical Warning
+No common primary clock between related clocks  
+The clocks rgmii_rxc and sysclk_200M_system_clock are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks rgmii_rxc] -to [get_clocks sysclk_200M_system_clock]
+Related violations: <none>
+
+TIMING-7#1 Critical Warning
+No common node between related clocks  
+The clocks rgmii_rxc and eth_125M_system_clock are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks rgmii_rxc] -to [get_clocks eth_125M_system_clock]
+Related violations: <none>
+
+TIMING-7#2 Critical Warning
+No common node between related clocks  
+The clocks rgmii_rxc and sysclk_200M_system_clock are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks rgmii_rxc] -to [get_clocks sysclk_200M_system_clock]
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_rx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/gpregsm1.curr_fwft_state[1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_rx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[3]/CLR,
+SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_rx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[4]/CLR,
+SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_rx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[5]/CLR,
+SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_rx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/CLR,
+SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_rx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[1]/CLR,
+SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_rx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[2]/CLR,
+SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_rx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/CLR,
+SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_rx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[4]/CLR,
+SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_rx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[5]/CLR,
+SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_rx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[0]/PRE,
+SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_rx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[1]/CLR,
+SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_rx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[2]/CLR,
+SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_rx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[3]/CLR,
+SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_rx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[4]/CLR,
+SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_rx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[5]/CLR
+ (the first 15 of 34 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/gpregsm1.curr_fwft_state[1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[3]/CLR,
+SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[4]/CLR,
+SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[5]/CLR,
+SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/CLR,
+SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[1]/CLR,
+SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[2]/CLR,
+SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/CLR,
+SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[4]/CLR,
+SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[5]/CLR,
+SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[0]/PRE,
+SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[1]/CLR,
+SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[2]/CLR,
+SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[3]/CLR,
+SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[4]/CLR,
+SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[5]/CLR
+ (the first 15 of 34 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell SENSOR_TOP/IMU_TOP/IMU_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/gpregsm1.curr_fwft_state[1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) SENSOR_TOP/IMU_TOP/IMU_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[3]/CLR,
+SENSOR_TOP/IMU_TOP/IMU_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[4]/CLR,
+SENSOR_TOP/IMU_TOP/IMU_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_reg[5]/CLR,
+SENSOR_TOP/IMU_TOP/IMU_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/CLR,
+SENSOR_TOP/IMU_TOP/IMU_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[1]/CLR,
+SENSOR_TOP/IMU_TOP/IMU_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[2]/CLR,
+SENSOR_TOP/IMU_TOP/IMU_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/CLR,
+SENSOR_TOP/IMU_TOP/IMU_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[4]/CLR,
+SENSOR_TOP/IMU_TOP/IMU_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[5]/CLR,
+SENSOR_TOP/IMU_TOP/IMU_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[0]/PRE,
+SENSOR_TOP/IMU_TOP/IMU_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[1]/CLR,
+SENSOR_TOP/IMU_TOP/IMU_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[2]/CLR,
+SENSOR_TOP/IMU_TOP/IMU_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[3]/CLR,
+SENSOR_TOP/IMU_TOP/IMU_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[4]/CLR,
+SENSOR_TOP/IMU_TOP/IMU_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[5]/CLR
+ (the first 15 of 34 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_3_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_3_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_3_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_3_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_3_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_3_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_3_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_3_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#6 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_3_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_3_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_3_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_3_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#7 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_3_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_3_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_3_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_3_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#8 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_sel[0]_INST_0, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[10]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[11]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[12]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[13]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[14]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[15]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[6]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[7]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[8]/CLR
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[9]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on ADC_BUSY relative to the rising and/or falling clock edge(s) of sysclk_200m_p.
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on I2C_SCL relative to the rising and/or falling clock edge(s) of sysclk_200m_p.
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on I2C_SDA relative to the rising and/or falling clock edge(s) of sysclk_200m_p.
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on IMU_SPI_DIN relative to the rising and/or falling clock edge(s) of sysclk_200m_p.
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on SPI_DIN_A relative to the rising and/or falling clock edge(s) of sysclk_200m_p.
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on SPI_DIN_B relative to the rising and/or falling clock edge(s) of sysclk_200m_p.
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on SPI_DIN_C relative to the rising and/or falling clock edge(s) of sysclk_200m_p.
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An input delay is missing on SPI_DIN_D relative to the rising and/or falling clock edge(s) of sysclk_200m_p.
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An input delay is missing on SPI_DIN_E relative to the rising and/or falling clock edge(s) of sysclk_200m_p.
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An input delay is missing on SPI_DIN_F relative to the rising and/or falling clock edge(s) of sysclk_200m_p.
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An input delay is missing on SPI_DIN_G relative to the rising and/or falling clock edge(s) of sysclk_200m_p.
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An input delay is missing on SPI_DIN_H relative to the rising and/or falling clock edge(s) of sysclk_200m_p.
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An input delay is missing on mdio[0] relative to the rising and/or falling clock edge(s) of sysclk_200m_p.
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on ADC_CONVST relative to the rising and/or falling clock edge(s) of sysclk_200m_p.
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on ADC_RST relative to the rising and/or falling clock edge(s) of sysclk_200m_p.
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An output delay is missing on IMU_SPI_CLK relative to the rising and/or falling clock edge(s) of sysclk_200m_p.
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An output delay is missing on IMU_SPI_CS_N relative to the rising and/or falling clock edge(s) of sysclk_200m_p.
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An output delay is missing on IMU_SPI_DOUT relative to the rising and/or falling clock edge(s) of sysclk_200m_p.
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An output delay is missing on SPI_CLK relative to the rising and/or falling clock edge(s) of sysclk_200m_p.
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An output delay is missing on SPI_CS_N relative to the rising and/or falling clock edge(s) of sysclk_200m_p.
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An output delay is missing on SPI_DOUT relative to the rising and/or falling clock edge(s) of sysclk_200m_p.
+Related violations: <none>
+
+TIMING-18#22 Warning
+Missing input or output delay  
+An output delay is missing on mdio[0] relative to the rising and/or falling clock edge(s) of sysclk_200m_p.
+Related violations: <none>
+
+TIMING-18#23 Warning
+Missing input or output delay  
+An output delay is missing on phy_rst_n[0] relative to the rising and/or falling clock edge(s) of sysclk_200m_p.
+Related violations: <none>
+
+TIMING-18#24 Warning
+Missing input or output delay  
+An output delay is missing on rgmii_td[0] relative to the rising and/or falling clock edge(s) of UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst_rgmii_tx_clk.
+Related violations: <none>
+
+TIMING-18#25 Warning
+Missing input or output delay  
+An output delay is missing on rgmii_td[1] relative to the rising and/or falling clock edge(s) of UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst_rgmii_tx_clk.
+Related violations: <none>
+
+TIMING-18#26 Warning
+Missing input or output delay  
+An output delay is missing on rgmii_td[2] relative to the rising and/or falling clock edge(s) of UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst_rgmii_tx_clk.
+Related violations: <none>
+
+TIMING-18#27 Warning
+Missing input or output delay  
+An output delay is missing on rgmii_td[3] relative to the rising and/or falling clock edge(s) of UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst_rgmii_tx_clk.
+Related violations: <none>
+
+TIMING-18#28 Warning
+Missing input or output delay  
+An output delay is missing on rgmii_tx_ctl relative to the rising and/or falling clock edge(s) of UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst_rgmii_tx_clk.
+Related violations: <none>
+
+TIMING-47#1 Warning
+False path, asynchronous clock group or max delay datapath only constraint between synchronous clocks  
+A False Path timing constraint is set between synchronous clocks UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst_rgmii_rx_clk and rgmii_rxc (see constraint position 669 in the Timing Constraint window in Vivado IDE). Masking entire synchronous clock domains via  set_false_path, set_clock_groups or set_max_delay -datapath_only may result in failure in hardware.
+Related violations: <none>
+
+TIMING-47#2 Warning
+False path, asynchronous clock group or max delay datapath only constraint between synchronous clocks  
+A False Path timing constraint is set between synchronous clocks UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst_rgmii_rx_clk and rgmii_rxc (see constraint position 670 in the Timing Constraint window in Vivado IDE). Masking entire synchronous clock domains via  set_false_path, set_clock_groups or set_max_delay -datapath_only may result in failure in hardware.
+Related violations: <none>
+
+TIMING-47#3 Warning
+False path, asynchronous clock group or max delay datapath only constraint between synchronous clocks  
+A False Path timing constraint is set between synchronous clocks UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst_rgmii_rx_clk and rgmii_rxc (see constraint position 671 in the Timing Constraint window in Vivado IDE). Masking entire synchronous clock domains via  set_false_path, set_clock_groups or set_max_delay -datapath_only may result in failure in hardware.
+Related violations: <none>
+
+TIMING-47#4 Warning
+False path, asynchronous clock group or max delay datapath only constraint between synchronous clocks  
+A False Path timing constraint is set between synchronous clocks UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst_rgmii_rx_clk and rgmii_rxc (see constraint position 672 in the Timing Constraint window in Vivado IDE). Masking entire synchronous clock domains via  set_false_path, set_clock_groups or set_max_delay -datapath_only may result in failure in hardware.
+Related violations: <none>
+
+TIMING-47#5 Warning
+False path, asynchronous clock group or max delay datapath only constraint between synchronous clocks  
+A False Path timing constraint is set between synchronous clocks eth_125M_system_clock and UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst_rgmii_tx_clk (see constraint position 680 in the Timing Constraint window in Vivado IDE). Masking entire synchronous clock domains via  set_false_path, set_clock_groups or set_max_delay -datapath_only may result in failure in hardware.
+Related violations: <none>
+
+TIMING-47#6 Warning
+False path, asynchronous clock group or max delay datapath only constraint between synchronous clocks  
+A False Path timing constraint is set between synchronous clocks eth_125M_system_clock and UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst_rgmii_tx_clk (see constraint position 681 in the Timing Constraint window in Vivado IDE). Masking entire synchronous clock domains via  set_false_path, set_clock_groups or set_max_delay -datapath_only may result in failure in hardware.
+Related violations: <none>
+
+TIMING-47#7 Warning
+False path, asynchronous clock group or max delay datapath only constraint between synchronous clocks  
+A False Path timing constraint is set between synchronous clocks eth_125M_system_clock and UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst_rgmii_tx_clk (see constraint position 682 in the Timing Constraint window in Vivado IDE). Masking entire synchronous clock domains via  set_false_path, set_clock_groups or set_max_delay -datapath_only may result in failure in hardware.
+Related violations: <none>
+
+TIMING-47#8 Warning
+False path, asynchronous clock group or max delay datapath only constraint between synchronous clocks  
+A False Path timing constraint is set between synchronous clocks eth_125M_system_clock and UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst_rgmii_tx_clk (see constraint position 683 in the Timing Constraint window in Vivado IDE). Masking entire synchronous clock domains via  set_false_path, set_clock_groups or set_max_delay -datapath_only may result in failure in hardware.
+Related violations: <none>
+
+XDCB-5#1 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/allx_typeA_match_detection.ltlib_v1_0_2_allx_typeA_inst/DUT/u_srl_drive/CLK}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '103' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc (Line: 72)
+Related violations: <none>
+
+XDCB-5#2 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/allx_typeA_match_detection.ltlib_v1_0_2_allx_typeA_inst/DUT/u_srl_drive/CLK}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '158' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc (Line: 72)
+Related violations: <none>
+
+XDCB-5#3 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/allx_typeA_match_detection.ltlib_v1_0_2_allx_typeA_inst/DUT/u_srl_drive/CLK}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '237' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc (Line: 72)
+Related violations: <none>
+
+XDCB-5#4 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/allx_typeA_match_detection.ltlib_v1_0_2_allx_typeA_inst/DUT/u_srl_drive/CLK}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '299' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_1_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc (Line: 72)
+Related violations: <none>
+
+XDCB-5#5 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/allx_typeA_match_detection.ltlib_v1_0_2_allx_typeA_inst/DUT/u_srl_drive/CLK}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '354' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc (Line: 72)
+Related violations: <none>
+
+XDCB-5#6 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/allx_typeA_match_detection.ltlib_v1_0_2_allx_typeA_inst/DUT/u_srl_drive/CLK}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '409' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/ila_2/ila_v6_2/constraints/ila.xdc (Line: 72)
+Related violations: <none>
+
+XDCB-5#7 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/allx_typeA_match_detection.ltlib_v1_0_2_allx_typeA_inst/DUT/u_srl_drive/CLK}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '464' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/ADC_CONFIG_ILA/ila_v6_2/constraints/ila.xdc (Line: 72)
+Related violations: <none>
+
+XDCB-5#8 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/allx_typeA_match_detection.ltlib_v1_0_2_allx_typeA_inst/DUT/u_srl_drive/CLK}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '48' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_ila_0_0/ila_v6_2/constraints/ila.xdc (Line: 72)
+Related violations: <none>
+
+XDCB-5#9 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/allx_typeA_match_detection.ltlib_v1_0_2_allx_typeA_inst/DUT/u_srl_drive/CLK}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '525' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/ADC_READ_ILA/ila_v6_2/constraints/ila.xdc (Line: 72)
+Related violations: <none>
+
+XDCB-5#10 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/allx_typeA_match_detection.ltlib_v1_0_2_allx_typeA_inst/DUT/u_srl_drive/CLK}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '581' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/imu_read_ila/ila_v6_2/constraints/ila.xdc (Line: 72)
+Related violations: <none>
+
+XDCB-5#11 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/allx_typeA_match_detection.ltlib_v1_0_2_allx_typeA_inst/DUT/u_srl_drive/CLK}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '636' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/IMU_CONFIG_ILA/ila_v6_2/constraints/ila.xdc (Line: 72)
+Related violations: <none>
+
+XDCB-5#12 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/yes_output_reg.dout_reg_reg/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '103' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc (Line: 72)
+Related violations: <none>
+
+XDCB-5#13 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/yes_output_reg.dout_reg_reg/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '158' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc (Line: 72)
+Related violations: <none>
+
+XDCB-5#14 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/yes_output_reg.dout_reg_reg/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '237' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc (Line: 72)
+Related violations: <none>
+
+XDCB-5#15 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/yes_output_reg.dout_reg_reg/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '299' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_1_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc (Line: 72)
+Related violations: <none>
+
+XDCB-5#16 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/yes_output_reg.dout_reg_reg/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '354' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc (Line: 72)
+Related violations: <none>
+
+XDCB-5#17 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/yes_output_reg.dout_reg_reg/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '409' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/ila_2/ila_v6_2/constraints/ila.xdc (Line: 72)
+Related violations: <none>
+
+XDCB-5#18 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/yes_output_reg.dout_reg_reg/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '464' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/ADC_CONFIG_ILA/ila_v6_2/constraints/ila.xdc (Line: 72)
+Related violations: <none>
+
+XDCB-5#19 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/yes_output_reg.dout_reg_reg/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '48' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_ila_0_0/ila_v6_2/constraints/ila.xdc (Line: 72)
+Related violations: <none>
+
+XDCB-5#20 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/yes_output_reg.dout_reg_reg/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '525' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/ADC_READ_ILA/ila_v6_2/constraints/ila.xdc (Line: 72)
+Related violations: <none>
+
+XDCB-5#21 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/yes_output_reg.dout_reg_reg/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '581' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/imu_read_ila/ila_v6_2/constraints/ila.xdc (Line: 72)
+Related violations: <none>
+
+XDCB-5#22 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/yes_output_reg.dout_reg_reg/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '636' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/IMU_CONFIG_ILA/ila_v6_2/constraints/ila.xdc (Line: 72)
+Related violations: <none>
+
+RTGT-1#1 Advisory
+RAM retargeting possibility  
+Identified 7 RAM64X1D primitives that could be retargeted to RAM64M8. Retargeting will save approximately 6 memory LUTs and improve routability. These can usually be achieved using synthesis inference or XPMs. The memories are UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst/tri_mode_ethernet_mac_i/RGMII_tri_mode_ethernet_mac_0_0_core/addr_filter_top/address_filter_inst/addr_regs.unicast_address_compare/byte_wide_ram[1].header_compare_dist_ram,
+UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst/tri_mode_ethernet_mac_i/RGMII_tri_mode_ethernet_mac_0_0_core/addr_filter_top/address_filter_inst/addr_regs.unicast_address_compare/byte_wide_ram[2].header_compare_dist_ram,
+UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst/tri_mode_ethernet_mac_i/RGMII_tri_mode_ethernet_mac_0_0_core/addr_filter_top/address_filter_inst/addr_regs.unicast_address_compare/byte_wide_ram[3].header_compare_dist_ram,
+UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst/tri_mode_ethernet_mac_i/RGMII_tri_mode_ethernet_mac_0_0_core/addr_filter_top/address_filter_inst/addr_regs.unicast_address_compare/byte_wide_ram[4].header_compare_dist_ram,
+UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst/tri_mode_ethernet_mac_i/RGMII_tri_mode_ethernet_mac_0_0_core/addr_filter_top/address_filter_inst/addr_regs.unicast_address_compare/byte_wide_ram[5].header_compare_dist_ram,
+UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst/tri_mode_ethernet_mac_i/RGMII_tri_mode_ethernet_mac_0_0_core/addr_filter_top/address_filter_inst/addr_regs.unicast_address_compare/byte_wide_ram[6].header_compare_dist_ram
+UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst/tri_mode_ethernet_mac_i/RGMII_tri_mode_ethernet_mac_0_0_core/addr_filter_top/address_filter_inst/addr_regs.unicast_address_compare/byte_wide_ram[7].header_compare_dist_ram
+Related violations: <none>
+
+RTGT-1#2 Advisory
+RAM retargeting possibility  
+Identified 7 RAM64X1D primitives that could be retargeted to RAM64M8. Retargeting will save approximately 6 memory LUTs and improve routability. These can usually be achieved using synthesis inference or XPMs. The memories are UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst/tri_mode_ethernet_mac_i/RGMII_tri_mode_ethernet_mac_0_0_core/addr_filter_top/address_filter_inst/byte_wide_ram[0].header_field_dist_ram,
+UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst/tri_mode_ethernet_mac_i/RGMII_tri_mode_ethernet_mac_0_0_core/addr_filter_top/address_filter_inst/byte_wide_ram[1].header_field_dist_ram,
+UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst/tri_mode_ethernet_mac_i/RGMII_tri_mode_ethernet_mac_0_0_core/addr_filter_top/address_filter_inst/byte_wide_ram[2].header_field_dist_ram,
+UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst/tri_mode_ethernet_mac_i/RGMII_tri_mode_ethernet_mac_0_0_core/addr_filter_top/address_filter_inst/byte_wide_ram[3].header_field_dist_ram,
+UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst/tri_mode_ethernet_mac_i/RGMII_tri_mode_ethernet_mac_0_0_core/addr_filter_top/address_filter_inst/byte_wide_ram[4].header_field_dist_ram,
+UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst/tri_mode_ethernet_mac_i/RGMII_tri_mode_ethernet_mac_0_0_core/addr_filter_top/address_filter_inst/byte_wide_ram[5].header_field_dist_ram
+UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst/tri_mode_ethernet_mac_i/RGMII_tri_mode_ethernet_mac_0_0_core/addr_filter_top/address_filter_inst/byte_wide_ram[6].header_field_dist_ram
+Related violations: <none>
+
+RTGT-1#3 Advisory
+RAM retargeting possibility  
+Identified 7 RAM64X1D primitives that could be retargeted to RAM64M8. Retargeting will save approximately 6 memory LUTs and improve routability. These can usually be achieved using synthesis inference or XPMs. The memories are UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst/tri_mode_ethernet_mac_i/RGMII_tri_mode_ethernet_mac_0_0_core/stats_block.statistics_counters/gen_distributed_parity[0].RAM64X1D_inst,
+UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst/tri_mode_ethernet_mac_i/RGMII_tri_mode_ethernet_mac_0_0_core/stats_block.statistics_counters/gen_distributed_parity[1].RAM64X1D_inst,
+UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst/tri_mode_ethernet_mac_i/RGMII_tri_mode_ethernet_mac_0_0_core/stats_block.statistics_counters/gen_distributed_parity[2].RAM64X1D_inst,
+UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst/tri_mode_ethernet_mac_i/RGMII_tri_mode_ethernet_mac_0_0_core/stats_block.statistics_counters/gen_distributed_parity[3].RAM64X1D_inst,
+UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst/tri_mode_ethernet_mac_i/RGMII_tri_mode_ethernet_mac_0_0_core/stats_block.statistics_counters/gen_distributed_parity[4].RAM64X1D_inst,
+UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst/tri_mode_ethernet_mac_i/RGMII_tri_mode_ethernet_mac_0_0_core/stats_block.statistics_counters/gen_distributed_parity[5].RAM64X1D_inst
+UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst/tri_mode_ethernet_mac_i/RGMII_tri_mode_ethernet_mac_0_0_core/stats_block.statistics_counters/gen_distributed_parity[6].RAM64X1D_inst
+Related violations: <none>
+
+

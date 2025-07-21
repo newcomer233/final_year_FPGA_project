@@ -1,0 +1,2 @@
+imu_read_ila.v,verilog,xil_defaultlib,../../../../final_prj_pl.gen/sources_1/ip/imu_read_ila/sim/imu_read_ila.v,incdir="../../../../final_prj_pl.gen/sources_1/ip/imu_read_ila/hdl/verilog"
+glbl.v,Verilog,xil_defaultlib,glbl.v

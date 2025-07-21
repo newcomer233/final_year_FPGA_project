@@ -1,0 +1,2 @@
+axis_eth_head_convertor.v,verilog,xil_defaultlib,../../../../final_prj_pl.gen/sources_1/ip/axis_eth_head_convertor/sim/axis_eth_head_convertor.v,incdir="../../../ipstatic/hdl"incdir="../../../ipstatic/hdl"
+glbl.v,Verilog,xil_defaultlib,glbl.v

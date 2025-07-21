@@ -1,0 +1,1 @@
+--incr --debug typical --relax --mt 16  -L xil_defaultlib -L axis_infrastructure_v1_1_1 -L axis_register_slice_v1_1_34 -L axis_dwidth_converter_v1_1_33 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot data_to_udp_fifo_widcov xil_defaultlib.data_to_udp_fifo_widcov xil_defaultlib.glbl -log elaborate.log

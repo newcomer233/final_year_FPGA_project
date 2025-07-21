@@ -1,0 +1,8 @@
++=======================+=======================+============================================================================+
+| Launch Setup Clock    | Launch Hold Clock     | Pin                                                                        |
++=======================+=======================+============================================================================+
+| eth_125M_system_clock | eth_125M_system_clock | UDP_TOP/RGMII_wrapper/RGMII_i/vio/inst/PROBE_IN_INST/probe_in_reg_reg[5]/D |
+| eth_125M_system_clock | eth_125M_system_clock | UDP_TOP/RGMII_wrapper/RGMII_i/vio/inst/PROBE_IN_INST/probe_in_reg_reg[3]/D |
+| rgmii_rxc             | rgmii_rxc             | UDP_TOP/RGMII_wrapper/RGMII_i/vio/inst/PROBE_IN_INST/probe_in_reg_reg[4]/D |
+| rgmii_rxc             | rgmii_rxc             | UDP_TOP/RGMII_wrapper/RGMII_i/vio/inst/PROBE_IN_INST/probe_in_reg_reg[2]/D |
++-----------------------+-----------------------+----------------------------------------------------------------------------+

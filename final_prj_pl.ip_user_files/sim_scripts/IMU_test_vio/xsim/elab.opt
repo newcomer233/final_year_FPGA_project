@@ -1,0 +1,1 @@
+--incr --debug typical --relax --mt 16  -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot IMU_test_vio xil_defaultlib.IMU_test_vio xil_defaultlib.glbl -log elaborate.log

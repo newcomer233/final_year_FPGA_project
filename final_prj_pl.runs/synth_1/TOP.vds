@@ -1,0 +1,948 @@
+#-----------------------------------------------------------
+# Vivado v2024.2.2 (64-bit)
+# SW Build 6060944 on Thu Mar 06 19:10:01 MST 2025
+# IP Build 6050500 on Thu Mar  6 23:33:39 MST 2025
+# SharedData Build 6060542 on Thu Mar 06 10:31:07 MST 2025
+# Start of session at: Mon Jul 21 13:47:34 2025
+# Process ID         : 31004
+# Current directory  : E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1
+# Command line       : vivado.exe -log TOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP.tcl
+# Log file           : E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/TOP.vds
+# Journal file       : E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1\vivado.jou
+# Running On         : LAPTOP-VEGJAO5A
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 102673 MB
+# Swap memory        : 6442 MB
+# Total Virtual      : 109116 MB
+# Available Virtual  : 81648 MB
+#-----------------------------------------------------------
+Sourcing tcl script 'D:/Xilinx/Vivado/2024.2/scripts/Vivado_init.tcl'
+source TOP.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 644.898 ; gain = 202.230
+INFO: [Project 1-5578] Found utility IPs instantiated in block design E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/bd/RGMII/RGMII.bd which have equivalent inline hdl with improved performance and reduced diskspace.
+It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
+More information on inline hdl is available in UG994. 
+Command: read_checkpoint -auto_incremental -incremental E:/final_prj/final_prj_pl/final_prj_pl.srcs/utils_1/imports/synth_1/ADC_TOP_test.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from E:/final_prj/final_prj_pl/final_prj_pl.srcs/utils_1/imports/synth_1/ADC_TOP_test.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top TOP -part xczu9eg-ffvb1156-2-i
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-i
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 21512
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2087.531 ; gain = 187.715
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'spi_phy_en', assumed default net type 'wire' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_TOP.v:89]
+INFO: [Synth 8-11241] undeclared symbol 'spi_config_tx_ready', assumed default net type 'wire' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_TOP.v:95]
+INFO: [Synth 8-11241] undeclared symbol 'spi_read_tx_ready', assumed default net type 'wire' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_TOP.v:96]
+INFO: [Synth 8-11241] undeclared symbol 'spi_read_write_valid', assumed default net type 'wire' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_TOP.v:151]
+INFO: [Synth 8-11241] undeclared symbol 'spi_config_tx_valid', assumed default net type 'wire' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_TOP.v:179]
+INFO: [Synth 8-11241] undeclared symbol 'spi_tx_begin_cnt', assumed default net type 'wire' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_CONFIG.v:286]
+INFO: [Synth 8-11241] undeclared symbol 'spi_tx_end_cnt', assumed default net type 'wire' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_CONFIG.v:287]
+INFO: [Synth 8-11241] undeclared symbol 'eth_axis_tready', assumed default net type 'wire' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/UDP_PACKAGE.v:233]
+INFO: [Synth 8-11241] undeclared symbol 'eth_m_axis_tuser', assumed default net type 'wire' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/UDP_PACKAGE.v:246]
+INFO: [Synth 8-11241] undeclared symbol 'prog_empty', assumed default net type 'wire' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/DATA_TO_UDP.v:157]
+INFO: [Synth 8-6157] synthesizing module 'TOP' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/TOP.v:23]
+INFO: [Synth 8-6157] synthesizing module 'system_clock' [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/system_clock_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_clock' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/system_clock_stub.v:6]
+WARNING: [Synth 8-7071] port 'locked' of module 'system_clock' is unconnected for instance 'system_clock_inst' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/TOP.v:87]
+WARNING: [Synth 8-7023] instance 'system_clock_inst' of module 'system_clock' has 6 connections declared, but only 5 given [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/TOP.v:87]
+INFO: [Synth 8-6157] synthesizing module 'SENSOR_TOP' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/SENSOR_TOP.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IMU_TOP' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_TOP.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IMU_SPI_LINK' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_SPI_LINK.v:23]
+INFO: [Synth 8-6157] synthesizing module 'spi_tx_fifo' [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/spi_tx_fifo_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'spi_tx_fifo' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/spi_tx_fifo_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'spi_rx_fifo_16bit' [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/spi_rx_fifo_16bit_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'spi_rx_fifo_16bit' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/spi_rx_fifo_16bit_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'IMU_SPI_PHY' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_SPI_PHY.v:23]
+INFO: [Synth 8-226] default block is never used [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_SPI_PHY.v:120]
+INFO: [Synth 8-226] default block is never used [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_SPI_PHY.v:234]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_SPI_PHY.v:389]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/ila_0_stub.v:6]
+WARNING: [Synth 8-689] width (17) of port connection 'probe4' does not match port width (16) of module 'ila_0' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_SPI_PHY.v:395]
+INFO: [Synth 8-6155] done synthesizing module 'IMU_SPI_PHY' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_SPI_PHY.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'IMU_SPI_LINK' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_SPI_LINK.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IMU_READ' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_READ.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_READ.v:231]
+INFO: [Synth 8-6157] synthesizing module 'imu_read_ila' [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/imu_read_ila_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'imu_read_ila' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/imu_read_ila_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'IMU_READ' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_READ.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IMU_CONFIG' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_CONFIG.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_CONFIG.v:279]
+INFO: [Synth 8-6157] synthesizing module 'IMU_CONFIG_ILA' [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/IMU_CONFIG_ILA_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'IMU_CONFIG_ILA' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/IMU_CONFIG_ILA_stub.v:6]
+WARNING: [Synth 8-689] width (1) of port connection 'probe5' does not match port width (4) of module 'IMU_CONFIG_ILA' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_CONFIG.v:286]
+WARNING: [Synth 8-689] width (1) of port connection 'probe6' does not match port width (4) of module 'IMU_CONFIG_ILA' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_CONFIG.v:287]
+INFO: [Synth 8-6155] done synthesizing module 'IMU_CONFIG' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_CONFIG.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IMU_TOP_VIO' [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/IMU_TOP_VIO_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'IMU_TOP_VIO' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/IMU_TOP_VIO_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'IMU_TOP' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_TOP.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ADC_TOP' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/ADC_TOP.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ADC_SPI_LINK' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/ADC_SPI_LINK.v:23]
+INFO: [Synth 8-6157] synthesizing module 'spi_rx_fifo' [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/spi_rx_fifo_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'spi_rx_fifo' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/spi_rx_fifo_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ADC_SPI_PHY' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/ADC_SPI_PHY.v:24]
+INFO: [Synth 8-226] default block is never used [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/ADC_SPI_PHY.v:130]
+INFO: [Synth 8-226] default block is never used [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/ADC_SPI_PHY.v:282]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/ADC_SPI_PHY.v:437]
+INFO: [Synth 8-6157] synthesizing module 'ila_2' [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/ila_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_2' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/ila_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ADC_SPI_PHY' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/ADC_SPI_PHY.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'ADC_SPI_LINK' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/ADC_SPI_LINK.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ADC_CONFIG' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/ADC_CONFIG.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/ADC_CONFIG.v:241]
+INFO: [Synth 8-6157] synthesizing module 'ADC_CONFIG_ILA' [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/ADC_CONFIG_ILA_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ADC_CONFIG_ILA' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/ADC_CONFIG_ILA_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'probe6' does not match port width (4) of module 'ADC_CONFIG_ILA' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/ADC_CONFIG.v:249]
+INFO: [Synth 8-6155] done synthesizing module 'ADC_CONFIG' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/ADC_CONFIG.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ADC_READ' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/ADC_READ.v:23]
+INFO: [Synth 8-226] default block is never used [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/ADC_READ.v:126]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/ADC_READ.v:185]
+INFO: [Synth 8-6157] synthesizing module 'ADC_READ_ILA' [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/ADC_READ_ILA_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ADC_READ_ILA' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/ADC_READ_ILA_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'probe11' does not match port width (7) of module 'ADC_READ_ILA' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/ADC_READ.v:198]
+INFO: [Synth 8-6155] done synthesizing module 'ADC_READ' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/ADC_READ.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ADC_TOP_VIO' [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/ADC_TOP_VIO_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ADC_TOP_VIO' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/ADC_TOP_VIO_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ADC_TOP' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/ADC_TOP.v:23]
+INFO: [Synth 8-6157] synthesizing module 'I2C_TOP' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/I2C_TOP.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PPG_I2C_PHY_wrapper' [E:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/PPG_I2C_PHY/hdl/PPG_I2C_PHY_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'PPG_I2C_PHY' [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/PPG_I2C_PHY/synth/PPG_I2C_PHY.v:13]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/PPG_I2C_PHY/synth/PPG_I2C_PHY.v:111]
+INFO: [Synth 8-6157] synthesizing module 'PPG_I2C_PHY_ila_0_0' [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/PPG_I2C_PHY_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'PPG_I2C_PHY_ila_0_0' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/PPG_I2C_PHY_ila_0_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/PPG_I2C_PHY/synth/PPG_I2C_PHY.v:115]
+INFO: [Synth 8-6157] synthesizing module 'PPG_I2C_PHY_system_ila_0_0' [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/PPG_I2C_PHY_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'PPG_I2C_PHY_system_ila_0_0' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/PPG_I2C_PHY_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'PPG_I2C_PHY_util_ds_buf_0_0' [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/PPG_I2C_PHY_util_ds_buf_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'PPG_I2C_PHY_util_ds_buf_0_0' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/PPG_I2C_PHY_util_ds_buf_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'PPG_I2C_PHY_util_ds_buf_0_1' [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/PPG_I2C_PHY_util_ds_buf_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'PPG_I2C_PHY_util_ds_buf_0_1' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/PPG_I2C_PHY_util_ds_buf_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'PPG_I2C_PHY_axi_iic_0_0' [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/PPG_I2C_PHY_axi_iic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'PPG_I2C_PHY_axi_iic_0_0' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/PPG_I2C_PHY_axi_iic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'PPG_I2C_PHY' (0#1) [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/PPG_I2C_PHY/synth/PPG_I2C_PHY.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'PPG_I2C_PHY_wrapper' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/PPG_I2C_PHY/hdl/PPG_I2C_PHY_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'I2C_RW_CTRL' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/I2C_RW_CTRL.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_RW_CTRL' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/I2C_RW_CTRL.v:23]
+INFO: [Synth 8-6157] synthesizing module 'I2C_CONFIG_READ' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/I2C_CONFIG_READ.v:24]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/I2C_CONFIG_READ.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_CONFIG_READ' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/I2C_CONFIG_READ.v:24]
+WARNING: [Synth 8-7071] port 'green_led_data' of module 'I2C_CONFIG_READ' is unconnected for instance 'I2C_CONFIG_READ' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/I2C_TOP.v:140]
+WARNING: [Synth 8-7071] port 'green_led_data_valid' of module 'I2C_CONFIG_READ' is unconnected for instance 'I2C_CONFIG_READ' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/I2C_TOP.v:140]
+WARNING: [Synth 8-7023] instance 'I2C_CONFIG_READ' of module 'I2C_CONFIG_READ' has 13 connections declared, but only 11 given [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/I2C_TOP.v:140]
+INFO: [Synth 8-6155] done synthesizing module 'I2C_TOP' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/I2C_TOP.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SENSOR_TOP' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/SENSOR_TOP.v:23]
+INFO: [Synth 8-6157] synthesizing module 'UDP_TOP' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/UDP_TOP.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RGMII_wrapper' [E:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/hdl/RGMII_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'RGMII' [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/synth/RGMII.v:13]
+INFO: [Synth 8-6157] synthesizing module 'RGMII_tri_mode_ethernet_mac_0_0' [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/RGMII_tri_mode_ethernet_mac_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RGMII_tri_mode_ethernet_mac_0_0' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/RGMII_tri_mode_ethernet_mac_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'rx_axis_filter_tuser' of module 'RGMII_tri_mode_ethernet_mac_0_0' is unconnected for instance 'TEMAC' [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/synth/RGMII.v:186]
+WARNING: [Synth 8-7071] port 'mac_irq' of module 'RGMII_tri_mode_ethernet_mac_0_0' is unconnected for instance 'TEMAC' [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/synth/RGMII.v:186]
+WARNING: [Synth 8-7023] instance 'TEMAC' of module 'RGMII_tri_mode_ethernet_mac_0_0' has 60 connections declared, but only 58 given [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/synth/RGMII.v:186]
+INFO: [Synth 8-6157] synthesizing module 'RGMII_axis_TX_data_fifo_0' [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/RGMII_axis_TX_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RGMII_axis_TX_data_fifo_0' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/RGMII_axis_TX_data_fifo_0_stub.v:6]
+WARNING: [Synth 8-7071] port 's_axis_tready' of module 'RGMII_axis_TX_data_fifo_0' is unconnected for instance 'axis_RX_data_fifo' [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/synth/RGMII.v:245]
+WARNING: [Synth 8-7023] instance 'axis_RX_data_fifo' of module 'RGMII_axis_TX_data_fifo_0' has 13 connections declared, but only 12 given [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/synth/RGMII.v:245]
+INFO: [Synth 8-6157] synthesizing module 'RGMII_axis_data_fifo_0_0' [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/RGMII_axis_data_fifo_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RGMII_axis_data_fifo_0_0' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/RGMII_axis_data_fifo_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'RGMII_rst_TEMAC_125M_0' [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/RGMII_rst_TEMAC_125M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RGMII_rst_TEMAC_125M_0' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/RGMII_rst_TEMAC_125M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'RGMII_rst_TEMAC_125M_0' is unconnected for instance 'rst_TEMAC_125M' [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/synth/RGMII.v:274]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'RGMII_rst_TEMAC_125M_0' is unconnected for instance 'rst_TEMAC_125M' [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/synth/RGMII.v:274]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'RGMII_rst_TEMAC_125M_0' is unconnected for instance 'rst_TEMAC_125M' [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/synth/RGMII.v:274]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'RGMII_rst_TEMAC_125M_0' is unconnected for instance 'rst_TEMAC_125M' [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/synth/RGMII.v:274]
+WARNING: [Synth 8-7023] instance 'rst_TEMAC_125M' of module 'RGMII_rst_TEMAC_125M_0' has 10 connections declared, but only 6 given [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/synth/RGMII.v:274]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/synth/RGMII.v:281]
+INFO: [Synth 8-6157] synthesizing module 'RGMII_system_ila_0_0' [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/RGMII_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RGMII_system_ila_0_0' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/RGMII_system_ila_0_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/synth/RGMII.v:297]
+INFO: [Synth 8-6157] synthesizing module 'RGMII_system_ila_1_0' [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/RGMII_system_ila_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RGMII_system_ila_1_0' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/RGMII_system_ila_1_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/synth/RGMII.v:317]
+INFO: [Synth 8-6157] synthesizing module 'RGMII_system_ila_0_1' [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/RGMII_system_ila_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RGMII_system_ila_0_1' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/RGMII_system_ila_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'RGMII_util_vector_logic_0_0' [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/RGMII_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RGMII_util_vector_logic_0_0' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/RGMII_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'RGMII_util_vector_logic_0_1' [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/RGMII_util_vector_logic_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RGMII_util_vector_logic_0_1' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/RGMII_util_vector_logic_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'RGMII_vio_0_0' [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/RGMII_vio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RGMII_vio_0_0' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/RGMII_vio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RGMII' (0#1) [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/synth/RGMII.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'RGMII_wrapper' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/hdl/RGMII_wrapper.v:13]
+WARNING: [Synth 8-689] width (2) of port connection 's_axis_txd_tkeep' does not match port width (1) of module 'RGMII_wrapper' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/UDP_TOP.v:125]
+INFO: [Synth 8-6157] synthesizing module 'UDP_CONFIG' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/UDP_CONFIG.v:23]
+INFO: [Synth 8-6157] synthesizing module 'axi4lite_process' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/axi4lite_process.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'axi4lite_process' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/axi4lite_process.v:23]
+INFO: [Synth 8-6157] synthesizing module 'udp_config_vio' [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/udp_config_vio_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'udp_config_vio' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/udp_config_vio_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'UDP_CONFIG' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/UDP_CONFIG.v:23]
+INFO: [Synth 8-6157] synthesizing module 'UDP_PACKAGE' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/UDP_PACKAGE.v:23]
+INFO: [Synth 8-6157] synthesizing module 'axis_eth_head_convertor' [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/axis_eth_head_convertor_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axis_eth_head_convertor' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/axis_eth_head_convertor_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'UDP_PACKAGE' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/UDP_PACKAGE.v:23]
+WARNING: [Synth 8-689] width (2) of port connection 's_axis_txd_tkeep' does not match port width (1) of module 'UDP_PACKAGE' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/UDP_TOP.v:169]
+WARNING: [Synth 8-7071] port 's_axis_txd_tuser' of module 'UDP_PACKAGE' is unconnected for instance 'UDP_PACKAGE' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/UDP_TOP.v:163]
+WARNING: [Synth 8-7071] port 'm_axis_rxd_tuser' of module 'UDP_PACKAGE' is unconnected for instance 'UDP_PACKAGE' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/UDP_TOP.v:163]
+WARNING: [Synth 8-7023] instance 'UDP_PACKAGE' of module 'UDP_PACKAGE' has 23 connections declared, but only 21 given [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/UDP_TOP.v:163]
+INFO: [Synth 8-6155] done synthesizing module 'UDP_TOP' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/UDP_TOP.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DATA_PROCESS_TOP' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/DATA_PROCESS_TOP.v:24]
+INFO: [Synth 8-6157] synthesizing module 'DATA_TO_UDP' [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/DATA_TO_UDP.v:23]
+INFO: [Synth 8-6157] synthesizing module 'data_to_udp_fifo' [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/data_to_udp_fifo_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'data_to_udp_fifo' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/data_to_udp_fifo_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'data_to_udp_fifo_widcov' [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/data_to_udp_fifo_widcov_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'data_to_udp_fifo_widcov' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/data_to_udp_fifo_widcov_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'DATA_TO_UDP' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/DATA_TO_UDP.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DATA_PROCESS_TOP' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/DATA_PROCESS_TOP.v:24]
+INFO: [Synth 8-6157] synthesizing module 'top_vio' [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/top_vio_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top_vio' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/.Xil/Vivado-31004-LAPTOP-VEGJAO5A/realtime/top_vio_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'TOP' (0#1) [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/TOP.v:23]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'IMU_SPI_PHY_ILA'. This will prevent further optimization [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_SPI_PHY.v:389]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'IMU_SPI_PHY'. This will prevent further optimization [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_SPI_LINK.v:96]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'IMU_READ'. This will prevent further optimization [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_TOP.v:142]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'imu_read_ila'. This will prevent further optimization [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_READ.v:231]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'IMU_CONFIG_ILA'. This will prevent further optimization [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_CONFIG.v:279]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'IMU_CONFIG'. This will prevent further optimization [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_TOP.v:174]
+WARNING: [Synth 8-6014] Unused sequential element config_buffer_done_cnt_reg was removed.  [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_CONFIG.v:199]
+WARNING: [Synth 8-6014] Unused sequential element delay_counter_reg was removed.  [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_CONFIG.v:207]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'IMU_TOP_VIO'. This will prevent further optimization [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_TOP.v:195]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'IMU_SPI_LINK'. This will prevent further optimization [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_TOP.v:117]
+WARNING: [Synth 8-3848] Net spi_tx_last in module/entity IMU_TOP does not have driver. [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/IMU_TOP.v:50]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'spi_phy_port'. This will prevent further optimization [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/ADC_SPI_PHY.v:437]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ADC_SPI_PHY'. This will prevent further optimization [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/ADC_SPI_LINK.v:104]
+WARNING: [Synth 8-6014] Unused sequential element spi_cs_reg_reg was removed.  [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/ADC_SPI_PHY.v:232]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ADC_CONFIG_ILA'. This will prevent further optimization [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/ADC_CONFIG.v:241]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ADC_CONFIG'. This will prevent further optimization [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/ADC_TOP.v:125]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ADC_READ'. This will prevent further optimization [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/ADC_TOP.v:142]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ADC_READ_ILA'. This will prevent further optimization [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/ADC_READ.v:185]
+WARNING: [Synth 8-6014] Unused sequential element ADC_BUSY_judge_reg was removed.  [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/ADC_READ.v:57]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ADC_TOP_VIO'. This will prevent further optimization [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/ADC_TOP.v:170]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ADC_TOP'. This will prevent further optimization [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/SENSOR_TOP.v:97]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ADC_SPI_LINK'. This will prevent further optimization [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/ADC_TOP.v:92]
+WARNING: [Synth 8-3848] Net spi_tx_last in module/entity ADC_TOP does not have driver. [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/ADC_TOP.v:69]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'SCL_BUF'. This will prevent further optimization [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/PPG_I2C_PHY/synth/PPG_I2C_PHY.v:135]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_iic'. This will prevent further optimization [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/PPG_I2C_PHY/synth/PPG_I2C_PHY.v:145]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'I2C_ILA'. This will prevent further optimization [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/PPG_I2C_PHY/synth/PPG_I2C_PHY.v:111]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'SDA_BUF'. This will prevent further optimization [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/PPG_I2C_PHY/synth/PPG_I2C_PHY.v:140]
+WARNING: [Synth 8-3848] Net s_axi_aresetn in module/entity I2C_TOP does not have driver. [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/I2C_TOP.v:33]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio'. This will prevent further optimization [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/synth/RGMII.v:330]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'RGMII_i'. This will prevent further optimization [E:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/hdl/RGMII_wrapper.v:139]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'TEMAC'. This will prevent further optimization [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/synth/RGMII.v:186]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'util_vector_logic_1'. This will prevent further optimization [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/synth/RGMII.v:327]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'rst_TEMAC_125M'. This will prevent further optimization [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/synth/RGMII.v:274]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'util_vector_logic_0'. This will prevent further optimization [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/synth/RGMII.v:324]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'udp_config_vio'. This will prevent further optimization [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/UDP_CONFIG.v:109]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi4lite_process'. This will prevent further optimization [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/UDP_CONFIG.v:65]
+WARNING: [Synth 8-3848] Net m_axis_rxd_tready in module/entity UDP_PACKAGE does not have driver. [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/UDP_PACKAGE.v:39]
+WARNING: [Synth 8-3848] Net s_axis_rxd_tuser in module/entity UDP_TOP does not have driver. [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/UDP_TOP.v:83]
+WARNING: [Synth 8-3848] Net tx_ifg_delay in module/entity UDP_TOP does not have driver. [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/UDP_TOP.v:88]
+WARNING: [Synth 8-3848] Net m_axis_rxd_tkeep in module/entity UDP_TOP does not have driver. [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/UDP_TOP.v:73]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'nolabel_line182'. This will prevent further optimization [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/TOP.v:182]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'DATA_PROCESS_TOP'. This will prevent further optimization [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/TOP.v:160]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'UDP_TOP'. This will prevent further optimization [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/TOP.v:133]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'SENSOR_TOP'. This will prevent further optimization [E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/TOP.v:97]
+WARNING: [Synth 8-7129] Port m_axis_rxd_tready in module UDP_PACKAGE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_rxd_tdata[7] in module UDP_PACKAGE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_rxd_tdata[6] in module UDP_PACKAGE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_rxd_tdata[5] in module UDP_PACKAGE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_rxd_tdata[4] in module UDP_PACKAGE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_rxd_tdata[3] in module UDP_PACKAGE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_rxd_tdata[2] in module UDP_PACKAGE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_rxd_tdata[1] in module UDP_PACKAGE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_rxd_tdata[0] in module UDP_PACKAGE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_rxd_tkeep in module UDP_PACKAGE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_rxd_tlast in module UDP_PACKAGE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_rxd_tvalid in module UDP_PACKAGE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_rxd_tuser[0] in module UDP_PACKAGE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sensor_data_tuser[0] in module UDP_PACKAGE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_rresp[1] in module axi4lite_process is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_rresp[0] in module axi4lite_process is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_bresp[1] in module axi4lite_process is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_bresp[0] in module axi4lite_process is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd_data_buffer[31] in module I2C_CONFIG_READ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd_data_buffer[30] in module I2C_CONFIG_READ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd_data_buffer[29] in module I2C_CONFIG_READ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd_data_buffer[28] in module I2C_CONFIG_READ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd_data_buffer[27] in module I2C_CONFIG_READ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd_data_buffer[26] in module I2C_CONFIG_READ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd_data_buffer[25] in module I2C_CONFIG_READ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd_data_buffer[24] in module I2C_CONFIG_READ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd_data_buffer[23] in module I2C_CONFIG_READ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd_data_buffer[22] in module I2C_CONFIG_READ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd_data_buffer[21] in module I2C_CONFIG_READ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd_data_buffer[20] in module I2C_CONFIG_READ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd_data_buffer[19] in module I2C_CONFIG_READ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd_data_buffer[18] in module I2C_CONFIG_READ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd_data_buffer[17] in module I2C_CONFIG_READ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd_data_buffer[16] in module I2C_CONFIG_READ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd_data_buffer[15] in module I2C_CONFIG_READ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd_data_buffer[14] in module I2C_CONFIG_READ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd_data_buffer[13] in module I2C_CONFIG_READ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd_data_buffer[12] in module I2C_CONFIG_READ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd_data_buffer[11] in module I2C_CONFIG_READ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd_data_buffer[10] in module I2C_CONFIG_READ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd_data_buffer[9] in module I2C_CONFIG_READ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd_data_buffer[8] in module I2C_CONFIG_READ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_rresp[1] in module I2C_RW_CTRL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_rresp[0] in module I2C_RW_CTRL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_bresp[1] in module I2C_RW_CTRL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_bresp[0] in module I2C_RW_CTRL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_rstn in module I2C_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port spi_rx_last in module ADC_READ is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2228.742 ; gain = 328.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2246.672 ; gain = 346.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2246.672 ; gain = 346.855
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 2254.723 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/IMU_TOP_VIO/IMU_TOP_VIO/ADC_TOP_VIO_in_context.xdc] for cell 'SENSOR_TOP/IMU_TOP/IMU_TOP_VIO'
+Finished Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/IMU_TOP_VIO/IMU_TOP_VIO/ADC_TOP_VIO_in_context.xdc] for cell 'SENSOR_TOP/IMU_TOP/IMU_TOP_VIO'
+Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_axi_iic_0_0/PPG_I2C_PHY_axi_iic_0_0/PPG_I2C_PHY_axi_iic_0_0_in_context.xdc] for cell 'SENSOR_TOP/I2C_TOP/PPG_I2C_PHY/PPG_I2C_PHY_i/axi_iic'
+Finished Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_axi_iic_0_0/PPG_I2C_PHY_axi_iic_0_0/PPG_I2C_PHY_axi_iic_0_0_in_context.xdc] for cell 'SENSOR_TOP/I2C_TOP/PPG_I2C_PHY/PPG_I2C_PHY_i/axi_iic'
+Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_util_ds_buf_0_0/PPG_I2C_PHY_util_ds_buf_0_0/PPG_I2C_PHY_util_ds_buf_0_1_in_context.xdc] for cell 'SENSOR_TOP/I2C_TOP/PPG_I2C_PHY/PPG_I2C_PHY_i/SCL_BUF'
+Finished Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_util_ds_buf_0_0/PPG_I2C_PHY_util_ds_buf_0_0/PPG_I2C_PHY_util_ds_buf_0_1_in_context.xdc] for cell 'SENSOR_TOP/I2C_TOP/PPG_I2C_PHY/PPG_I2C_PHY_i/SCL_BUF'
+Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_util_ds_buf_0_1/PPG_I2C_PHY_util_ds_buf_0_1/PPG_I2C_PHY_util_ds_buf_0_1_in_context.xdc] for cell 'SENSOR_TOP/I2C_TOP/PPG_I2C_PHY/PPG_I2C_PHY_i/SDA_BUF'
+Finished Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_util_ds_buf_0_1/PPG_I2C_PHY_util_ds_buf_0_1/PPG_I2C_PHY_util_ds_buf_0_1_in_context.xdc] for cell 'SENSOR_TOP/I2C_TOP/PPG_I2C_PHY/PPG_I2C_PHY_i/SDA_BUF'
+Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_ila_0_0/PPG_I2C_PHY_ila_0_0/PPG_I2C_PHY_ila_0_0_in_context.xdc] for cell 'SENSOR_TOP/I2C_TOP/PPG_I2C_PHY/PPG_I2C_PHY_i/I2C_ILA'
+Finished Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_ila_0_0/PPG_I2C_PHY_ila_0_0/PPG_I2C_PHY_ila_0_0_in_context.xdc] for cell 'SENSOR_TOP/I2C_TOP/PPG_I2C_PHY/PPG_I2C_PHY_i/I2C_ILA'
+Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_system_ila_0_0/PPG_I2C_PHY_system_ila_0_0/PPG_I2C_PHY_system_ila_0_0_in_context.xdc] for cell 'SENSOR_TOP/I2C_TOP/PPG_I2C_PHY/PPG_I2C_PHY_i/IIC_AXI_ILA'
+Finished Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_system_ila_0_0/PPG_I2C_PHY_system_ila_0_0/PPG_I2C_PHY_system_ila_0_0_in_context.xdc] for cell 'SENSOR_TOP/I2C_TOP/PPG_I2C_PHY/PPG_I2C_PHY_i/IIC_AXI_ILA'
+Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'SENSOR_TOP/IMU_TOP/IMU_SPI_LINK/IMU_SPI_PHY/IMU_SPI_PHY_ILA'
+Finished Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'SENSOR_TOP/IMU_TOP/IMU_SPI_LINK/IMU_SPI_PHY/IMU_SPI_PHY_ILA'
+Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0_in_context.xdc] for cell 'UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC'
+Finished Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0_in_context.xdc] for cell 'UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC'
+Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_axis_TX_data_fifo_0/RGMII_axis_TX_data_fifo_0/RGMII_axis_TX_data_fifo_0_in_context.xdc] for cell 'UDP_TOP/RGMII_wrapper/RGMII_i/axis_RX_data_fifo'
+Finished Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_axis_TX_data_fifo_0/RGMII_axis_TX_data_fifo_0/RGMII_axis_TX_data_fifo_0_in_context.xdc] for cell 'UDP_TOP/RGMII_wrapper/RGMII_i/axis_RX_data_fifo'
+Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_util_vector_logic_0_0/RGMII_util_vector_logic_0_0/RGMII_util_vector_logic_0_0_in_context.xdc] for cell 'UDP_TOP/RGMII_wrapper/RGMII_i/util_vector_logic_0'
+Finished Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_util_vector_logic_0_0/RGMII_util_vector_logic_0_0/RGMII_util_vector_logic_0_0_in_context.xdc] for cell 'UDP_TOP/RGMII_wrapper/RGMII_i/util_vector_logic_0'
+Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_util_vector_logic_0_1/RGMII_util_vector_logic_0_1/RGMII_util_vector_logic_0_0_in_context.xdc] for cell 'UDP_TOP/RGMII_wrapper/RGMII_i/util_vector_logic_1'
+Finished Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_util_vector_logic_0_1/RGMII_util_vector_logic_0_1/RGMII_util_vector_logic_0_0_in_context.xdc] for cell 'UDP_TOP/RGMII_wrapper/RGMII_i/util_vector_logic_1'
+Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_0_0/RGMII_system_ila_0_0/RGMII_system_ila_0_0_in_context.xdc] for cell 'UDP_TOP/RGMII_wrapper/RGMII_i/system_ila_0'
+Finished Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_0_0/RGMII_system_ila_0_0/RGMII_system_ila_0_0_in_context.xdc] for cell 'UDP_TOP/RGMII_wrapper/RGMII_i/system_ila_0'
+Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_vio_0_0/RGMII_vio_0_0/RGMII_vio_0_0_in_context.xdc] for cell 'UDP_TOP/RGMII_wrapper/RGMII_i/vio'
+Finished Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_vio_0_0/RGMII_vio_0_0/RGMII_vio_0_0_in_context.xdc] for cell 'UDP_TOP/RGMII_wrapper/RGMII_i/vio'
+Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_axis_data_fifo_0_0/RGMII_axis_data_fifo_0_0/RGMII_axis_data_fifo_0_0_in_context.xdc] for cell 'UDP_TOP/RGMII_wrapper/RGMII_i/axis_TX_data_fifo'
+Finished Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_axis_data_fifo_0_0/RGMII_axis_data_fifo_0_0/RGMII_axis_data_fifo_0_0_in_context.xdc] for cell 'UDP_TOP/RGMII_wrapper/RGMII_i/axis_TX_data_fifo'
+Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_rst_TEMAC_125M_0/RGMII_rst_TEMAC_125M_0/RGMII_rst_TEMAC_125M_0_in_context.xdc] for cell 'UDP_TOP/RGMII_wrapper/RGMII_i/rst_TEMAC_125M'
+Finished Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_rst_TEMAC_125M_0/RGMII_rst_TEMAC_125M_0/RGMII_rst_TEMAC_125M_0_in_context.xdc] for cell 'UDP_TOP/RGMII_wrapper/RGMII_i/rst_TEMAC_125M'
+Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_1_0/RGMII_system_ila_1_0/RGMII_system_ila_1_0_in_context.xdc] for cell 'UDP_TOP/RGMII_wrapper/RGMII_i/system_ila_1'
+Finished Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_1_0/RGMII_system_ila_1_0/RGMII_system_ila_1_0_in_context.xdc] for cell 'UDP_TOP/RGMII_wrapper/RGMII_i/system_ila_1'
+Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_0_1/RGMII_system_ila_0_1/RGMII_system_ila_0_1_in_context.xdc] for cell 'UDP_TOP/RGMII_wrapper/RGMII_i/system_ila_2'
+Finished Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_0_1/RGMII_system_ila_0_1/RGMII_system_ila_0_1_in_context.xdc] for cell 'UDP_TOP/RGMII_wrapper/RGMII_i/system_ila_2'
+Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/ila_2/ila_2/ila_2_in_context.xdc] for cell 'SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/ADC_SPI_PHY/spi_phy_port'
+Finished Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/ila_2/ila_2/ila_2_in_context.xdc] for cell 'SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/ADC_SPI_PHY/spi_phy_port'
+Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/spi_tx_fifo/spi_tx_fifo/spi_tx_fifo_in_context.xdc] for cell 'SENSOR_TOP/IMU_TOP/IMU_SPI_LINK/spi_tx_fifo'
+Finished Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/spi_tx_fifo/spi_tx_fifo/spi_tx_fifo_in_context.xdc] for cell 'SENSOR_TOP/IMU_TOP/IMU_SPI_LINK/spi_tx_fifo'
+Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/spi_tx_fifo/spi_tx_fifo/spi_tx_fifo_in_context.xdc] for cell 'SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_tx_fifo'
+Finished Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/spi_tx_fifo/spi_tx_fifo/spi_tx_fifo_in_context.xdc] for cell 'SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_tx_fifo'
+Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/spi_rx_fifo/spi_rx_fifo/spi_rx_fifo_in_context.xdc] for cell 'SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_rx_fifo'
+Finished Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/spi_rx_fifo/spi_rx_fifo/spi_rx_fifo_in_context.xdc] for cell 'SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_rx_fifo'
+Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/ADC_CONFIG_ILA/ADC_CONFIG_ILA/ADC_CONFIG_ILA_in_context.xdc] for cell 'SENSOR_TOP/ADC_TOP/ADC_CONFIG/ADC_CONFIG_ILA'
+Finished Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/ADC_CONFIG_ILA/ADC_CONFIG_ILA/ADC_CONFIG_ILA_in_context.xdc] for cell 'SENSOR_TOP/ADC_TOP/ADC_CONFIG/ADC_CONFIG_ILA'
+Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/ADC_TOP_VIO/ADC_TOP_VIO/ADC_TOP_VIO_in_context.xdc] for cell 'SENSOR_TOP/ADC_TOP/ADC_TOP_VIO'
+Finished Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/ADC_TOP_VIO/ADC_TOP_VIO/ADC_TOP_VIO_in_context.xdc] for cell 'SENSOR_TOP/ADC_TOP/ADC_TOP_VIO'
+Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/ADC_READ_ILA/ADC_READ_ILA/ADC_READ_ILA_in_context.xdc] for cell 'SENSOR_TOP/ADC_TOP/ADC_READ/ADC_READ_ILA'
+Finished Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/ADC_READ_ILA/ADC_READ_ILA/ADC_READ_ILA_in_context.xdc] for cell 'SENSOR_TOP/ADC_TOP/ADC_READ/ADC_READ_ILA'
+Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/spi_rx_fifo_16bit/spi_rx_fifo_16bit/spi_rx_fifo_16bit_in_context.xdc] for cell 'SENSOR_TOP/IMU_TOP/IMU_SPI_LINK/spi_rx_fifo'
+Finished Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/spi_rx_fifo_16bit/spi_rx_fifo_16bit/spi_rx_fifo_16bit_in_context.xdc] for cell 'SENSOR_TOP/IMU_TOP/IMU_SPI_LINK/spi_rx_fifo'
+Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/imu_read_ila/imu_read_ila/imu_read_ila_in_context.xdc] for cell 'SENSOR_TOP/IMU_TOP/IMU_READ/imu_read_ila'
+Finished Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/imu_read_ila/imu_read_ila/imu_read_ila_in_context.xdc] for cell 'SENSOR_TOP/IMU_TOP/IMU_READ/imu_read_ila'
+Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/IMU_CONFIG_ILA/IMU_CONFIG_ILA/IMU_CONFIG_ILA_in_context.xdc] for cell 'SENSOR_TOP/IMU_TOP/IMU_CONFIG/IMU_CONFIG_ILA'
+Finished Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/IMU_CONFIG_ILA/IMU_CONFIG_ILA/IMU_CONFIG_ILA_in_context.xdc] for cell 'SENSOR_TOP/IMU_TOP/IMU_CONFIG/IMU_CONFIG_ILA'
+Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/udp_config_vio/udp_config_vio/udp_config_vio_in_context.xdc] for cell 'UDP_TOP/UDP_CONFIG/udp_config_vio'
+Finished Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/udp_config_vio/udp_config_vio/udp_config_vio_in_context.xdc] for cell 'UDP_TOP/UDP_CONFIG/udp_config_vio'
+Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/axis_eth_head_convertor/axis_eth_head_convertor/axis_eth_head_convertor_in_context.xdc] for cell 'UDP_TOP/UDP_PACKAGE/axis_eth_head_convertor'
+Finished Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/axis_eth_head_convertor/axis_eth_head_convertor/axis_eth_head_convertor_in_context.xdc] for cell 'UDP_TOP/UDP_PACKAGE/axis_eth_head_convertor'
+Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/system_clock/system_clock/system_clock_in_context.xdc] for cell 'system_clock_inst'
+Finished Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/system_clock/system_clock/system_clock_in_context.xdc] for cell 'system_clock_inst'
+Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/top_vio/top_vio/top_vio_in_context.xdc] for cell 'nolabel_line182'
+Finished Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/top_vio/top_vio/top_vio_in_context.xdc] for cell 'nolabel_line182'
+Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/data_to_udp_fifo/data_to_udp_fifo/data_to_udp_fifo_in_context.xdc] for cell 'DATA_PROCESS_TOP/DATA_TO_UDP/data_to_udp_fifo'
+Finished Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/data_to_udp_fifo/data_to_udp_fifo/data_to_udp_fifo_in_context.xdc] for cell 'DATA_PROCESS_TOP/DATA_TO_UDP/data_to_udp_fifo'
+Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/data_to_udp_fifo_widcov/data_to_udp_fifo_widcov/data_to_udp_fifo_widcov_in_context.xdc] for cell 'DATA_PROCESS_TOP/DATA_TO_UDP/data_to_udp_fifo_widcov'
+Finished Parsing XDC File [e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/data_to_udp_fifo_widcov/data_to_udp_fifo_widcov/data_to_udp_fifo_widcov_in_context.xdc] for cell 'DATA_PROCESS_TOP/DATA_TO_UDP/data_to_udp_fifo_widcov'
+Parsing XDC File [E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/AD7606.xdc]
+Finished Parsing XDC File [E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/AD7606.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/AD7606.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/ICM42688.xdc]
+Finished Parsing XDC File [E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/ICM42688.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/ICM42688.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/MAX86916.xdc]
+Finished Parsing XDC File [E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/MAX86916.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/MAX86916.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/ETH_PHY.xdc]
+Finished Parsing XDC File [E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/ETH_PHY.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/ETH_PHY.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/BITSTREAM.xdc]
+WARNING: [Vivado 12-5460] The attribute CFGBVS is not supported in the xczu9eg-ffvb1156-2-i device [E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/BITSTREAM.xdc:1]
+WARNING: [Vivado 12-5460] The attribute CONFIG_VOLTAGE is not supported in the xczu9eg-ffvb1156-2-i device [E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/BITSTREAM.xdc:2]
+Finished Parsing XDC File [E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/BITSTREAM.xdc]
+Parsing XDC File [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2370.875 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2370.875 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'nolabel_line182' at clock pin 'clk' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'DATA_PROCESS_TOP/DATA_TO_UDP/data_to_udp_fifo' at clock pin 's_axis_aclk' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'DATA_PROCESS_TOP/DATA_TO_UDP/data_to_udp_fifo_widcov' at clock pin 'aclk' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'SENSOR_TOP/ADC_TOP/ADC_TOP_VIO' at clock pin 'clk' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'SENSOR_TOP/ADC_TOP/ADC_CONFIG/ADC_CONFIG_ILA' at clock pin 'clk' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'SENSOR_TOP/ADC_TOP/ADC_READ/ADC_READ_ILA' at clock pin 'clk' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_rx_fifo' at clock pin 's_aclk' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_tx_fifo' at clock pin 's_aclk' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/ADC_SPI_PHY/spi_phy_port' at clock pin 'clk' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'SENSOR_TOP/IMU_TOP/IMU_TOP_VIO' at clock pin 'clk' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'SENSOR_TOP/IMU_TOP/IMU_CONFIG/IMU_CONFIG_ILA' at clock pin 'clk' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'SENSOR_TOP/IMU_TOP/IMU_READ/imu_read_ila' at clock pin 'clk' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'SENSOR_TOP/IMU_TOP/IMU_SPI_LINK/spi_rx_fifo' at clock pin 's_aclk' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'SENSOR_TOP/IMU_TOP/IMU_SPI_LINK/spi_tx_fifo' at clock pin 's_aclk' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'SENSOR_TOP/IMU_TOP/IMU_SPI_LINK/IMU_SPI_PHY/IMU_SPI_PHY_ILA' at clock pin 'clk' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'UDP_TOP/UDP_CONFIG/udp_config_vio' at clock pin 'clk' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'UDP_TOP/UDP_PACKAGE/axis_eth_head_convertor' at clock pin 'aclk' is different from the actual clock period '5.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2370.875 ; gain = 471.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu9eg-ffvb1156-2-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2370.875 ; gain = 471.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for I2C_SCL. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_util_ds_buf_0_0/PPG_I2C_PHY_util_ds_buf_0_0/PPG_I2C_PHY_util_ds_buf_0_1_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for I2C_SCL. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_util_ds_buf_0_0/PPG_I2C_PHY_util_ds_buf_0_0/PPG_I2C_PHY_util_ds_buf_0_1_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for I2C_SDA. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_util_ds_buf_0_1/PPG_I2C_PHY_util_ds_buf_0_1/PPG_I2C_PHY_util_ds_buf_0_1_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for I2C_SDA. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_util_ds_buf_0_1/PPG_I2C_PHY_util_ds_buf_0_1/PPG_I2C_PHY_util_ds_buf_0_1_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for mdc. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mdc. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for mdio[0]. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mdio[0]. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_rx_ctl. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_rx_ctl. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_rxc. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_rxc. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_rd[0]. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_rd[0]. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_rd[1]. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_rd[1]. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_rd[2]. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0_in_context.xdc, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_rd[2]. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_rd[3]. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0_in_context.xdc, line 20).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_rd[3]. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0_in_context.xdc, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_tx_ctl. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0_in_context.xdc, line 22).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_tx_ctl. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0_in_context.xdc, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_txc. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0_in_context.xdc, line 24).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_txc. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0_in_context.xdc, line 25).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_td[0]. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0_in_context.xdc, line 26).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_td[0]. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0_in_context.xdc, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_td[1]. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0_in_context.xdc, line 28).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_td[1]. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0_in_context.xdc, line 29).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_td[2]. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0_in_context.xdc, line 30).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_td[2]. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0_in_context.xdc, line 31).
+Applied set_property IO_BUFFER_TYPE = NONE for rgmii_td[3]. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0_in_context.xdc, line 32).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rgmii_td[3]. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0_in_context.xdc, line 33).
+Applied set_property IO_BUFFER_TYPE = NONE for sysclk_200m_n. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/system_clock/system_clock/system_clock_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sysclk_200m_n. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/system_clock/system_clock/system_clock_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for sysclk_200m_p. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/system_clock/system_clock/system_clock_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sysclk_200m_p. (constraint file  e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/system_clock/system_clock/system_clock_in_context.xdc, line 8).
+Applied set_property KEEP_HIERARCHY = SOFT for SENSOR_TOP/IMU_TOP/IMU_TOP_VIO. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SENSOR_TOP/I2C_TOP/PPG_I2C_PHY/PPG_I2C_PHY_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SENSOR_TOP/I2C_TOP/PPG_I2C_PHY/PPG_I2C_PHY_i/axi_iic. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SENSOR_TOP/I2C_TOP/PPG_I2C_PHY/PPG_I2C_PHY_i/SCL_BUF. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SENSOR_TOP/I2C_TOP/PPG_I2C_PHY/PPG_I2C_PHY_i/SDA_BUF. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SENSOR_TOP/I2C_TOP/PPG_I2C_PHY/PPG_I2C_PHY_i/I2C_ILA. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SENSOR_TOP/I2C_TOP/PPG_I2C_PHY/PPG_I2C_PHY_i/IIC_AXI_ILA. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SENSOR_TOP/IMU_TOP/IMU_SPI_LINK/IMU_SPI_PHY/IMU_SPI_PHY_ILA. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for UDP_TOP/RGMII_wrapper/RGMII_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for UDP_TOP/RGMII_wrapper/RGMII_i/axis_RX_data_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for UDP_TOP/RGMII_wrapper/RGMII_i/util_vector_logic_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for UDP_TOP/RGMII_wrapper/RGMII_i/util_vector_logic_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for UDP_TOP/RGMII_wrapper/RGMII_i/system_ila_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for UDP_TOP/RGMII_wrapper/RGMII_i/vio. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for UDP_TOP/RGMII_wrapper/RGMII_i/axis_TX_data_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for UDP_TOP/RGMII_wrapper/RGMII_i/rst_TEMAC_125M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for UDP_TOP/RGMII_wrapper/RGMII_i/system_ila_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for UDP_TOP/RGMII_wrapper/RGMII_i/system_ila_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/ADC_SPI_PHY/spi_phy_port. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SENSOR_TOP/IMU_TOP/IMU_SPI_LINK/spi_tx_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_tx_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_rx_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SENSOR_TOP/ADC_TOP/ADC_CONFIG/ADC_CONFIG_ILA. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SENSOR_TOP/ADC_TOP/ADC_TOP_VIO. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SENSOR_TOP/ADC_TOP/ADC_READ/ADC_READ_ILA. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SENSOR_TOP/IMU_TOP/IMU_SPI_LINK/spi_rx_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SENSOR_TOP/IMU_TOP/IMU_READ/imu_read_ila. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for SENSOR_TOP/IMU_TOP/IMU_CONFIG/IMU_CONFIG_ILA. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for UDP_TOP/UDP_CONFIG/udp_config_vio. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for UDP_TOP/UDP_PACKAGE/axis_eth_head_convertor. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_clock_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for nolabel_line182. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for DATA_PROCESS_TOP/DATA_TO_UDP/data_to_udp_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for DATA_PROCESS_TOP/DATA_TO_UDP/data_to_udp_fifo_widcov. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2370.875 ; gain = 471.059
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'transmit_status_reg' in module 'IMU_READ'
+INFO: [Synth 8-802] inferred FSM for state register 'write_state_reg' in module 'IMU_CONFIG'
+INFO: [Synth 8-802] inferred FSM for state register 'status_reg' in module 'IMU_CONFIG'
+INFO: [Synth 8-802] inferred FSM for state register 'status_reg' in module 'ADC_CONFIG'
+INFO: [Synth 8-802] inferred FSM for state register 'ADC_CONVST_state_reg' in module 'ADC_READ'
+INFO: [Synth 8-802] inferred FSM for state register 'axi4_lite_wr_stage_reg' in module 'I2C_RW_CTRL'
+INFO: [Synth 8-802] inferred FSM for state register 'axi4_lite_rd_stage_reg' in module 'I2C_RW_CTRL'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'I2C_CONFIG_READ'
+INFO: [Synth 8-802] inferred FSM for state register 'axi4_lite_wr_stage_reg' in module 'axi4lite_process'
+INFO: [Synth 8-802] inferred FSM for state register 'axi4_lite_rd_stage_reg' in module 'axi4lite_process'
+INFO: [Synth 8-802] inferred FSM for state register 'transmit_state_reg' in module 'UDP_PACKAGE'
+INFO: [Synth 8-6159] Found Keep on FSM register 'transmit_status_reg' in module 'IMU_READ', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                  iSTATE | 00000000000000000000000000000000 | 00000000000000000000000000000000
+                 iSTATE0 | 00000000000000000000000000000001 | 00000000000000000000000000000001
+                 iSTATE1 | 00000000000000000000000000000010 | 00000000000000000000000000000010
+                 iSTATE2 | 00000000000000000000000000000011 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-6159] Found Keep on FSM register 'status_reg' in module 'IMU_CONFIG', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                  iSTATE |                             0000 |                             0000
+                 iSTATE0 |                             0001 |                             0001
+                 iSTATE1 |                             0010 |                             0010
+                 iSTATE2 |                             0011 |                             0011
+                 iSTATE3 |                             1111 |                             1111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-6159] Found Keep on FSM register 'write_state_reg' in module 'IMU_CONFIG', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                  iSTATE |                             0000 |                             0000
+                 iSTATE0 |                             0001 |                             0001
+                 iSTATE1 |                             0010 |                             0010
+                 iSTATE2 |                             0011 |                             0011
+                 iSTATE3 |                             0100 |                             0100
+                 iSTATE4 |                             0101 |                             0101
+                 iSTATE5 |                             0110 |                             0110
+                 iSTATE6 |                             0111 |                             0111
+                 iSTATE7 |                             1000 |                             1000
+                 iSTATE8 |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-6159] Found Keep on FSM register 'status_reg' in module 'ADC_CONFIG', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                  iSTATE |                             0000 |                             0000
+                 iSTATE0 |                             0001 |                             0001
+                 iSTATE1 |                             0010 |                             0010
+                 iSTATE2 |                             0011 |                             0011
+                 iSTATE3 |                             1111 |                             1111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-6159] Found Keep on FSM register 'ADC_CONVST_state_reg' in module 'ADC_READ', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                   START |                               01 |                               01
+                    WAIT |                               10 |                               10
+                    DONE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 RD_IDLE |                              001 |                              000
+                 RD_ADDR |                              010 |                              001
+                 RD_DATA |                              100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'axi4_lite_rd_stage_reg' using encoding 'one-hot' in module 'I2C_RW_CTRL'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 WR_IDLE |                               00 | 00000000000000000000000000000000
+                 WR_ADDR |                               01 | 00000000000000000000000000000001
+                 WR_DATA |                               10 | 00000000000000000000000000000010
+                 WR_RESP |                               11 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'axi4_lite_wr_stage_reg' using encoding 'sequential' in module 'I2C_RW_CTRL'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                       0000000001 |                             0000
+              CFG_IIC_CR |                       0000000010 |                             0001
+            CFG_IIC_ADDR |                       0000000100 |                             0010
+             MAX_CFG_SEQ |                       0000001000 |                             0011
+             MAX_CFG_CUR |                       0000010000 |                             0100
+            MAX_CFG_FIFO |                       0000100000 |                             0101
+              READ_FIFO1 |                       0001000000 |                             0110
+              READ_FIFO2 |                       0010000000 |                             0111
+              READ_FIFO3 |                       0100000000 |                             1000
+                    DONE |                       1000000000 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'I2C_CONFIG_READ'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 RD_IDLE |                              001 |                              000
+                 RD_ADDR |                              010 |                              001
+                 RD_DATA |                              100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'axi4_lite_rd_stage_reg' using encoding 'one-hot' in module 'axi4lite_process'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 WR_IDLE |                               00 | 00000000000000000000000000000000
+                 WR_ADDR |                               01 | 00000000000000000000000000000001
+                 WR_DATA |                               10 | 00000000000000000000000000000010
+                 WR_RESP |                               11 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'axi4_lite_wr_stage_reg' using encoding 'sequential' in module 'axi4lite_process'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 TX_IDLE |                               00 | 00000000000000000000000000000000
+           TX_ALL_HEADER |                               01 | 00000000000000000000000000000001
+       WAIT_HEADER_READY |                               10 | 00000000000000000000000000000010
+              TX_PAYLOAD |                               11 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'transmit_state_reg' using encoding 'sequential' in module 'UDP_PACKAGE'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2370.875 ; gain = 471.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 13    
+	   2 Input   17 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 3     
+	   3 Input   16 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 3     
++---Registers : 
+	              240 Bit    Registers := 1     
+	              128 Bit    Registers := 2     
+	              112 Bit    Registers := 2     
+	               32 Bit    Registers := 19    
+	               24 Bit    Registers := 2     
+	               17 Bit    Registers := 2     
+	               16 Bit    Registers := 30    
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 4     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 5     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 71    
++---Muxes : 
+	   2 Input  128 Bit        Muxes := 2     
+	   2 Input  112 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 17    
+	   6 Input   32 Bit        Muxes := 4     
+	   4 Input   32 Bit        Muxes := 1     
+	  11 Input   32 Bit        Muxes := 1     
+	  10 Input   32 Bit        Muxes := 1     
+	  10 Input   24 Bit        Muxes := 2     
+	   2 Input   24 Bit        Muxes := 1     
+	   2 Input   17 Bit        Muxes := 6     
+	   2 Input   16 Bit        Muxes := 34    
+	   4 Input   16 Bit        Muxes := 2     
+	   8 Input   16 Bit        Muxes := 7     
+	   6 Input   15 Bit        Muxes := 1     
+	   7 Input   15 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 2     
+	   3 Input   12 Bit        Muxes := 1     
+	  10 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 2     
+	   3 Input    9 Bit        Muxes := 1     
+	  10 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 2     
+	   4 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 2     
+	   6 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 13    
+	  11 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 6     
+	   2 Input    3 Bit        Muxes := 12    
+	   2 Input    2 Bit        Muxes := 32    
+	   8 Input    2 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 2     
+	   5 Input    2 Bit        Muxes := 1     
+	   6 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 89    
+	   6 Input    1 Bit        Muxes := 20    
+	   4 Input    1 Bit        Muxes := 20    
+	   3 Input    1 Bit        Muxes := 18    
+	  11 Input    1 Bit        Muxes := 2     
+	  10 Input    1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2520 (col length:168)
+BRAMs: 1824 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port S_AXI_rresp[1] in module axi4lite_process is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_rresp[0] in module axi4lite_process is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_bresp[1] in module axi4lite_process is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_bresp[0] in module axi4lite_process is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sensor_data_tuser[0] in module UDP_TOP is either unconnected or has no load
+WARNING: [Synth 8-7129] Port spi_rx_last in module ADC_READ is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (I2C_TOP/I2C_RW_CTRL/FSM_onehot_axi4_lite_rd_stage_reg[2]) is unused and will be removed from module SENSOR_TOP.
+WARNING: [Synth 8-3332] Sequential element (I2C_TOP/I2C_RW_CTRL/FSM_onehot_axi4_lite_rd_stage_reg[1]) is unused and will be removed from module SENSOR_TOP.
+WARNING: [Synth 8-3332] Sequential element (I2C_TOP/I2C_RW_CTRL/FSM_onehot_axi4_lite_rd_stage_reg[0]) is unused and will be removed from module SENSOR_TOP.
+WARNING: [Synth 8-3332] Sequential element (I2C_TOP/I2C_RW_CTRL/FSM_sequential_axi4_lite_wr_stage_reg[1]) is unused and will be removed from module SENSOR_TOP.
+WARNING: [Synth 8-3332] Sequential element (I2C_TOP/I2C_RW_CTRL/FSM_sequential_axi4_lite_wr_stage_reg[0]) is unused and will be removed from module SENSOR_TOP.
+WARNING: [Synth 8-3332] Sequential element (I2C_TOP/I2C_CONFIG_READ/FSM_onehot_state_reg[9]) is unused and will be removed from module SENSOR_TOP.
+WARNING: [Synth 8-3332] Sequential element (I2C_TOP/I2C_CONFIG_READ/FSM_onehot_state_reg[7]) is unused and will be removed from module SENSOR_TOP.
+WARNING: [Synth 8-3332] Sequential element (I2C_TOP/I2C_CONFIG_READ/FSM_onehot_state_reg[4]) is unused and will be removed from module SENSOR_TOP.
+WARNING: [Synth 8-3332] Sequential element (I2C_TOP/I2C_CONFIG_READ/FSM_onehot_state_reg[2]) is unused and will be removed from module SENSOR_TOP.
+WARNING: [Synth 8-3332] Sequential element (I2C_TOP/I2C_CONFIG_READ/FSM_onehot_state_reg[1]) is unused and will be removed from module SENSOR_TOP.
+WARNING: [Synth 8-3332] Sequential element (I2C_TOP/I2C_CONFIG_READ/FSM_onehot_state_reg[0]) is unused and will be removed from module SENSOR_TOP.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2370.875 ; gain = 471.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 2965.664 ; gain = 1065.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 3010.254 ; gain = 1110.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 3025.145 ; gain = 1125.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin spi_tx_begin_cnt_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin spi_tx_end_cnt_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin RGMII_wrapper/RGMII_i:m_axis_rxd_tready to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 3209.168 ; gain = 1309.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 3209.168 ; gain = 1309.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 3209.168 ; gain = 1309.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 3209.168 ; gain = 1309.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 3209.168 ; gain = 1309.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 3209.168 ; gain = 1309.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------------+----------+
+|      |BlackBox name                   |Instances |
++------+--------------------------------+----------+
+|1     |system_clock                    |         1|
+|2     |spi_tx_fifo                     |         2|
+|3     |spi_rx_fifo                     |         1|
+|4     |ila_2                           |         1|
+|5     |ADC_CONFIG_ILA                  |         1|
+|6     |ADC_READ_ILA                    |         1|
+|7     |ADC_TOP_VIO                     |         1|
+|8     |PPG_I2C_PHY_ila_0_0             |         1|
+|9     |PPG_I2C_PHY_system_ila_0_0      |         1|
+|10    |PPG_I2C_PHY_util_ds_buf_0_0     |         1|
+|11    |PPG_I2C_PHY_util_ds_buf_0_1     |         1|
+|12    |PPG_I2C_PHY_axi_iic_0_0         |         1|
+|13    |spi_rx_fifo_16bit               |         1|
+|14    |ila_0                           |         1|
+|15    |imu_read_ila                    |         1|
+|16    |IMU_CONFIG_ILA                  |         1|
+|17    |IMU_TOP_VIO                     |         1|
+|18    |RGMII_tri_mode_ethernet_mac_0_0 |         1|
+|19    |RGMII_axis_TX_data_fifo_0       |         1|
+|20    |RGMII_axis_data_fifo_0_0        |         1|
+|21    |RGMII_rst_TEMAC_125M_0          |         1|
+|22    |RGMII_system_ila_0_0            |         1|
+|23    |RGMII_system_ila_1_0            |         1|
+|24    |RGMII_system_ila_0_1            |         1|
+|25    |RGMII_util_vector_logic_0_0     |         1|
+|26    |RGMII_util_vector_logic_0_1     |         1|
+|27    |RGMII_vio_0_0                   |         1|
+|28    |udp_config_vio                  |         1|
+|29    |axis_eth_head_convertor         |         1|
+|30    |data_to_udp_fifo                |         1|
+|31    |data_to_udp_fifo_widcov         |         1|
+|32    |top_vio                         |         1|
++------+--------------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------------+------+
+|      |Cell                          |Count |
++------+------------------------------+------+
+|1     |ADC_CONFIG_ILA                |     1|
+|2     |ADC_READ_ILA                  |     1|
+|3     |ADC_TOP_VIO                   |     1|
+|4     |IMU_CONFIG_ILA                |     1|
+|5     |IMU_TOP_VIO                   |     1|
+|6     |PPG_I2C_PHY_axi_iic_0         |     1|
+|7     |PPG_I2C_PHY_ila_0             |     1|
+|8     |PPG_I2C_PHY_system_ila_0      |     1|
+|9     |PPG_I2C_PHY_util_ds_buf_0     |     2|
+|11    |RGMII_axis_TX_data_fifo       |     1|
+|12    |RGMII_axis_data_fifo_0        |     1|
+|13    |RGMII_rst_TEMAC_125M          |     1|
+|14    |RGMII_system_ila_0            |     2|
+|16    |RGMII_system_ila_1            |     1|
+|17    |RGMII_tri_mode_ethernet_mac_0 |     1|
+|18    |RGMII_util_vector_logic_0     |     2|
+|20    |RGMII_vio_0                   |     1|
+|21    |axis_eth_head_convertor       |     1|
+|22    |data_to_udp_fifo              |     1|
+|23    |data_to_udp_fifo_widcov       |     1|
+|24    |ila                           |     2|
+|26    |imu_read_ila                  |     1|
+|27    |spi_rx_fifo                   |     1|
+|28    |spi_rx_fifo_16bit             |     1|
+|29    |spi_tx_fifo                   |     2|
+|31    |system_clock                  |     1|
+|32    |top_vio                       |     1|
+|33    |udp_config_vio                |     1|
+|34    |CARRY8                        |    68|
+|35    |LUT1                          |   210|
+|36    |LUT2                          |   561|
+|37    |LUT3                          |   106|
+|38    |LUT4                          |   346|
+|39    |LUT5                          |   264|
+|40    |LUT6                          |   211|
+|41    |MUXF7                         |     1|
+|42    |FDCE                          |   487|
+|43    |FDRE                          |  1386|
+|44    |FDSE                          |     1|
+|45    |IBUF                          |    10|
+|46    |IOBUF                         |     4|
+|47    |OBUF                          |     5|
++------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 3209.168 ; gain = 1309.352
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 21 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 3209.168 ; gain = 1185.148
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 3209.168 ; gain = 1309.352
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 3209.168 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 83 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3209.168 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 14 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 10 instances
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 4 instances
+
+Synth Design complete | Checksum: 576a4611
+INFO: [Common 17-83] Releasing license: Synthesis
+211 Infos, 135 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 3209.168 ; gain = 2344.645
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3209.168 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/TOP.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file TOP_utilization_synth.rpt -pb TOP_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 21 13:48:29 2025...

@@ -1,0 +1,7 @@
+verilog xil_defaultlib --include "../../../../final_prj_pl.gen/sources_1/ip/IMU_TOP_VIO/hdl/verilog" --include "../../../../final_prj_pl.gen/sources_1/ip/IMU_TOP_VIO/hdl" --include "../../../../final_prj_pl.gen/sources_1/ip/ADC_TOP_VIO/hdl/verilog" --include "../../../../final_prj_pl.gen/sources_1/ip/ADC_TOP_VIO/hdl" --include "../../../../final_prj_pl.gen/sources_1/ip/top_vio/hdl/verilog" --include "../../../../final_prj_pl.gen/sources_1/ip/top_vio/hdl" \
+"../../../../final_prj_pl.gen/sources_1/ip/top_vio/sim/top_vio.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

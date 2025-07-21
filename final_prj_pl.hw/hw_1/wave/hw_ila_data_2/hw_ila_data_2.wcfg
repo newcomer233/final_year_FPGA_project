@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="E:/final_prj/final_prj_pl/final_prj_pl.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0"></ZoomStartTime>
+      <ZoomEndTime time="12"></ZoomEndTime>
+      <Cursor1Time time="0"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="328"></NameColumnWidth>
+      <ValueColumnWidth column_width="94"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="SENSOR_TOP/ADC_TOP/ADC_READ/ADC_BUSY" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">SENSOR_TOP/ADC_TOP/ADC_READ/ADC_BUSY</obj_property>
+      <obj_property name="ObjectShortName">ADC_BUSY</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="SENSOR_TOP/ADC_TOP/ADC_READ/ADC_CONVST" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">SENSOR_TOP/ADC_TOP/ADC_READ/ADC_CONVST</obj_property>
+      <obj_property name="ObjectShortName">ADC_CONVST</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="SENSOR_TOP/ADC_TOP/ADC_READ/ADC_CONVST_counter" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">SENSOR_TOP/ADC_TOP/ADC_READ/ADC_CONVST_counter[6:0]</obj_property>
+      <obj_property name="ObjectShortName">ADC_CONVST_counter[6:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="SENSOR_TOP/ADC_TOP/ADC_READ/ADC_CONVST_state" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">SENSOR_TOP/ADC_TOP/ADC_READ/ADC_CONVST_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ADC_CONVST_state[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="SENSOR_TOP/ADC_TOP/ADC_READ/spi_en" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">SENSOR_TOP/ADC_TOP/ADC_READ/spi_en</obj_property>
+      <obj_property name="ObjectShortName">spi_en</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="SENSOR_TOP/ADC_TOP/ADC_READ/spi_rx_data_A" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">SENSOR_TOP/ADC_TOP/ADC_READ/spi_rx_data_A[15:0]</obj_property>
+      <obj_property name="ObjectShortName">spi_rx_data_A[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="SENSOR_TOP/ADC_TOP/ADC_READ/spi_rx_data_B" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">SENSOR_TOP/ADC_TOP/ADC_READ/spi_rx_data_B[15:0]</obj_property>
+      <obj_property name="ObjectShortName">spi_rx_data_B[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="SENSOR_TOP/ADC_TOP/ADC_READ/spi_rx_data_C" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">SENSOR_TOP/ADC_TOP/ADC_READ/spi_rx_data_C[15:0]</obj_property>
+      <obj_property name="ObjectShortName">spi_rx_data_C[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="SENSOR_TOP/ADC_TOP/ADC_READ/spi_rx_data_D" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">SENSOR_TOP/ADC_TOP/ADC_READ/spi_rx_data_D[15:0]</obj_property>
+      <obj_property name="ObjectShortName">spi_rx_data_D[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="SENSOR_TOP/ADC_TOP/ADC_READ/spi_rx_data_E" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">SENSOR_TOP/ADC_TOP/ADC_READ/spi_rx_data_E[15:0]</obj_property>
+      <obj_property name="ObjectShortName">spi_rx_data_E[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="SENSOR_TOP/ADC_TOP/ADC_READ/spi_rx_data_F" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">SENSOR_TOP/ADC_TOP/ADC_READ/spi_rx_data_F[15:0]</obj_property>
+      <obj_property name="ObjectShortName">spi_rx_data_F[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="SENSOR_TOP/ADC_TOP/ADC_READ/spi_rx_data_G" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">SENSOR_TOP/ADC_TOP/ADC_READ/spi_rx_data_G[15:0]</obj_property>
+      <obj_property name="ObjectShortName">spi_rx_data_G[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="SENSOR_TOP/ADC_TOP/ADC_READ/spi_rx_data_H" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">SENSOR_TOP/ADC_TOP/ADC_READ/spi_rx_data_H[15:0]</obj_property>
+      <obj_property name="ObjectShortName">spi_rx_data_H[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="SENSOR_TOP/ADC_TOP/ADC_READ/spi_rx_ready" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">SENSOR_TOP/ADC_TOP/ADC_READ/spi_rx_ready</obj_property>
+      <obj_property name="ObjectShortName">spi_rx_ready</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="SENSOR_TOP/ADC_TOP/ADC_READ/spi_rx_valid" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">SENSOR_TOP/ADC_TOP/ADC_READ/spi_rx_valid</obj_property>
+      <obj_property name="ObjectShortName">spi_rx_valid</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

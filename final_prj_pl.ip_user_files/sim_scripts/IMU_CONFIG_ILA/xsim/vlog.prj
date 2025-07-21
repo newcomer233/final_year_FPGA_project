@@ -1,0 +1,7 @@
+verilog xil_defaultlib --include "D:/Xilinx/Vivado/2024.2/data/xilinx_vip/include" --include "../../../../final_prj_pl.gen/sources_1/ip/IMU_CONFIG_ILA/hdl/verilog" \
+"../../../../final_prj_pl.gen/sources_1/ip/IMU_CONFIG_ILA/sim/IMU_CONFIG_ILA.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

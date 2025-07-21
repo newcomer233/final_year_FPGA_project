@@ -1,0 +1,2 @@
+IMU_TOP_VIO.v,verilog,xil_defaultlib,../../../../final_prj_pl.gen/sources_1/ip/IMU_TOP_VIO/sim/IMU_TOP_VIO.v,incdir="../../../../final_prj_pl.gen/sources_1/ip/IMU_TOP_VIO/hdl/verilog"incdir="../../../../final_prj_pl.gen/sources_1/ip/IMU_TOP_VIO/hdl"
+glbl.v,Verilog,xil_defaultlib,glbl.v

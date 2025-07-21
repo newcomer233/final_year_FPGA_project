@@ -1,0 +1,7 @@
+verilog xil_defaultlib --include "../../../ipstatic/hdl" \
+"../../../../final_prj_pl.gen/sources_1/ip/axis_eth_head_convertor/sim/axis_eth_head_convertor.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

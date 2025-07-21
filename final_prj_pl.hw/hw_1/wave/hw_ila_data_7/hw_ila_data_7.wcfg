@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="E:/final_prj/final_prj_pl/final_prj_pl.hw/hw_1/wave/hw_ila_data_7/hw_ila_data_7.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0"></ZoomStartTime>
+      <ZoomEndTime time="1,195"></ZoomEndTime>
+      <Cursor1Time time="0"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="265"></NameColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="22" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject fp_name="SENSOR_TOP/IMU_TOP/IMU_READ/spi_rx_valid" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">SENSOR_TOP/IMU_TOP/IMU_READ/spi_rx_valid</obj_property>
+      <obj_property name="ObjectShortName">spi_rx_valid</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="SENSOR_TOP/IMU_TOP/IMU_READ/spi_rx_ready" type="logic">
+      <obj_property name="ElementShortName">SENSOR_TOP/IMU_TOP/IMU_READ/spi_rx_ready</obj_property>
+      <obj_property name="ObjectShortName">spi_rx_ready</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="SENSOR_TOP/IMU_TOP/IMU_READ/spi_rx_data" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">SENSOR_TOP/IMU_TOP/IMU_READ/spi_rx_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">spi_rx_data[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="SENSOR_TOP/IMU_TOP/IMU_READ/spi_rx_last" type="logic">
+      <obj_property name="ElementShortName">SENSOR_TOP/IMU_TOP/IMU_READ/spi_rx_last</obj_property>
+      <obj_property name="ObjectShortName">spi_rx_last</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="SENSOR_TOP/IMU_TOP/IMU_READ/spi_en" type="logic">
+      <obj_property name="ElementShortName">SENSOR_TOP/IMU_TOP/IMU_READ/spi_en</obj_property>
+      <obj_property name="ObjectShortName">spi_en</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="SENSOR_TOP/IMU_TOP/IMU_READ/spi_busy" type="logic">
+      <obj_property name="ElementShortName">SENSOR_TOP/IMU_TOP/IMU_READ/spi_busy</obj_property>
+      <obj_property name="ObjectShortName">spi_busy</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="SENSOR_TOP/IMU_TOP/IMU_READ/IMU_DATA_VALID" type="logic">
+      <obj_property name="ElementShortName">SENSOR_TOP/IMU_TOP/IMU_READ/IMU_DATA_VALID</obj_property>
+      <obj_property name="ObjectShortName">IMU_DATA_VALID</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="SENSOR_TOP/IMU_TOP/IMU_READ/TEMP_data" type="array">
+      <obj_property name="ElementShortName">SENSOR_TOP/IMU_TOP/IMU_READ/TEMP_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">TEMP_data[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="SENSOR_TOP/IMU_TOP/IMU_READ/ACCEL_X" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">SENSOR_TOP/IMU_TOP/IMU_READ/ACCEL_X[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ACCEL_X[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="SENSOR_TOP/IMU_TOP/IMU_READ/ACCEL_Y" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">SENSOR_TOP/IMU_TOP/IMU_READ/ACCEL_Y[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ACCEL_Y[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="SENSOR_TOP/IMU_TOP/IMU_READ/ACCEL_Z" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">SENSOR_TOP/IMU_TOP/IMU_READ/ACCEL_Z[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ACCEL_Z[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="SENSOR_TOP/IMU_TOP/IMU_READ/GYRO_X" type="array">
+      <obj_property name="ElementShortName">SENSOR_TOP/IMU_TOP/IMU_READ/GYRO_X[15:0]</obj_property>
+      <obj_property name="ObjectShortName">GYRO_X[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="SENSOR_TOP/IMU_TOP/IMU_READ/GYRO_Y" type="array">
+      <obj_property name="ElementShortName">SENSOR_TOP/IMU_TOP/IMU_READ/GYRO_Y[15:0]</obj_property>
+      <obj_property name="ObjectShortName">GYRO_Y[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="SENSOR_TOP/IMU_TOP/IMU_READ/GYRO_Z" type="array">
+      <obj_property name="ElementShortName">SENSOR_TOP/IMU_TOP/IMU_READ/GYRO_Z[15:0]</obj_property>
+      <obj_property name="ObjectShortName">GYRO_Z[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="SENSOR_TOP/IMU_TOP/IMU_READ/BYTE_POS" type="array">
+      <obj_property name="ElementShortName">SENSOR_TOP/IMU_TOP/IMU_READ/BYTE_POS[4:0]</obj_property>
+      <obj_property name="ObjectShortName">BYTE_POS[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="SENSOR_TOP/IMU_TOP/IMU_READ/IMU_BREAK_COUNTER" type="array">
+      <obj_property name="ElementShortName">SENSOR_TOP/IMU_TOP/IMU_READ/IMU_BREAK_COUNTER[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IMU_BREAK_COUNTER[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="SENSOR_TOP/IMU_TOP/IMU_READ/transmit_counter" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">SENSOR_TOP/IMU_TOP/IMU_READ/transmit_counter[5:0]</obj_property>
+      <obj_property name="ObjectShortName">transmit_counter[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="SENSOR_TOP/IMU_TOP/IMU_READ/transmit_status" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">SENSOR_TOP/IMU_TOP/IMU_READ/transmit_status[31:0]</obj_property>
+      <obj_property name="ObjectShortName">transmit_status[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="SENSOR_TOP/IMU_TOP/IMU_READ/spi_tx_data" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">SENSOR_TOP/IMU_TOP/IMU_READ/spi_tx_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">spi_tx_data[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="SENSOR_TOP/IMU_TOP/IMU_READ/spi_tx_valid" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">SENSOR_TOP/IMU_TOP/IMU_READ/spi_tx_valid</obj_property>
+      <obj_property name="ObjectShortName">spi_tx_valid</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="SENSOR_TOP/IMU_TOP/IMU_READ/spi_tx_ready" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">SENSOR_TOP/IMU_TOP/IMU_READ/spi_tx_ready</obj_property>
+      <obj_property name="ObjectShortName">spi_tx_ready</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="SENSOR_TOP/IMU_TOP/IMU_READ/data_done" type="logic">
+      <obj_property name="ElementShortName">SENSOR_TOP/IMU_TOP/IMU_READ/data_done</obj_property>
+      <obj_property name="ObjectShortName">data_done</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

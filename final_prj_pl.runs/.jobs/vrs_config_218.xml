@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="DDR4_ddr4_0_0_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/DDR4_ddr4_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DDR4_axi_interconnect_0_imp_xbar_0_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/DDR4_axi_interconnect_0_imp_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DDR4_zynq_ultra_ps_e_0_0_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/DDR4_zynq_ultra_ps_e_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DDR4_ddr4_sync_reset_0_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/DDR4_ddr4_sync_reset_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DDR4_axi_interconnect_0_imp_auto_us_cc_df_0_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/DDR4_axi_interconnect_0_imp_auto_us_cc_df_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DDR4_axi_interconnect_0_imp_s00_mmu_0_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/DDR4_axi_interconnect_0_imp_s00_mmu_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DDR4_axi_interconnect_0_imp_auto_us_cc_df_3_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/DDR4_axi_interconnect_0_imp_auto_us_cc_df_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DDR4_axi_interconnect_0_imp_auto_us_cc_df_1_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/DDR4_axi_interconnect_0_imp_auto_us_cc_df_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="DDR4_axi_interconnect_0_imp_auto_us_cc_df_0_synth_1"/>
+	</Run>
+	<Run Id="DDR4_axi_interconnect_0_imp_auto_us_cc_df_2_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/DDR4_axi_interconnect_0_imp_auto_us_cc_df_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DDR4_util_vector_logic_0_0_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/DDR4_util_vector_logic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DDR4_axi_interconnect_0_imp_s02_mmu_0_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/DDR4_axi_interconnect_0_imp_s02_mmu_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DDR4_axi_interconnect_0_imp_s03_mmu_0_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/DDR4_axi_interconnect_0_imp_s03_mmu_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DDR4_axi_interconnect_0_imp_s01_mmu_0_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/DDR4_axi_interconnect_0_imp_s01_mmu_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="DDR4_axi_interconnect_0_imp_s00_mmu_0_synth_1"/>
+	</Run>
+	<Run Id="DDR4_proc_sys_reset_0_0_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/DDR4_proc_sys_reset_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="impl_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="write_bitstream" ToStepId="write_bitstream">
+		<Parent Id="DDR4_ddr4_0_0_synth_1"/>
+		<Parent Id="DDR4_axi_interconnect_0_imp_xbar_0_synth_1"/>
+		<Parent Id="DDR4_zynq_ultra_ps_e_0_0_synth_1"/>
+		<Parent Id="DDR4_ddr4_sync_reset_0_synth_1"/>
+		<Parent Id="DDR4_axi_interconnect_0_imp_auto_us_cc_df_0_synth_1"/>
+		<Parent Id="DDR4_axi_interconnect_0_imp_s00_mmu_0_synth_1"/>
+		<Parent Id="DDR4_axi_interconnect_0_imp_auto_us_cc_df_3_synth_1"/>
+		<Parent Id="DDR4_axi_interconnect_0_imp_auto_us_cc_df_1_synth_1"/>
+		<Parent Id="DDR4_axi_interconnect_0_imp_auto_us_cc_df_2_synth_1"/>
+		<Parent Id="DDR4_util_vector_logic_0_0_synth_1"/>
+		<Parent Id="DDR4_axi_interconnect_0_imp_s02_mmu_0_synth_1"/>
+		<Parent Id="DDR4_axi_interconnect_0_imp_s03_mmu_0_synth_1"/>
+		<Parent Id="DDR4_axi_interconnect_0_imp_s01_mmu_0_synth_1"/>
+		<Parent Id="DDR4_proc_sys_reset_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+		<Parameter Name="general.shortenLongPath" Val="true" Type="bool"/>
+	</Parameters>
+	<ProductInfo Name="vivado"/>
+</Runs>
+

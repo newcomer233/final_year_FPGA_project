@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2024.2.2 (64-bit)
+# SW Build 6060944 on Thu Mar 06 19:10:01 MST 2025
+# IP Build 6050500 on Thu Mar  6 23:33:39 MST 2025
+# SharedData Build 6060542 on Thu Mar 06 10:31:07 MST 2025
+# Start of session at: Wed Jun 25 14:58:44 2025
+# Process ID         : 30316
+# Current directory  : E:/final_prj/final_prj_pl/final_prj_pl.runs/spi_tx_fifo_synth_1
+# Command line       : vivado.exe -log spi_tx_fifo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source spi_tx_fifo.tcl
+# Log file           : E:/final_prj/final_prj_pl/final_prj_pl.runs/spi_tx_fifo_synth_1/spi_tx_fifo.vds
+# Journal file       : E:/final_prj/final_prj_pl/final_prj_pl.runs/spi_tx_fifo_synth_1\vivado.jou
+# Running On         : LAPTOP-VEGJAO5A
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 102673 MB
+# Swap memory        : 6442 MB
+# Total Virtual      : 109116 MB
+# Available Virtual  : 83465 MB
+#-----------------------------------------------------------
+Sourcing tcl script 'D:/Xilinx/Vivado/2024.2/scripts/Vivado_init.tcl'
+source spi_tx_fifo.tcl -notrace
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: spi_tx_fifo
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 27814fd890a9dcf5 to dir: E:/final_prj/final_prj_pl/final_prj_pl.runs/spi_tx_fifo_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/final_prj/final_prj_pl/final_prj_pl.cache/ip/2024.2.2/2/7/27814fd890a9dcf5/spi_tx_fifo.dcp to E:/final_prj/final_prj_pl/final_prj_pl.runs/spi_tx_fifo_synth_1/spi_tx_fifo.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/final_prj/final_prj_pl/final_prj_pl.cache/ip/2024.2.2/2/7/27814fd890a9dcf5/spi_tx_fifo_sim_netlist.v to E:/final_prj/final_prj_pl/final_prj_pl.runs/spi_tx_fifo_synth_1/spi_tx_fifo_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/final_prj/final_prj_pl/final_prj_pl.cache/ip/2024.2.2/2/7/27814fd890a9dcf5/spi_tx_fifo_sim_netlist.vhdl to E:/final_prj/final_prj_pl/final_prj_pl.runs/spi_tx_fifo_synth_1/spi_tx_fifo_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/final_prj/final_prj_pl/final_prj_pl.cache/ip/2024.2.2/2/7/27814fd890a9dcf5/spi_tx_fifo_stub.v to E:/final_prj/final_prj_pl/final_prj_pl.runs/spi_tx_fifo_synth_1/spi_tx_fifo_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file e:/final_prj/final_prj_pl/final_prj_pl.cache/ip/2024.2.2/2/7/27814fd890a9dcf5/spi_tx_fifo_stub.vhdl to E:/final_prj/final_prj_pl/final_prj_pl.runs/spi_tx_fifo_synth_1/spi_tx_fifo_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP spi_tx_fifo, cache-ID = 27814fd890a9dcf5.
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 25 14:58:53 2025...

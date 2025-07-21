@@ -1,0 +1,5 @@
+xpm_cdc.sv,systemverilog,xpm,D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,incdir="../../../../final_prj_pl.gen/sources_1/ip/IMU_TOP_VIO/hdl/verilog"incdir="../../../../final_prj_pl.gen/sources_1/ip/IMU_TOP_VIO/hdl"
+xpm_memory.sv,systemverilog,xpm,D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,incdir="../../../../final_prj_pl.gen/sources_1/ip/IMU_TOP_VIO/hdl/verilog"incdir="../../../../final_prj_pl.gen/sources_1/ip/IMU_TOP_VIO/hdl"
+xpm_VCOMP.vhd,vhdl,xpm,D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_VCOMP.vhd,incdir="../../../../final_prj_pl.gen/sources_1/ip/IMU_TOP_VIO/hdl/verilog"incdir="../../../../final_prj_pl.gen/sources_1/ip/IMU_TOP_VIO/hdl"
+IMU_TOP_VIO.v,verilog,xil_defaultlib,../../../../final_prj_pl.gen/sources_1/ip/IMU_TOP_VIO/sim/IMU_TOP_VIO.v,incdir="../../../../final_prj_pl.gen/sources_1/ip/IMU_TOP_VIO/hdl/verilog"incdir="../../../../final_prj_pl.gen/sources_1/ip/IMU_TOP_VIO/hdl"
+glbl.v,Verilog,xil_defaultlib,glbl.v

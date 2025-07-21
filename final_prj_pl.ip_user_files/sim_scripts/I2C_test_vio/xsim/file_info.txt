@@ -1,0 +1,2 @@
+I2C_test_vio.v,verilog,xil_defaultlib,../../../../final_prj_pl.gen/sources_1/ip/I2C_test_vio/sim/I2C_test_vio.v,incdir="../../../../final_prj_pl.gen/sources_1/ip/I2C_test_vio/hdl/verilog"incdir="../../../../final_prj_pl.gen/sources_1/ip/I2C_test_vio/hdl"
+glbl.v,Verilog,xil_defaultlib,glbl.v
