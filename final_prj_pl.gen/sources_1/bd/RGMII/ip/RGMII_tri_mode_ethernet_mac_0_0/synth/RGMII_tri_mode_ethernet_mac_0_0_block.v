@@ -53,9 +53,6 @@
 //
 //              This block level:
 //
-//              * instantiates all clock enable logic required to operate the
-//                TEMAC and its example design;
-//
 //              * instantiates the statistics counter decode logic for all user definable
 //                counters
 //
@@ -102,8 +99,6 @@
 //              |       |                  |             |
 //              |       --------------------             |
 //              |                                        |
-//              |     clock enable logic                 |
-//              |                                        |
 //              -----------------------------------------|
 //
 
@@ -128,8 +123,6 @@ module RGMII_tri_mode_ethernet_mac_0_0_block
 
       // Receiver Interface
       //--------------------------
-      output               rx_enable,
-
       output      [27:0]   rx_statistics_vector,
       output               rx_statistics_valid,
 
@@ -144,8 +137,6 @@ module RGMII_tri_mode_ethernet_mac_0_0_block
 
       // Transmitter Interface
       //-----------------------------
-      output               tx_enable,
-
       input       [7:0]    tx_ifg_delay,
       output      [31:0]   tx_statistics_vector,
       output               tx_statistics_valid,
@@ -230,19 +221,12 @@ module RGMII_tri_mode_ethernet_mac_0_0_block
    wire           gmii_rx_dv_int;            // gmii_rx_dv registered in IOBs.
    wire           gmii_rx_er_int;            // gmii_rx_er registered in IOBs.
    wire  [7:0]    gmii_rxd_int;              // gmii_rxd registered in IOBs.
-   reg            rx_enable_int = 0;         // rx_enable signal to throttle data
-   wire           tx_enable_int;
    wire           rx_mac_aclk_int;           // Internal receive gmii/mii clock signal.
    wire           tx_mac_aclk_int;           // Internal transmit gmii/mii clock signal.
    wire           speedis100_int;            // Asserted when speed is 100Mb/s.
    wire           speedis10100_int;          // Asserted when speed is 10Mb/s or 100Mb/s.
-   wire           rxspeedis10100;            // MAC speed setting resampled on the transmitter clock
    wire           tx_reset_int;             // Synchronous reset in the MAC and gmii Tx domain
    wire           rx_reset_int;             // Synchronous reset in the MAC and gmii Rx domain
-   wire           phy_tx_enable;
-   wire           phy_tx_enable_falling;
-   wire           clk_div5;
-   wire           clk_div5_shift;
    wire  [31:0]   rx_statistics_vector_int;
    wire           rx_statistics_valid_int;
    wire  [39:0]   tx_statistics_vector_int;
@@ -272,8 +256,6 @@ module RGMII_tri_mode_ethernet_mac_0_0_block
    assign tx_reset = tx_reset_int;
 
    // Assign the internal clock signals to output ports.
-   assign tx_enable = tx_enable_int;
-   assign rx_enable = rx_enable_int;
    assign rx_mac_aclk = rx_mac_aclk_int;
    assign tx_mac_aclk = tx_mac_aclk_int;
 
@@ -285,50 +267,6 @@ module RGMII_tri_mode_ethernet_mac_0_0_block
 
 
    assign tx_mac_aclk_int = gtx_clk;
-
-   //---------------------------------------------------------------------------
-   // Transmitter Clock Enable generation circuit. These circuits produce the
-   // clock enables for 10/100/1000 operation.
-   //---------------------------------------------------------------------------
-
-   RGMII_tri_mode_ethernet_mac_0_0_clk_en_gen enable_gen (
-      .reset            (tx_reset_int),
-      .speed_is_10_100  (speedis10100_int),
-      .speed_is_100     (speedis100_int),
-      .clk              (gtx_clk),
-      .client_tx_enable (tx_enable_int),
-      .phy_tx_enable    (phy_tx_enable),
-      .phy_tx_enable_falling (phy_tx_enable_falling),
-      .clk_div5         (clk_div5),
-      .clk_div5_shift   (clk_div5_shift)
-   );
-
-
-   //---------------------------------------------------------------------------
-   // Clock Enable circuitry
-   //---------------------------------------------------------------------------
-
-   // Resynchronise the speed selection signal in the receiver clock domain
-   RGMII_tri_mode_ethernet_mac_0_0_block_sync_block rxspeedis10100gen (
-      .clk              (rx_mac_aclk_int),
-      .data_in          (speedis10100_int),
-      .data_out         (rxspeedis10100)
-   );
-
-   // Create the receiver clock enable
-   always @(posedge rx_mac_aclk_int)
-   begin
-      if (rx_reset_int == 1'b1) begin
-         rx_enable_int <= 1'b0;
-      end
-      else begin
-         if (rxspeedis10100 == 1'b1)
-            rx_enable_int <= ~(rx_enable_int);
-         else
-            rx_enable_int <= 1'b1;
-      end
-   end
-
 
 
 
@@ -353,9 +291,6 @@ module RGMII_tri_mode_ethernet_mac_0_0_block
       .mdio_o           (mdio_o),
       .mdio_t           (mdio_t),
 
-      // Current operating speed is 10/100
-      .speedis10100     (speedis10100_int),
-
       // The following ports are the RGMII physical interface: these will be at
       // pins on the FPGA
       .rgmii_txd        (rgmii_txd),
@@ -372,14 +307,10 @@ module RGMII_tri_mode_ethernet_mac_0_0_block
 
       // The following ports are the internal GMII connections from IOB logic
       // to the TEMAC core
-      .phy_tx_enable    (phy_tx_enable),
-      .phy_tx_enable_falling (phy_tx_enable_falling),
       .txd_from_mac     (gmii_txd_int),
       .tx_en_from_mac   (gmii_tx_en_int),
       .tx_er_from_mac   (gmii_tx_er_int),
       .tx_clk           (tx_mac_aclk_int),
-      .clk_div5         (clk_div5),
-      .clk_div5_shift   (clk_div5_shift),
       .rxd_to_mac       (gmii_rxd_int),
       .rx_dv_to_mac     (gmii_rx_dv_int),
       .rx_er_to_mac     (gmii_rx_er_int),
@@ -468,7 +399,7 @@ module RGMII_tri_mode_ethernet_mac_0_0_block
       .C_AT_ENTRIES              (4),
       .C_FAMILY                  ("zynquplus"),
       .C_HAS_2G5                 (0),
-      .C_MAC_SPEED               ("TRI_SPEED"),
+      .C_MAC_SPEED               ("SPEED_1000_MBPS"),
       .C_HAS_STATS               (1),
       .C_NUM_STATS               (34),
       .C_CNTR_RST                (1),
@@ -505,7 +436,7 @@ module RGMII_tri_mode_ethernet_mac_0_0_block
       // rx sideband signals
       .rx_statistics_vector      (rx_statistics_vector_int),
       .rx_statistics_valid       (rx_statistics_valid_int),
-      .rx_enable                 (rx_enable_int),
+      .rx_enable                 (1'b1),
       .rx_axis_filter_tuser      (rx_axis_filter_tuser),
 
       // 1588 Rx timestamping (unused)
@@ -527,7 +458,7 @@ module RGMII_tri_mode_ethernet_mac_0_0_block
       // tx sideband signals
       .tx_collision              (),
       .tx_retransmit             (),
-      .tx_enable                 (tx_enable_int),
+      .tx_enable                 (1'b1),
       .tx_ifg_delay              (tx_ifg_delay),
       .tx_statistics_vector      (tx_statistics_vector_int),
       .tx_statistics_valid       (tx_statistics_valid_int),
@@ -590,7 +521,7 @@ module RGMII_tri_mode_ethernet_mac_0_0_block
       .speed_is_10_100           (speedis10100_int),
 
       // GMII/MII Interface
-      .gmii_tx_clken             (phy_tx_enable),
+      .gmii_tx_clken             (1'b1),
       .gmii_txd                  (gmii_txd_int),
       .gmii_tx_en                (gmii_tx_en_int),
       .gmii_tx_er                (gmii_tx_er_int),

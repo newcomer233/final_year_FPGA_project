@@ -57,9 +57,8 @@ if {$::dispatch::connected} {
 
 OPTRACE "axis_eth_head_convertor_synth_1" START { ROLLUP_AUTO }
 set_param general.maxThreads 16
-set_param bd.open.in_stealth_mode 2
-set_msg_config  -id {[BD 41-1271]}  -suppress 
 set_msg_config  -id {[BD 41-1306]}  -suppress 
+set_msg_config  -id {[BD 41-1271]}  -suppress 
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
@@ -78,7 +77,7 @@ set_property ip_output_repo e:/final_prj/final_prj_pl/final_prj_pl.cache/ip [cur
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet e:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/axis_eth_head_convertor/axis_eth_head_convertor.xci
+read_ip -quiet E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/axis_eth_head_convertor/axis_eth_head_convertor.xci
 set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/axis_eth_head_convertor/axis_eth_head_convertor_ooc.xdc]
 
 OPTRACE "Adding files" END { }

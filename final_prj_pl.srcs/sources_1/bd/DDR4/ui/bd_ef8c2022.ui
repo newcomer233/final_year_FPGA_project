@@ -1,45 +1,56 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.43587",
-   "Default View_TopLeft":"-502,-292",
+   "Default View_ScaleFactor":"0.583141",
+   "Default View_TopLeft":"-636,-340",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
 #  -string -flagsOSRD
-preplace port DDR4 -pg 1 -lvl 5 -x 1710 -y 30 -defaultsOSRD
-preplace port ADC_AXI -pg 1 -lvl 0 -x -330 -y -80 -defaultsOSRD
-preplace port IMU_AXI -pg 1 -lvl 0 -x -330 -y -60 -defaultsOSRD
-preplace port port-id_PL_ACLK -pg 1 -lvl 0 -x -330 -y 50 -defaultsOSRD
-preplace port port-id_PL_ARESETN -pg 1 -lvl 0 -x -330 -y 70 -defaultsOSRD
-preplace port port-id_ddr4_sysclk_200M -pg 1 -lvl 0 -x -330 -y 280 -defaultsOSRD
-preplace port port-id_ddr4_rst -pg 1 -lvl 0 -x -330 -y 320 -defaultsOSRD
-preplace inst ddr4_0 -pg 1 -lvl 3 -x 1190 -y 80 -defaultsOSRD
-preplace inst axi_interconnect_0 -pg 1 -lvl 1 -x 160 -y 70 -defaultsOSRD
-preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 2 -x 660 -y -220 -defaultsOSRD
-preplace inst util_vector_logic_0 -pg 1 -lvl 4 -x 1540 -y 320 -defaultsOSRD
-preplace inst util_vector_logic_1 -pg 1 -lvl 4 -x 1540 -y 140 -defaultsOSRD
-preplace inst ddr4_sync_reset -pg 1 -lvl 2 -x 660 -y 510 -defaultsOSRD
-preplace inst ddr4_sync_reset1 -pg 1 -lvl 2 -x 660 -y -500 -defaultsOSRD
-preplace netloc S00_ACLK_0_1 1 0 1 -40 40n
-preplace netloc S00_ARESETN_0_1 1 0 1 -30 60n
-preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 3 -20 -160 350 -110 970
-preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 3 0 300 N 300 990
-preplace netloc M00_ACLK_1 1 0 4 -10 310 330J 310 NJ 310 1360
-preplace netloc ddr4_0_c0_ddr4_ui_clk_sync_rst 1 3 1 1370 130n
-preplace netloc util_vector_logic_1_Res 1 3 2 1390 80 1690
-preplace netloc ddr4_0_c0_init_calib_complete 1 3 1 1380 50n
-preplace netloc util_vector_logic_0_Res 1 0 3 10 290 N 290 1000
-preplace netloc c0_sys_clk_i_0_1 1 0 3 NJ 280 320J 70 NJ
-preplace netloc sys_rst_0_1 1 0 3 NJ 320 360J 110 NJ
-preplace netloc util_vector_logic_0_Res1 1 1 4 360 390 NJ 390 NJ 390 1690
-preplace netloc zynq_ultra_ps_e_0_pl_resetn1 1 1 2 360 -310 970
-preplace netloc axi_interconnect_0_M00_AXI 1 1 2 310 50 N
-preplace netloc ddr4_0_C0_DDR4 1 3 2 N 30 N
-preplace netloc S00_AXI_0_1 1 0 1 N -80
-preplace netloc S01_AXI_0_1 1 0 1 N -60
-preplace netloc S02_AXI_1 1 0 3 -10 -150 320J -130 960
-preplace netloc S03_AXI_1 1 0 3 10 -140 310J -120 980
-levelinfo -pg 1 -330 160 660 1190 1540 1710
-pagesize -pg 1 -db -bbox -sgen -500 -600 1800 610
+preplace port c0_ddr4 -pg 1 -lvl 6 -x 2630 -y 600 -defaultsOSRD
+preplace port ADC_AXI -pg 1 -lvl 0 -x -170 -y 320 -defaultsOSRD
+preplace port IMU_AXI0 -pg 1 -lvl 0 -x -170 -y 340 -defaultsOSRD
+preplace port IMU_AXI1 -pg 1 -lvl 0 -x -170 -y 360 -defaultsOSRD
+preplace port port-id_PL_ACLK -pg 1 -lvl 0 -x -170 -y 230 -defaultsOSRD
+preplace port port-id_PL_ARESETN -pg 1 -lvl 0 -x -170 -y 260 -defaultsOSRD
+preplace port port-id_ddr4_rst -pg 1 -lvl 0 -x -170 -y 690 -defaultsOSRD
+preplace port port-id_c0_sys_clk_i -pg 1 -lvl 0 -x -170 -y 210 -defaultsOSRD
+preplace inst ddr4_0 -pg 1 -lvl 5 -x 2420 -y 650 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 3 -x 1020 -y 850 -defaultsOSRD
+preplace inst util_vector_logic_1 -pg 1 -lvl 1 -x 20 -y 840 -defaultsOSRD
+preplace inst ddr4_sync_reset -pg 1 -lvl 4 -x 1620 -y 680 -defaultsOSRD
+preplace inst zynq_ultra -pg 1 -lvl 3 -x 1020 -y 40 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 2 -x 440 -y 470 -defaultsOSRD
+preplace inst dpuczdx8g_0 -pg 1 -lvl 4 -x 1620 -y 40 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 4 -x 1620 -y -250 -defaultsOSRD
+preplace netloc M00_ACLK_1 1 1 5 270 240 N 240 1420 530 NJ 530 2600
+preplace netloc PL_ACLK_1 1 0 2 NJ 230 240
+preplace netloc PL_ARESETN_1 1 0 2 NJ 260 230
+preplace netloc c0_sys_clk_i_0_1 1 0 5 NJ 210 NJ 210 NJ 210 NJ 210 1850J
+preplace netloc ddr4_0_c0_ddr4_ui_clk_sync_rst 1 0 6 -130 780 NJ 780 N 780 1310J 790 NJ 790 2590
+preplace netloc ddr4_0_c0_init_calib_complete 1 2 4 730 540 NJ 540 NJ 540 2590
+preplace netloc ddr4_sync_reset_peripheral_aresetn 1 1 4 290 250 N 250 NJ 250 1790
+preplace netloc dpuczdx8g_0_dpu0_interrupt 1 2 3 700 -140 NJ -140 1820
+preplace netloc proc_sys_reset_0_interconnect_aresetn 1 1 4 250 220 NJ 220 NJ 220 1840
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 3 2 1450 140 1830
+preplace netloc sys_rst_0_1 1 0 5 NJ 690 NJ 690 N 690 1320J 780 1850J
+preplace netloc util_vector_logic_0_Res 1 1 4 300 260 N 260 N 260 1810
+preplace netloc util_vector_logic_0_Res1 1 3 1 1340 660n
+preplace netloc util_vector_logic_1_Res 1 1 2 NJ 840 N
+preplace netloc zynq_ultra_pl_clk0 1 1 3 260 100 690 -100 1430
+preplace netloc zynq_ultra_pl_resetn0 1 3 1 1440 -270n
+preplace netloc ADC_AXI_1 1 0 2 NJ 320 N
+preplace netloc S01_AXI_0_1 1 0 2 NJ 340 NJ
+preplace netloc S02_AXI_0_1 1 0 2 NJ 360 NJ
+preplace netloc S03_AXI_1 1 1 3 280 180 NJ 180 1310
+preplace netloc axi_interconnect_0_M00_AXI 1 2 3 N 470 NJ 470 1830
+preplace netloc ddr4_0_C0_DDR4 1 5 1 NJ 600
+preplace netloc dpuczdx8g_0_DPU0_M_AXI_DATA0 1 2 3 710 -130 NJ -130 1810
+preplace netloc dpuczdx8g_0_DPU0_M_AXI_DATA1 1 2 3 730 -110 NJ -110 1790
+preplace netloc dpuczdx8g_0_DPU0_M_AXI_INSTR 1 2 3 720 -120 NJ -120 1800
+preplace netloc zynq_ultra_M_AXI_HPM0_LPD 1 3 1 1450 0n
+levelinfo -pg 1 -170 20 440 1020 1620 2420 2630
+pagesize -pg 1 -db -bbox -sgen -340 -360 2800 1700
 "
 }
-0
+{
+   "da_clkrst_cnt":"4"
+}

@@ -70,7 +70,7 @@ set_multicycle_path -from $ip_gtx_clk -to [get_clocks $rgmii_tx_clk] -1 -hold
 ############################################################
 set axi4_lite_clk [get_clocks -of_objects [get_ports s_axi_aclk]]
 
-create_generated_clock -name [current_instance .]_mdc -divide_by 80 -source [get_ports s_axi_aclk] [get_pins -hier -regexp -nocase {.*mdio_enabled\.miim_clk_int_reg/Q}]
+create_generated_clock -name [current_instance .]_mdc -divide_by 40 -source [get_ports s_axi_aclk] [get_pins -hier -regexp -nocase {.*mdio_enabled\.miim_clk_int_reg/Q}]
 set mdc_clk [get_clocks [current_instance .]_mdc]
 
 set_input_delay -clock $mdc_clk -max [expr 400-300] [get_ports mdio]

@@ -1,6 +1,6 @@
 set_property PACKAGE_PIN AL8 [get_ports sysclk_200m_p]
 set_property IOSTANDARD DIFF_SSTL12 [get_ports sysclk_200m_p]
-
+create_clock -name sysclk_200m -period 5.000 [get_ports sysclk_200m_p]
 
 set_property PACKAGE_PIN G19 [get_ports SPI_DIN_A]
 set_property PACKAGE_PIN B19 [get_ports SPI_DIN_B]

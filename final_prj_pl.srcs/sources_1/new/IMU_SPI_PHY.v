@@ -25,7 +25,7 @@ module IMU_SPI_PHY(
     //PHYSICAL INTERFACE
     inout           SPI_CLK,
     input           SPI_DIN,
-    output reg      SPI_DOUT=0,
+    output          SPI_DOUT,
     inout           SPI_CS_N,//
     //INTERNAL DATA INTERFACE
     input       [15:0]  tx_data,
@@ -43,7 +43,7 @@ module IMU_SPI_PHY(
     input           SPI_master,
     input   [1:0]   SPI_MODE,
     input   [31:0]  SPI_HZ,
-(* keep = "true" *) input   [31:0]  bits_len
+    input   [31:0]  bits_len
     );
     /*
     SPI MODE 0  CPOL =0  CPHA =0   SAMPLE FIRST
@@ -71,7 +71,7 @@ module IMU_SPI_PHY(
     assign SPI_CLK_in = SPI_CLK;
     assign SPI_CS_N  = SPI_master ? SPI_CS_out : 1'BZ;
     assign SPI_CS_in = SPI_CS_N;
-    
+
 
     //counting spi should count
     always@(posedge sysclk_200m)begin
@@ -128,7 +128,7 @@ module IMU_SPI_PHY(
     //SPI transmit control
     reg     [31:0] data_cnt;
     wire    [31:0] pos;
-    reg     [16:0] tx_data_reg='d0;
+ (* shreg_extract = "no" *) reg     [16:0] tx_data_reg;
     reg     [15:0] rx_data_reg='d0;
     // assign rx_data=(SPI_MODE==2'b00 || SPI_MODE==2'b10) ? rx_data_reg[32:1] :rx_data_reg[31:0];
     assign rx_data=rx_data_reg;
@@ -148,18 +148,18 @@ module IMU_SPI_PHY(
         if(tx_data_valid && tx_data_ready)begin
             if(SPI_MODE==2'd0 || SPI_MODE==2'd2)begin
                 tx_data_reg<={tx_data,1'b0};
-                SPI_DOUT<=tx_data[15];
+                // SPI_DOUT<=tx_data[15];
             end
             else begin 
                 tx_data_reg<={1'b0,tx_data};
-                SPI_DOUT<=1'b0;
+                // SPI_DOUT<=1'b0;
             end
             data_cnt<=32'd0;
             rx_data_reg<='d0;
         end
         else begin
             if(SPI_CS_in)begin
-                SPI_DOUT<=1'b0;//tx_data_reg[pos]
+                // SPI_DOUT<=1'b0;//tx_data_reg[pos]
                 data_cnt<=32'd0;
                 rx_data_reg<='d0;
             end
@@ -180,11 +180,11 @@ module IMU_SPI_PHY(
                     rx_data_reg<=rx_data_reg;
                 end
 
-                SPI_DOUT<=tx_data_reg[16];      
+                // SPI_DOUT<=tx_data_reg[16];      
             end
         end
     end
-    
+    assign SPI_DOUT  = SPI_CS_in ? 1'b0 : tx_data_reg[16] ;
     
     //SPI_CS_out control and main data control
     always@(posedge sysclk_200m)begin

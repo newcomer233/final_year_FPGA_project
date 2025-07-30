@@ -57,8 +57,8 @@ COMPONENT data_to_udp_fifo_widcov
     aresetn : IN STD_LOGIC;
     s_axis_tvalid : IN STD_LOGIC;
     s_axis_tready : OUT STD_LOGIC;
-    s_axis_tdata : IN STD_LOGIC_VECTOR(239 DOWNTO 0);
-    s_axis_tkeep : IN STD_LOGIC_VECTOR(29 DOWNTO 0);
+    s_axis_tdata : IN STD_LOGIC_VECTOR(351 DOWNTO 0);
+    s_axis_tkeep : IN STD_LOGIC_VECTOR(43 DOWNTO 0);
     s_axis_tlast : IN STD_LOGIC;
     m_axis_tvalid : OUT STD_LOGIC;
     m_axis_tready : IN STD_LOGIC;

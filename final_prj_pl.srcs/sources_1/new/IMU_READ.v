@@ -65,7 +65,7 @@ module IMU_READ(
 
     always@(posedge sysclk_200M) begin
         if(IMU_ENABLE && IMU_config_complete)begin
-            if(IMU_BREAK_COUNTER == 32'd200_000)  begin 
+            if(IMU_BREAK_COUNTER == 32'd100_000)  begin 
                 IMU_BREAK_COUNTER<='d0;
                 GAP_FLAG<=1'b1;
             end

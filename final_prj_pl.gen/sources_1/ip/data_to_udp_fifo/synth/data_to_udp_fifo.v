@@ -52,8 +52,8 @@
 
 (* X_CORE_INFO = "axis_data_fifo_v2_0_16_top,Vivado 2024.2.2" *)
 (* CHECK_LICENSE_TYPE = "data_to_udp_fifo,axis_data_fifo_v2_0_16_top,{}" *)
-(* CORE_GENERATION_INFO = "data_to_udp_fifo,axis_data_fifo_v2_0_16_top,{x_ipProduct=Vivado 2024.2.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axis_data_fifo,x_ipVersion=2.0,x_ipCoreRevision=16,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_FAMILY=zynquplus,C_AXIS_TDATA_WIDTH=240,C_AXIS_TID_WIDTH=1,C_AXIS_TDEST_WIDTH=1,C_AXIS_TUSER_WIDTH=1,C_AXIS_SIGNAL_SET=0b00000000000000000000000000011011,C_FIFO_DEPTH=64,C_FIFO_MODE=1,C_IS_ACLK_ASYNC=0,C_SYNCHRONIZER_STAGE=3,C_ACLKEN_CONV_MODE=0,C_ECC_MODE=0,C_FIFO_MEMORY_TYPE=auto,C_\
-USE_ADV_FEATURES=825372720,C_PROG_EMPTY_THRESH=5,C_PROG_FULL_THRESH=11}" *)
+(* CORE_GENERATION_INFO = "data_to_udp_fifo,axis_data_fifo_v2_0_16_top,{x_ipProduct=Vivado 2024.2.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axis_data_fifo,x_ipVersion=2.0,x_ipCoreRevision=16,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_FAMILY=zynquplus,C_AXIS_TDATA_WIDTH=352,C_AXIS_TID_WIDTH=1,C_AXIS_TDEST_WIDTH=1,C_AXIS_TUSER_WIDTH=1,C_AXIS_SIGNAL_SET=0b00000000000000000000000000011011,C_FIFO_DEPTH=128,C_FIFO_MODE=2,C_IS_ACLK_ASYNC=0,C_SYNCHRONIZER_STAGE=3,C_ACLKEN_CONV_MODE=0,C_ECC_MODE=0,C_FIFO_MEMORY_TYPE=block,\
+C_USE_ADV_FEATURES=826355768,C_PROG_EMPTY_THRESH=5,C_PROG_FULL_THRESH=11}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module data_to_udp_fifo (
   s_axis_aresetn,
@@ -81,45 +81,45 @@ input wire s_axis_aresetn;
 input wire s_axis_aclk;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TVALID" *)
 (* X_INTERFACE_MODE = "slave" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXIS, TDATA_NUM_BYTES 30, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, LAYERED_METADATA undef, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXIS, TDATA_NUM_BYTES 44, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, LAYERED_METADATA undef, INSERT_VIP 0" *)
 input wire s_axis_tvalid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TREADY" *)
 output wire s_axis_tready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TDATA" *)
-input wire [239 : 0] s_axis_tdata;
+input wire [351 : 0] s_axis_tdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TKEEP" *)
-input wire [29 : 0] s_axis_tkeep;
+input wire [43 : 0] s_axis_tkeep;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TLAST" *)
 input wire s_axis_tlast;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TVALID" *)
 (* X_INTERFACE_MODE = "master" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXIS, TDATA_NUM_BYTES 30, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, LAYERED_METADATA undef, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXIS, TDATA_NUM_BYTES 44, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, LAYERED_METADATA undef, INSERT_VIP 0" *)
 output wire m_axis_tvalid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TREADY" *)
 input wire m_axis_tready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TDATA" *)
-output wire [239 : 0] m_axis_tdata;
+output wire [351 : 0] m_axis_tdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TKEEP" *)
-output wire [29 : 0] m_axis_tkeep;
+output wire [43 : 0] m_axis_tkeep;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TLAST" *)
 output wire m_axis_tlast;
 output wire prog_empty;
 
   axis_data_fifo_v2_0_16_top #(
     .C_FAMILY("zynquplus"),
-    .C_AXIS_TDATA_WIDTH(240),
+    .C_AXIS_TDATA_WIDTH(352),
     .C_AXIS_TID_WIDTH(1),
     .C_AXIS_TDEST_WIDTH(1),
     .C_AXIS_TUSER_WIDTH(1),
     .C_AXIS_SIGNAL_SET(32'B00000000000000000000000000011011),
-    .C_FIFO_DEPTH(64),
-    .C_FIFO_MODE(1),
+    .C_FIFO_DEPTH(128),
+    .C_FIFO_MODE(2),
     .C_IS_ACLK_ASYNC(0),
     .C_SYNCHRONIZER_STAGE(3),
     .C_ACLKEN_CONV_MODE(0),
     .C_ECC_MODE(0),
-    .C_FIFO_MEMORY_TYPE("auto"),
-    .C_USE_ADV_FEATURES(825372720),
+    .C_FIFO_MEMORY_TYPE("block"),
+    .C_USE_ADV_FEATURES(826355768),
     .C_PROG_EMPTY_THRESH(5),
     .C_PROG_FULL_THRESH(11)
   ) inst (
@@ -129,7 +129,7 @@ output wire prog_empty;
     .s_axis_tvalid(s_axis_tvalid),
     .s_axis_tready(s_axis_tready),
     .s_axis_tdata(s_axis_tdata),
-    .s_axis_tstrb(30'H3FFFFFFF),
+    .s_axis_tstrb(44'HFFFFFFFFFFF),
     .s_axis_tkeep(s_axis_tkeep),
     .s_axis_tlast(s_axis_tlast),
     .s_axis_tid(1'H0),

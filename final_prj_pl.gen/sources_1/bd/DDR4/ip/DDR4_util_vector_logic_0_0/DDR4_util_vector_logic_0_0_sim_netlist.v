@@ -2,10 +2,10 @@
 // Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2.2 (win64) Build 6060944 Thu Mar 06 19:10:01 MST 2025
-// Date        : Mon Jul  7 14:47:55 2025
+// Date        : Mon Jul 28 00:30:06 2025
 // Host        : LAPTOP-VEGJAO5A running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim -rename_top DDR4_util_vector_logic_0_0 -prefix
-//               DDR4_util_vector_logic_0_0_ DDR4_util_vector_logic_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim
+//               e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_util_vector_logic_0_0/DDR4_util_vector_logic_0_0_sim_netlist.v
 // Design      : DDR4_util_vector_logic_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.

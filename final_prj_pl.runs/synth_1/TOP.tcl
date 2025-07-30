@@ -59,10 +59,7 @@ OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param tcl.collectionResultDisplayLimit 0
 set_param general.maxThreads 16
 set_param chipscope.maxJobs 8
-set_param power.BramSDPPropagationFix 1
-set_param power.enableUnconnectedCarry8PinPower 1
-set_param power.enableCarry8RouteBelPower 1
-set_param power.enableLutRouteBelPower 1
+set_param bd.open.in_stealth_mode 3
 set_param xicom.use_bs_reader 1
 set_msg_config  -id {[BD 41-1306]}  -suppress 
 set_msg_config  -id {[BD 41-1271]}  -suppress 
@@ -78,6 +75,8 @@ set_property parent.project_path E:/final_prj/final_prj_pl/final_prj_pl.xpr [cur
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
+set_property ip_repo_paths e:/final_prj/dpu_ip [current_project]
+update_ip_catalog
 set_property ip_output_repo e:/final_prj/final_prj_pl/final_prj_pl.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
@@ -105,13 +104,10 @@ read_verilog -library xil_defaultlib {
   E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/UDP_TOP.v
   E:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/hdl/RGMII_wrapper.v
   E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/DATA_PROCESS_TOP.v
-  E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/DATA_ORDER.v
   E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/DATA_TO_UDP.v
+  E:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/hdl/DDR4_wrapper.v
+  E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/new/DATA_TO_DDR.v
 }
-read_ip -quiet E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/IMU_TOP_VIO/IMU_TOP_VIO.xci
-set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/IMU_TOP_VIO/IMU_TOP_VIO.xdc]
-set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/IMU_TOP_VIO/IMU_TOP_VIO_ooc.xdc]
-
 add_files E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/bd/PPG_I2C_PHY/PPG_I2C_PHY.bd
 set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_axi_iic_0_0/PPG_I2C_PHY_axi_iic_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_axi_iic_0_0/PPG_I2C_PHY_axi_iic_0_0_ooc.xdc]
@@ -131,49 +127,100 @@ set_property used_in_implementation false [get_files -all e:/final_prj/final_prj
 set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_system_ila_0_0/PPG_I2C_PHY_system_ila_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/PPG_I2C_PHY/PPG_I2C_PHY_ooc.xdc]
 
-read_ip -quiet E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/ila_0/ila_0.xci
-set_property used_in_synthesis false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/ila_0/ila_0_ooc.xdc]
-
 add_files E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/bd/RGMII/RGMII.bd
 set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/synth/RGMII_tri_mode_ethernet_mac_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/synth/RGMII_tri_mode_ethernet_mac_0_0.xdc]
 set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/synth/RGMII_tri_mode_ethernet_mac_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/synth/RGMII_tri_mode_ethernet_mac_0_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_axis_TX_data_fifo_0/RGMII_axis_TX_data_fifo_0_ooc.xdc]
-set_property used_in_synthesis false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_0_0/bd_0/ip/ip_0/bd_bb77_ila_lib_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_0_0/bd_0/bd_bb77_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_0_0/RGMII_system_ila_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_vio_0_0/RGMII_vio_0_0.xdc]
 set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_vio_0_0/RGMII_vio_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_axis_data_fifo_0_0/RGMII_axis_data_fifo_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_rst_TEMAC_125M_0/RGMII_rst_TEMAC_125M_0_board.xdc]
-set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_rst_TEMAC_125M_0/RGMII_rst_TEMAC_125M_0.xdc]
-set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_rst_TEMAC_125M_0/RGMII_rst_TEMAC_125M_0_ooc.xdc]
 set_property used_in_synthesis false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_1_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
 set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_1_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
 set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_1_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc]
 set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_1_0/bd_0/ip/ip_0/bd_7b26_ila_lib_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_1_0/bd_0/bd_7b26_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_1_0/RGMII_system_ila_1_0_ooc.xdc]
-set_property used_in_synthesis false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_0_1/bd_0/ip/ip_0/bd_7bb6_ila_lib_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_0_1/bd_0/bd_7bb6_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_0_1/RGMII_system_ila_0_1_ooc.xdc]
+set_property used_in_synthesis false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_0_2/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_0_2/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_0_2/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_0_2/bd_0/ip/ip_0/bd_7af6_ila_lib_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_0_2/bd_0/bd_7af6_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_0_2/RGMII_system_ila_0_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_axis_TX_data_fifo_0/RGMII_axis_TX_data_fifo_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_0_3/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_0_3/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_0_3/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_0_3/bd_0/ip/ip_0/bd_ba37_ila_lib_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_0_3/bd_0/bd_ba37_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_0_3/RGMII_system_ila_0_3_ooc.xdc]
+set_property used_in_synthesis false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_TX_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_TX_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_TX_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_TX_0/bd_0/ip/ip_0/bd_3378_ila_lib_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_TX_0/bd_0/bd_3378_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_system_ila_TX_0/RGMII_system_ila_TX_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/RGMII_ooc.xdc]
 
-read_ip -quiet E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
-set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
-set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc]
-set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
+add_files E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/bd/DDR4/DDR4.bd
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_ddr4_0_0/ip_1/par/DDR4_ddr4_0_0_phy_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_ddr4_0_0/bd_0/ip/ip_0/bd_cfe9_microblaze_I_0.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_ddr4_0_0/bd_0/ip/ip_0/bd_cfe9_microblaze_I_0_ooc_debug.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_ddr4_0_0/bd_0/ip/ip_1/bd_cfe9_rst_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_ddr4_0_0/bd_0/ip/ip_1/bd_cfe9_rst_0_0.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_ddr4_0_0/bd_0/ip/ip_2/bd_cfe9_ilmb_0.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_ddr4_0_0/bd_0/ip/ip_3/bd_cfe9_dlmb_0.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_ddr4_0_0/bd_0/ip/ip_6/bd_cfe9_lmb_bram_I_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_ddr4_0_0/bd_0/ip/ip_9/bd_cfe9_second_lmb_bram_I_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_ddr4_0_0/bd_0/ip/ip_10/bd_cfe9_iomodule_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_ddr4_0_0/bd_0/bd_cfe9_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_ddr4_0_0/ip_0/DDR4_ddr4_0_0_microblaze_mcs_board.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_ddr4_0_0/ip_0/DDR4_ddr4_0_0_microblaze_mcs_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_ddr4_0_0/DDR4_ddr4_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_ddr4_0_0/par/DDR4_ddr4_0_0.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_proc_sys_reset_0_0/DDR4_proc_sys_reset_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_proc_sys_reset_0_0/DDR4_proc_sys_reset_0_0.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_proc_sys_reset_0_0/DDR4_proc_sys_reset_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_zynq_ultra_ps_e_0_1/DDR4_zynq_ultra_ps_e_0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_zynq_ultra_ps_e_0_1/DDR4_zynq_ultra_ps_e_0_1.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_axi_interconnect_0_imp_xbar_0/DDR4_axi_interconnect_0_imp_xbar_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_axi_interconnect_0_imp_s00_data_fifo_0/DDR4_axi_interconnect_0_imp_s00_data_fifo_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_axi_interconnect_0_imp_s00_data_fifo_0/DDR4_axi_interconnect_0_imp_s00_data_fifo_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_axi_interconnect_0_imp_s00_data_fifo_0/DDR4_axi_interconnect_0_imp_s00_data_fifo_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_axi_interconnect_0_imp_auto_cc_0/DDR4_axi_interconnect_0_imp_auto_cc_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_axi_interconnect_0_imp_auto_cc_0/DDR4_axi_interconnect_0_imp_auto_cc_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_axi_interconnect_0_imp_auto_cc_0/DDR4_axi_interconnect_0_imp_auto_cc_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_axi_interconnect_0_imp_s01_data_fifo_0/DDR4_axi_interconnect_0_imp_s01_data_fifo_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_axi_interconnect_0_imp_s01_data_fifo_0/DDR4_axi_interconnect_0_imp_s01_data_fifo_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_axi_interconnect_0_imp_s01_data_fifo_0/DDR4_axi_interconnect_0_imp_s01_data_fifo_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_axi_interconnect_0_imp_auto_cc_1/DDR4_axi_interconnect_0_imp_auto_cc_1_clocks.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_axi_interconnect_0_imp_auto_cc_1/DDR4_axi_interconnect_0_imp_auto_cc_1_clocks.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_axi_interconnect_0_imp_auto_cc_1/DDR4_axi_interconnect_0_imp_auto_cc_1_ooc.xdc]
+set_property used_in_synthesis false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_axi_interconnect_0_imp_s02_data_fifo_0/DDR4_axi_interconnect_0_imp_s02_data_fifo_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_axi_interconnect_0_imp_s02_data_fifo_0/DDR4_axi_interconnect_0_imp_s02_data_fifo_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_axi_interconnect_0_imp_s02_data_fifo_0/DDR4_axi_interconnect_0_imp_s02_data_fifo_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_axi_interconnect_0_imp_auto_cc_2/DDR4_axi_interconnect_0_imp_auto_cc_2_clocks.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_axi_interconnect_0_imp_auto_cc_2/DDR4_axi_interconnect_0_imp_auto_cc_2_clocks.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_axi_interconnect_0_imp_auto_cc_2/DDR4_axi_interconnect_0_imp_auto_cc_2_ooc.xdc]
+set_property used_in_synthesis false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_axi_interconnect_0_imp_s03_data_fifo_0/DDR4_axi_interconnect_0_imp_s03_data_fifo_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_axi_interconnect_0_imp_s03_data_fifo_0/DDR4_axi_interconnect_0_imp_s03_data_fifo_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_axi_interconnect_0_imp_s03_data_fifo_0/DDR4_axi_interconnect_0_imp_s03_data_fifo_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_axi_interconnect_0_imp_auto_cc_3/DDR4_axi_interconnect_0_imp_auto_cc_3_clocks.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_axi_interconnect_0_imp_auto_cc_3/DDR4_axi_interconnect_0_imp_auto_cc_3_clocks.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_axi_interconnect_0_imp_auto_cc_3/DDR4_axi_interconnect_0_imp_auto_cc_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_axi_interconnect_0_imp_s00_mmu_0/DDR4_axi_interconnect_0_imp_s00_mmu_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_axi_interconnect_0_imp_s01_mmu_0/DDR4_axi_interconnect_0_imp_s01_mmu_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_axi_interconnect_0_imp_s02_mmu_0/DDR4_axi_interconnect_0_imp_s02_mmu_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_dpuczdx8g_0_0/DDR4_dpuczdx8g_0_0.xdc]
+set_property used_in_synthesis false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_dpuczdx8g_0_0/DDR4_dpuczdx8g_0_0_impl.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_dpuczdx8g_0_0/DDR4_dpuczdx8g_0_0_impl.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_proc_sys_reset_0_1/DDR4_proc_sys_reset_0_1_board.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_proc_sys_reset_0_1/DDR4_proc_sys_reset_0_1.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_proc_sys_reset_0_1/DDR4_proc_sys_reset_0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/DDR4_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_ddr4_0_0/bd_0/ip/ip_0/data/mb_bootloop_le.elf]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_ddr4_0_0/ip_0/mb_bootloop_le.elf]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_ddr4_0_0/sw/calibration_0/Debug/calibration_ddr.elf]
 
 read_ip -quiet E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/ila_2/ila_2.xci
 set_property used_in_synthesis false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/ila_2/ila_v6_2/constraints/ila_impl.xdc]
@@ -208,10 +255,6 @@ set_property used_in_implementation false [get_files -all e:/final_prj/final_prj
 read_ip -quiet E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/spi_rx_fifo_16bit/spi_rx_fifo_16bit.xci
 set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/spi_rx_fifo_16bit/spi_rx_fifo_16bit.xdc]
 set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/spi_rx_fifo_16bit/spi_rx_fifo_16bit_ooc.xdc]
-
-read_ip -quiet E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/IMU_test_vio/IMU_test_vio.xci
-set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/IMU_test_vio/IMU_test_vio.xdc]
-set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/IMU_test_vio/IMU_test_vio_ooc.xdc]
 
 read_ip -quiet E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/imu_read_ila/imu_read_ila.xci
 set_property used_in_synthesis false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/imu_read_ila/ila_v6_2/constraints/ila_impl.xdc]
@@ -248,6 +291,16 @@ set_property used_in_implementation false [get_files -all e:/final_prj/final_prj
 read_ip -quiet E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/data_to_udp_fifo_widcov/data_to_udp_fifo_widcov.xci
 set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/data_to_udp_fifo_widcov/data_to_udp_fifo_widcov_ooc.xdc]
 
+read_ip -quiet E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/ila_0/ila_0.xci
+set_property used_in_synthesis false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/ila_0/ila_0_ooc.xdc]
+
+read_ip -quiet E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/IMU_TOP_VIO/IMU_TOP_VIO.xci
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/IMU_TOP_VIO/IMU_TOP_VIO.xdc]
+set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/IMU_TOP_VIO/IMU_TOP_VIO_ooc.xdc]
+
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -257,20 +310,23 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/DDR4.xdc
+set_property used_in_implementation false [get_files E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/DDR4.xdc]
+
 read_xdc E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/AD7606.xdc
 set_property used_in_implementation false [get_files E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/AD7606.xdc]
 
 read_xdc E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/ICM42688.xdc
 set_property used_in_implementation false [get_files E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/ICM42688.xdc]
 
-read_xdc E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/MAX86916.xdc
-set_property used_in_implementation false [get_files E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/MAX86916.xdc]
-
 read_xdc E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/ETH_PHY.xdc
 set_property used_in_implementation false [get_files E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/ETH_PHY.xdc]
 
 read_xdc E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/BITSTREAM.xdc
 set_property used_in_implementation false [get_files E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/BITSTREAM.xdc]
+
+read_xdc E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/TIME_CONSTRS.xdc
+set_property used_in_implementation false [get_files E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/TIME_CONSTRS.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
@@ -280,7 +336,7 @@ read_checkpoint -auto_incremental -incremental E:/final_prj/final_prj_pl/final_p
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top TOP -part xczu9eg-ffvb1156-2-i
+synth_design -top TOP -part xczu9eg-ffvb1156-2-i -directive PerformanceOptimized -fsm_extraction one_hot -keep_equivalent_registers -resource_sharing off -no_lc -shreg_min_size 5
 OPTRACE "synth_design" END { }
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"

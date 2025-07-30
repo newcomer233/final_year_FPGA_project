@@ -1,0 +1,31 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2.2 (win64) Build 6060944 Thu Mar 06 19:10:01 MST 2025
+| Date         : Wed Jul 30 12:48:12 2025
+| Host         : LAPTOP-VEGJAO5A running 64-bit major release  (build 9200)
+| Command      : report_high_fanout_nets -file opt_report_high_fanout_nets_0.rpt
+| Design       : TOP
+| Device       : xczu9eg
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+High Fan-out Nets Information
+
+1. Summary
+----------
+
++--------------------------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Net Name                                                                                                                       | Fanout | Driver Type |
++--------------------------------------------------------------------------------------------------------------------------------+--------+-------------+
+| DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/nl_tvalid                                |   2117 | FDRE        |
+| nolabel_line336/inst/PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/probe_out0[0]                                           |   1489 | FDRE        |
+| DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/rst_n_r                                                     |   1295 | FDRE        |
+| DDR4_and_ZYNQ_TOP/DDR4_i/ddr4_0/inst/u_ddr_axi/USE_UPSIZER.upsizer_d2/ARESET                                                   |   1005 | FDRE        |
+| DDR4_and_ZYNQ_TOP/DDR4_i/ddr4_0/inst/u_ddr_axi/axi_w_channel_0/wready_d3                                                       |    935 | FDRE        |
+| dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_ADDRESS_CONTROLLER/sl_iport0_o[1]                                  |    918 | FDRE        |
+| dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_ADDRESS_CONTROLLER/sl_iport0_o[0]                                  |    912 | FDRE        |
+| DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_img_reader/pool_pea_tvalid                  |    851 | FDRE        |
+| DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/xbar/inst/gen_samd.crossbar_samd/aresetn_d                                         |    645 | FDRE        |
+| DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_img_reader/inst_ds_fifo_0/pea_tvalid_enable |    641 | LUT3        |
++--------------------------------------------------------------------------------------------------------------------------------+--------+-------------+
+
+

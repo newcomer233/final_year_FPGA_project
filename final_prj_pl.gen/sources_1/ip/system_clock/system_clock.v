@@ -53,14 +53,14 @@
 //  Output     Output      Phase    Duty Cycle   Pk-to-Pk     Phase
 //   Clock     Freq (MHz)  (degrees)    (%)     Jitter (ps)  Error (ps)
 //----------------------------------------------------------------------------
-// sysclk_200M__200.00000______0.000______50.0_______98.146_____89.971
+// sysclk_200M__100.00000______0.000______50.0______112.316_____89.971
 // eth_125M__125.00000______0.000______50.0______107.523_____89.971
-// refclk_100M__100.00000______0.000______50.0______112.316_____89.971
+// refclk_333M__333.33333______0.000______50.0_______88.896_____89.971
 //
 //----------------------------------------------------------------------------
 // Input Clock   Freq (MHz)    Input Jitter (UI)
 //----------------------------------------------------------------------------
-// __primary_________200.000____________0.010
+// __primary__________200.00____________0.010
 
 `timescale 1ps/1ps
 
@@ -71,12 +71,11 @@ module system_clock
   // Clock out ports
   output        sysclk_200M,
   output        eth_125M,
-  output        refclk_100M,
+  output        refclk_333M,
   // Status and control signals
   output        locked,
  // Clock in ports
-  input         clk_in1_p,
-  input         clk_in1_n
+  input         clk_in1
  );
 
   system_clock_clk_wiz inst
@@ -84,12 +83,11 @@ module system_clock
   // Clock out ports  
   .sysclk_200M(sysclk_200M),
   .eth_125M(eth_125M),
-  .refclk_100M(refclk_100M),
+  .refclk_333M(refclk_333M),
   // Status and control signals               
   .locked(locked),
  // Clock in ports
-  .clk_in1_p(clk_in1_p),
-  .clk_in1_n(clk_in1_n)
+  .clk_in1(clk_in1)
   );
 
 endmodule

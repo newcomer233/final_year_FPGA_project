@@ -45,3 +45,8 @@ set_property IOSTANDARD LVCMOS18 [get_ports rgmii_tx_ctl]
 
 set_property PACKAGE_PIN V3 [get_ports rgmii_txc]
 set_property IOSTANDARD LVCMOS18 [get_ports rgmii_txc]
+# ===== RGMII TX DELAY ==============UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst/tri_mode_ethernet_mac_i/rgmii_interface/delay_rgmii_tx_ctl
+
+set_property DELAY_VALUE 950 [get_cells {UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst/tri_mode_ethernet_mac_i/rgmii_interface/delay_rgmii_tx_clk}]
+# set_property DELAY_VALUE 1000 [get_cells {UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst/tri_mode_ethernet_mac_i/rgmii_interface/delay_rgmii_tx_clk_casc}]
+# set_property DELAY_VALUE 500 [get_cells {UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst/tri_mode_ethernet_mac_i/rgmii_interface/delay_rgmii_tx_ctl}]

@@ -2,7 +2,7 @@
 // Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2.2 (win64) Build 6060944 Thu Mar 06 19:10:01 MST 2025
-// Date        : Wed Jul  2 14:25:41 2025
+// Date        : Tue Jul 29 21:22:25 2025
 // Host        : LAPTOP-VEGJAO5A running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_tri_mode_ethernet_mac_0_0/RGMII_tri_mode_ethernet_mac_0_0_stub.v
@@ -14,11 +14,11 @@
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
-(* CORE_GENERATION_INFO = "RGMII_tri_mode_ethernet_mac_0_0,RGMII_tri_mode_ethernet_mac_0_0_support,{x_ipProduct=Vivado 2024.2.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=tri_mode_ethernet_mac,x_ipVersion=9.0,x_ipCoreRevision=37,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,c_component_name=RGMII_tri_mode_ethernet_mac_0_0,c_physical_interface=RGMII,c_half_duplex=false,c_has_host=true,c_has_mdio=true,c_mdio_external=true,c_axilite_freq=200,c_add_filter=true,c_at_entries=4,c_family=zynquplus,c_mac_speed=TRI_SPEED,c_int_clk_src=User_Clk2,c_int_mode_type=BASEX,c_has_stats=true,c_num_stats=34,c_cntr_rst=true,c_stats_width=64,c_avb=false,c_1588=0,c_tx_inband_cf_enable=false,c_rx_inband_ts_enable=false,c_tx_tuser_width=1,c_rx_vec_width=79,c_tx_vec_width=79,c_addr_width=12,c_pfc=false,c_mii_io=true,c_data_rate=1_Gbps,x_ipLicense=tri_mode_eth_mac@2015.04(bought),x_ipLicense=eth_avb_endpoint@2015.04(bought)}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "RGMII_tri_mode_ethernet_mac_0_0_support,Vivado 2024.2.2" *) 
+(* CORE_GENERATION_INFO = "RGMII_tri_mode_ethernet_mac_0_0,RGMII_tri_mode_ethernet_mac_0_0_support,{x_ipProduct=Vivado 2024.2.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=tri_mode_ethernet_mac,x_ipVersion=9.0,x_ipCoreRevision=37,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,c_component_name=RGMII_tri_mode_ethernet_mac_0_0,c_physical_interface=RGMII,c_half_duplex=false,c_has_host=true,c_has_mdio=true,c_mdio_external=true,c_axilite_freq=100,c_add_filter=true,c_at_entries=4,c_family=zynquplus,c_mac_speed=SPEED_1000_MBPS,c_int_clk_src=User_Clk2,c_int_mode_type=BASEX,c_has_stats=true,c_num_stats=34,c_cntr_rst=true,c_stats_width=64,c_avb=false,c_1588=0,c_tx_inband_cf_enable=false,c_rx_inband_ts_enable=false,c_tx_tuser_width=1,c_rx_vec_width=79,c_tx_vec_width=79,c_addr_width=12,c_pfc=false,c_mii_io=true,c_data_rate=1_Gbps,x_ipLicense=tri_mode_eth_mac@2015.04(bought),x_ipLicense=eth_avb_endpoint@2015.04(bought)}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "RGMII_tri_mode_ethernet_mac_0_0_support,Vivado 2024.2.2" *) 
 module RGMII_tri_mode_ethernet_mac_0_0(gtx_clk, refclk, glbl_rstn, rx_axi_rstn, 
-  tx_axi_rstn, rx_enable, rx_statistics_vector, rx_statistics_valid, rx_mac_aclk, rx_reset, 
+  tx_axi_rstn, rx_statistics_vector, rx_statistics_valid, rx_mac_aclk, rx_reset, 
   rx_axis_mac_tdata, rx_axis_mac_tvalid, rx_axis_mac_tlast, rx_axis_mac_tuser, 
-  rx_axis_filter_tuser, tx_enable, tx_ifg_delay, tx_statistics_vector, tx_statistics_valid, 
+  rx_axis_filter_tuser, tx_ifg_delay, tx_statistics_vector, tx_statistics_valid, 
   tx_mac_aclk, tx_reset, tx_axis_mac_tdata, tx_axis_mac_tvalid, tx_axis_mac_tlast, 
   tx_axis_mac_tuser, tx_axis_mac_tready, pause_req, pause_val, speedis100, speedis10100, 
   rgmii_txd, rgmii_tx_ctl, rgmii_txc, rgmii_rxd, rgmii_rx_ctl, rgmii_rxc, inband_link_status, 
@@ -26,7 +26,7 @@ module RGMII_tri_mode_ethernet_mac_0_0(gtx_clk, refclk, glbl_rstn, rx_axi_rstn,
   s_axi_awvalid, s_axi_awready, s_axi_wdata, s_axi_wvalid, s_axi_wready, s_axi_bresp, 
   s_axi_bvalid, s_axi_bready, s_axi_araddr, s_axi_arvalid, s_axi_arready, s_axi_rdata, 
   s_axi_rresp, s_axi_rvalid, s_axi_rready, mac_irq)
-/* synthesis syn_black_box black_box_pad_pin="glbl_rstn,rx_axi_rstn,tx_axi_rstn,rx_enable,rx_statistics_vector[27:0],rx_statistics_valid,rx_reset,rx_axis_mac_tdata[7:0],rx_axis_mac_tvalid,rx_axis_mac_tlast,rx_axis_mac_tuser,rx_axis_filter_tuser[4:0],tx_enable,tx_ifg_delay[7:0],tx_statistics_vector[31:0],tx_statistics_valid,tx_reset,tx_axis_mac_tdata[7:0],tx_axis_mac_tvalid,tx_axis_mac_tlast,tx_axis_mac_tuser,tx_axis_mac_tready,pause_req,pause_val[15:0],speedis100,speedis10100,rgmii_txd[3:0],rgmii_tx_ctl,rgmii_txc,rgmii_rxd[3:0],rgmii_rx_ctl,rgmii_rxc,inband_link_status,inband_clock_speed[1:0],inband_duplex_status,mdio,mdc,s_axi_resetn,s_axi_awaddr[11:0],s_axi_awvalid,s_axi_awready,s_axi_wdata[31:0],s_axi_wvalid,s_axi_wready,s_axi_bresp[1:0],s_axi_bvalid,s_axi_bready,s_axi_araddr[11:0],s_axi_arvalid,s_axi_arready,s_axi_rdata[31:0],s_axi_rresp[1:0],s_axi_rvalid,s_axi_rready,mac_irq" */
+/* synthesis syn_black_box black_box_pad_pin="glbl_rstn,rx_axi_rstn,tx_axi_rstn,rx_statistics_vector[27:0],rx_statistics_valid,rx_reset,rx_axis_mac_tdata[7:0],rx_axis_mac_tvalid,rx_axis_mac_tlast,rx_axis_mac_tuser,rx_axis_filter_tuser[4:0],tx_ifg_delay[7:0],tx_statistics_vector[31:0],tx_statistics_valid,tx_reset,tx_axis_mac_tdata[7:0],tx_axis_mac_tvalid,tx_axis_mac_tlast,tx_axis_mac_tuser,tx_axis_mac_tready,pause_req,pause_val[15:0],speedis100,speedis10100,rgmii_txd[3:0],rgmii_tx_ctl,rgmii_txc,rgmii_rxd[3:0],rgmii_rx_ctl,rgmii_rxc,inband_link_status,inband_clock_speed[1:0],inband_duplex_status,mdio,mdc,s_axi_resetn,s_axi_awaddr[11:0],s_axi_awvalid,s_axi_awready,s_axi_wdata[31:0],s_axi_wvalid,s_axi_wready,s_axi_bresp[1:0],s_axi_bvalid,s_axi_bready,s_axi_araddr[11:0],s_axi_arvalid,s_axi_arready,s_axi_rdata[31:0],s_axi_rresp[1:0],s_axi_rvalid,s_axi_rready,mac_irq" */
 /* synthesis syn_force_seq_prim="gtx_clk" */
 /* synthesis syn_force_seq_prim="refclk" */
 /* synthesis syn_force_seq_prim="rx_mac_aclk" */
@@ -37,7 +37,6 @@ module RGMII_tri_mode_ethernet_mac_0_0(gtx_clk, refclk, glbl_rstn, rx_axi_rstn,
   input glbl_rstn;
   input rx_axi_rstn;
   input tx_axi_rstn;
-  output rx_enable;
   output [27:0]rx_statistics_vector;
   output rx_statistics_valid;
   output rx_mac_aclk /* synthesis syn_isclock = 1 */;
@@ -47,7 +46,6 @@ module RGMII_tri_mode_ethernet_mac_0_0(gtx_clk, refclk, glbl_rstn, rx_axi_rstn,
   output rx_axis_mac_tlast;
   output rx_axis_mac_tuser;
   output [4:0]rx_axis_filter_tuser;
-  output tx_enable;
   input [7:0]tx_ifg_delay;
   output [31:0]tx_statistics_vector;
   output tx_statistics_valid;

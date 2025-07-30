@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2.2 (64-bit)
+# SW Build 6060944 on Thu Mar 06 19:10:01 MST 2025
+# IP Build 6050500 on Thu Mar  6 23:33:39 MST 2025
+# SharedData Build 6060542 on Thu Mar 06 10:31:07 MST 2025
+# Start of session at: Thu Jul 24 18:23:20 2025
+# Process ID         : 23932
+# Current directory  : E:/final_prj/final_prj_pl/final_prj_pl.runs/ila_0_synth_1
+# Command line       : vivado.exe -log ila_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ila_0.tcl
+# Log file           : E:/final_prj/final_prj_pl/final_prj_pl.runs/ila_0_synth_1/ila_0.vds
+# Journal file       : E:/final_prj/final_prj_pl/final_prj_pl.runs/ila_0_synth_1\vivado.jou
+# Running On         : LAPTOP-VEGJAO5A
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 102673 MB
+# Swap memory        : 6442 MB
+# Total Virtual      : 109116 MB
+# Available Virtual  : 84173 MB
+#-----------------------------------------------------------
+source ila_0.tcl -notrace

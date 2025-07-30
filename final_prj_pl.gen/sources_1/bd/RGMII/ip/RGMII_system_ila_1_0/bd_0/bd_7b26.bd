@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x165CF084D32ED1F3",
+      "boundary_crc": "0x165CF0848F390B64",
       "design_src": "SBD",
       "device": "xczu9eg-ffvb1156-2-i",
       "name": "bd_7b26",
@@ -44,7 +44,7 @@
             "value_src": "default"
           },
           "CLK_DOMAIN": {
-            "value": "RGMII_axis_clk_0",
+            "value": "RGMII_axis_clk",
             "value_src": "default"
           },
           "DATA_WIDTH": {
@@ -52,7 +52,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "200000000",
+            "value": "100000000",
             "value_src": "default"
           },
           "HAS_BRESP": {
@@ -166,12 +166,12 @@
             "value": "resetn"
           },
           "CLK_DOMAIN": {
-            "value": "RGMII_axis_clk_0",
+            "value": "RGMII_axis_clk",
             "value_src": "default_prop"
           },
           "FREQ_HZ": {
-            "value": "200000000",
-            "value_src": "default_prop"
+            "value": "100000000",
+            "value_src": "default"
           },
           "FREQ_TOLERANCE_HZ": {
             "value": "0",
@@ -226,7 +226,7 @@
             "value": "0"
           },
           "C_ILA_CLK_FREQ": {
-            "value": "200000000"
+            "value": "100000000"
           },
           "C_INPUT_PIPE_STAGES": {
             "value": "0"

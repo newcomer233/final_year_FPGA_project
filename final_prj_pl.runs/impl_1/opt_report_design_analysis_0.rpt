@@ -1,0 +1,31 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2.2 (win64) Build 6060944 Thu Mar 06 19:10:01 MST 2025
+| Date         : Wed Jul 30 12:48:13 2025
+| Host         : LAPTOP-VEGJAO5A running 64-bit major release  (build 9200)
+| Command      : report_design_analysis -logic_level_distribution -file opt_report_design_analysis_0.rpt
+| Design       : TOP
+| Device       : xczu9eg
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Design Analysis
+
+Table of Contents
+-----------------
+1. Logic Level Distribution
+
+1. Logic Level Distribution
+---------------------------
+
++-------------------------------------------------------+-------------+---+---+-----+-----+---+----+----+
+|                    End Point Clock                    | Requirement | 0 | 2 |  6  |  7  | 9 | 10 | 11 |
++-------------------------------------------------------+-------------+---+---+-----+-----+---+----+----+
+| UDP_TOP/RGMII_wrapper/RGMII_i/TEMAC/inst_rgmii_tx_clk | 0.000ns     | 0 | 5 |   0 |   0 | 0 |  0 |  0 |
+| mmcm_clkout0                                          | 3.333ns     | 0 | 0 | 289 | 693 | 4 |  3 |  5 |
+| refclk_333M_system_clock                              | 3.000ns     | 1 | 0 |   0 |   0 | 0 |  0 |  0 |
++-------------------------------------------------------+-------------+---+---+-----+-----+---+----+----+
+* Columns represent the logic levels per end point clock
+** Distribution is for top worst 1000 paths
+
+

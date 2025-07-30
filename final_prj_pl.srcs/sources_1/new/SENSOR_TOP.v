@@ -28,6 +28,11 @@ module SENSOR_TOP(
     input   IMU_SPI_DIN,
     output  IMU_SPI_DOUT,
     inout   IMU_SPI_CS_N,
+
+    inout   IMU_SPI_CLK_2,
+    input   IMU_SPI_DIN_2,
+    output  IMU_SPI_DOUT_2,
+    inout   IMU_SPI_CS_N_2,
     //ADC PHYSICLA interface
     inout   SPI_CLK,
     input   SPI_DIN_A,
@@ -51,8 +56,10 @@ module SENSOR_TOP(
     output reg adc_data_valid,
 
     output reg imu_data_valid,
-    output reg [111:0] imu_data
+    output reg [111:0] imu_data,
 
+    output reg imu_data_valid_2,
+    output reg [111:0] imu_data_2
     );
     //internal IMU data interface
     wire         IMU_DATA_VALID;
@@ -63,6 +70,16 @@ module SENSOR_TOP(
     wire  [15:0] GYRO_X;
     wire  [15:0] GYRO_Y;
     wire  [15:0] GYRO_Z;
+
+    wire         IMU_DATA_VALID_2;
+    wire  [15:0] TEMP_data_2;
+    wire  [15:0] ACCEL_X_2;
+    wire  [15:0] ACCEL_Y_2;
+    wire  [15:0] ACCEL_Z_2;
+    wire  [15:0] GYRO_X_2;
+    wire  [15:0] GYRO_Y_2;
+    wire  [15:0] GYRO_Z_2;
+
     //internal ADC digital interface
     wire  [15:0] spi_rx_data_A;
     wire  [15:0] spi_rx_data_B;
@@ -93,6 +110,24 @@ module SENSOR_TOP(
     .GYRO_Z         (GYRO_Z        )
     );
 
+    IMU_TOP IMU_TOP_2(
+    .sysclk_200m    (sysclk_200m),
+    .axi_rstn       (axi_rstn),
+    //IMU digital interface
+    .IMU_SPI_CLK    (IMU_SPI_CLK_2 ),
+    .IMU_SPI_DIN    (IMU_SPI_DIN_2 ),
+    .IMU_SPI_DOUT   (IMU_SPI_DOUT_2),
+    .IMU_SPI_CS_N   (IMU_SPI_CS_N_2),
+    //IMU data interface
+    .IMU_DATA_VALID (IMU_DATA_VALID_2 ),
+    .TEMP_data      (TEMP_data_2     ),
+    .ACCEL_X        (ACCEL_X_2     ),
+    .ACCEL_Y        (ACCEL_Y_2     ),
+    .ACCEL_Z        (ACCEL_Z_2     ),
+    .GYRO_X         (GYRO_X_2      ),
+    .GYRO_Y         (GYRO_Y_2      ),
+    .GYRO_Z         (GYRO_Z_2      )
+    );
     
     ADC_TOP ADC_TOP(
     .sysclk_200m    (sysclk_200m),
@@ -126,13 +161,13 @@ module SENSOR_TOP(
     .spi_rx_data_valid      (spi_rx_data_valid)
     );
 
-    I2C_TOP I2C_TOP(
-    .sysclk_200m    (sysclk_200m),
-    .axi_rstn       (axi_rstn),
-    //I2C digital interface
-    .I2C_SCL        (I2C_SCL),
-    .I2C_SDA        (I2C_SDA)
-    );
+    // I2C_TOP I2C_TOP(
+    // .sysclk_200m    (sysclk_200m),
+    // .axi_rstn       (axi_rstn),
+    // //I2C digital interface
+    // .I2C_SCL        (I2C_SCL),
+    // .I2C_SDA        (I2C_SDA)
+    // );
     always@(posedge sysclk_200m) begin
         if(spi_rx_data_valid) begin
             adc_data <= {
@@ -169,6 +204,25 @@ module SENSOR_TOP(
         else begin
             imu_data_valid <= 1'b0;
             imu_data <= 112'h0;
+        end
+    end
+
+    always@(posedge sysclk_200m) begin
+        if(IMU_DATA_VALID_2) begin
+            imu_data_2 <= {
+                TEMP_data_2,
+                ACCEL_X_2,
+                ACCEL_Y_2,
+                ACCEL_Z_2,
+                GYRO_X_2,
+                GYRO_Y_2,
+                GYRO_Z_2
+            };
+            imu_data_valid_2 <= 1'b1;
+        end
+        else begin
+            imu_data_valid_2 <= 1'b0;
+            imu_data_2 <= 112'h0;
         end
     end
 endmodule

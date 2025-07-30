@@ -61,7 +61,7 @@
 
 
 #ifdef XILINX_SIMULATOR
-DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_core::sc_module_name& nm) : DDR4_axi_interconnect_0_imp_xbar_0_sc(nm), aclk("aclk"), aresetn("aresetn"), s_axi_awid("s_axi_awid"), s_axi_awaddr("s_axi_awaddr"), s_axi_awlen("s_axi_awlen"), s_axi_awsize("s_axi_awsize"), s_axi_awburst("s_axi_awburst"), s_axi_awlock("s_axi_awlock"), s_axi_awcache("s_axi_awcache"), s_axi_awprot("s_axi_awprot"), s_axi_awqos("s_axi_awqos"), s_axi_awvalid("s_axi_awvalid"), s_axi_awready("s_axi_awready"), s_axi_wdata("s_axi_wdata"), s_axi_wstrb("s_axi_wstrb"), s_axi_wlast("s_axi_wlast"), s_axi_wvalid("s_axi_wvalid"), s_axi_wready("s_axi_wready"), s_axi_bid("s_axi_bid"), s_axi_bresp("s_axi_bresp"), s_axi_bvalid("s_axi_bvalid"), s_axi_bready("s_axi_bready"), s_axi_arid("s_axi_arid"), s_axi_araddr("s_axi_araddr"), s_axi_arlen("s_axi_arlen"), s_axi_arsize("s_axi_arsize"), s_axi_arburst("s_axi_arburst"), s_axi_arlock("s_axi_arlock"), s_axi_arcache("s_axi_arcache"), s_axi_arprot("s_axi_arprot"), s_axi_arqos("s_axi_arqos"), s_axi_arvalid("s_axi_arvalid"), s_axi_arready("s_axi_arready"), s_axi_rid("s_axi_rid"), s_axi_rdata("s_axi_rdata"), s_axi_rresp("s_axi_rresp"), s_axi_rlast("s_axi_rlast"), s_axi_rvalid("s_axi_rvalid"), s_axi_rready("s_axi_rready"), m_axi_awid("m_axi_awid"), m_axi_awaddr("m_axi_awaddr"), m_axi_awlen("m_axi_awlen"), m_axi_awsize("m_axi_awsize"), m_axi_awburst("m_axi_awburst"), m_axi_awlock("m_axi_awlock"), m_axi_awcache("m_axi_awcache"), m_axi_awprot("m_axi_awprot"), m_axi_awregion("m_axi_awregion"), m_axi_awqos("m_axi_awqos"), m_axi_awvalid("m_axi_awvalid"), m_axi_awready("m_axi_awready"), m_axi_wdata("m_axi_wdata"), m_axi_wstrb("m_axi_wstrb"), m_axi_wlast("m_axi_wlast"), m_axi_wvalid("m_axi_wvalid"), m_axi_wready("m_axi_wready"), m_axi_bid("m_axi_bid"), m_axi_bresp("m_axi_bresp"), m_axi_bvalid("m_axi_bvalid"), m_axi_bready("m_axi_bready"), m_axi_arid("m_axi_arid"), m_axi_araddr("m_axi_araddr"), m_axi_arlen("m_axi_arlen"), m_axi_arsize("m_axi_arsize"), m_axi_arburst("m_axi_arburst"), m_axi_arlock("m_axi_arlock"), m_axi_arcache("m_axi_arcache"), m_axi_arprot("m_axi_arprot"), m_axi_arregion("m_axi_arregion"), m_axi_arqos("m_axi_arqos"), m_axi_arvalid("m_axi_arvalid"), m_axi_arready("m_axi_arready"), m_axi_rid("m_axi_rid"), m_axi_rdata("m_axi_rdata"), m_axi_rresp("m_axi_rresp"), m_axi_rlast("m_axi_rlast"), m_axi_rvalid("m_axi_rvalid"), m_axi_rready("m_axi_rready")
+DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_core::sc_module_name& nm) : DDR4_axi_interconnect_0_imp_xbar_0_sc(nm), aclk("aclk"), aresetn("aresetn"), s_axi_awid("s_axi_awid"), s_axi_awaddr("s_axi_awaddr"), s_axi_awlen("s_axi_awlen"), s_axi_awsize("s_axi_awsize"), s_axi_awburst("s_axi_awburst"), s_axi_awlock("s_axi_awlock"), s_axi_awcache("s_axi_awcache"), s_axi_awprot("s_axi_awprot"), s_axi_awqos("s_axi_awqos"), s_axi_awuser("s_axi_awuser"), s_axi_awvalid("s_axi_awvalid"), s_axi_awready("s_axi_awready"), s_axi_wdata("s_axi_wdata"), s_axi_wstrb("s_axi_wstrb"), s_axi_wlast("s_axi_wlast"), s_axi_wvalid("s_axi_wvalid"), s_axi_wready("s_axi_wready"), s_axi_bid("s_axi_bid"), s_axi_bresp("s_axi_bresp"), s_axi_bvalid("s_axi_bvalid"), s_axi_bready("s_axi_bready"), s_axi_arid("s_axi_arid"), s_axi_araddr("s_axi_araddr"), s_axi_arlen("s_axi_arlen"), s_axi_arsize("s_axi_arsize"), s_axi_arburst("s_axi_arburst"), s_axi_arlock("s_axi_arlock"), s_axi_arcache("s_axi_arcache"), s_axi_arprot("s_axi_arprot"), s_axi_arqos("s_axi_arqos"), s_axi_aruser("s_axi_aruser"), s_axi_arvalid("s_axi_arvalid"), s_axi_arready("s_axi_arready"), s_axi_rid("s_axi_rid"), s_axi_rdata("s_axi_rdata"), s_axi_rresp("s_axi_rresp"), s_axi_rlast("s_axi_rlast"), s_axi_rvalid("s_axi_rvalid"), s_axi_rready("s_axi_rready"), m_axi_awid("m_axi_awid"), m_axi_awaddr("m_axi_awaddr"), m_axi_awlen("m_axi_awlen"), m_axi_awsize("m_axi_awsize"), m_axi_awburst("m_axi_awburst"), m_axi_awlock("m_axi_awlock"), m_axi_awcache("m_axi_awcache"), m_axi_awprot("m_axi_awprot"), m_axi_awregion("m_axi_awregion"), m_axi_awqos("m_axi_awqos"), m_axi_awuser("m_axi_awuser"), m_axi_awvalid("m_axi_awvalid"), m_axi_awready("m_axi_awready"), m_axi_wdata("m_axi_wdata"), m_axi_wstrb("m_axi_wstrb"), m_axi_wlast("m_axi_wlast"), m_axi_wvalid("m_axi_wvalid"), m_axi_wready("m_axi_wready"), m_axi_bid("m_axi_bid"), m_axi_bresp("m_axi_bresp"), m_axi_bvalid("m_axi_bvalid"), m_axi_bready("m_axi_bready"), m_axi_arid("m_axi_arid"), m_axi_araddr("m_axi_araddr"), m_axi_arlen("m_axi_arlen"), m_axi_arsize("m_axi_arsize"), m_axi_arburst("m_axi_arburst"), m_axi_arlock("m_axi_arlock"), m_axi_arcache("m_axi_arcache"), m_axi_arprot("m_axi_arprot"), m_axi_arregion("m_axi_arregion"), m_axi_arqos("m_axi_arqos"), m_axi_aruser("m_axi_aruser"), m_axi_arvalid("m_axi_arvalid"), m_axi_arready("m_axi_arready"), m_axi_rid("m_axi_rid"), m_axi_rdata("m_axi_rdata"), m_axi_rresp("m_axi_rresp"), m_axi_rlast("m_axi_rlast"), m_axi_rvalid("m_axi_rvalid"), m_axi_rready("m_axi_rready")
 {
 
   // initialize pins
@@ -79,6 +79,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awcache_converter_0 = NULL;
   mp_s_axi_awprot_converter_0 = NULL;
   mp_s_axi_awqos_converter_0 = NULL;
+  mp_s_axi_awuser_converter_0 = NULL;
   mp_s_axi_awvalid_converter_0 = NULL;
   mp_s_axi_awready_converter_0 = NULL;
   mp_s_axi_wdata_converter_0 = NULL;
@@ -99,6 +100,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arcache_converter_0 = NULL;
   mp_s_axi_arprot_converter_0 = NULL;
   mp_s_axi_arqos_converter_0 = NULL;
+  mp_s_axi_aruser_converter_0 = NULL;
   mp_s_axi_arvalid_converter_0 = NULL;
   mp_s_axi_arready_converter_0 = NULL;
   mp_s_axi_rid_converter_0 = NULL;
@@ -132,6 +134,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awcache_converter_1 = NULL;
   mp_s_axi_awprot_converter_1 = NULL;
   mp_s_axi_awqos_converter_1 = NULL;
+  mp_s_axi_awuser_converter_1 = NULL;
   mp_s_axi_awvalid_converter_1 = NULL;
   mp_s_axi_awready_converter_1 = NULL;
   mp_s_axi_wdata_converter_1 = NULL;
@@ -152,6 +155,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arcache_converter_1 = NULL;
   mp_s_axi_arprot_converter_1 = NULL;
   mp_s_axi_arqos_converter_1 = NULL;
+  mp_s_axi_aruser_converter_1 = NULL;
   mp_s_axi_arvalid_converter_1 = NULL;
   mp_s_axi_arready_converter_1 = NULL;
   mp_s_axi_rid_converter_1 = NULL;
@@ -170,6 +174,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awcache_converter_2 = NULL;
   mp_s_axi_awprot_converter_2 = NULL;
   mp_s_axi_awqos_converter_2 = NULL;
+  mp_s_axi_awuser_converter_2 = NULL;
   mp_s_axi_awvalid_converter_2 = NULL;
   mp_s_axi_awready_converter_2 = NULL;
   mp_s_axi_wdata_converter_2 = NULL;
@@ -190,6 +195,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arcache_converter_2 = NULL;
   mp_s_axi_arprot_converter_2 = NULL;
   mp_s_axi_arqos_converter_2 = NULL;
+  mp_s_axi_aruser_converter_2 = NULL;
   mp_s_axi_arvalid_converter_2 = NULL;
   mp_s_axi_arready_converter_2 = NULL;
   mp_s_axi_rid_converter_2 = NULL;
@@ -208,6 +214,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awcache_converter_3 = NULL;
   mp_s_axi_awprot_converter_3 = NULL;
   mp_s_axi_awqos_converter_3 = NULL;
+  mp_s_axi_awuser_converter_3 = NULL;
   mp_s_axi_awvalid_converter_3 = NULL;
   mp_s_axi_awready_converter_3 = NULL;
   mp_s_axi_wdata_converter_3 = NULL;
@@ -228,6 +235,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arcache_converter_3 = NULL;
   mp_s_axi_arprot_converter_3 = NULL;
   mp_s_axi_arqos_converter_3 = NULL;
+  mp_s_axi_aruser_converter_3 = NULL;
   mp_s_axi_arvalid_converter_3 = NULL;
   mp_s_axi_arready_converter_3 = NULL;
   mp_s_axi_rid_converter_3 = NULL;
@@ -258,6 +266,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_arprot = NULL;
   mp_s_axi_split_arqos = NULL;
   mp_s_axi_split_arsize = NULL;
+  mp_s_axi_split_aruser = NULL;
   mp_s_axi_split_arvalid = NULL;
   mp_s_axi_split_awaddr = NULL;
   mp_s_axi_split_awburst = NULL;
@@ -268,6 +277,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_awprot = NULL;
   mp_s_axi_split_awqos = NULL;
   mp_s_axi_split_awsize = NULL;
+  mp_s_axi_split_awuser = NULL;
   mp_s_axi_split_awvalid = NULL;
   mp_s_axi_split_bready = NULL;
   mp_s_axi_split_rready = NULL;
@@ -275,10 +285,10 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_wlast = NULL;
   mp_s_axi_split_wstrb = NULL;
   mp_s_axi_split_wvalid = NULL;
-  mp_s_axi_split_awid = new xsc::xsc_split<8, 4>("s_axi_split_awid");
+  mp_s_axi_split_awid = new xsc::xsc_split<72, 4>("s_axi_split_awid");
   mp_s_axi_split_awid->in_port(s_axi_awid);
   mp_s_axi_split_awid->out_port[0](s_axi_split_awid_out_0);
-    mp_s_axi_split_awid->add_mask(0,2,0);
+    mp_s_axi_split_awid->add_mask(0,18,0);
   mp_s_axi_split_awaddr = new xsc::xsc_split<160, 4>("s_axi_split_awaddr");
   mp_s_axi_split_awaddr->in_port(s_axi_awaddr);
   mp_s_axi_split_awaddr->out_port[0](s_axi_split_awaddr_out_0);
@@ -311,6 +321,10 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_awqos->in_port(s_axi_awqos);
   mp_s_axi_split_awqos->out_port[0](s_axi_split_awqos_out_0);
     mp_s_axi_split_awqos->add_mask(0,4,0);
+  mp_s_axi_split_awuser = new xsc::xsc_split<64, 4>("s_axi_split_awuser");
+  mp_s_axi_split_awuser->in_port(s_axi_awuser);
+  mp_s_axi_split_awuser->out_port[0](s_axi_split_awuser_out_0);
+    mp_s_axi_split_awuser->add_mask(0,16,0);
   mp_s_axi_split_awvalid = new xsc::xsc_split<4, 4>("s_axi_split_awvalid");
   mp_s_axi_split_awvalid->in_port(s_axi_awvalid);
   mp_s_axi_split_awvalid->out_port[0](s_axi_split_awvalid_out_0);
@@ -319,14 +333,14 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_concat_awready->in_port[0](s_axi_concat_awready_out_0);
   mp_s_axi_concat_awready->out_port(s_axi_awready);
     mp_s_axi_concat_awready->offset_port(0, 0);
-  mp_s_axi_split_wdata = new xsc::xsc_split<1024, 4>("s_axi_split_wdata");
+  mp_s_axi_split_wdata = new xsc::xsc_split<512, 4>("s_axi_split_wdata");
   mp_s_axi_split_wdata->in_port(s_axi_wdata);
   mp_s_axi_split_wdata->out_port[0](s_axi_split_wdata_out_0);
-    mp_s_axi_split_wdata->add_mask(0,256,0);
-  mp_s_axi_split_wstrb = new xsc::xsc_split<128, 4>("s_axi_split_wstrb");
+    mp_s_axi_split_wdata->add_mask(0,128,0);
+  mp_s_axi_split_wstrb = new xsc::xsc_split<64, 4>("s_axi_split_wstrb");
   mp_s_axi_split_wstrb->in_port(s_axi_wstrb);
   mp_s_axi_split_wstrb->out_port[0](s_axi_split_wstrb_out_0);
-    mp_s_axi_split_wstrb->add_mask(0,32,0);
+    mp_s_axi_split_wstrb->add_mask(0,16,0);
   mp_s_axi_split_wlast = new xsc::xsc_split<4, 4>("s_axi_split_wlast");
   mp_s_axi_split_wlast->in_port(s_axi_wlast);
   mp_s_axi_split_wlast->out_port[0](s_axi_split_wlast_out_0);
@@ -339,7 +353,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_concat_wready->in_port[0](s_axi_concat_wready_out_0);
   mp_s_axi_concat_wready->out_port(s_axi_wready);
     mp_s_axi_concat_wready->offset_port(0, 0);
-  mp_s_axi_concat_bid = new xsc::xsc_concatenator<8, 4>("s_axi_concat_bid");
+  mp_s_axi_concat_bid = new xsc::xsc_concatenator<72, 4>("s_axi_concat_bid");
   mp_s_axi_concat_bid->in_port[0](s_axi_concat_bid_out_0);
   mp_s_axi_concat_bid->out_port(s_axi_bid);
     mp_s_axi_concat_bid->offset_port(0, 0);
@@ -355,10 +369,10 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_bready->in_port(s_axi_bready);
   mp_s_axi_split_bready->out_port[0](s_axi_split_bready_out_0);
     mp_s_axi_split_bready->add_mask(0,1,0);
-  mp_s_axi_split_arid = new xsc::xsc_split<8, 4>("s_axi_split_arid");
+  mp_s_axi_split_arid = new xsc::xsc_split<72, 4>("s_axi_split_arid");
   mp_s_axi_split_arid->in_port(s_axi_arid);
   mp_s_axi_split_arid->out_port[0](s_axi_split_arid_out_0);
-    mp_s_axi_split_arid->add_mask(0,2,0);
+    mp_s_axi_split_arid->add_mask(0,18,0);
   mp_s_axi_split_araddr = new xsc::xsc_split<160, 4>("s_axi_split_araddr");
   mp_s_axi_split_araddr->in_port(s_axi_araddr);
   mp_s_axi_split_araddr->out_port[0](s_axi_split_araddr_out_0);
@@ -391,6 +405,10 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_arqos->in_port(s_axi_arqos);
   mp_s_axi_split_arqos->out_port[0](s_axi_split_arqos_out_0);
     mp_s_axi_split_arqos->add_mask(0,4,0);
+  mp_s_axi_split_aruser = new xsc::xsc_split<64, 4>("s_axi_split_aruser");
+  mp_s_axi_split_aruser->in_port(s_axi_aruser);
+  mp_s_axi_split_aruser->out_port[0](s_axi_split_aruser_out_0);
+    mp_s_axi_split_aruser->add_mask(0,16,0);
   mp_s_axi_split_arvalid = new xsc::xsc_split<4, 4>("s_axi_split_arvalid");
   mp_s_axi_split_arvalid->in_port(s_axi_arvalid);
   mp_s_axi_split_arvalid->out_port[0](s_axi_split_arvalid_out_0);
@@ -399,11 +417,11 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_concat_arready->in_port[0](s_axi_concat_arready_out_0);
   mp_s_axi_concat_arready->out_port(s_axi_arready);
     mp_s_axi_concat_arready->offset_port(0, 0);
-  mp_s_axi_concat_rid = new xsc::xsc_concatenator<8, 4>("s_axi_concat_rid");
+  mp_s_axi_concat_rid = new xsc::xsc_concatenator<72, 4>("s_axi_concat_rid");
   mp_s_axi_concat_rid->in_port[0](s_axi_concat_rid_out_0);
   mp_s_axi_concat_rid->out_port(s_axi_rid);
     mp_s_axi_concat_rid->offset_port(0, 0);
-  mp_s_axi_concat_rdata = new xsc::xsc_concatenator<1024, 4>("s_axi_concat_rdata");
+  mp_s_axi_concat_rdata = new xsc::xsc_concatenator<512, 4>("s_axi_concat_rdata");
   mp_s_axi_concat_rdata->in_port[0](s_axi_concat_rdata_out_0);
   mp_s_axi_concat_rdata->out_port(s_axi_rdata);
     mp_s_axi_concat_rdata->offset_port(0, 0);
@@ -425,7 +443,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
     mp_s_axi_split_rready->add_mask(0,1,0);
   
   mp_s_axi_split_awid->out_port[1](s_axi_split_awid_out_1);
-    mp_s_axi_split_awid->add_mask(1,4,2);
+    mp_s_axi_split_awid->add_mask(1,36,18);
   
   mp_s_axi_split_awaddr->out_port[1](s_axi_split_awaddr_out_1);
     mp_s_axi_split_awaddr->add_mask(1,80,40);
@@ -451,16 +469,19 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_awqos->out_port[1](s_axi_split_awqos_out_1);
     mp_s_axi_split_awqos->add_mask(1,8,4);
   
+  mp_s_axi_split_awuser->out_port[1](s_axi_split_awuser_out_1);
+    mp_s_axi_split_awuser->add_mask(1,32,16);
+  
   mp_s_axi_split_awvalid->out_port[1](s_axi_split_awvalid_out_1);
     mp_s_axi_split_awvalid->add_mask(1,2,1);
   mp_s_axi_concat_awready->in_port[1](s_axi_concat_awready_out_1);
   mp_s_axi_concat_awready->offset_port(1, 1);
   
   mp_s_axi_split_wdata->out_port[1](s_axi_split_wdata_out_1);
-    mp_s_axi_split_wdata->add_mask(1,512,256);
+    mp_s_axi_split_wdata->add_mask(1,256,128);
   
   mp_s_axi_split_wstrb->out_port[1](s_axi_split_wstrb_out_1);
-    mp_s_axi_split_wstrb->add_mask(1,64,32);
+    mp_s_axi_split_wstrb->add_mask(1,32,16);
   
   mp_s_axi_split_wlast->out_port[1](s_axi_split_wlast_out_1);
     mp_s_axi_split_wlast->add_mask(1,2,1);
@@ -470,7 +491,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_concat_wready->in_port[1](s_axi_concat_wready_out_1);
   mp_s_axi_concat_wready->offset_port(1, 1);
   mp_s_axi_concat_bid->in_port[1](s_axi_concat_bid_out_1);
-  mp_s_axi_concat_bid->offset_port(1, 2);
+  mp_s_axi_concat_bid->offset_port(1, 18);
   mp_s_axi_concat_bresp->in_port[1](s_axi_concat_bresp_out_1);
   mp_s_axi_concat_bresp->offset_port(1, 2);
   mp_s_axi_concat_bvalid->in_port[1](s_axi_concat_bvalid_out_1);
@@ -480,7 +501,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
     mp_s_axi_split_bready->add_mask(1,2,1);
   
   mp_s_axi_split_arid->out_port[1](s_axi_split_arid_out_1);
-    mp_s_axi_split_arid->add_mask(1,4,2);
+    mp_s_axi_split_arid->add_mask(1,36,18);
   
   mp_s_axi_split_araddr->out_port[1](s_axi_split_araddr_out_1);
     mp_s_axi_split_araddr->add_mask(1,80,40);
@@ -506,14 +527,17 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_arqos->out_port[1](s_axi_split_arqos_out_1);
     mp_s_axi_split_arqos->add_mask(1,8,4);
   
+  mp_s_axi_split_aruser->out_port[1](s_axi_split_aruser_out_1);
+    mp_s_axi_split_aruser->add_mask(1,32,16);
+  
   mp_s_axi_split_arvalid->out_port[1](s_axi_split_arvalid_out_1);
     mp_s_axi_split_arvalid->add_mask(1,2,1);
   mp_s_axi_concat_arready->in_port[1](s_axi_concat_arready_out_1);
   mp_s_axi_concat_arready->offset_port(1, 1);
   mp_s_axi_concat_rid->in_port[1](s_axi_concat_rid_out_1);
-  mp_s_axi_concat_rid->offset_port(1, 2);
+  mp_s_axi_concat_rid->offset_port(1, 18);
   mp_s_axi_concat_rdata->in_port[1](s_axi_concat_rdata_out_1);
-  mp_s_axi_concat_rdata->offset_port(1, 256);
+  mp_s_axi_concat_rdata->offset_port(1, 128);
   mp_s_axi_concat_rresp->in_port[1](s_axi_concat_rresp_out_1);
   mp_s_axi_concat_rresp->offset_port(1, 2);
   mp_s_axi_concat_rlast->in_port[1](s_axi_concat_rlast_out_1);
@@ -525,7 +549,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
     mp_s_axi_split_rready->add_mask(1,2,1);
   
   mp_s_axi_split_awid->out_port[2](s_axi_split_awid_out_2);
-    mp_s_axi_split_awid->add_mask(2,6,4);
+    mp_s_axi_split_awid->add_mask(2,54,36);
   
   mp_s_axi_split_awaddr->out_port[2](s_axi_split_awaddr_out_2);
     mp_s_axi_split_awaddr->add_mask(2,120,80);
@@ -551,16 +575,19 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_awqos->out_port[2](s_axi_split_awqos_out_2);
     mp_s_axi_split_awqos->add_mask(2,12,8);
   
+  mp_s_axi_split_awuser->out_port[2](s_axi_split_awuser_out_2);
+    mp_s_axi_split_awuser->add_mask(2,48,32);
+  
   mp_s_axi_split_awvalid->out_port[2](s_axi_split_awvalid_out_2);
     mp_s_axi_split_awvalid->add_mask(2,3,2);
   mp_s_axi_concat_awready->in_port[2](s_axi_concat_awready_out_2);
   mp_s_axi_concat_awready->offset_port(2, 2);
   
   mp_s_axi_split_wdata->out_port[2](s_axi_split_wdata_out_2);
-    mp_s_axi_split_wdata->add_mask(2,768,512);
+    mp_s_axi_split_wdata->add_mask(2,384,256);
   
   mp_s_axi_split_wstrb->out_port[2](s_axi_split_wstrb_out_2);
-    mp_s_axi_split_wstrb->add_mask(2,96,64);
+    mp_s_axi_split_wstrb->add_mask(2,48,32);
   
   mp_s_axi_split_wlast->out_port[2](s_axi_split_wlast_out_2);
     mp_s_axi_split_wlast->add_mask(2,3,2);
@@ -570,7 +597,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_concat_wready->in_port[2](s_axi_concat_wready_out_2);
   mp_s_axi_concat_wready->offset_port(2, 2);
   mp_s_axi_concat_bid->in_port[2](s_axi_concat_bid_out_2);
-  mp_s_axi_concat_bid->offset_port(2, 4);
+  mp_s_axi_concat_bid->offset_port(2, 36);
   mp_s_axi_concat_bresp->in_port[2](s_axi_concat_bresp_out_2);
   mp_s_axi_concat_bresp->offset_port(2, 4);
   mp_s_axi_concat_bvalid->in_port[2](s_axi_concat_bvalid_out_2);
@@ -580,7 +607,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
     mp_s_axi_split_bready->add_mask(2,3,2);
   
   mp_s_axi_split_arid->out_port[2](s_axi_split_arid_out_2);
-    mp_s_axi_split_arid->add_mask(2,6,4);
+    mp_s_axi_split_arid->add_mask(2,54,36);
   
   mp_s_axi_split_araddr->out_port[2](s_axi_split_araddr_out_2);
     mp_s_axi_split_araddr->add_mask(2,120,80);
@@ -606,14 +633,17 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_arqos->out_port[2](s_axi_split_arqos_out_2);
     mp_s_axi_split_arqos->add_mask(2,12,8);
   
+  mp_s_axi_split_aruser->out_port[2](s_axi_split_aruser_out_2);
+    mp_s_axi_split_aruser->add_mask(2,48,32);
+  
   mp_s_axi_split_arvalid->out_port[2](s_axi_split_arvalid_out_2);
     mp_s_axi_split_arvalid->add_mask(2,3,2);
   mp_s_axi_concat_arready->in_port[2](s_axi_concat_arready_out_2);
   mp_s_axi_concat_arready->offset_port(2, 2);
   mp_s_axi_concat_rid->in_port[2](s_axi_concat_rid_out_2);
-  mp_s_axi_concat_rid->offset_port(2, 4);
+  mp_s_axi_concat_rid->offset_port(2, 36);
   mp_s_axi_concat_rdata->in_port[2](s_axi_concat_rdata_out_2);
-  mp_s_axi_concat_rdata->offset_port(2, 512);
+  mp_s_axi_concat_rdata->offset_port(2, 256);
   mp_s_axi_concat_rresp->in_port[2](s_axi_concat_rresp_out_2);
   mp_s_axi_concat_rresp->offset_port(2, 4);
   mp_s_axi_concat_rlast->in_port[2](s_axi_concat_rlast_out_2);
@@ -625,7 +655,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
     mp_s_axi_split_rready->add_mask(2,3,2);
   
   mp_s_axi_split_awid->out_port[3](s_axi_split_awid_out_3);
-    mp_s_axi_split_awid->add_mask(3,8,6);
+    mp_s_axi_split_awid->add_mask(3,72,54);
   
   mp_s_axi_split_awaddr->out_port[3](s_axi_split_awaddr_out_3);
     mp_s_axi_split_awaddr->add_mask(3,160,120);
@@ -651,16 +681,19 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_awqos->out_port[3](s_axi_split_awqos_out_3);
     mp_s_axi_split_awqos->add_mask(3,16,12);
   
+  mp_s_axi_split_awuser->out_port[3](s_axi_split_awuser_out_3);
+    mp_s_axi_split_awuser->add_mask(3,64,48);
+  
   mp_s_axi_split_awvalid->out_port[3](s_axi_split_awvalid_out_3);
     mp_s_axi_split_awvalid->add_mask(3,4,3);
   mp_s_axi_concat_awready->in_port[3](s_axi_concat_awready_out_3);
   mp_s_axi_concat_awready->offset_port(3, 3);
   
   mp_s_axi_split_wdata->out_port[3](s_axi_split_wdata_out_3);
-    mp_s_axi_split_wdata->add_mask(3,1024,768);
+    mp_s_axi_split_wdata->add_mask(3,512,384);
   
   mp_s_axi_split_wstrb->out_port[3](s_axi_split_wstrb_out_3);
-    mp_s_axi_split_wstrb->add_mask(3,128,96);
+    mp_s_axi_split_wstrb->add_mask(3,64,48);
   
   mp_s_axi_split_wlast->out_port[3](s_axi_split_wlast_out_3);
     mp_s_axi_split_wlast->add_mask(3,4,3);
@@ -670,7 +703,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_concat_wready->in_port[3](s_axi_concat_wready_out_3);
   mp_s_axi_concat_wready->offset_port(3, 3);
   mp_s_axi_concat_bid->in_port[3](s_axi_concat_bid_out_3);
-  mp_s_axi_concat_bid->offset_port(3, 6);
+  mp_s_axi_concat_bid->offset_port(3, 54);
   mp_s_axi_concat_bresp->in_port[3](s_axi_concat_bresp_out_3);
   mp_s_axi_concat_bresp->offset_port(3, 6);
   mp_s_axi_concat_bvalid->in_port[3](s_axi_concat_bvalid_out_3);
@@ -680,7 +713,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
     mp_s_axi_split_bready->add_mask(3,4,3);
   
   mp_s_axi_split_arid->out_port[3](s_axi_split_arid_out_3);
-    mp_s_axi_split_arid->add_mask(3,8,6);
+    mp_s_axi_split_arid->add_mask(3,72,54);
   
   mp_s_axi_split_araddr->out_port[3](s_axi_split_araddr_out_3);
     mp_s_axi_split_araddr->add_mask(3,160,120);
@@ -706,14 +739,17 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_arqos->out_port[3](s_axi_split_arqos_out_3);
     mp_s_axi_split_arqos->add_mask(3,16,12);
   
+  mp_s_axi_split_aruser->out_port[3](s_axi_split_aruser_out_3);
+    mp_s_axi_split_aruser->add_mask(3,64,48);
+  
   mp_s_axi_split_arvalid->out_port[3](s_axi_split_arvalid_out_3);
     mp_s_axi_split_arvalid->add_mask(3,4,3);
   mp_s_axi_concat_arready->in_port[3](s_axi_concat_arready_out_3);
   mp_s_axi_concat_arready->offset_port(3, 3);
   mp_s_axi_concat_rid->in_port[3](s_axi_concat_rid_out_3);
-  mp_s_axi_concat_rid->offset_port(3, 6);
+  mp_s_axi_concat_rid->offset_port(3, 54);
   mp_s_axi_concat_rdata->in_port[3](s_axi_concat_rdata_out_3);
-  mp_s_axi_concat_rdata->offset_port(3, 768);
+  mp_s_axi_concat_rdata->offset_port(3, 384);
   mp_s_axi_concat_rresp->in_port[3](s_axi_concat_rresp_out_3);
   mp_s_axi_concat_rresp->offset_port(3, 6);
   mp_s_axi_concat_rlast->in_port[3](s_axi_concat_rlast_out_3);
@@ -738,12 +774,12 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
 
   // 'S00_AXI' transactor parameters
     xsc::common_cpp::properties S00_AXI_transactor_param_props;
-    S00_AXI_transactor_param_props.addLong("DATA_WIDTH", "256");
+    S00_AXI_transactor_param_props.addLong("DATA_WIDTH", "128");
     S00_AXI_transactor_param_props.addLong("FREQ_HZ", "300000000");
-    S00_AXI_transactor_param_props.addLong("ID_WIDTH", "2");
+    S00_AXI_transactor_param_props.addLong("ID_WIDTH", "18");
     S00_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
-    S00_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
-    S00_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "0");
+    S00_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "16");
+    S00_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "16");
     S00_AXI_transactor_param_props.addLong("WUSER_WIDTH", "0");
     S00_AXI_transactor_param_props.addLong("RUSER_WIDTH", "0");
     S00_AXI_transactor_param_props.addLong("BUSER_WIDTH", "0");
@@ -771,11 +807,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     S00_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
     S00_AXI_transactor_param_props.addString("CLK_DOMAIN", "DDR4_ddr4_0_0_c0_ddr4_ui_clk");
 
-    mp_S00_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<256,40,2,1,1,1,1,1>("S00_AXI_transactor", S00_AXI_transactor_param_props);
+    mp_S00_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<128,40,18,16,1,1,16,1>("S00_AXI_transactor", S00_AXI_transactor_param_props);
 
     // S00_AXI' transactor ports
 
-    mp_s_axi_awid_converter_0 = new xsc::common::vector2vector_converter<8,2>("s_axi_awid_converter_0");
+    mp_s_axi_awid_converter_0 = new xsc::common::vector2vector_converter<72,18>("s_axi_awid_converter_0");
     mp_s_axi_awid_converter_0->vector_in(s_axi_split_awid_out_0);
     mp_s_axi_awid_converter_0->vector_out(m_s_axi_awid_converter_0_signal);
     mp_S00_AXI_transactor->AWID(m_s_axi_awid_converter_0_signal);
@@ -811,6 +847,10 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_awqos_converter_0->vector_in(s_axi_split_awqos_out_0);
     mp_s_axi_awqos_converter_0->vector_out(m_s_axi_awqos_converter_0_signal);
     mp_S00_AXI_transactor->AWQOS(m_s_axi_awqos_converter_0_signal);
+    mp_s_axi_awuser_converter_0 = new xsc::common::vector2vector_converter<64,16>("s_axi_awuser_converter_0");
+    mp_s_axi_awuser_converter_0->vector_in(s_axi_split_awuser_out_0);
+    mp_s_axi_awuser_converter_0->vector_out(m_s_axi_awuser_converter_0_signal);
+    mp_S00_AXI_transactor->AWUSER(m_s_axi_awuser_converter_0_signal);
     mp_s_axi_awvalid_converter_0 = new xsc::common::vectorN2scalar_converter<4>("s_axi_awvalid_converter_0");
     mp_s_axi_awvalid_converter_0->vector_in(s_axi_split_awvalid_out_0);
     mp_s_axi_awvalid_converter_0->scalar_out(m_s_axi_awvalid_converter_0_signal);
@@ -819,11 +859,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_awready_converter_0->scalar_in(m_s_axi_awready_converter_0_signal);
     mp_s_axi_awready_converter_0->vector_out(s_axi_concat_awready_out_0);
     mp_S00_AXI_transactor->AWREADY(m_s_axi_awready_converter_0_signal);
-    mp_s_axi_wdata_converter_0 = new xsc::common::vector2vector_converter<1024,256>("s_axi_wdata_converter_0");
+    mp_s_axi_wdata_converter_0 = new xsc::common::vector2vector_converter<512,128>("s_axi_wdata_converter_0");
     mp_s_axi_wdata_converter_0->vector_in(s_axi_split_wdata_out_0);
     mp_s_axi_wdata_converter_0->vector_out(m_s_axi_wdata_converter_0_signal);
     mp_S00_AXI_transactor->WDATA(m_s_axi_wdata_converter_0_signal);
-    mp_s_axi_wstrb_converter_0 = new xsc::common::vector2vector_converter<128,32>("s_axi_wstrb_converter_0");
+    mp_s_axi_wstrb_converter_0 = new xsc::common::vector2vector_converter<64,16>("s_axi_wstrb_converter_0");
     mp_s_axi_wstrb_converter_0->vector_in(s_axi_split_wstrb_out_0);
     mp_s_axi_wstrb_converter_0->vector_out(m_s_axi_wstrb_converter_0_signal);
     mp_S00_AXI_transactor->WSTRB(m_s_axi_wstrb_converter_0_signal);
@@ -839,7 +879,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_wready_converter_0->scalar_in(m_s_axi_wready_converter_0_signal);
     mp_s_axi_wready_converter_0->vector_out(s_axi_concat_wready_out_0);
     mp_S00_AXI_transactor->WREADY(m_s_axi_wready_converter_0_signal);
-    mp_s_axi_bid_converter_0 = new xsc::common::vector2vector_converter<2,8>("s_axi_bid_converter_0");
+    mp_s_axi_bid_converter_0 = new xsc::common::vector2vector_converter<18,72>("s_axi_bid_converter_0");
     mp_s_axi_bid_converter_0->vector_in(m_s_axi_bid_converter_0_signal);
     mp_s_axi_bid_converter_0->vector_out(s_axi_concat_bid_out_0);
     mp_S00_AXI_transactor->BID(m_s_axi_bid_converter_0_signal);
@@ -855,7 +895,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_bready_converter_0->vector_in(s_axi_split_bready_out_0);
     mp_s_axi_bready_converter_0->scalar_out(m_s_axi_bready_converter_0_signal);
     mp_S00_AXI_transactor->BREADY(m_s_axi_bready_converter_0_signal);
-    mp_s_axi_arid_converter_0 = new xsc::common::vector2vector_converter<8,2>("s_axi_arid_converter_0");
+    mp_s_axi_arid_converter_0 = new xsc::common::vector2vector_converter<72,18>("s_axi_arid_converter_0");
     mp_s_axi_arid_converter_0->vector_in(s_axi_split_arid_out_0);
     mp_s_axi_arid_converter_0->vector_out(m_s_axi_arid_converter_0_signal);
     mp_S00_AXI_transactor->ARID(m_s_axi_arid_converter_0_signal);
@@ -891,6 +931,10 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_arqos_converter_0->vector_in(s_axi_split_arqos_out_0);
     mp_s_axi_arqos_converter_0->vector_out(m_s_axi_arqos_converter_0_signal);
     mp_S00_AXI_transactor->ARQOS(m_s_axi_arqos_converter_0_signal);
+    mp_s_axi_aruser_converter_0 = new xsc::common::vector2vector_converter<64,16>("s_axi_aruser_converter_0");
+    mp_s_axi_aruser_converter_0->vector_in(s_axi_split_aruser_out_0);
+    mp_s_axi_aruser_converter_0->vector_out(m_s_axi_aruser_converter_0_signal);
+    mp_S00_AXI_transactor->ARUSER(m_s_axi_aruser_converter_0_signal);
     mp_s_axi_arvalid_converter_0 = new xsc::common::vectorN2scalar_converter<4>("s_axi_arvalid_converter_0");
     mp_s_axi_arvalid_converter_0->vector_in(s_axi_split_arvalid_out_0);
     mp_s_axi_arvalid_converter_0->scalar_out(m_s_axi_arvalid_converter_0_signal);
@@ -899,11 +943,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_arready_converter_0->scalar_in(m_s_axi_arready_converter_0_signal);
     mp_s_axi_arready_converter_0->vector_out(s_axi_concat_arready_out_0);
     mp_S00_AXI_transactor->ARREADY(m_s_axi_arready_converter_0_signal);
-    mp_s_axi_rid_converter_0 = new xsc::common::vector2vector_converter<2,8>("s_axi_rid_converter_0");
+    mp_s_axi_rid_converter_0 = new xsc::common::vector2vector_converter<18,72>("s_axi_rid_converter_0");
     mp_s_axi_rid_converter_0->vector_in(m_s_axi_rid_converter_0_signal);
     mp_s_axi_rid_converter_0->vector_out(s_axi_concat_rid_out_0);
     mp_S00_AXI_transactor->RID(m_s_axi_rid_converter_0_signal);
-    mp_s_axi_rdata_converter_0 = new xsc::common::vector2vector_converter<256,1024>("s_axi_rdata_converter_0");
+    mp_s_axi_rdata_converter_0 = new xsc::common::vector2vector_converter<128,512>("s_axi_rdata_converter_0");
     mp_s_axi_rdata_converter_0->vector_in(m_s_axi_rdata_converter_0_signal);
     mp_s_axi_rdata_converter_0->vector_out(s_axi_concat_rdata_out_0);
     mp_S00_AXI_transactor->RDATA(m_s_axi_rdata_converter_0_signal);
@@ -943,12 +987,12 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
 
   // 'M00_AXI' transactor parameters
     xsc::common_cpp::properties M00_AXI_transactor_param_props;
-    M00_AXI_transactor_param_props.addLong("DATA_WIDTH", "256");
+    M00_AXI_transactor_param_props.addLong("DATA_WIDTH", "128");
     M00_AXI_transactor_param_props.addLong("FREQ_HZ", "300000000");
-    M00_AXI_transactor_param_props.addLong("ID_WIDTH", "2");
+    M00_AXI_transactor_param_props.addLong("ID_WIDTH", "18");
     M00_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
-    M00_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
-    M00_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "0");
+    M00_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "16");
+    M00_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "16");
     M00_AXI_transactor_param_props.addLong("WUSER_WIDTH", "0");
     M00_AXI_transactor_param_props.addLong("RUSER_WIDTH", "0");
     M00_AXI_transactor_param_props.addLong("BUSER_WIDTH", "0");
@@ -962,8 +1006,8 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     M00_AXI_transactor_param_props.addLong("HAS_BRESP", "1");
     M00_AXI_transactor_param_props.addLong("HAS_RRESP", "1");
     M00_AXI_transactor_param_props.addLong("SUPPORTS_NARROW_BURST", "1");
-    M00_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "2");
-    M00_AXI_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "2");
+    M00_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "8");
+    M00_AXI_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "8");
     M00_AXI_transactor_param_props.addLong("MAX_BURST_LENGTH", "256");
     M00_AXI_transactor_param_props.addLong("NUM_READ_THREADS", "1");
     M00_AXI_transactor_param_props.addLong("NUM_WRITE_THREADS", "1");
@@ -976,7 +1020,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     M00_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
     M00_AXI_transactor_param_props.addString("CLK_DOMAIN", "DDR4_ddr4_0_0_c0_ddr4_ui_clk");
 
-    mp_M00_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<256,40,2,1,1,1,1,1>("M00_AXI_transactor", M00_AXI_transactor_param_props);
+    mp_M00_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<128,40,18,16,1,1,16,1>("M00_AXI_transactor", M00_AXI_transactor_param_props);
 
     // M00_AXI' transactor ports
 
@@ -993,6 +1037,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_M00_AXI_transactor->AWPROT(m_axi_awprot);
     mp_M00_AXI_transactor->AWREGION(m_axi_awregion);
     mp_M00_AXI_transactor->AWQOS(m_axi_awqos);
+    mp_M00_AXI_transactor->AWUSER(m_axi_awuser);
     mp_m_axi_awvalid_converter = new xsc::common::scalar2vectorN_converter<1>("m_axi_awvalid_converter");
     mp_m_axi_awvalid_converter->scalar_in(m_m_axi_awvalid_converter_signal);
     mp_m_axi_awvalid_converter->vector_out(m_axi_awvalid);
@@ -1038,6 +1083,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_M00_AXI_transactor->ARPROT(m_axi_arprot);
     mp_M00_AXI_transactor->ARREGION(m_axi_arregion);
     mp_M00_AXI_transactor->ARQOS(m_axi_arqos);
+    mp_M00_AXI_transactor->ARUSER(m_axi_aruser);
     mp_m_axi_arvalid_converter = new xsc::common::scalar2vectorN_converter<1>("m_axi_arvalid_converter");
     mp_m_axi_arvalid_converter->scalar_in(m_m_axi_arvalid_converter_signal);
     mp_m_axi_arvalid_converter->vector_out(m_axi_arvalid);
@@ -1081,12 +1127,12 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
 
   // 'S01_AXI' transactor parameters
     xsc::common_cpp::properties S01_AXI_transactor_param_props;
-    S01_AXI_transactor_param_props.addLong("DATA_WIDTH", "256");
+    S01_AXI_transactor_param_props.addLong("DATA_WIDTH", "128");
     S01_AXI_transactor_param_props.addLong("FREQ_HZ", "300000000");
-    S01_AXI_transactor_param_props.addLong("ID_WIDTH", "2");
+    S01_AXI_transactor_param_props.addLong("ID_WIDTH", "18");
     S01_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
-    S01_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
-    S01_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "0");
+    S01_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "16");
+    S01_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "16");
     S01_AXI_transactor_param_props.addLong("WUSER_WIDTH", "0");
     S01_AXI_transactor_param_props.addLong("RUSER_WIDTH", "0");
     S01_AXI_transactor_param_props.addLong("BUSER_WIDTH", "0");
@@ -1114,11 +1160,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     S01_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
     S01_AXI_transactor_param_props.addString("CLK_DOMAIN", "DDR4_ddr4_0_0_c0_ddr4_ui_clk");
 
-    mp_S01_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<256,40,2,1,1,1,1,1>("S01_AXI_transactor", S01_AXI_transactor_param_props);
+    mp_S01_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<128,40,18,16,1,1,16,1>("S01_AXI_transactor", S01_AXI_transactor_param_props);
 
     // S01_AXI' transactor ports
 
-    mp_s_axi_awid_converter_1 = new xsc::common::vector2vector_converter<8,2>("s_axi_awid_converter_1");
+    mp_s_axi_awid_converter_1 = new xsc::common::vector2vector_converter<72,18>("s_axi_awid_converter_1");
     mp_s_axi_awid_converter_1->vector_in(s_axi_split_awid_out_1);
     mp_s_axi_awid_converter_1->vector_out(m_s_axi_awid_converter_1_signal);
     mp_S01_AXI_transactor->AWID(m_s_axi_awid_converter_1_signal);
@@ -1154,6 +1200,10 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_awqos_converter_1->vector_in(s_axi_split_awqos_out_1);
     mp_s_axi_awqos_converter_1->vector_out(m_s_axi_awqos_converter_1_signal);
     mp_S01_AXI_transactor->AWQOS(m_s_axi_awqos_converter_1_signal);
+    mp_s_axi_awuser_converter_1 = new xsc::common::vector2vector_converter<64,16>("s_axi_awuser_converter_1");
+    mp_s_axi_awuser_converter_1->vector_in(s_axi_split_awuser_out_1);
+    mp_s_axi_awuser_converter_1->vector_out(m_s_axi_awuser_converter_1_signal);
+    mp_S01_AXI_transactor->AWUSER(m_s_axi_awuser_converter_1_signal);
     mp_s_axi_awvalid_converter_1 = new xsc::common::vectorN2scalar_converter<4>("s_axi_awvalid_converter_1");
     mp_s_axi_awvalid_converter_1->vector_in(s_axi_split_awvalid_out_1);
     mp_s_axi_awvalid_converter_1->scalar_out(m_s_axi_awvalid_converter_1_signal);
@@ -1162,11 +1212,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_awready_converter_1->scalar_in(m_s_axi_awready_converter_1_signal);
     mp_s_axi_awready_converter_1->vector_out(s_axi_concat_awready_out_1);
     mp_S01_AXI_transactor->AWREADY(m_s_axi_awready_converter_1_signal);
-    mp_s_axi_wdata_converter_1 = new xsc::common::vector2vector_converter<1024,256>("s_axi_wdata_converter_1");
+    mp_s_axi_wdata_converter_1 = new xsc::common::vector2vector_converter<512,128>("s_axi_wdata_converter_1");
     mp_s_axi_wdata_converter_1->vector_in(s_axi_split_wdata_out_1);
     mp_s_axi_wdata_converter_1->vector_out(m_s_axi_wdata_converter_1_signal);
     mp_S01_AXI_transactor->WDATA(m_s_axi_wdata_converter_1_signal);
-    mp_s_axi_wstrb_converter_1 = new xsc::common::vector2vector_converter<128,32>("s_axi_wstrb_converter_1");
+    mp_s_axi_wstrb_converter_1 = new xsc::common::vector2vector_converter<64,16>("s_axi_wstrb_converter_1");
     mp_s_axi_wstrb_converter_1->vector_in(s_axi_split_wstrb_out_1);
     mp_s_axi_wstrb_converter_1->vector_out(m_s_axi_wstrb_converter_1_signal);
     mp_S01_AXI_transactor->WSTRB(m_s_axi_wstrb_converter_1_signal);
@@ -1182,7 +1232,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_wready_converter_1->scalar_in(m_s_axi_wready_converter_1_signal);
     mp_s_axi_wready_converter_1->vector_out(s_axi_concat_wready_out_1);
     mp_S01_AXI_transactor->WREADY(m_s_axi_wready_converter_1_signal);
-    mp_s_axi_bid_converter_1 = new xsc::common::vector2vector_converter<2,8>("s_axi_bid_converter_1");
+    mp_s_axi_bid_converter_1 = new xsc::common::vector2vector_converter<18,72>("s_axi_bid_converter_1");
     mp_s_axi_bid_converter_1->vector_in(m_s_axi_bid_converter_1_signal);
     mp_s_axi_bid_converter_1->vector_out(s_axi_concat_bid_out_1);
     mp_S01_AXI_transactor->BID(m_s_axi_bid_converter_1_signal);
@@ -1198,7 +1248,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_bready_converter_1->vector_in(s_axi_split_bready_out_1);
     mp_s_axi_bready_converter_1->scalar_out(m_s_axi_bready_converter_1_signal);
     mp_S01_AXI_transactor->BREADY(m_s_axi_bready_converter_1_signal);
-    mp_s_axi_arid_converter_1 = new xsc::common::vector2vector_converter<8,2>("s_axi_arid_converter_1");
+    mp_s_axi_arid_converter_1 = new xsc::common::vector2vector_converter<72,18>("s_axi_arid_converter_1");
     mp_s_axi_arid_converter_1->vector_in(s_axi_split_arid_out_1);
     mp_s_axi_arid_converter_1->vector_out(m_s_axi_arid_converter_1_signal);
     mp_S01_AXI_transactor->ARID(m_s_axi_arid_converter_1_signal);
@@ -1234,6 +1284,10 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_arqos_converter_1->vector_in(s_axi_split_arqos_out_1);
     mp_s_axi_arqos_converter_1->vector_out(m_s_axi_arqos_converter_1_signal);
     mp_S01_AXI_transactor->ARQOS(m_s_axi_arqos_converter_1_signal);
+    mp_s_axi_aruser_converter_1 = new xsc::common::vector2vector_converter<64,16>("s_axi_aruser_converter_1");
+    mp_s_axi_aruser_converter_1->vector_in(s_axi_split_aruser_out_1);
+    mp_s_axi_aruser_converter_1->vector_out(m_s_axi_aruser_converter_1_signal);
+    mp_S01_AXI_transactor->ARUSER(m_s_axi_aruser_converter_1_signal);
     mp_s_axi_arvalid_converter_1 = new xsc::common::vectorN2scalar_converter<4>("s_axi_arvalid_converter_1");
     mp_s_axi_arvalid_converter_1->vector_in(s_axi_split_arvalid_out_1);
     mp_s_axi_arvalid_converter_1->scalar_out(m_s_axi_arvalid_converter_1_signal);
@@ -1242,11 +1296,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_arready_converter_1->scalar_in(m_s_axi_arready_converter_1_signal);
     mp_s_axi_arready_converter_1->vector_out(s_axi_concat_arready_out_1);
     mp_S01_AXI_transactor->ARREADY(m_s_axi_arready_converter_1_signal);
-    mp_s_axi_rid_converter_1 = new xsc::common::vector2vector_converter<2,8>("s_axi_rid_converter_1");
+    mp_s_axi_rid_converter_1 = new xsc::common::vector2vector_converter<18,72>("s_axi_rid_converter_1");
     mp_s_axi_rid_converter_1->vector_in(m_s_axi_rid_converter_1_signal);
     mp_s_axi_rid_converter_1->vector_out(s_axi_concat_rid_out_1);
     mp_S01_AXI_transactor->RID(m_s_axi_rid_converter_1_signal);
-    mp_s_axi_rdata_converter_1 = new xsc::common::vector2vector_converter<256,1024>("s_axi_rdata_converter_1");
+    mp_s_axi_rdata_converter_1 = new xsc::common::vector2vector_converter<128,512>("s_axi_rdata_converter_1");
     mp_s_axi_rdata_converter_1->vector_in(m_s_axi_rdata_converter_1_signal);
     mp_s_axi_rdata_converter_1->vector_out(s_axi_concat_rdata_out_1);
     mp_S01_AXI_transactor->RDATA(m_s_axi_rdata_converter_1_signal);
@@ -1286,12 +1340,12 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
 
   // 'S02_AXI' transactor parameters
     xsc::common_cpp::properties S02_AXI_transactor_param_props;
-    S02_AXI_transactor_param_props.addLong("DATA_WIDTH", "256");
+    S02_AXI_transactor_param_props.addLong("DATA_WIDTH", "128");
     S02_AXI_transactor_param_props.addLong("FREQ_HZ", "300000000");
-    S02_AXI_transactor_param_props.addLong("ID_WIDTH", "2");
+    S02_AXI_transactor_param_props.addLong("ID_WIDTH", "18");
     S02_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
-    S02_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
-    S02_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "0");
+    S02_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "16");
+    S02_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "16");
     S02_AXI_transactor_param_props.addLong("WUSER_WIDTH", "0");
     S02_AXI_transactor_param_props.addLong("RUSER_WIDTH", "0");
     S02_AXI_transactor_param_props.addLong("BUSER_WIDTH", "0");
@@ -1308,8 +1362,8 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     S02_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "2");
     S02_AXI_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "2");
     S02_AXI_transactor_param_props.addLong("MAX_BURST_LENGTH", "256");
-    S02_AXI_transactor_param_props.addLong("NUM_READ_THREADS", "4");
-    S02_AXI_transactor_param_props.addLong("NUM_WRITE_THREADS", "4");
+    S02_AXI_transactor_param_props.addLong("NUM_READ_THREADS", "1");
+    S02_AXI_transactor_param_props.addLong("NUM_WRITE_THREADS", "1");
     S02_AXI_transactor_param_props.addLong("RUSER_BITS_PER_BYTE", "0");
     S02_AXI_transactor_param_props.addLong("WUSER_BITS_PER_BYTE", "0");
     S02_AXI_transactor_param_props.addLong("HAS_SIZE", "1");
@@ -1319,11 +1373,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     S02_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
     S02_AXI_transactor_param_props.addString("CLK_DOMAIN", "DDR4_ddr4_0_0_c0_ddr4_ui_clk");
 
-    mp_S02_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<256,40,2,1,1,1,1,1>("S02_AXI_transactor", S02_AXI_transactor_param_props);
+    mp_S02_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<128,40,18,16,1,1,16,1>("S02_AXI_transactor", S02_AXI_transactor_param_props);
 
     // S02_AXI' transactor ports
 
-    mp_s_axi_awid_converter_2 = new xsc::common::vector2vector_converter<8,2>("s_axi_awid_converter_2");
+    mp_s_axi_awid_converter_2 = new xsc::common::vector2vector_converter<72,18>("s_axi_awid_converter_2");
     mp_s_axi_awid_converter_2->vector_in(s_axi_split_awid_out_2);
     mp_s_axi_awid_converter_2->vector_out(m_s_axi_awid_converter_2_signal);
     mp_S02_AXI_transactor->AWID(m_s_axi_awid_converter_2_signal);
@@ -1359,6 +1413,10 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_awqos_converter_2->vector_in(s_axi_split_awqos_out_2);
     mp_s_axi_awqos_converter_2->vector_out(m_s_axi_awqos_converter_2_signal);
     mp_S02_AXI_transactor->AWQOS(m_s_axi_awqos_converter_2_signal);
+    mp_s_axi_awuser_converter_2 = new xsc::common::vector2vector_converter<64,16>("s_axi_awuser_converter_2");
+    mp_s_axi_awuser_converter_2->vector_in(s_axi_split_awuser_out_2);
+    mp_s_axi_awuser_converter_2->vector_out(m_s_axi_awuser_converter_2_signal);
+    mp_S02_AXI_transactor->AWUSER(m_s_axi_awuser_converter_2_signal);
     mp_s_axi_awvalid_converter_2 = new xsc::common::vectorN2scalar_converter<4>("s_axi_awvalid_converter_2");
     mp_s_axi_awvalid_converter_2->vector_in(s_axi_split_awvalid_out_2);
     mp_s_axi_awvalid_converter_2->scalar_out(m_s_axi_awvalid_converter_2_signal);
@@ -1367,11 +1425,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_awready_converter_2->scalar_in(m_s_axi_awready_converter_2_signal);
     mp_s_axi_awready_converter_2->vector_out(s_axi_concat_awready_out_2);
     mp_S02_AXI_transactor->AWREADY(m_s_axi_awready_converter_2_signal);
-    mp_s_axi_wdata_converter_2 = new xsc::common::vector2vector_converter<1024,256>("s_axi_wdata_converter_2");
+    mp_s_axi_wdata_converter_2 = new xsc::common::vector2vector_converter<512,128>("s_axi_wdata_converter_2");
     mp_s_axi_wdata_converter_2->vector_in(s_axi_split_wdata_out_2);
     mp_s_axi_wdata_converter_2->vector_out(m_s_axi_wdata_converter_2_signal);
     mp_S02_AXI_transactor->WDATA(m_s_axi_wdata_converter_2_signal);
-    mp_s_axi_wstrb_converter_2 = new xsc::common::vector2vector_converter<128,32>("s_axi_wstrb_converter_2");
+    mp_s_axi_wstrb_converter_2 = new xsc::common::vector2vector_converter<64,16>("s_axi_wstrb_converter_2");
     mp_s_axi_wstrb_converter_2->vector_in(s_axi_split_wstrb_out_2);
     mp_s_axi_wstrb_converter_2->vector_out(m_s_axi_wstrb_converter_2_signal);
     mp_S02_AXI_transactor->WSTRB(m_s_axi_wstrb_converter_2_signal);
@@ -1387,7 +1445,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_wready_converter_2->scalar_in(m_s_axi_wready_converter_2_signal);
     mp_s_axi_wready_converter_2->vector_out(s_axi_concat_wready_out_2);
     mp_S02_AXI_transactor->WREADY(m_s_axi_wready_converter_2_signal);
-    mp_s_axi_bid_converter_2 = new xsc::common::vector2vector_converter<2,8>("s_axi_bid_converter_2");
+    mp_s_axi_bid_converter_2 = new xsc::common::vector2vector_converter<18,72>("s_axi_bid_converter_2");
     mp_s_axi_bid_converter_2->vector_in(m_s_axi_bid_converter_2_signal);
     mp_s_axi_bid_converter_2->vector_out(s_axi_concat_bid_out_2);
     mp_S02_AXI_transactor->BID(m_s_axi_bid_converter_2_signal);
@@ -1403,7 +1461,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_bready_converter_2->vector_in(s_axi_split_bready_out_2);
     mp_s_axi_bready_converter_2->scalar_out(m_s_axi_bready_converter_2_signal);
     mp_S02_AXI_transactor->BREADY(m_s_axi_bready_converter_2_signal);
-    mp_s_axi_arid_converter_2 = new xsc::common::vector2vector_converter<8,2>("s_axi_arid_converter_2");
+    mp_s_axi_arid_converter_2 = new xsc::common::vector2vector_converter<72,18>("s_axi_arid_converter_2");
     mp_s_axi_arid_converter_2->vector_in(s_axi_split_arid_out_2);
     mp_s_axi_arid_converter_2->vector_out(m_s_axi_arid_converter_2_signal);
     mp_S02_AXI_transactor->ARID(m_s_axi_arid_converter_2_signal);
@@ -1439,6 +1497,10 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_arqos_converter_2->vector_in(s_axi_split_arqos_out_2);
     mp_s_axi_arqos_converter_2->vector_out(m_s_axi_arqos_converter_2_signal);
     mp_S02_AXI_transactor->ARQOS(m_s_axi_arqos_converter_2_signal);
+    mp_s_axi_aruser_converter_2 = new xsc::common::vector2vector_converter<64,16>("s_axi_aruser_converter_2");
+    mp_s_axi_aruser_converter_2->vector_in(s_axi_split_aruser_out_2);
+    mp_s_axi_aruser_converter_2->vector_out(m_s_axi_aruser_converter_2_signal);
+    mp_S02_AXI_transactor->ARUSER(m_s_axi_aruser_converter_2_signal);
     mp_s_axi_arvalid_converter_2 = new xsc::common::vectorN2scalar_converter<4>("s_axi_arvalid_converter_2");
     mp_s_axi_arvalid_converter_2->vector_in(s_axi_split_arvalid_out_2);
     mp_s_axi_arvalid_converter_2->scalar_out(m_s_axi_arvalid_converter_2_signal);
@@ -1447,11 +1509,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_arready_converter_2->scalar_in(m_s_axi_arready_converter_2_signal);
     mp_s_axi_arready_converter_2->vector_out(s_axi_concat_arready_out_2);
     mp_S02_AXI_transactor->ARREADY(m_s_axi_arready_converter_2_signal);
-    mp_s_axi_rid_converter_2 = new xsc::common::vector2vector_converter<2,8>("s_axi_rid_converter_2");
+    mp_s_axi_rid_converter_2 = new xsc::common::vector2vector_converter<18,72>("s_axi_rid_converter_2");
     mp_s_axi_rid_converter_2->vector_in(m_s_axi_rid_converter_2_signal);
     mp_s_axi_rid_converter_2->vector_out(s_axi_concat_rid_out_2);
     mp_S02_AXI_transactor->RID(m_s_axi_rid_converter_2_signal);
-    mp_s_axi_rdata_converter_2 = new xsc::common::vector2vector_converter<256,1024>("s_axi_rdata_converter_2");
+    mp_s_axi_rdata_converter_2 = new xsc::common::vector2vector_converter<128,512>("s_axi_rdata_converter_2");
     mp_s_axi_rdata_converter_2->vector_in(m_s_axi_rdata_converter_2_signal);
     mp_s_axi_rdata_converter_2->vector_out(s_axi_concat_rdata_out_2);
     mp_S02_AXI_transactor->RDATA(m_s_axi_rdata_converter_2_signal);
@@ -1491,12 +1553,12 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
 
   // 'S03_AXI' transactor parameters
     xsc::common_cpp::properties S03_AXI_transactor_param_props;
-    S03_AXI_transactor_param_props.addLong("DATA_WIDTH", "256");
+    S03_AXI_transactor_param_props.addLong("DATA_WIDTH", "128");
     S03_AXI_transactor_param_props.addLong("FREQ_HZ", "300000000");
-    S03_AXI_transactor_param_props.addLong("ID_WIDTH", "2");
+    S03_AXI_transactor_param_props.addLong("ID_WIDTH", "18");
     S03_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
-    S03_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
-    S03_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "0");
+    S03_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "16");
+    S03_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "16");
     S03_AXI_transactor_param_props.addLong("WUSER_WIDTH", "0");
     S03_AXI_transactor_param_props.addLong("RUSER_WIDTH", "0");
     S03_AXI_transactor_param_props.addLong("BUSER_WIDTH", "0");
@@ -1524,11 +1586,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     S03_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
     S03_AXI_transactor_param_props.addString("CLK_DOMAIN", "DDR4_ddr4_0_0_c0_ddr4_ui_clk");
 
-    mp_S03_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<256,40,2,1,1,1,1,1>("S03_AXI_transactor", S03_AXI_transactor_param_props);
+    mp_S03_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<128,40,18,16,1,1,16,1>("S03_AXI_transactor", S03_AXI_transactor_param_props);
 
     // S03_AXI' transactor ports
 
-    mp_s_axi_awid_converter_3 = new xsc::common::vector2vector_converter<8,2>("s_axi_awid_converter_3");
+    mp_s_axi_awid_converter_3 = new xsc::common::vector2vector_converter<72,18>("s_axi_awid_converter_3");
     mp_s_axi_awid_converter_3->vector_in(s_axi_split_awid_out_3);
     mp_s_axi_awid_converter_3->vector_out(m_s_axi_awid_converter_3_signal);
     mp_S03_AXI_transactor->AWID(m_s_axi_awid_converter_3_signal);
@@ -1564,6 +1626,10 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_awqos_converter_3->vector_in(s_axi_split_awqos_out_3);
     mp_s_axi_awqos_converter_3->vector_out(m_s_axi_awqos_converter_3_signal);
     mp_S03_AXI_transactor->AWQOS(m_s_axi_awqos_converter_3_signal);
+    mp_s_axi_awuser_converter_3 = new xsc::common::vector2vector_converter<64,16>("s_axi_awuser_converter_3");
+    mp_s_axi_awuser_converter_3->vector_in(s_axi_split_awuser_out_3);
+    mp_s_axi_awuser_converter_3->vector_out(m_s_axi_awuser_converter_3_signal);
+    mp_S03_AXI_transactor->AWUSER(m_s_axi_awuser_converter_3_signal);
     mp_s_axi_awvalid_converter_3 = new xsc::common::vectorN2scalar_converter<4>("s_axi_awvalid_converter_3");
     mp_s_axi_awvalid_converter_3->vector_in(s_axi_split_awvalid_out_3);
     mp_s_axi_awvalid_converter_3->scalar_out(m_s_axi_awvalid_converter_3_signal);
@@ -1572,11 +1638,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_awready_converter_3->scalar_in(m_s_axi_awready_converter_3_signal);
     mp_s_axi_awready_converter_3->vector_out(s_axi_concat_awready_out_3);
     mp_S03_AXI_transactor->AWREADY(m_s_axi_awready_converter_3_signal);
-    mp_s_axi_wdata_converter_3 = new xsc::common::vector2vector_converter<1024,256>("s_axi_wdata_converter_3");
+    mp_s_axi_wdata_converter_3 = new xsc::common::vector2vector_converter<512,128>("s_axi_wdata_converter_3");
     mp_s_axi_wdata_converter_3->vector_in(s_axi_split_wdata_out_3);
     mp_s_axi_wdata_converter_3->vector_out(m_s_axi_wdata_converter_3_signal);
     mp_S03_AXI_transactor->WDATA(m_s_axi_wdata_converter_3_signal);
-    mp_s_axi_wstrb_converter_3 = new xsc::common::vector2vector_converter<128,32>("s_axi_wstrb_converter_3");
+    mp_s_axi_wstrb_converter_3 = new xsc::common::vector2vector_converter<64,16>("s_axi_wstrb_converter_3");
     mp_s_axi_wstrb_converter_3->vector_in(s_axi_split_wstrb_out_3);
     mp_s_axi_wstrb_converter_3->vector_out(m_s_axi_wstrb_converter_3_signal);
     mp_S03_AXI_transactor->WSTRB(m_s_axi_wstrb_converter_3_signal);
@@ -1592,7 +1658,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_wready_converter_3->scalar_in(m_s_axi_wready_converter_3_signal);
     mp_s_axi_wready_converter_3->vector_out(s_axi_concat_wready_out_3);
     mp_S03_AXI_transactor->WREADY(m_s_axi_wready_converter_3_signal);
-    mp_s_axi_bid_converter_3 = new xsc::common::vector2vector_converter<2,8>("s_axi_bid_converter_3");
+    mp_s_axi_bid_converter_3 = new xsc::common::vector2vector_converter<18,72>("s_axi_bid_converter_3");
     mp_s_axi_bid_converter_3->vector_in(m_s_axi_bid_converter_3_signal);
     mp_s_axi_bid_converter_3->vector_out(s_axi_concat_bid_out_3);
     mp_S03_AXI_transactor->BID(m_s_axi_bid_converter_3_signal);
@@ -1608,7 +1674,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_bready_converter_3->vector_in(s_axi_split_bready_out_3);
     mp_s_axi_bready_converter_3->scalar_out(m_s_axi_bready_converter_3_signal);
     mp_S03_AXI_transactor->BREADY(m_s_axi_bready_converter_3_signal);
-    mp_s_axi_arid_converter_3 = new xsc::common::vector2vector_converter<8,2>("s_axi_arid_converter_3");
+    mp_s_axi_arid_converter_3 = new xsc::common::vector2vector_converter<72,18>("s_axi_arid_converter_3");
     mp_s_axi_arid_converter_3->vector_in(s_axi_split_arid_out_3);
     mp_s_axi_arid_converter_3->vector_out(m_s_axi_arid_converter_3_signal);
     mp_S03_AXI_transactor->ARID(m_s_axi_arid_converter_3_signal);
@@ -1644,6 +1710,10 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_arqos_converter_3->vector_in(s_axi_split_arqos_out_3);
     mp_s_axi_arqos_converter_3->vector_out(m_s_axi_arqos_converter_3_signal);
     mp_S03_AXI_transactor->ARQOS(m_s_axi_arqos_converter_3_signal);
+    mp_s_axi_aruser_converter_3 = new xsc::common::vector2vector_converter<64,16>("s_axi_aruser_converter_3");
+    mp_s_axi_aruser_converter_3->vector_in(s_axi_split_aruser_out_3);
+    mp_s_axi_aruser_converter_3->vector_out(m_s_axi_aruser_converter_3_signal);
+    mp_S03_AXI_transactor->ARUSER(m_s_axi_aruser_converter_3_signal);
     mp_s_axi_arvalid_converter_3 = new xsc::common::vectorN2scalar_converter<4>("s_axi_arvalid_converter_3");
     mp_s_axi_arvalid_converter_3->vector_in(s_axi_split_arvalid_out_3);
     mp_s_axi_arvalid_converter_3->scalar_out(m_s_axi_arvalid_converter_3_signal);
@@ -1652,11 +1722,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_arready_converter_3->scalar_in(m_s_axi_arready_converter_3_signal);
     mp_s_axi_arready_converter_3->vector_out(s_axi_concat_arready_out_3);
     mp_S03_AXI_transactor->ARREADY(m_s_axi_arready_converter_3_signal);
-    mp_s_axi_rid_converter_3 = new xsc::common::vector2vector_converter<2,8>("s_axi_rid_converter_3");
+    mp_s_axi_rid_converter_3 = new xsc::common::vector2vector_converter<18,72>("s_axi_rid_converter_3");
     mp_s_axi_rid_converter_3->vector_in(m_s_axi_rid_converter_3_signal);
     mp_s_axi_rid_converter_3->vector_out(s_axi_concat_rid_out_3);
     mp_S03_AXI_transactor->RID(m_s_axi_rid_converter_3_signal);
-    mp_s_axi_rdata_converter_3 = new xsc::common::vector2vector_converter<256,1024>("s_axi_rdata_converter_3");
+    mp_s_axi_rdata_converter_3 = new xsc::common::vector2vector_converter<128,512>("s_axi_rdata_converter_3");
     mp_s_axi_rdata_converter_3->vector_in(m_s_axi_rdata_converter_3_signal);
     mp_s_axi_rdata_converter_3->vector_out(s_axi_concat_rdata_out_3);
     mp_S03_AXI_transactor->RDATA(m_s_axi_rdata_converter_3_signal);
@@ -1696,7 +1766,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
 
 
 #ifdef XM_SYSTEMC
-DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_core::sc_module_name& nm) : DDR4_axi_interconnect_0_imp_xbar_0_sc(nm), aclk("aclk"), aresetn("aresetn"), s_axi_awid("s_axi_awid"), s_axi_awaddr("s_axi_awaddr"), s_axi_awlen("s_axi_awlen"), s_axi_awsize("s_axi_awsize"), s_axi_awburst("s_axi_awburst"), s_axi_awlock("s_axi_awlock"), s_axi_awcache("s_axi_awcache"), s_axi_awprot("s_axi_awprot"), s_axi_awqos("s_axi_awqos"), s_axi_awvalid("s_axi_awvalid"), s_axi_awready("s_axi_awready"), s_axi_wdata("s_axi_wdata"), s_axi_wstrb("s_axi_wstrb"), s_axi_wlast("s_axi_wlast"), s_axi_wvalid("s_axi_wvalid"), s_axi_wready("s_axi_wready"), s_axi_bid("s_axi_bid"), s_axi_bresp("s_axi_bresp"), s_axi_bvalid("s_axi_bvalid"), s_axi_bready("s_axi_bready"), s_axi_arid("s_axi_arid"), s_axi_araddr("s_axi_araddr"), s_axi_arlen("s_axi_arlen"), s_axi_arsize("s_axi_arsize"), s_axi_arburst("s_axi_arburst"), s_axi_arlock("s_axi_arlock"), s_axi_arcache("s_axi_arcache"), s_axi_arprot("s_axi_arprot"), s_axi_arqos("s_axi_arqos"), s_axi_arvalid("s_axi_arvalid"), s_axi_arready("s_axi_arready"), s_axi_rid("s_axi_rid"), s_axi_rdata("s_axi_rdata"), s_axi_rresp("s_axi_rresp"), s_axi_rlast("s_axi_rlast"), s_axi_rvalid("s_axi_rvalid"), s_axi_rready("s_axi_rready"), m_axi_awid("m_axi_awid"), m_axi_awaddr("m_axi_awaddr"), m_axi_awlen("m_axi_awlen"), m_axi_awsize("m_axi_awsize"), m_axi_awburst("m_axi_awburst"), m_axi_awlock("m_axi_awlock"), m_axi_awcache("m_axi_awcache"), m_axi_awprot("m_axi_awprot"), m_axi_awregion("m_axi_awregion"), m_axi_awqos("m_axi_awqos"), m_axi_awvalid("m_axi_awvalid"), m_axi_awready("m_axi_awready"), m_axi_wdata("m_axi_wdata"), m_axi_wstrb("m_axi_wstrb"), m_axi_wlast("m_axi_wlast"), m_axi_wvalid("m_axi_wvalid"), m_axi_wready("m_axi_wready"), m_axi_bid("m_axi_bid"), m_axi_bresp("m_axi_bresp"), m_axi_bvalid("m_axi_bvalid"), m_axi_bready("m_axi_bready"), m_axi_arid("m_axi_arid"), m_axi_araddr("m_axi_araddr"), m_axi_arlen("m_axi_arlen"), m_axi_arsize("m_axi_arsize"), m_axi_arburst("m_axi_arburst"), m_axi_arlock("m_axi_arlock"), m_axi_arcache("m_axi_arcache"), m_axi_arprot("m_axi_arprot"), m_axi_arregion("m_axi_arregion"), m_axi_arqos("m_axi_arqos"), m_axi_arvalid("m_axi_arvalid"), m_axi_arready("m_axi_arready"), m_axi_rid("m_axi_rid"), m_axi_rdata("m_axi_rdata"), m_axi_rresp("m_axi_rresp"), m_axi_rlast("m_axi_rlast"), m_axi_rvalid("m_axi_rvalid"), m_axi_rready("m_axi_rready")
+DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_core::sc_module_name& nm) : DDR4_axi_interconnect_0_imp_xbar_0_sc(nm), aclk("aclk"), aresetn("aresetn"), s_axi_awid("s_axi_awid"), s_axi_awaddr("s_axi_awaddr"), s_axi_awlen("s_axi_awlen"), s_axi_awsize("s_axi_awsize"), s_axi_awburst("s_axi_awburst"), s_axi_awlock("s_axi_awlock"), s_axi_awcache("s_axi_awcache"), s_axi_awprot("s_axi_awprot"), s_axi_awqos("s_axi_awqos"), s_axi_awuser("s_axi_awuser"), s_axi_awvalid("s_axi_awvalid"), s_axi_awready("s_axi_awready"), s_axi_wdata("s_axi_wdata"), s_axi_wstrb("s_axi_wstrb"), s_axi_wlast("s_axi_wlast"), s_axi_wvalid("s_axi_wvalid"), s_axi_wready("s_axi_wready"), s_axi_bid("s_axi_bid"), s_axi_bresp("s_axi_bresp"), s_axi_bvalid("s_axi_bvalid"), s_axi_bready("s_axi_bready"), s_axi_arid("s_axi_arid"), s_axi_araddr("s_axi_araddr"), s_axi_arlen("s_axi_arlen"), s_axi_arsize("s_axi_arsize"), s_axi_arburst("s_axi_arburst"), s_axi_arlock("s_axi_arlock"), s_axi_arcache("s_axi_arcache"), s_axi_arprot("s_axi_arprot"), s_axi_arqos("s_axi_arqos"), s_axi_aruser("s_axi_aruser"), s_axi_arvalid("s_axi_arvalid"), s_axi_arready("s_axi_arready"), s_axi_rid("s_axi_rid"), s_axi_rdata("s_axi_rdata"), s_axi_rresp("s_axi_rresp"), s_axi_rlast("s_axi_rlast"), s_axi_rvalid("s_axi_rvalid"), s_axi_rready("s_axi_rready"), m_axi_awid("m_axi_awid"), m_axi_awaddr("m_axi_awaddr"), m_axi_awlen("m_axi_awlen"), m_axi_awsize("m_axi_awsize"), m_axi_awburst("m_axi_awburst"), m_axi_awlock("m_axi_awlock"), m_axi_awcache("m_axi_awcache"), m_axi_awprot("m_axi_awprot"), m_axi_awregion("m_axi_awregion"), m_axi_awqos("m_axi_awqos"), m_axi_awuser("m_axi_awuser"), m_axi_awvalid("m_axi_awvalid"), m_axi_awready("m_axi_awready"), m_axi_wdata("m_axi_wdata"), m_axi_wstrb("m_axi_wstrb"), m_axi_wlast("m_axi_wlast"), m_axi_wvalid("m_axi_wvalid"), m_axi_wready("m_axi_wready"), m_axi_bid("m_axi_bid"), m_axi_bresp("m_axi_bresp"), m_axi_bvalid("m_axi_bvalid"), m_axi_bready("m_axi_bready"), m_axi_arid("m_axi_arid"), m_axi_araddr("m_axi_araddr"), m_axi_arlen("m_axi_arlen"), m_axi_arsize("m_axi_arsize"), m_axi_arburst("m_axi_arburst"), m_axi_arlock("m_axi_arlock"), m_axi_arcache("m_axi_arcache"), m_axi_arprot("m_axi_arprot"), m_axi_arregion("m_axi_arregion"), m_axi_arqos("m_axi_arqos"), m_axi_aruser("m_axi_aruser"), m_axi_arvalid("m_axi_arvalid"), m_axi_arready("m_axi_arready"), m_axi_rid("m_axi_rid"), m_axi_rdata("m_axi_rdata"), m_axi_rresp("m_axi_rresp"), m_axi_rlast("m_axi_rlast"), m_axi_rvalid("m_axi_rvalid"), m_axi_rready("m_axi_rready")
 {
 
   // initialize pins
@@ -1714,6 +1784,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awcache_converter_0 = NULL;
   mp_s_axi_awprot_converter_0 = NULL;
   mp_s_axi_awqos_converter_0 = NULL;
+  mp_s_axi_awuser_converter_0 = NULL;
   mp_s_axi_awvalid_converter_0 = NULL;
   mp_s_axi_awready_converter_0 = NULL;
   mp_s_axi_wdata_converter_0 = NULL;
@@ -1734,6 +1805,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arcache_converter_0 = NULL;
   mp_s_axi_arprot_converter_0 = NULL;
   mp_s_axi_arqos_converter_0 = NULL;
+  mp_s_axi_aruser_converter_0 = NULL;
   mp_s_axi_arvalid_converter_0 = NULL;
   mp_s_axi_arready_converter_0 = NULL;
   mp_s_axi_rid_converter_0 = NULL;
@@ -1767,6 +1839,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awcache_converter_1 = NULL;
   mp_s_axi_awprot_converter_1 = NULL;
   mp_s_axi_awqos_converter_1 = NULL;
+  mp_s_axi_awuser_converter_1 = NULL;
   mp_s_axi_awvalid_converter_1 = NULL;
   mp_s_axi_awready_converter_1 = NULL;
   mp_s_axi_wdata_converter_1 = NULL;
@@ -1787,6 +1860,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arcache_converter_1 = NULL;
   mp_s_axi_arprot_converter_1 = NULL;
   mp_s_axi_arqos_converter_1 = NULL;
+  mp_s_axi_aruser_converter_1 = NULL;
   mp_s_axi_arvalid_converter_1 = NULL;
   mp_s_axi_arready_converter_1 = NULL;
   mp_s_axi_rid_converter_1 = NULL;
@@ -1805,6 +1879,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awcache_converter_2 = NULL;
   mp_s_axi_awprot_converter_2 = NULL;
   mp_s_axi_awqos_converter_2 = NULL;
+  mp_s_axi_awuser_converter_2 = NULL;
   mp_s_axi_awvalid_converter_2 = NULL;
   mp_s_axi_awready_converter_2 = NULL;
   mp_s_axi_wdata_converter_2 = NULL;
@@ -1825,6 +1900,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arcache_converter_2 = NULL;
   mp_s_axi_arprot_converter_2 = NULL;
   mp_s_axi_arqos_converter_2 = NULL;
+  mp_s_axi_aruser_converter_2 = NULL;
   mp_s_axi_arvalid_converter_2 = NULL;
   mp_s_axi_arready_converter_2 = NULL;
   mp_s_axi_rid_converter_2 = NULL;
@@ -1843,6 +1919,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awcache_converter_3 = NULL;
   mp_s_axi_awprot_converter_3 = NULL;
   mp_s_axi_awqos_converter_3 = NULL;
+  mp_s_axi_awuser_converter_3 = NULL;
   mp_s_axi_awvalid_converter_3 = NULL;
   mp_s_axi_awready_converter_3 = NULL;
   mp_s_axi_wdata_converter_3 = NULL;
@@ -1863,6 +1940,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arcache_converter_3 = NULL;
   mp_s_axi_arprot_converter_3 = NULL;
   mp_s_axi_arqos_converter_3 = NULL;
+  mp_s_axi_aruser_converter_3 = NULL;
   mp_s_axi_arvalid_converter_3 = NULL;
   mp_s_axi_arready_converter_3 = NULL;
   mp_s_axi_rid_converter_3 = NULL;
@@ -1893,6 +1971,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_arprot = NULL;
   mp_s_axi_split_arqos = NULL;
   mp_s_axi_split_arsize = NULL;
+  mp_s_axi_split_aruser = NULL;
   mp_s_axi_split_arvalid = NULL;
   mp_s_axi_split_awaddr = NULL;
   mp_s_axi_split_awburst = NULL;
@@ -1903,6 +1982,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_awprot = NULL;
   mp_s_axi_split_awqos = NULL;
   mp_s_axi_split_awsize = NULL;
+  mp_s_axi_split_awuser = NULL;
   mp_s_axi_split_awvalid = NULL;
   mp_s_axi_split_bready = NULL;
   mp_s_axi_split_rready = NULL;
@@ -1910,10 +1990,10 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_wlast = NULL;
   mp_s_axi_split_wstrb = NULL;
   mp_s_axi_split_wvalid = NULL;
-  mp_s_axi_split_awid = new xsc::xsc_split<8, 4>("s_axi_split_awid");
+  mp_s_axi_split_awid = new xsc::xsc_split<72, 4>("s_axi_split_awid");
   mp_s_axi_split_awid->in_port(s_axi_awid);
   mp_s_axi_split_awid->out_port[0](s_axi_split_awid_out_0);
-    mp_s_axi_split_awid->add_mask(0,2,0);
+    mp_s_axi_split_awid->add_mask(0,18,0);
   mp_s_axi_split_awaddr = new xsc::xsc_split<160, 4>("s_axi_split_awaddr");
   mp_s_axi_split_awaddr->in_port(s_axi_awaddr);
   mp_s_axi_split_awaddr->out_port[0](s_axi_split_awaddr_out_0);
@@ -1946,6 +2026,10 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_awqos->in_port(s_axi_awqos);
   mp_s_axi_split_awqos->out_port[0](s_axi_split_awqos_out_0);
     mp_s_axi_split_awqos->add_mask(0,4,0);
+  mp_s_axi_split_awuser = new xsc::xsc_split<64, 4>("s_axi_split_awuser");
+  mp_s_axi_split_awuser->in_port(s_axi_awuser);
+  mp_s_axi_split_awuser->out_port[0](s_axi_split_awuser_out_0);
+    mp_s_axi_split_awuser->add_mask(0,16,0);
   mp_s_axi_split_awvalid = new xsc::xsc_split<4, 4>("s_axi_split_awvalid");
   mp_s_axi_split_awvalid->in_port(s_axi_awvalid);
   mp_s_axi_split_awvalid->out_port[0](s_axi_split_awvalid_out_0);
@@ -1954,14 +2038,14 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_concat_awready->in_port[0](s_axi_concat_awready_out_0);
   mp_s_axi_concat_awready->out_port(s_axi_awready);
     mp_s_axi_concat_awready->offset_port(0, 0);
-  mp_s_axi_split_wdata = new xsc::xsc_split<1024, 4>("s_axi_split_wdata");
+  mp_s_axi_split_wdata = new xsc::xsc_split<512, 4>("s_axi_split_wdata");
   mp_s_axi_split_wdata->in_port(s_axi_wdata);
   mp_s_axi_split_wdata->out_port[0](s_axi_split_wdata_out_0);
-    mp_s_axi_split_wdata->add_mask(0,256,0);
-  mp_s_axi_split_wstrb = new xsc::xsc_split<128, 4>("s_axi_split_wstrb");
+    mp_s_axi_split_wdata->add_mask(0,128,0);
+  mp_s_axi_split_wstrb = new xsc::xsc_split<64, 4>("s_axi_split_wstrb");
   mp_s_axi_split_wstrb->in_port(s_axi_wstrb);
   mp_s_axi_split_wstrb->out_port[0](s_axi_split_wstrb_out_0);
-    mp_s_axi_split_wstrb->add_mask(0,32,0);
+    mp_s_axi_split_wstrb->add_mask(0,16,0);
   mp_s_axi_split_wlast = new xsc::xsc_split<4, 4>("s_axi_split_wlast");
   mp_s_axi_split_wlast->in_port(s_axi_wlast);
   mp_s_axi_split_wlast->out_port[0](s_axi_split_wlast_out_0);
@@ -1974,7 +2058,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_concat_wready->in_port[0](s_axi_concat_wready_out_0);
   mp_s_axi_concat_wready->out_port(s_axi_wready);
     mp_s_axi_concat_wready->offset_port(0, 0);
-  mp_s_axi_concat_bid = new xsc::xsc_concatenator<8, 4>("s_axi_concat_bid");
+  mp_s_axi_concat_bid = new xsc::xsc_concatenator<72, 4>("s_axi_concat_bid");
   mp_s_axi_concat_bid->in_port[0](s_axi_concat_bid_out_0);
   mp_s_axi_concat_bid->out_port(s_axi_bid);
     mp_s_axi_concat_bid->offset_port(0, 0);
@@ -1990,10 +2074,10 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_bready->in_port(s_axi_bready);
   mp_s_axi_split_bready->out_port[0](s_axi_split_bready_out_0);
     mp_s_axi_split_bready->add_mask(0,1,0);
-  mp_s_axi_split_arid = new xsc::xsc_split<8, 4>("s_axi_split_arid");
+  mp_s_axi_split_arid = new xsc::xsc_split<72, 4>("s_axi_split_arid");
   mp_s_axi_split_arid->in_port(s_axi_arid);
   mp_s_axi_split_arid->out_port[0](s_axi_split_arid_out_0);
-    mp_s_axi_split_arid->add_mask(0,2,0);
+    mp_s_axi_split_arid->add_mask(0,18,0);
   mp_s_axi_split_araddr = new xsc::xsc_split<160, 4>("s_axi_split_araddr");
   mp_s_axi_split_araddr->in_port(s_axi_araddr);
   mp_s_axi_split_araddr->out_port[0](s_axi_split_araddr_out_0);
@@ -2026,6 +2110,10 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_arqos->in_port(s_axi_arqos);
   mp_s_axi_split_arqos->out_port[0](s_axi_split_arqos_out_0);
     mp_s_axi_split_arqos->add_mask(0,4,0);
+  mp_s_axi_split_aruser = new xsc::xsc_split<64, 4>("s_axi_split_aruser");
+  mp_s_axi_split_aruser->in_port(s_axi_aruser);
+  mp_s_axi_split_aruser->out_port[0](s_axi_split_aruser_out_0);
+    mp_s_axi_split_aruser->add_mask(0,16,0);
   mp_s_axi_split_arvalid = new xsc::xsc_split<4, 4>("s_axi_split_arvalid");
   mp_s_axi_split_arvalid->in_port(s_axi_arvalid);
   mp_s_axi_split_arvalid->out_port[0](s_axi_split_arvalid_out_0);
@@ -2034,11 +2122,11 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_concat_arready->in_port[0](s_axi_concat_arready_out_0);
   mp_s_axi_concat_arready->out_port(s_axi_arready);
     mp_s_axi_concat_arready->offset_port(0, 0);
-  mp_s_axi_concat_rid = new xsc::xsc_concatenator<8, 4>("s_axi_concat_rid");
+  mp_s_axi_concat_rid = new xsc::xsc_concatenator<72, 4>("s_axi_concat_rid");
   mp_s_axi_concat_rid->in_port[0](s_axi_concat_rid_out_0);
   mp_s_axi_concat_rid->out_port(s_axi_rid);
     mp_s_axi_concat_rid->offset_port(0, 0);
-  mp_s_axi_concat_rdata = new xsc::xsc_concatenator<1024, 4>("s_axi_concat_rdata");
+  mp_s_axi_concat_rdata = new xsc::xsc_concatenator<512, 4>("s_axi_concat_rdata");
   mp_s_axi_concat_rdata->in_port[0](s_axi_concat_rdata_out_0);
   mp_s_axi_concat_rdata->out_port(s_axi_rdata);
     mp_s_axi_concat_rdata->offset_port(0, 0);
@@ -2060,7 +2148,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
     mp_s_axi_split_rready->add_mask(0,1,0);
   
   mp_s_axi_split_awid->out_port[1](s_axi_split_awid_out_1);
-    mp_s_axi_split_awid->add_mask(1,4,2);
+    mp_s_axi_split_awid->add_mask(1,36,18);
   
   mp_s_axi_split_awaddr->out_port[1](s_axi_split_awaddr_out_1);
     mp_s_axi_split_awaddr->add_mask(1,80,40);
@@ -2086,16 +2174,19 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_awqos->out_port[1](s_axi_split_awqos_out_1);
     mp_s_axi_split_awqos->add_mask(1,8,4);
   
+  mp_s_axi_split_awuser->out_port[1](s_axi_split_awuser_out_1);
+    mp_s_axi_split_awuser->add_mask(1,32,16);
+  
   mp_s_axi_split_awvalid->out_port[1](s_axi_split_awvalid_out_1);
     mp_s_axi_split_awvalid->add_mask(1,2,1);
   mp_s_axi_concat_awready->in_port[1](s_axi_concat_awready_out_1);
   mp_s_axi_concat_awready->offset_port(1, 1);
   
   mp_s_axi_split_wdata->out_port[1](s_axi_split_wdata_out_1);
-    mp_s_axi_split_wdata->add_mask(1,512,256);
+    mp_s_axi_split_wdata->add_mask(1,256,128);
   
   mp_s_axi_split_wstrb->out_port[1](s_axi_split_wstrb_out_1);
-    mp_s_axi_split_wstrb->add_mask(1,64,32);
+    mp_s_axi_split_wstrb->add_mask(1,32,16);
   
   mp_s_axi_split_wlast->out_port[1](s_axi_split_wlast_out_1);
     mp_s_axi_split_wlast->add_mask(1,2,1);
@@ -2105,7 +2196,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_concat_wready->in_port[1](s_axi_concat_wready_out_1);
   mp_s_axi_concat_wready->offset_port(1, 1);
   mp_s_axi_concat_bid->in_port[1](s_axi_concat_bid_out_1);
-  mp_s_axi_concat_bid->offset_port(1, 2);
+  mp_s_axi_concat_bid->offset_port(1, 18);
   mp_s_axi_concat_bresp->in_port[1](s_axi_concat_bresp_out_1);
   mp_s_axi_concat_bresp->offset_port(1, 2);
   mp_s_axi_concat_bvalid->in_port[1](s_axi_concat_bvalid_out_1);
@@ -2115,7 +2206,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
     mp_s_axi_split_bready->add_mask(1,2,1);
   
   mp_s_axi_split_arid->out_port[1](s_axi_split_arid_out_1);
-    mp_s_axi_split_arid->add_mask(1,4,2);
+    mp_s_axi_split_arid->add_mask(1,36,18);
   
   mp_s_axi_split_araddr->out_port[1](s_axi_split_araddr_out_1);
     mp_s_axi_split_araddr->add_mask(1,80,40);
@@ -2141,14 +2232,17 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_arqos->out_port[1](s_axi_split_arqos_out_1);
     mp_s_axi_split_arqos->add_mask(1,8,4);
   
+  mp_s_axi_split_aruser->out_port[1](s_axi_split_aruser_out_1);
+    mp_s_axi_split_aruser->add_mask(1,32,16);
+  
   mp_s_axi_split_arvalid->out_port[1](s_axi_split_arvalid_out_1);
     mp_s_axi_split_arvalid->add_mask(1,2,1);
   mp_s_axi_concat_arready->in_port[1](s_axi_concat_arready_out_1);
   mp_s_axi_concat_arready->offset_port(1, 1);
   mp_s_axi_concat_rid->in_port[1](s_axi_concat_rid_out_1);
-  mp_s_axi_concat_rid->offset_port(1, 2);
+  mp_s_axi_concat_rid->offset_port(1, 18);
   mp_s_axi_concat_rdata->in_port[1](s_axi_concat_rdata_out_1);
-  mp_s_axi_concat_rdata->offset_port(1, 256);
+  mp_s_axi_concat_rdata->offset_port(1, 128);
   mp_s_axi_concat_rresp->in_port[1](s_axi_concat_rresp_out_1);
   mp_s_axi_concat_rresp->offset_port(1, 2);
   mp_s_axi_concat_rlast->in_port[1](s_axi_concat_rlast_out_1);
@@ -2160,7 +2254,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
     mp_s_axi_split_rready->add_mask(1,2,1);
   
   mp_s_axi_split_awid->out_port[2](s_axi_split_awid_out_2);
-    mp_s_axi_split_awid->add_mask(2,6,4);
+    mp_s_axi_split_awid->add_mask(2,54,36);
   
   mp_s_axi_split_awaddr->out_port[2](s_axi_split_awaddr_out_2);
     mp_s_axi_split_awaddr->add_mask(2,120,80);
@@ -2186,16 +2280,19 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_awqos->out_port[2](s_axi_split_awqos_out_2);
     mp_s_axi_split_awqos->add_mask(2,12,8);
   
+  mp_s_axi_split_awuser->out_port[2](s_axi_split_awuser_out_2);
+    mp_s_axi_split_awuser->add_mask(2,48,32);
+  
   mp_s_axi_split_awvalid->out_port[2](s_axi_split_awvalid_out_2);
     mp_s_axi_split_awvalid->add_mask(2,3,2);
   mp_s_axi_concat_awready->in_port[2](s_axi_concat_awready_out_2);
   mp_s_axi_concat_awready->offset_port(2, 2);
   
   mp_s_axi_split_wdata->out_port[2](s_axi_split_wdata_out_2);
-    mp_s_axi_split_wdata->add_mask(2,768,512);
+    mp_s_axi_split_wdata->add_mask(2,384,256);
   
   mp_s_axi_split_wstrb->out_port[2](s_axi_split_wstrb_out_2);
-    mp_s_axi_split_wstrb->add_mask(2,96,64);
+    mp_s_axi_split_wstrb->add_mask(2,48,32);
   
   mp_s_axi_split_wlast->out_port[2](s_axi_split_wlast_out_2);
     mp_s_axi_split_wlast->add_mask(2,3,2);
@@ -2205,7 +2302,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_concat_wready->in_port[2](s_axi_concat_wready_out_2);
   mp_s_axi_concat_wready->offset_port(2, 2);
   mp_s_axi_concat_bid->in_port[2](s_axi_concat_bid_out_2);
-  mp_s_axi_concat_bid->offset_port(2, 4);
+  mp_s_axi_concat_bid->offset_port(2, 36);
   mp_s_axi_concat_bresp->in_port[2](s_axi_concat_bresp_out_2);
   mp_s_axi_concat_bresp->offset_port(2, 4);
   mp_s_axi_concat_bvalid->in_port[2](s_axi_concat_bvalid_out_2);
@@ -2215,7 +2312,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
     mp_s_axi_split_bready->add_mask(2,3,2);
   
   mp_s_axi_split_arid->out_port[2](s_axi_split_arid_out_2);
-    mp_s_axi_split_arid->add_mask(2,6,4);
+    mp_s_axi_split_arid->add_mask(2,54,36);
   
   mp_s_axi_split_araddr->out_port[2](s_axi_split_araddr_out_2);
     mp_s_axi_split_araddr->add_mask(2,120,80);
@@ -2241,14 +2338,17 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_arqos->out_port[2](s_axi_split_arqos_out_2);
     mp_s_axi_split_arqos->add_mask(2,12,8);
   
+  mp_s_axi_split_aruser->out_port[2](s_axi_split_aruser_out_2);
+    mp_s_axi_split_aruser->add_mask(2,48,32);
+  
   mp_s_axi_split_arvalid->out_port[2](s_axi_split_arvalid_out_2);
     mp_s_axi_split_arvalid->add_mask(2,3,2);
   mp_s_axi_concat_arready->in_port[2](s_axi_concat_arready_out_2);
   mp_s_axi_concat_arready->offset_port(2, 2);
   mp_s_axi_concat_rid->in_port[2](s_axi_concat_rid_out_2);
-  mp_s_axi_concat_rid->offset_port(2, 4);
+  mp_s_axi_concat_rid->offset_port(2, 36);
   mp_s_axi_concat_rdata->in_port[2](s_axi_concat_rdata_out_2);
-  mp_s_axi_concat_rdata->offset_port(2, 512);
+  mp_s_axi_concat_rdata->offset_port(2, 256);
   mp_s_axi_concat_rresp->in_port[2](s_axi_concat_rresp_out_2);
   mp_s_axi_concat_rresp->offset_port(2, 4);
   mp_s_axi_concat_rlast->in_port[2](s_axi_concat_rlast_out_2);
@@ -2260,7 +2360,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
     mp_s_axi_split_rready->add_mask(2,3,2);
   
   mp_s_axi_split_awid->out_port[3](s_axi_split_awid_out_3);
-    mp_s_axi_split_awid->add_mask(3,8,6);
+    mp_s_axi_split_awid->add_mask(3,72,54);
   
   mp_s_axi_split_awaddr->out_port[3](s_axi_split_awaddr_out_3);
     mp_s_axi_split_awaddr->add_mask(3,160,120);
@@ -2286,16 +2386,19 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_awqos->out_port[3](s_axi_split_awqos_out_3);
     mp_s_axi_split_awqos->add_mask(3,16,12);
   
+  mp_s_axi_split_awuser->out_port[3](s_axi_split_awuser_out_3);
+    mp_s_axi_split_awuser->add_mask(3,64,48);
+  
   mp_s_axi_split_awvalid->out_port[3](s_axi_split_awvalid_out_3);
     mp_s_axi_split_awvalid->add_mask(3,4,3);
   mp_s_axi_concat_awready->in_port[3](s_axi_concat_awready_out_3);
   mp_s_axi_concat_awready->offset_port(3, 3);
   
   mp_s_axi_split_wdata->out_port[3](s_axi_split_wdata_out_3);
-    mp_s_axi_split_wdata->add_mask(3,1024,768);
+    mp_s_axi_split_wdata->add_mask(3,512,384);
   
   mp_s_axi_split_wstrb->out_port[3](s_axi_split_wstrb_out_3);
-    mp_s_axi_split_wstrb->add_mask(3,128,96);
+    mp_s_axi_split_wstrb->add_mask(3,64,48);
   
   mp_s_axi_split_wlast->out_port[3](s_axi_split_wlast_out_3);
     mp_s_axi_split_wlast->add_mask(3,4,3);
@@ -2305,7 +2408,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_concat_wready->in_port[3](s_axi_concat_wready_out_3);
   mp_s_axi_concat_wready->offset_port(3, 3);
   mp_s_axi_concat_bid->in_port[3](s_axi_concat_bid_out_3);
-  mp_s_axi_concat_bid->offset_port(3, 6);
+  mp_s_axi_concat_bid->offset_port(3, 54);
   mp_s_axi_concat_bresp->in_port[3](s_axi_concat_bresp_out_3);
   mp_s_axi_concat_bresp->offset_port(3, 6);
   mp_s_axi_concat_bvalid->in_port[3](s_axi_concat_bvalid_out_3);
@@ -2315,7 +2418,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
     mp_s_axi_split_bready->add_mask(3,4,3);
   
   mp_s_axi_split_arid->out_port[3](s_axi_split_arid_out_3);
-    mp_s_axi_split_arid->add_mask(3,8,6);
+    mp_s_axi_split_arid->add_mask(3,72,54);
   
   mp_s_axi_split_araddr->out_port[3](s_axi_split_araddr_out_3);
     mp_s_axi_split_araddr->add_mask(3,160,120);
@@ -2341,14 +2444,17 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_arqos->out_port[3](s_axi_split_arqos_out_3);
     mp_s_axi_split_arqos->add_mask(3,16,12);
   
+  mp_s_axi_split_aruser->out_port[3](s_axi_split_aruser_out_3);
+    mp_s_axi_split_aruser->add_mask(3,64,48);
+  
   mp_s_axi_split_arvalid->out_port[3](s_axi_split_arvalid_out_3);
     mp_s_axi_split_arvalid->add_mask(3,4,3);
   mp_s_axi_concat_arready->in_port[3](s_axi_concat_arready_out_3);
   mp_s_axi_concat_arready->offset_port(3, 3);
   mp_s_axi_concat_rid->in_port[3](s_axi_concat_rid_out_3);
-  mp_s_axi_concat_rid->offset_port(3, 6);
+  mp_s_axi_concat_rid->offset_port(3, 54);
   mp_s_axi_concat_rdata->in_port[3](s_axi_concat_rdata_out_3);
-  mp_s_axi_concat_rdata->offset_port(3, 768);
+  mp_s_axi_concat_rdata->offset_port(3, 384);
   mp_s_axi_concat_rresp->in_port[3](s_axi_concat_rresp_out_3);
   mp_s_axi_concat_rresp->offset_port(3, 6);
   mp_s_axi_concat_rlast->in_port[3](s_axi_concat_rlast_out_3);
@@ -2373,12 +2479,12 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
 
   // 'S00_AXI' transactor parameters
     xsc::common_cpp::properties S00_AXI_transactor_param_props;
-    S00_AXI_transactor_param_props.addLong("DATA_WIDTH", "256");
+    S00_AXI_transactor_param_props.addLong("DATA_WIDTH", "128");
     S00_AXI_transactor_param_props.addLong("FREQ_HZ", "300000000");
-    S00_AXI_transactor_param_props.addLong("ID_WIDTH", "2");
+    S00_AXI_transactor_param_props.addLong("ID_WIDTH", "18");
     S00_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
-    S00_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
-    S00_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "0");
+    S00_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "16");
+    S00_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "16");
     S00_AXI_transactor_param_props.addLong("WUSER_WIDTH", "0");
     S00_AXI_transactor_param_props.addLong("RUSER_WIDTH", "0");
     S00_AXI_transactor_param_props.addLong("BUSER_WIDTH", "0");
@@ -2406,11 +2512,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     S00_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
     S00_AXI_transactor_param_props.addString("CLK_DOMAIN", "DDR4_ddr4_0_0_c0_ddr4_ui_clk");
 
-    mp_S00_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<256,40,2,1,1,1,1,1>("S00_AXI_transactor", S00_AXI_transactor_param_props);
+    mp_S00_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<128,40,18,16,1,1,16,1>("S00_AXI_transactor", S00_AXI_transactor_param_props);
 
     // S00_AXI' transactor ports
 
-    mp_s_axi_awid_converter_0 = new xsc::common::vector2vector_converter<8,2>("s_axi_awid_converter_0");
+    mp_s_axi_awid_converter_0 = new xsc::common::vector2vector_converter<72,18>("s_axi_awid_converter_0");
     mp_s_axi_awid_converter_0->vector_in(s_axi_split_awid_out_0);
     mp_s_axi_awid_converter_0->vector_out(m_s_axi_awid_converter_0_signal);
     mp_S00_AXI_transactor->AWID(m_s_axi_awid_converter_0_signal);
@@ -2446,6 +2552,10 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_awqos_converter_0->vector_in(s_axi_split_awqos_out_0);
     mp_s_axi_awqos_converter_0->vector_out(m_s_axi_awqos_converter_0_signal);
     mp_S00_AXI_transactor->AWQOS(m_s_axi_awqos_converter_0_signal);
+    mp_s_axi_awuser_converter_0 = new xsc::common::vector2vector_converter<64,16>("s_axi_awuser_converter_0");
+    mp_s_axi_awuser_converter_0->vector_in(s_axi_split_awuser_out_0);
+    mp_s_axi_awuser_converter_0->vector_out(m_s_axi_awuser_converter_0_signal);
+    mp_S00_AXI_transactor->AWUSER(m_s_axi_awuser_converter_0_signal);
     mp_s_axi_awvalid_converter_0 = new xsc::common::vectorN2scalar_converter<4>("s_axi_awvalid_converter_0");
     mp_s_axi_awvalid_converter_0->vector_in(s_axi_split_awvalid_out_0);
     mp_s_axi_awvalid_converter_0->scalar_out(m_s_axi_awvalid_converter_0_signal);
@@ -2454,11 +2564,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_awready_converter_0->scalar_in(m_s_axi_awready_converter_0_signal);
     mp_s_axi_awready_converter_0->vector_out(s_axi_concat_awready_out_0);
     mp_S00_AXI_transactor->AWREADY(m_s_axi_awready_converter_0_signal);
-    mp_s_axi_wdata_converter_0 = new xsc::common::vector2vector_converter<1024,256>("s_axi_wdata_converter_0");
+    mp_s_axi_wdata_converter_0 = new xsc::common::vector2vector_converter<512,128>("s_axi_wdata_converter_0");
     mp_s_axi_wdata_converter_0->vector_in(s_axi_split_wdata_out_0);
     mp_s_axi_wdata_converter_0->vector_out(m_s_axi_wdata_converter_0_signal);
     mp_S00_AXI_transactor->WDATA(m_s_axi_wdata_converter_0_signal);
-    mp_s_axi_wstrb_converter_0 = new xsc::common::vector2vector_converter<128,32>("s_axi_wstrb_converter_0");
+    mp_s_axi_wstrb_converter_0 = new xsc::common::vector2vector_converter<64,16>("s_axi_wstrb_converter_0");
     mp_s_axi_wstrb_converter_0->vector_in(s_axi_split_wstrb_out_0);
     mp_s_axi_wstrb_converter_0->vector_out(m_s_axi_wstrb_converter_0_signal);
     mp_S00_AXI_transactor->WSTRB(m_s_axi_wstrb_converter_0_signal);
@@ -2474,7 +2584,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_wready_converter_0->scalar_in(m_s_axi_wready_converter_0_signal);
     mp_s_axi_wready_converter_0->vector_out(s_axi_concat_wready_out_0);
     mp_S00_AXI_transactor->WREADY(m_s_axi_wready_converter_0_signal);
-    mp_s_axi_bid_converter_0 = new xsc::common::vector2vector_converter<2,8>("s_axi_bid_converter_0");
+    mp_s_axi_bid_converter_0 = new xsc::common::vector2vector_converter<18,72>("s_axi_bid_converter_0");
     mp_s_axi_bid_converter_0->vector_in(m_s_axi_bid_converter_0_signal);
     mp_s_axi_bid_converter_0->vector_out(s_axi_concat_bid_out_0);
     mp_S00_AXI_transactor->BID(m_s_axi_bid_converter_0_signal);
@@ -2490,7 +2600,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_bready_converter_0->vector_in(s_axi_split_bready_out_0);
     mp_s_axi_bready_converter_0->scalar_out(m_s_axi_bready_converter_0_signal);
     mp_S00_AXI_transactor->BREADY(m_s_axi_bready_converter_0_signal);
-    mp_s_axi_arid_converter_0 = new xsc::common::vector2vector_converter<8,2>("s_axi_arid_converter_0");
+    mp_s_axi_arid_converter_0 = new xsc::common::vector2vector_converter<72,18>("s_axi_arid_converter_0");
     mp_s_axi_arid_converter_0->vector_in(s_axi_split_arid_out_0);
     mp_s_axi_arid_converter_0->vector_out(m_s_axi_arid_converter_0_signal);
     mp_S00_AXI_transactor->ARID(m_s_axi_arid_converter_0_signal);
@@ -2526,6 +2636,10 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_arqos_converter_0->vector_in(s_axi_split_arqos_out_0);
     mp_s_axi_arqos_converter_0->vector_out(m_s_axi_arqos_converter_0_signal);
     mp_S00_AXI_transactor->ARQOS(m_s_axi_arqos_converter_0_signal);
+    mp_s_axi_aruser_converter_0 = new xsc::common::vector2vector_converter<64,16>("s_axi_aruser_converter_0");
+    mp_s_axi_aruser_converter_0->vector_in(s_axi_split_aruser_out_0);
+    mp_s_axi_aruser_converter_0->vector_out(m_s_axi_aruser_converter_0_signal);
+    mp_S00_AXI_transactor->ARUSER(m_s_axi_aruser_converter_0_signal);
     mp_s_axi_arvalid_converter_0 = new xsc::common::vectorN2scalar_converter<4>("s_axi_arvalid_converter_0");
     mp_s_axi_arvalid_converter_0->vector_in(s_axi_split_arvalid_out_0);
     mp_s_axi_arvalid_converter_0->scalar_out(m_s_axi_arvalid_converter_0_signal);
@@ -2534,11 +2648,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_arready_converter_0->scalar_in(m_s_axi_arready_converter_0_signal);
     mp_s_axi_arready_converter_0->vector_out(s_axi_concat_arready_out_0);
     mp_S00_AXI_transactor->ARREADY(m_s_axi_arready_converter_0_signal);
-    mp_s_axi_rid_converter_0 = new xsc::common::vector2vector_converter<2,8>("s_axi_rid_converter_0");
+    mp_s_axi_rid_converter_0 = new xsc::common::vector2vector_converter<18,72>("s_axi_rid_converter_0");
     mp_s_axi_rid_converter_0->vector_in(m_s_axi_rid_converter_0_signal);
     mp_s_axi_rid_converter_0->vector_out(s_axi_concat_rid_out_0);
     mp_S00_AXI_transactor->RID(m_s_axi_rid_converter_0_signal);
-    mp_s_axi_rdata_converter_0 = new xsc::common::vector2vector_converter<256,1024>("s_axi_rdata_converter_0");
+    mp_s_axi_rdata_converter_0 = new xsc::common::vector2vector_converter<128,512>("s_axi_rdata_converter_0");
     mp_s_axi_rdata_converter_0->vector_in(m_s_axi_rdata_converter_0_signal);
     mp_s_axi_rdata_converter_0->vector_out(s_axi_concat_rdata_out_0);
     mp_S00_AXI_transactor->RDATA(m_s_axi_rdata_converter_0_signal);
@@ -2578,12 +2692,12 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
 
   // 'M00_AXI' transactor parameters
     xsc::common_cpp::properties M00_AXI_transactor_param_props;
-    M00_AXI_transactor_param_props.addLong("DATA_WIDTH", "256");
+    M00_AXI_transactor_param_props.addLong("DATA_WIDTH", "128");
     M00_AXI_transactor_param_props.addLong("FREQ_HZ", "300000000");
-    M00_AXI_transactor_param_props.addLong("ID_WIDTH", "2");
+    M00_AXI_transactor_param_props.addLong("ID_WIDTH", "18");
     M00_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
-    M00_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
-    M00_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "0");
+    M00_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "16");
+    M00_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "16");
     M00_AXI_transactor_param_props.addLong("WUSER_WIDTH", "0");
     M00_AXI_transactor_param_props.addLong("RUSER_WIDTH", "0");
     M00_AXI_transactor_param_props.addLong("BUSER_WIDTH", "0");
@@ -2597,8 +2711,8 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     M00_AXI_transactor_param_props.addLong("HAS_BRESP", "1");
     M00_AXI_transactor_param_props.addLong("HAS_RRESP", "1");
     M00_AXI_transactor_param_props.addLong("SUPPORTS_NARROW_BURST", "1");
-    M00_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "2");
-    M00_AXI_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "2");
+    M00_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "8");
+    M00_AXI_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "8");
     M00_AXI_transactor_param_props.addLong("MAX_BURST_LENGTH", "256");
     M00_AXI_transactor_param_props.addLong("NUM_READ_THREADS", "1");
     M00_AXI_transactor_param_props.addLong("NUM_WRITE_THREADS", "1");
@@ -2611,7 +2725,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     M00_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
     M00_AXI_transactor_param_props.addString("CLK_DOMAIN", "DDR4_ddr4_0_0_c0_ddr4_ui_clk");
 
-    mp_M00_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<256,40,2,1,1,1,1,1>("M00_AXI_transactor", M00_AXI_transactor_param_props);
+    mp_M00_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<128,40,18,16,1,1,16,1>("M00_AXI_transactor", M00_AXI_transactor_param_props);
 
     // M00_AXI' transactor ports
 
@@ -2628,6 +2742,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_M00_AXI_transactor->AWPROT(m_axi_awprot);
     mp_M00_AXI_transactor->AWREGION(m_axi_awregion);
     mp_M00_AXI_transactor->AWQOS(m_axi_awqos);
+    mp_M00_AXI_transactor->AWUSER(m_axi_awuser);
     mp_m_axi_awvalid_converter = new xsc::common::scalar2vectorN_converter<1>("m_axi_awvalid_converter");
     mp_m_axi_awvalid_converter->scalar_in(m_m_axi_awvalid_converter_signal);
     mp_m_axi_awvalid_converter->vector_out(m_axi_awvalid);
@@ -2673,6 +2788,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_M00_AXI_transactor->ARPROT(m_axi_arprot);
     mp_M00_AXI_transactor->ARREGION(m_axi_arregion);
     mp_M00_AXI_transactor->ARQOS(m_axi_arqos);
+    mp_M00_AXI_transactor->ARUSER(m_axi_aruser);
     mp_m_axi_arvalid_converter = new xsc::common::scalar2vectorN_converter<1>("m_axi_arvalid_converter");
     mp_m_axi_arvalid_converter->scalar_in(m_m_axi_arvalid_converter_signal);
     mp_m_axi_arvalid_converter->vector_out(m_axi_arvalid);
@@ -2716,12 +2832,12 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
 
   // 'S01_AXI' transactor parameters
     xsc::common_cpp::properties S01_AXI_transactor_param_props;
-    S01_AXI_transactor_param_props.addLong("DATA_WIDTH", "256");
+    S01_AXI_transactor_param_props.addLong("DATA_WIDTH", "128");
     S01_AXI_transactor_param_props.addLong("FREQ_HZ", "300000000");
-    S01_AXI_transactor_param_props.addLong("ID_WIDTH", "2");
+    S01_AXI_transactor_param_props.addLong("ID_WIDTH", "18");
     S01_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
-    S01_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
-    S01_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "0");
+    S01_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "16");
+    S01_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "16");
     S01_AXI_transactor_param_props.addLong("WUSER_WIDTH", "0");
     S01_AXI_transactor_param_props.addLong("RUSER_WIDTH", "0");
     S01_AXI_transactor_param_props.addLong("BUSER_WIDTH", "0");
@@ -2749,11 +2865,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     S01_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
     S01_AXI_transactor_param_props.addString("CLK_DOMAIN", "DDR4_ddr4_0_0_c0_ddr4_ui_clk");
 
-    mp_S01_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<256,40,2,1,1,1,1,1>("S01_AXI_transactor", S01_AXI_transactor_param_props);
+    mp_S01_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<128,40,18,16,1,1,16,1>("S01_AXI_transactor", S01_AXI_transactor_param_props);
 
     // S01_AXI' transactor ports
 
-    mp_s_axi_awid_converter_1 = new xsc::common::vector2vector_converter<8,2>("s_axi_awid_converter_1");
+    mp_s_axi_awid_converter_1 = new xsc::common::vector2vector_converter<72,18>("s_axi_awid_converter_1");
     mp_s_axi_awid_converter_1->vector_in(s_axi_split_awid_out_1);
     mp_s_axi_awid_converter_1->vector_out(m_s_axi_awid_converter_1_signal);
     mp_S01_AXI_transactor->AWID(m_s_axi_awid_converter_1_signal);
@@ -2789,6 +2905,10 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_awqos_converter_1->vector_in(s_axi_split_awqos_out_1);
     mp_s_axi_awqos_converter_1->vector_out(m_s_axi_awqos_converter_1_signal);
     mp_S01_AXI_transactor->AWQOS(m_s_axi_awqos_converter_1_signal);
+    mp_s_axi_awuser_converter_1 = new xsc::common::vector2vector_converter<64,16>("s_axi_awuser_converter_1");
+    mp_s_axi_awuser_converter_1->vector_in(s_axi_split_awuser_out_1);
+    mp_s_axi_awuser_converter_1->vector_out(m_s_axi_awuser_converter_1_signal);
+    mp_S01_AXI_transactor->AWUSER(m_s_axi_awuser_converter_1_signal);
     mp_s_axi_awvalid_converter_1 = new xsc::common::vectorN2scalar_converter<4>("s_axi_awvalid_converter_1");
     mp_s_axi_awvalid_converter_1->vector_in(s_axi_split_awvalid_out_1);
     mp_s_axi_awvalid_converter_1->scalar_out(m_s_axi_awvalid_converter_1_signal);
@@ -2797,11 +2917,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_awready_converter_1->scalar_in(m_s_axi_awready_converter_1_signal);
     mp_s_axi_awready_converter_1->vector_out(s_axi_concat_awready_out_1);
     mp_S01_AXI_transactor->AWREADY(m_s_axi_awready_converter_1_signal);
-    mp_s_axi_wdata_converter_1 = new xsc::common::vector2vector_converter<1024,256>("s_axi_wdata_converter_1");
+    mp_s_axi_wdata_converter_1 = new xsc::common::vector2vector_converter<512,128>("s_axi_wdata_converter_1");
     mp_s_axi_wdata_converter_1->vector_in(s_axi_split_wdata_out_1);
     mp_s_axi_wdata_converter_1->vector_out(m_s_axi_wdata_converter_1_signal);
     mp_S01_AXI_transactor->WDATA(m_s_axi_wdata_converter_1_signal);
-    mp_s_axi_wstrb_converter_1 = new xsc::common::vector2vector_converter<128,32>("s_axi_wstrb_converter_1");
+    mp_s_axi_wstrb_converter_1 = new xsc::common::vector2vector_converter<64,16>("s_axi_wstrb_converter_1");
     mp_s_axi_wstrb_converter_1->vector_in(s_axi_split_wstrb_out_1);
     mp_s_axi_wstrb_converter_1->vector_out(m_s_axi_wstrb_converter_1_signal);
     mp_S01_AXI_transactor->WSTRB(m_s_axi_wstrb_converter_1_signal);
@@ -2817,7 +2937,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_wready_converter_1->scalar_in(m_s_axi_wready_converter_1_signal);
     mp_s_axi_wready_converter_1->vector_out(s_axi_concat_wready_out_1);
     mp_S01_AXI_transactor->WREADY(m_s_axi_wready_converter_1_signal);
-    mp_s_axi_bid_converter_1 = new xsc::common::vector2vector_converter<2,8>("s_axi_bid_converter_1");
+    mp_s_axi_bid_converter_1 = new xsc::common::vector2vector_converter<18,72>("s_axi_bid_converter_1");
     mp_s_axi_bid_converter_1->vector_in(m_s_axi_bid_converter_1_signal);
     mp_s_axi_bid_converter_1->vector_out(s_axi_concat_bid_out_1);
     mp_S01_AXI_transactor->BID(m_s_axi_bid_converter_1_signal);
@@ -2833,7 +2953,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_bready_converter_1->vector_in(s_axi_split_bready_out_1);
     mp_s_axi_bready_converter_1->scalar_out(m_s_axi_bready_converter_1_signal);
     mp_S01_AXI_transactor->BREADY(m_s_axi_bready_converter_1_signal);
-    mp_s_axi_arid_converter_1 = new xsc::common::vector2vector_converter<8,2>("s_axi_arid_converter_1");
+    mp_s_axi_arid_converter_1 = new xsc::common::vector2vector_converter<72,18>("s_axi_arid_converter_1");
     mp_s_axi_arid_converter_1->vector_in(s_axi_split_arid_out_1);
     mp_s_axi_arid_converter_1->vector_out(m_s_axi_arid_converter_1_signal);
     mp_S01_AXI_transactor->ARID(m_s_axi_arid_converter_1_signal);
@@ -2869,6 +2989,10 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_arqos_converter_1->vector_in(s_axi_split_arqos_out_1);
     mp_s_axi_arqos_converter_1->vector_out(m_s_axi_arqos_converter_1_signal);
     mp_S01_AXI_transactor->ARQOS(m_s_axi_arqos_converter_1_signal);
+    mp_s_axi_aruser_converter_1 = new xsc::common::vector2vector_converter<64,16>("s_axi_aruser_converter_1");
+    mp_s_axi_aruser_converter_1->vector_in(s_axi_split_aruser_out_1);
+    mp_s_axi_aruser_converter_1->vector_out(m_s_axi_aruser_converter_1_signal);
+    mp_S01_AXI_transactor->ARUSER(m_s_axi_aruser_converter_1_signal);
     mp_s_axi_arvalid_converter_1 = new xsc::common::vectorN2scalar_converter<4>("s_axi_arvalid_converter_1");
     mp_s_axi_arvalid_converter_1->vector_in(s_axi_split_arvalid_out_1);
     mp_s_axi_arvalid_converter_1->scalar_out(m_s_axi_arvalid_converter_1_signal);
@@ -2877,11 +3001,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_arready_converter_1->scalar_in(m_s_axi_arready_converter_1_signal);
     mp_s_axi_arready_converter_1->vector_out(s_axi_concat_arready_out_1);
     mp_S01_AXI_transactor->ARREADY(m_s_axi_arready_converter_1_signal);
-    mp_s_axi_rid_converter_1 = new xsc::common::vector2vector_converter<2,8>("s_axi_rid_converter_1");
+    mp_s_axi_rid_converter_1 = new xsc::common::vector2vector_converter<18,72>("s_axi_rid_converter_1");
     mp_s_axi_rid_converter_1->vector_in(m_s_axi_rid_converter_1_signal);
     mp_s_axi_rid_converter_1->vector_out(s_axi_concat_rid_out_1);
     mp_S01_AXI_transactor->RID(m_s_axi_rid_converter_1_signal);
-    mp_s_axi_rdata_converter_1 = new xsc::common::vector2vector_converter<256,1024>("s_axi_rdata_converter_1");
+    mp_s_axi_rdata_converter_1 = new xsc::common::vector2vector_converter<128,512>("s_axi_rdata_converter_1");
     mp_s_axi_rdata_converter_1->vector_in(m_s_axi_rdata_converter_1_signal);
     mp_s_axi_rdata_converter_1->vector_out(s_axi_concat_rdata_out_1);
     mp_S01_AXI_transactor->RDATA(m_s_axi_rdata_converter_1_signal);
@@ -2921,12 +3045,12 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
 
   // 'S02_AXI' transactor parameters
     xsc::common_cpp::properties S02_AXI_transactor_param_props;
-    S02_AXI_transactor_param_props.addLong("DATA_WIDTH", "256");
+    S02_AXI_transactor_param_props.addLong("DATA_WIDTH", "128");
     S02_AXI_transactor_param_props.addLong("FREQ_HZ", "300000000");
-    S02_AXI_transactor_param_props.addLong("ID_WIDTH", "2");
+    S02_AXI_transactor_param_props.addLong("ID_WIDTH", "18");
     S02_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
-    S02_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
-    S02_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "0");
+    S02_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "16");
+    S02_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "16");
     S02_AXI_transactor_param_props.addLong("WUSER_WIDTH", "0");
     S02_AXI_transactor_param_props.addLong("RUSER_WIDTH", "0");
     S02_AXI_transactor_param_props.addLong("BUSER_WIDTH", "0");
@@ -2943,8 +3067,8 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     S02_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "2");
     S02_AXI_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "2");
     S02_AXI_transactor_param_props.addLong("MAX_BURST_LENGTH", "256");
-    S02_AXI_transactor_param_props.addLong("NUM_READ_THREADS", "4");
-    S02_AXI_transactor_param_props.addLong("NUM_WRITE_THREADS", "4");
+    S02_AXI_transactor_param_props.addLong("NUM_READ_THREADS", "1");
+    S02_AXI_transactor_param_props.addLong("NUM_WRITE_THREADS", "1");
     S02_AXI_transactor_param_props.addLong("RUSER_BITS_PER_BYTE", "0");
     S02_AXI_transactor_param_props.addLong("WUSER_BITS_PER_BYTE", "0");
     S02_AXI_transactor_param_props.addLong("HAS_SIZE", "1");
@@ -2954,11 +3078,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     S02_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
     S02_AXI_transactor_param_props.addString("CLK_DOMAIN", "DDR4_ddr4_0_0_c0_ddr4_ui_clk");
 
-    mp_S02_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<256,40,2,1,1,1,1,1>("S02_AXI_transactor", S02_AXI_transactor_param_props);
+    mp_S02_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<128,40,18,16,1,1,16,1>("S02_AXI_transactor", S02_AXI_transactor_param_props);
 
     // S02_AXI' transactor ports
 
-    mp_s_axi_awid_converter_2 = new xsc::common::vector2vector_converter<8,2>("s_axi_awid_converter_2");
+    mp_s_axi_awid_converter_2 = new xsc::common::vector2vector_converter<72,18>("s_axi_awid_converter_2");
     mp_s_axi_awid_converter_2->vector_in(s_axi_split_awid_out_2);
     mp_s_axi_awid_converter_2->vector_out(m_s_axi_awid_converter_2_signal);
     mp_S02_AXI_transactor->AWID(m_s_axi_awid_converter_2_signal);
@@ -2994,6 +3118,10 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_awqos_converter_2->vector_in(s_axi_split_awqos_out_2);
     mp_s_axi_awqos_converter_2->vector_out(m_s_axi_awqos_converter_2_signal);
     mp_S02_AXI_transactor->AWQOS(m_s_axi_awqos_converter_2_signal);
+    mp_s_axi_awuser_converter_2 = new xsc::common::vector2vector_converter<64,16>("s_axi_awuser_converter_2");
+    mp_s_axi_awuser_converter_2->vector_in(s_axi_split_awuser_out_2);
+    mp_s_axi_awuser_converter_2->vector_out(m_s_axi_awuser_converter_2_signal);
+    mp_S02_AXI_transactor->AWUSER(m_s_axi_awuser_converter_2_signal);
     mp_s_axi_awvalid_converter_2 = new xsc::common::vectorN2scalar_converter<4>("s_axi_awvalid_converter_2");
     mp_s_axi_awvalid_converter_2->vector_in(s_axi_split_awvalid_out_2);
     mp_s_axi_awvalid_converter_2->scalar_out(m_s_axi_awvalid_converter_2_signal);
@@ -3002,11 +3130,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_awready_converter_2->scalar_in(m_s_axi_awready_converter_2_signal);
     mp_s_axi_awready_converter_2->vector_out(s_axi_concat_awready_out_2);
     mp_S02_AXI_transactor->AWREADY(m_s_axi_awready_converter_2_signal);
-    mp_s_axi_wdata_converter_2 = new xsc::common::vector2vector_converter<1024,256>("s_axi_wdata_converter_2");
+    mp_s_axi_wdata_converter_2 = new xsc::common::vector2vector_converter<512,128>("s_axi_wdata_converter_2");
     mp_s_axi_wdata_converter_2->vector_in(s_axi_split_wdata_out_2);
     mp_s_axi_wdata_converter_2->vector_out(m_s_axi_wdata_converter_2_signal);
     mp_S02_AXI_transactor->WDATA(m_s_axi_wdata_converter_2_signal);
-    mp_s_axi_wstrb_converter_2 = new xsc::common::vector2vector_converter<128,32>("s_axi_wstrb_converter_2");
+    mp_s_axi_wstrb_converter_2 = new xsc::common::vector2vector_converter<64,16>("s_axi_wstrb_converter_2");
     mp_s_axi_wstrb_converter_2->vector_in(s_axi_split_wstrb_out_2);
     mp_s_axi_wstrb_converter_2->vector_out(m_s_axi_wstrb_converter_2_signal);
     mp_S02_AXI_transactor->WSTRB(m_s_axi_wstrb_converter_2_signal);
@@ -3022,7 +3150,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_wready_converter_2->scalar_in(m_s_axi_wready_converter_2_signal);
     mp_s_axi_wready_converter_2->vector_out(s_axi_concat_wready_out_2);
     mp_S02_AXI_transactor->WREADY(m_s_axi_wready_converter_2_signal);
-    mp_s_axi_bid_converter_2 = new xsc::common::vector2vector_converter<2,8>("s_axi_bid_converter_2");
+    mp_s_axi_bid_converter_2 = new xsc::common::vector2vector_converter<18,72>("s_axi_bid_converter_2");
     mp_s_axi_bid_converter_2->vector_in(m_s_axi_bid_converter_2_signal);
     mp_s_axi_bid_converter_2->vector_out(s_axi_concat_bid_out_2);
     mp_S02_AXI_transactor->BID(m_s_axi_bid_converter_2_signal);
@@ -3038,7 +3166,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_bready_converter_2->vector_in(s_axi_split_bready_out_2);
     mp_s_axi_bready_converter_2->scalar_out(m_s_axi_bready_converter_2_signal);
     mp_S02_AXI_transactor->BREADY(m_s_axi_bready_converter_2_signal);
-    mp_s_axi_arid_converter_2 = new xsc::common::vector2vector_converter<8,2>("s_axi_arid_converter_2");
+    mp_s_axi_arid_converter_2 = new xsc::common::vector2vector_converter<72,18>("s_axi_arid_converter_2");
     mp_s_axi_arid_converter_2->vector_in(s_axi_split_arid_out_2);
     mp_s_axi_arid_converter_2->vector_out(m_s_axi_arid_converter_2_signal);
     mp_S02_AXI_transactor->ARID(m_s_axi_arid_converter_2_signal);
@@ -3074,6 +3202,10 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_arqos_converter_2->vector_in(s_axi_split_arqos_out_2);
     mp_s_axi_arqos_converter_2->vector_out(m_s_axi_arqos_converter_2_signal);
     mp_S02_AXI_transactor->ARQOS(m_s_axi_arqos_converter_2_signal);
+    mp_s_axi_aruser_converter_2 = new xsc::common::vector2vector_converter<64,16>("s_axi_aruser_converter_2");
+    mp_s_axi_aruser_converter_2->vector_in(s_axi_split_aruser_out_2);
+    mp_s_axi_aruser_converter_2->vector_out(m_s_axi_aruser_converter_2_signal);
+    mp_S02_AXI_transactor->ARUSER(m_s_axi_aruser_converter_2_signal);
     mp_s_axi_arvalid_converter_2 = new xsc::common::vectorN2scalar_converter<4>("s_axi_arvalid_converter_2");
     mp_s_axi_arvalid_converter_2->vector_in(s_axi_split_arvalid_out_2);
     mp_s_axi_arvalid_converter_2->scalar_out(m_s_axi_arvalid_converter_2_signal);
@@ -3082,11 +3214,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_arready_converter_2->scalar_in(m_s_axi_arready_converter_2_signal);
     mp_s_axi_arready_converter_2->vector_out(s_axi_concat_arready_out_2);
     mp_S02_AXI_transactor->ARREADY(m_s_axi_arready_converter_2_signal);
-    mp_s_axi_rid_converter_2 = new xsc::common::vector2vector_converter<2,8>("s_axi_rid_converter_2");
+    mp_s_axi_rid_converter_2 = new xsc::common::vector2vector_converter<18,72>("s_axi_rid_converter_2");
     mp_s_axi_rid_converter_2->vector_in(m_s_axi_rid_converter_2_signal);
     mp_s_axi_rid_converter_2->vector_out(s_axi_concat_rid_out_2);
     mp_S02_AXI_transactor->RID(m_s_axi_rid_converter_2_signal);
-    mp_s_axi_rdata_converter_2 = new xsc::common::vector2vector_converter<256,1024>("s_axi_rdata_converter_2");
+    mp_s_axi_rdata_converter_2 = new xsc::common::vector2vector_converter<128,512>("s_axi_rdata_converter_2");
     mp_s_axi_rdata_converter_2->vector_in(m_s_axi_rdata_converter_2_signal);
     mp_s_axi_rdata_converter_2->vector_out(s_axi_concat_rdata_out_2);
     mp_S02_AXI_transactor->RDATA(m_s_axi_rdata_converter_2_signal);
@@ -3126,12 +3258,12 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
 
   // 'S03_AXI' transactor parameters
     xsc::common_cpp::properties S03_AXI_transactor_param_props;
-    S03_AXI_transactor_param_props.addLong("DATA_WIDTH", "256");
+    S03_AXI_transactor_param_props.addLong("DATA_WIDTH", "128");
     S03_AXI_transactor_param_props.addLong("FREQ_HZ", "300000000");
-    S03_AXI_transactor_param_props.addLong("ID_WIDTH", "2");
+    S03_AXI_transactor_param_props.addLong("ID_WIDTH", "18");
     S03_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
-    S03_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
-    S03_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "0");
+    S03_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "16");
+    S03_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "16");
     S03_AXI_transactor_param_props.addLong("WUSER_WIDTH", "0");
     S03_AXI_transactor_param_props.addLong("RUSER_WIDTH", "0");
     S03_AXI_transactor_param_props.addLong("BUSER_WIDTH", "0");
@@ -3159,11 +3291,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     S03_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
     S03_AXI_transactor_param_props.addString("CLK_DOMAIN", "DDR4_ddr4_0_0_c0_ddr4_ui_clk");
 
-    mp_S03_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<256,40,2,1,1,1,1,1>("S03_AXI_transactor", S03_AXI_transactor_param_props);
+    mp_S03_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<128,40,18,16,1,1,16,1>("S03_AXI_transactor", S03_AXI_transactor_param_props);
 
     // S03_AXI' transactor ports
 
-    mp_s_axi_awid_converter_3 = new xsc::common::vector2vector_converter<8,2>("s_axi_awid_converter_3");
+    mp_s_axi_awid_converter_3 = new xsc::common::vector2vector_converter<72,18>("s_axi_awid_converter_3");
     mp_s_axi_awid_converter_3->vector_in(s_axi_split_awid_out_3);
     mp_s_axi_awid_converter_3->vector_out(m_s_axi_awid_converter_3_signal);
     mp_S03_AXI_transactor->AWID(m_s_axi_awid_converter_3_signal);
@@ -3199,6 +3331,10 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_awqos_converter_3->vector_in(s_axi_split_awqos_out_3);
     mp_s_axi_awqos_converter_3->vector_out(m_s_axi_awqos_converter_3_signal);
     mp_S03_AXI_transactor->AWQOS(m_s_axi_awqos_converter_3_signal);
+    mp_s_axi_awuser_converter_3 = new xsc::common::vector2vector_converter<64,16>("s_axi_awuser_converter_3");
+    mp_s_axi_awuser_converter_3->vector_in(s_axi_split_awuser_out_3);
+    mp_s_axi_awuser_converter_3->vector_out(m_s_axi_awuser_converter_3_signal);
+    mp_S03_AXI_transactor->AWUSER(m_s_axi_awuser_converter_3_signal);
     mp_s_axi_awvalid_converter_3 = new xsc::common::vectorN2scalar_converter<4>("s_axi_awvalid_converter_3");
     mp_s_axi_awvalid_converter_3->vector_in(s_axi_split_awvalid_out_3);
     mp_s_axi_awvalid_converter_3->scalar_out(m_s_axi_awvalid_converter_3_signal);
@@ -3207,11 +3343,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_awready_converter_3->scalar_in(m_s_axi_awready_converter_3_signal);
     mp_s_axi_awready_converter_3->vector_out(s_axi_concat_awready_out_3);
     mp_S03_AXI_transactor->AWREADY(m_s_axi_awready_converter_3_signal);
-    mp_s_axi_wdata_converter_3 = new xsc::common::vector2vector_converter<1024,256>("s_axi_wdata_converter_3");
+    mp_s_axi_wdata_converter_3 = new xsc::common::vector2vector_converter<512,128>("s_axi_wdata_converter_3");
     mp_s_axi_wdata_converter_3->vector_in(s_axi_split_wdata_out_3);
     mp_s_axi_wdata_converter_3->vector_out(m_s_axi_wdata_converter_3_signal);
     mp_S03_AXI_transactor->WDATA(m_s_axi_wdata_converter_3_signal);
-    mp_s_axi_wstrb_converter_3 = new xsc::common::vector2vector_converter<128,32>("s_axi_wstrb_converter_3");
+    mp_s_axi_wstrb_converter_3 = new xsc::common::vector2vector_converter<64,16>("s_axi_wstrb_converter_3");
     mp_s_axi_wstrb_converter_3->vector_in(s_axi_split_wstrb_out_3);
     mp_s_axi_wstrb_converter_3->vector_out(m_s_axi_wstrb_converter_3_signal);
     mp_S03_AXI_transactor->WSTRB(m_s_axi_wstrb_converter_3_signal);
@@ -3227,7 +3363,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_wready_converter_3->scalar_in(m_s_axi_wready_converter_3_signal);
     mp_s_axi_wready_converter_3->vector_out(s_axi_concat_wready_out_3);
     mp_S03_AXI_transactor->WREADY(m_s_axi_wready_converter_3_signal);
-    mp_s_axi_bid_converter_3 = new xsc::common::vector2vector_converter<2,8>("s_axi_bid_converter_3");
+    mp_s_axi_bid_converter_3 = new xsc::common::vector2vector_converter<18,72>("s_axi_bid_converter_3");
     mp_s_axi_bid_converter_3->vector_in(m_s_axi_bid_converter_3_signal);
     mp_s_axi_bid_converter_3->vector_out(s_axi_concat_bid_out_3);
     mp_S03_AXI_transactor->BID(m_s_axi_bid_converter_3_signal);
@@ -3243,7 +3379,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_bready_converter_3->vector_in(s_axi_split_bready_out_3);
     mp_s_axi_bready_converter_3->scalar_out(m_s_axi_bready_converter_3_signal);
     mp_S03_AXI_transactor->BREADY(m_s_axi_bready_converter_3_signal);
-    mp_s_axi_arid_converter_3 = new xsc::common::vector2vector_converter<8,2>("s_axi_arid_converter_3");
+    mp_s_axi_arid_converter_3 = new xsc::common::vector2vector_converter<72,18>("s_axi_arid_converter_3");
     mp_s_axi_arid_converter_3->vector_in(s_axi_split_arid_out_3);
     mp_s_axi_arid_converter_3->vector_out(m_s_axi_arid_converter_3_signal);
     mp_S03_AXI_transactor->ARID(m_s_axi_arid_converter_3_signal);
@@ -3279,6 +3415,10 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_arqos_converter_3->vector_in(s_axi_split_arqos_out_3);
     mp_s_axi_arqos_converter_3->vector_out(m_s_axi_arqos_converter_3_signal);
     mp_S03_AXI_transactor->ARQOS(m_s_axi_arqos_converter_3_signal);
+    mp_s_axi_aruser_converter_3 = new xsc::common::vector2vector_converter<64,16>("s_axi_aruser_converter_3");
+    mp_s_axi_aruser_converter_3->vector_in(s_axi_split_aruser_out_3);
+    mp_s_axi_aruser_converter_3->vector_out(m_s_axi_aruser_converter_3_signal);
+    mp_S03_AXI_transactor->ARUSER(m_s_axi_aruser_converter_3_signal);
     mp_s_axi_arvalid_converter_3 = new xsc::common::vectorN2scalar_converter<4>("s_axi_arvalid_converter_3");
     mp_s_axi_arvalid_converter_3->vector_in(s_axi_split_arvalid_out_3);
     mp_s_axi_arvalid_converter_3->scalar_out(m_s_axi_arvalid_converter_3_signal);
@@ -3287,11 +3427,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_arready_converter_3->scalar_in(m_s_axi_arready_converter_3_signal);
     mp_s_axi_arready_converter_3->vector_out(s_axi_concat_arready_out_3);
     mp_S03_AXI_transactor->ARREADY(m_s_axi_arready_converter_3_signal);
-    mp_s_axi_rid_converter_3 = new xsc::common::vector2vector_converter<2,8>("s_axi_rid_converter_3");
+    mp_s_axi_rid_converter_3 = new xsc::common::vector2vector_converter<18,72>("s_axi_rid_converter_3");
     mp_s_axi_rid_converter_3->vector_in(m_s_axi_rid_converter_3_signal);
     mp_s_axi_rid_converter_3->vector_out(s_axi_concat_rid_out_3);
     mp_S03_AXI_transactor->RID(m_s_axi_rid_converter_3_signal);
-    mp_s_axi_rdata_converter_3 = new xsc::common::vector2vector_converter<256,1024>("s_axi_rdata_converter_3");
+    mp_s_axi_rdata_converter_3 = new xsc::common::vector2vector_converter<128,512>("s_axi_rdata_converter_3");
     mp_s_axi_rdata_converter_3->vector_in(m_s_axi_rdata_converter_3_signal);
     mp_s_axi_rdata_converter_3->vector_out(s_axi_concat_rdata_out_3);
     mp_S03_AXI_transactor->RDATA(m_s_axi_rdata_converter_3_signal);
@@ -3331,7 +3471,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
 
 
 #ifdef RIVIERA
-DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_core::sc_module_name& nm) : DDR4_axi_interconnect_0_imp_xbar_0_sc(nm), aclk("aclk"), aresetn("aresetn"), s_axi_awid("s_axi_awid"), s_axi_awaddr("s_axi_awaddr"), s_axi_awlen("s_axi_awlen"), s_axi_awsize("s_axi_awsize"), s_axi_awburst("s_axi_awburst"), s_axi_awlock("s_axi_awlock"), s_axi_awcache("s_axi_awcache"), s_axi_awprot("s_axi_awprot"), s_axi_awqos("s_axi_awqos"), s_axi_awvalid("s_axi_awvalid"), s_axi_awready("s_axi_awready"), s_axi_wdata("s_axi_wdata"), s_axi_wstrb("s_axi_wstrb"), s_axi_wlast("s_axi_wlast"), s_axi_wvalid("s_axi_wvalid"), s_axi_wready("s_axi_wready"), s_axi_bid("s_axi_bid"), s_axi_bresp("s_axi_bresp"), s_axi_bvalid("s_axi_bvalid"), s_axi_bready("s_axi_bready"), s_axi_arid("s_axi_arid"), s_axi_araddr("s_axi_araddr"), s_axi_arlen("s_axi_arlen"), s_axi_arsize("s_axi_arsize"), s_axi_arburst("s_axi_arburst"), s_axi_arlock("s_axi_arlock"), s_axi_arcache("s_axi_arcache"), s_axi_arprot("s_axi_arprot"), s_axi_arqos("s_axi_arqos"), s_axi_arvalid("s_axi_arvalid"), s_axi_arready("s_axi_arready"), s_axi_rid("s_axi_rid"), s_axi_rdata("s_axi_rdata"), s_axi_rresp("s_axi_rresp"), s_axi_rlast("s_axi_rlast"), s_axi_rvalid("s_axi_rvalid"), s_axi_rready("s_axi_rready"), m_axi_awid("m_axi_awid"), m_axi_awaddr("m_axi_awaddr"), m_axi_awlen("m_axi_awlen"), m_axi_awsize("m_axi_awsize"), m_axi_awburst("m_axi_awburst"), m_axi_awlock("m_axi_awlock"), m_axi_awcache("m_axi_awcache"), m_axi_awprot("m_axi_awprot"), m_axi_awregion("m_axi_awregion"), m_axi_awqos("m_axi_awqos"), m_axi_awvalid("m_axi_awvalid"), m_axi_awready("m_axi_awready"), m_axi_wdata("m_axi_wdata"), m_axi_wstrb("m_axi_wstrb"), m_axi_wlast("m_axi_wlast"), m_axi_wvalid("m_axi_wvalid"), m_axi_wready("m_axi_wready"), m_axi_bid("m_axi_bid"), m_axi_bresp("m_axi_bresp"), m_axi_bvalid("m_axi_bvalid"), m_axi_bready("m_axi_bready"), m_axi_arid("m_axi_arid"), m_axi_araddr("m_axi_araddr"), m_axi_arlen("m_axi_arlen"), m_axi_arsize("m_axi_arsize"), m_axi_arburst("m_axi_arburst"), m_axi_arlock("m_axi_arlock"), m_axi_arcache("m_axi_arcache"), m_axi_arprot("m_axi_arprot"), m_axi_arregion("m_axi_arregion"), m_axi_arqos("m_axi_arqos"), m_axi_arvalid("m_axi_arvalid"), m_axi_arready("m_axi_arready"), m_axi_rid("m_axi_rid"), m_axi_rdata("m_axi_rdata"), m_axi_rresp("m_axi_rresp"), m_axi_rlast("m_axi_rlast"), m_axi_rvalid("m_axi_rvalid"), m_axi_rready("m_axi_rready")
+DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_core::sc_module_name& nm) : DDR4_axi_interconnect_0_imp_xbar_0_sc(nm), aclk("aclk"), aresetn("aresetn"), s_axi_awid("s_axi_awid"), s_axi_awaddr("s_axi_awaddr"), s_axi_awlen("s_axi_awlen"), s_axi_awsize("s_axi_awsize"), s_axi_awburst("s_axi_awburst"), s_axi_awlock("s_axi_awlock"), s_axi_awcache("s_axi_awcache"), s_axi_awprot("s_axi_awprot"), s_axi_awqos("s_axi_awqos"), s_axi_awuser("s_axi_awuser"), s_axi_awvalid("s_axi_awvalid"), s_axi_awready("s_axi_awready"), s_axi_wdata("s_axi_wdata"), s_axi_wstrb("s_axi_wstrb"), s_axi_wlast("s_axi_wlast"), s_axi_wvalid("s_axi_wvalid"), s_axi_wready("s_axi_wready"), s_axi_bid("s_axi_bid"), s_axi_bresp("s_axi_bresp"), s_axi_bvalid("s_axi_bvalid"), s_axi_bready("s_axi_bready"), s_axi_arid("s_axi_arid"), s_axi_araddr("s_axi_araddr"), s_axi_arlen("s_axi_arlen"), s_axi_arsize("s_axi_arsize"), s_axi_arburst("s_axi_arburst"), s_axi_arlock("s_axi_arlock"), s_axi_arcache("s_axi_arcache"), s_axi_arprot("s_axi_arprot"), s_axi_arqos("s_axi_arqos"), s_axi_aruser("s_axi_aruser"), s_axi_arvalid("s_axi_arvalid"), s_axi_arready("s_axi_arready"), s_axi_rid("s_axi_rid"), s_axi_rdata("s_axi_rdata"), s_axi_rresp("s_axi_rresp"), s_axi_rlast("s_axi_rlast"), s_axi_rvalid("s_axi_rvalid"), s_axi_rready("s_axi_rready"), m_axi_awid("m_axi_awid"), m_axi_awaddr("m_axi_awaddr"), m_axi_awlen("m_axi_awlen"), m_axi_awsize("m_axi_awsize"), m_axi_awburst("m_axi_awburst"), m_axi_awlock("m_axi_awlock"), m_axi_awcache("m_axi_awcache"), m_axi_awprot("m_axi_awprot"), m_axi_awregion("m_axi_awregion"), m_axi_awqos("m_axi_awqos"), m_axi_awuser("m_axi_awuser"), m_axi_awvalid("m_axi_awvalid"), m_axi_awready("m_axi_awready"), m_axi_wdata("m_axi_wdata"), m_axi_wstrb("m_axi_wstrb"), m_axi_wlast("m_axi_wlast"), m_axi_wvalid("m_axi_wvalid"), m_axi_wready("m_axi_wready"), m_axi_bid("m_axi_bid"), m_axi_bresp("m_axi_bresp"), m_axi_bvalid("m_axi_bvalid"), m_axi_bready("m_axi_bready"), m_axi_arid("m_axi_arid"), m_axi_araddr("m_axi_araddr"), m_axi_arlen("m_axi_arlen"), m_axi_arsize("m_axi_arsize"), m_axi_arburst("m_axi_arburst"), m_axi_arlock("m_axi_arlock"), m_axi_arcache("m_axi_arcache"), m_axi_arprot("m_axi_arprot"), m_axi_arregion("m_axi_arregion"), m_axi_arqos("m_axi_arqos"), m_axi_aruser("m_axi_aruser"), m_axi_arvalid("m_axi_arvalid"), m_axi_arready("m_axi_arready"), m_axi_rid("m_axi_rid"), m_axi_rdata("m_axi_rdata"), m_axi_rresp("m_axi_rresp"), m_axi_rlast("m_axi_rlast"), m_axi_rvalid("m_axi_rvalid"), m_axi_rready("m_axi_rready")
 {
 
   // initialize pins
@@ -3349,6 +3489,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awcache_converter_0 = NULL;
   mp_s_axi_awprot_converter_0 = NULL;
   mp_s_axi_awqos_converter_0 = NULL;
+  mp_s_axi_awuser_converter_0 = NULL;
   mp_s_axi_awvalid_converter_0 = NULL;
   mp_s_axi_awready_converter_0 = NULL;
   mp_s_axi_wdata_converter_0 = NULL;
@@ -3369,6 +3510,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arcache_converter_0 = NULL;
   mp_s_axi_arprot_converter_0 = NULL;
   mp_s_axi_arqos_converter_0 = NULL;
+  mp_s_axi_aruser_converter_0 = NULL;
   mp_s_axi_arvalid_converter_0 = NULL;
   mp_s_axi_arready_converter_0 = NULL;
   mp_s_axi_rid_converter_0 = NULL;
@@ -3402,6 +3544,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awcache_converter_1 = NULL;
   mp_s_axi_awprot_converter_1 = NULL;
   mp_s_axi_awqos_converter_1 = NULL;
+  mp_s_axi_awuser_converter_1 = NULL;
   mp_s_axi_awvalid_converter_1 = NULL;
   mp_s_axi_awready_converter_1 = NULL;
   mp_s_axi_wdata_converter_1 = NULL;
@@ -3422,6 +3565,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arcache_converter_1 = NULL;
   mp_s_axi_arprot_converter_1 = NULL;
   mp_s_axi_arqos_converter_1 = NULL;
+  mp_s_axi_aruser_converter_1 = NULL;
   mp_s_axi_arvalid_converter_1 = NULL;
   mp_s_axi_arready_converter_1 = NULL;
   mp_s_axi_rid_converter_1 = NULL;
@@ -3440,6 +3584,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awcache_converter_2 = NULL;
   mp_s_axi_awprot_converter_2 = NULL;
   mp_s_axi_awqos_converter_2 = NULL;
+  mp_s_axi_awuser_converter_2 = NULL;
   mp_s_axi_awvalid_converter_2 = NULL;
   mp_s_axi_awready_converter_2 = NULL;
   mp_s_axi_wdata_converter_2 = NULL;
@@ -3460,6 +3605,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arcache_converter_2 = NULL;
   mp_s_axi_arprot_converter_2 = NULL;
   mp_s_axi_arqos_converter_2 = NULL;
+  mp_s_axi_aruser_converter_2 = NULL;
   mp_s_axi_arvalid_converter_2 = NULL;
   mp_s_axi_arready_converter_2 = NULL;
   mp_s_axi_rid_converter_2 = NULL;
@@ -3478,6 +3624,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awcache_converter_3 = NULL;
   mp_s_axi_awprot_converter_3 = NULL;
   mp_s_axi_awqos_converter_3 = NULL;
+  mp_s_axi_awuser_converter_3 = NULL;
   mp_s_axi_awvalid_converter_3 = NULL;
   mp_s_axi_awready_converter_3 = NULL;
   mp_s_axi_wdata_converter_3 = NULL;
@@ -3498,6 +3645,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arcache_converter_3 = NULL;
   mp_s_axi_arprot_converter_3 = NULL;
   mp_s_axi_arqos_converter_3 = NULL;
+  mp_s_axi_aruser_converter_3 = NULL;
   mp_s_axi_arvalid_converter_3 = NULL;
   mp_s_axi_arready_converter_3 = NULL;
   mp_s_axi_rid_converter_3 = NULL;
@@ -3528,6 +3676,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_arprot = NULL;
   mp_s_axi_split_arqos = NULL;
   mp_s_axi_split_arsize = NULL;
+  mp_s_axi_split_aruser = NULL;
   mp_s_axi_split_arvalid = NULL;
   mp_s_axi_split_awaddr = NULL;
   mp_s_axi_split_awburst = NULL;
@@ -3538,6 +3687,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_awprot = NULL;
   mp_s_axi_split_awqos = NULL;
   mp_s_axi_split_awsize = NULL;
+  mp_s_axi_split_awuser = NULL;
   mp_s_axi_split_awvalid = NULL;
   mp_s_axi_split_bready = NULL;
   mp_s_axi_split_rready = NULL;
@@ -3545,10 +3695,10 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_wlast = NULL;
   mp_s_axi_split_wstrb = NULL;
   mp_s_axi_split_wvalid = NULL;
-  mp_s_axi_split_awid = new xsc::xsc_split<8, 4>("s_axi_split_awid");
+  mp_s_axi_split_awid = new xsc::xsc_split<72, 4>("s_axi_split_awid");
   mp_s_axi_split_awid->in_port(s_axi_awid);
   mp_s_axi_split_awid->out_port[0](s_axi_split_awid_out_0);
-    mp_s_axi_split_awid->add_mask(0,2,0);
+    mp_s_axi_split_awid->add_mask(0,18,0);
   mp_s_axi_split_awaddr = new xsc::xsc_split<160, 4>("s_axi_split_awaddr");
   mp_s_axi_split_awaddr->in_port(s_axi_awaddr);
   mp_s_axi_split_awaddr->out_port[0](s_axi_split_awaddr_out_0);
@@ -3581,6 +3731,10 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_awqos->in_port(s_axi_awqos);
   mp_s_axi_split_awqos->out_port[0](s_axi_split_awqos_out_0);
     mp_s_axi_split_awqos->add_mask(0,4,0);
+  mp_s_axi_split_awuser = new xsc::xsc_split<64, 4>("s_axi_split_awuser");
+  mp_s_axi_split_awuser->in_port(s_axi_awuser);
+  mp_s_axi_split_awuser->out_port[0](s_axi_split_awuser_out_0);
+    mp_s_axi_split_awuser->add_mask(0,16,0);
   mp_s_axi_split_awvalid = new xsc::xsc_split<4, 4>("s_axi_split_awvalid");
   mp_s_axi_split_awvalid->in_port(s_axi_awvalid);
   mp_s_axi_split_awvalid->out_port[0](s_axi_split_awvalid_out_0);
@@ -3589,14 +3743,14 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_concat_awready->in_port[0](s_axi_concat_awready_out_0);
   mp_s_axi_concat_awready->out_port(s_axi_awready);
     mp_s_axi_concat_awready->offset_port(0, 0);
-  mp_s_axi_split_wdata = new xsc::xsc_split<1024, 4>("s_axi_split_wdata");
+  mp_s_axi_split_wdata = new xsc::xsc_split<512, 4>("s_axi_split_wdata");
   mp_s_axi_split_wdata->in_port(s_axi_wdata);
   mp_s_axi_split_wdata->out_port[0](s_axi_split_wdata_out_0);
-    mp_s_axi_split_wdata->add_mask(0,256,0);
-  mp_s_axi_split_wstrb = new xsc::xsc_split<128, 4>("s_axi_split_wstrb");
+    mp_s_axi_split_wdata->add_mask(0,128,0);
+  mp_s_axi_split_wstrb = new xsc::xsc_split<64, 4>("s_axi_split_wstrb");
   mp_s_axi_split_wstrb->in_port(s_axi_wstrb);
   mp_s_axi_split_wstrb->out_port[0](s_axi_split_wstrb_out_0);
-    mp_s_axi_split_wstrb->add_mask(0,32,0);
+    mp_s_axi_split_wstrb->add_mask(0,16,0);
   mp_s_axi_split_wlast = new xsc::xsc_split<4, 4>("s_axi_split_wlast");
   mp_s_axi_split_wlast->in_port(s_axi_wlast);
   mp_s_axi_split_wlast->out_port[0](s_axi_split_wlast_out_0);
@@ -3609,7 +3763,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_concat_wready->in_port[0](s_axi_concat_wready_out_0);
   mp_s_axi_concat_wready->out_port(s_axi_wready);
     mp_s_axi_concat_wready->offset_port(0, 0);
-  mp_s_axi_concat_bid = new xsc::xsc_concatenator<8, 4>("s_axi_concat_bid");
+  mp_s_axi_concat_bid = new xsc::xsc_concatenator<72, 4>("s_axi_concat_bid");
   mp_s_axi_concat_bid->in_port[0](s_axi_concat_bid_out_0);
   mp_s_axi_concat_bid->out_port(s_axi_bid);
     mp_s_axi_concat_bid->offset_port(0, 0);
@@ -3625,10 +3779,10 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_bready->in_port(s_axi_bready);
   mp_s_axi_split_bready->out_port[0](s_axi_split_bready_out_0);
     mp_s_axi_split_bready->add_mask(0,1,0);
-  mp_s_axi_split_arid = new xsc::xsc_split<8, 4>("s_axi_split_arid");
+  mp_s_axi_split_arid = new xsc::xsc_split<72, 4>("s_axi_split_arid");
   mp_s_axi_split_arid->in_port(s_axi_arid);
   mp_s_axi_split_arid->out_port[0](s_axi_split_arid_out_0);
-    mp_s_axi_split_arid->add_mask(0,2,0);
+    mp_s_axi_split_arid->add_mask(0,18,0);
   mp_s_axi_split_araddr = new xsc::xsc_split<160, 4>("s_axi_split_araddr");
   mp_s_axi_split_araddr->in_port(s_axi_araddr);
   mp_s_axi_split_araddr->out_port[0](s_axi_split_araddr_out_0);
@@ -3661,6 +3815,10 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_arqos->in_port(s_axi_arqos);
   mp_s_axi_split_arqos->out_port[0](s_axi_split_arqos_out_0);
     mp_s_axi_split_arqos->add_mask(0,4,0);
+  mp_s_axi_split_aruser = new xsc::xsc_split<64, 4>("s_axi_split_aruser");
+  mp_s_axi_split_aruser->in_port(s_axi_aruser);
+  mp_s_axi_split_aruser->out_port[0](s_axi_split_aruser_out_0);
+    mp_s_axi_split_aruser->add_mask(0,16,0);
   mp_s_axi_split_arvalid = new xsc::xsc_split<4, 4>("s_axi_split_arvalid");
   mp_s_axi_split_arvalid->in_port(s_axi_arvalid);
   mp_s_axi_split_arvalid->out_port[0](s_axi_split_arvalid_out_0);
@@ -3669,11 +3827,11 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_concat_arready->in_port[0](s_axi_concat_arready_out_0);
   mp_s_axi_concat_arready->out_port(s_axi_arready);
     mp_s_axi_concat_arready->offset_port(0, 0);
-  mp_s_axi_concat_rid = new xsc::xsc_concatenator<8, 4>("s_axi_concat_rid");
+  mp_s_axi_concat_rid = new xsc::xsc_concatenator<72, 4>("s_axi_concat_rid");
   mp_s_axi_concat_rid->in_port[0](s_axi_concat_rid_out_0);
   mp_s_axi_concat_rid->out_port(s_axi_rid);
     mp_s_axi_concat_rid->offset_port(0, 0);
-  mp_s_axi_concat_rdata = new xsc::xsc_concatenator<1024, 4>("s_axi_concat_rdata");
+  mp_s_axi_concat_rdata = new xsc::xsc_concatenator<512, 4>("s_axi_concat_rdata");
   mp_s_axi_concat_rdata->in_port[0](s_axi_concat_rdata_out_0);
   mp_s_axi_concat_rdata->out_port(s_axi_rdata);
     mp_s_axi_concat_rdata->offset_port(0, 0);
@@ -3695,7 +3853,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
     mp_s_axi_split_rready->add_mask(0,1,0);
   
   mp_s_axi_split_awid->out_port[1](s_axi_split_awid_out_1);
-    mp_s_axi_split_awid->add_mask(1,4,2);
+    mp_s_axi_split_awid->add_mask(1,36,18);
   
   mp_s_axi_split_awaddr->out_port[1](s_axi_split_awaddr_out_1);
     mp_s_axi_split_awaddr->add_mask(1,80,40);
@@ -3721,16 +3879,19 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_awqos->out_port[1](s_axi_split_awqos_out_1);
     mp_s_axi_split_awqos->add_mask(1,8,4);
   
+  mp_s_axi_split_awuser->out_port[1](s_axi_split_awuser_out_1);
+    mp_s_axi_split_awuser->add_mask(1,32,16);
+  
   mp_s_axi_split_awvalid->out_port[1](s_axi_split_awvalid_out_1);
     mp_s_axi_split_awvalid->add_mask(1,2,1);
   mp_s_axi_concat_awready->in_port[1](s_axi_concat_awready_out_1);
   mp_s_axi_concat_awready->offset_port(1, 1);
   
   mp_s_axi_split_wdata->out_port[1](s_axi_split_wdata_out_1);
-    mp_s_axi_split_wdata->add_mask(1,512,256);
+    mp_s_axi_split_wdata->add_mask(1,256,128);
   
   mp_s_axi_split_wstrb->out_port[1](s_axi_split_wstrb_out_1);
-    mp_s_axi_split_wstrb->add_mask(1,64,32);
+    mp_s_axi_split_wstrb->add_mask(1,32,16);
   
   mp_s_axi_split_wlast->out_port[1](s_axi_split_wlast_out_1);
     mp_s_axi_split_wlast->add_mask(1,2,1);
@@ -3740,7 +3901,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_concat_wready->in_port[1](s_axi_concat_wready_out_1);
   mp_s_axi_concat_wready->offset_port(1, 1);
   mp_s_axi_concat_bid->in_port[1](s_axi_concat_bid_out_1);
-  mp_s_axi_concat_bid->offset_port(1, 2);
+  mp_s_axi_concat_bid->offset_port(1, 18);
   mp_s_axi_concat_bresp->in_port[1](s_axi_concat_bresp_out_1);
   mp_s_axi_concat_bresp->offset_port(1, 2);
   mp_s_axi_concat_bvalid->in_port[1](s_axi_concat_bvalid_out_1);
@@ -3750,7 +3911,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
     mp_s_axi_split_bready->add_mask(1,2,1);
   
   mp_s_axi_split_arid->out_port[1](s_axi_split_arid_out_1);
-    mp_s_axi_split_arid->add_mask(1,4,2);
+    mp_s_axi_split_arid->add_mask(1,36,18);
   
   mp_s_axi_split_araddr->out_port[1](s_axi_split_araddr_out_1);
     mp_s_axi_split_araddr->add_mask(1,80,40);
@@ -3776,14 +3937,17 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_arqos->out_port[1](s_axi_split_arqos_out_1);
     mp_s_axi_split_arqos->add_mask(1,8,4);
   
+  mp_s_axi_split_aruser->out_port[1](s_axi_split_aruser_out_1);
+    mp_s_axi_split_aruser->add_mask(1,32,16);
+  
   mp_s_axi_split_arvalid->out_port[1](s_axi_split_arvalid_out_1);
     mp_s_axi_split_arvalid->add_mask(1,2,1);
   mp_s_axi_concat_arready->in_port[1](s_axi_concat_arready_out_1);
   mp_s_axi_concat_arready->offset_port(1, 1);
   mp_s_axi_concat_rid->in_port[1](s_axi_concat_rid_out_1);
-  mp_s_axi_concat_rid->offset_port(1, 2);
+  mp_s_axi_concat_rid->offset_port(1, 18);
   mp_s_axi_concat_rdata->in_port[1](s_axi_concat_rdata_out_1);
-  mp_s_axi_concat_rdata->offset_port(1, 256);
+  mp_s_axi_concat_rdata->offset_port(1, 128);
   mp_s_axi_concat_rresp->in_port[1](s_axi_concat_rresp_out_1);
   mp_s_axi_concat_rresp->offset_port(1, 2);
   mp_s_axi_concat_rlast->in_port[1](s_axi_concat_rlast_out_1);
@@ -3795,7 +3959,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
     mp_s_axi_split_rready->add_mask(1,2,1);
   
   mp_s_axi_split_awid->out_port[2](s_axi_split_awid_out_2);
-    mp_s_axi_split_awid->add_mask(2,6,4);
+    mp_s_axi_split_awid->add_mask(2,54,36);
   
   mp_s_axi_split_awaddr->out_port[2](s_axi_split_awaddr_out_2);
     mp_s_axi_split_awaddr->add_mask(2,120,80);
@@ -3821,16 +3985,19 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_awqos->out_port[2](s_axi_split_awqos_out_2);
     mp_s_axi_split_awqos->add_mask(2,12,8);
   
+  mp_s_axi_split_awuser->out_port[2](s_axi_split_awuser_out_2);
+    mp_s_axi_split_awuser->add_mask(2,48,32);
+  
   mp_s_axi_split_awvalid->out_port[2](s_axi_split_awvalid_out_2);
     mp_s_axi_split_awvalid->add_mask(2,3,2);
   mp_s_axi_concat_awready->in_port[2](s_axi_concat_awready_out_2);
   mp_s_axi_concat_awready->offset_port(2, 2);
   
   mp_s_axi_split_wdata->out_port[2](s_axi_split_wdata_out_2);
-    mp_s_axi_split_wdata->add_mask(2,768,512);
+    mp_s_axi_split_wdata->add_mask(2,384,256);
   
   mp_s_axi_split_wstrb->out_port[2](s_axi_split_wstrb_out_2);
-    mp_s_axi_split_wstrb->add_mask(2,96,64);
+    mp_s_axi_split_wstrb->add_mask(2,48,32);
   
   mp_s_axi_split_wlast->out_port[2](s_axi_split_wlast_out_2);
     mp_s_axi_split_wlast->add_mask(2,3,2);
@@ -3840,7 +4007,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_concat_wready->in_port[2](s_axi_concat_wready_out_2);
   mp_s_axi_concat_wready->offset_port(2, 2);
   mp_s_axi_concat_bid->in_port[2](s_axi_concat_bid_out_2);
-  mp_s_axi_concat_bid->offset_port(2, 4);
+  mp_s_axi_concat_bid->offset_port(2, 36);
   mp_s_axi_concat_bresp->in_port[2](s_axi_concat_bresp_out_2);
   mp_s_axi_concat_bresp->offset_port(2, 4);
   mp_s_axi_concat_bvalid->in_port[2](s_axi_concat_bvalid_out_2);
@@ -3850,7 +4017,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
     mp_s_axi_split_bready->add_mask(2,3,2);
   
   mp_s_axi_split_arid->out_port[2](s_axi_split_arid_out_2);
-    mp_s_axi_split_arid->add_mask(2,6,4);
+    mp_s_axi_split_arid->add_mask(2,54,36);
   
   mp_s_axi_split_araddr->out_port[2](s_axi_split_araddr_out_2);
     mp_s_axi_split_araddr->add_mask(2,120,80);
@@ -3876,14 +4043,17 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_arqos->out_port[2](s_axi_split_arqos_out_2);
     mp_s_axi_split_arqos->add_mask(2,12,8);
   
+  mp_s_axi_split_aruser->out_port[2](s_axi_split_aruser_out_2);
+    mp_s_axi_split_aruser->add_mask(2,48,32);
+  
   mp_s_axi_split_arvalid->out_port[2](s_axi_split_arvalid_out_2);
     mp_s_axi_split_arvalid->add_mask(2,3,2);
   mp_s_axi_concat_arready->in_port[2](s_axi_concat_arready_out_2);
   mp_s_axi_concat_arready->offset_port(2, 2);
   mp_s_axi_concat_rid->in_port[2](s_axi_concat_rid_out_2);
-  mp_s_axi_concat_rid->offset_port(2, 4);
+  mp_s_axi_concat_rid->offset_port(2, 36);
   mp_s_axi_concat_rdata->in_port[2](s_axi_concat_rdata_out_2);
-  mp_s_axi_concat_rdata->offset_port(2, 512);
+  mp_s_axi_concat_rdata->offset_port(2, 256);
   mp_s_axi_concat_rresp->in_port[2](s_axi_concat_rresp_out_2);
   mp_s_axi_concat_rresp->offset_port(2, 4);
   mp_s_axi_concat_rlast->in_port[2](s_axi_concat_rlast_out_2);
@@ -3895,7 +4065,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
     mp_s_axi_split_rready->add_mask(2,3,2);
   
   mp_s_axi_split_awid->out_port[3](s_axi_split_awid_out_3);
-    mp_s_axi_split_awid->add_mask(3,8,6);
+    mp_s_axi_split_awid->add_mask(3,72,54);
   
   mp_s_axi_split_awaddr->out_port[3](s_axi_split_awaddr_out_3);
     mp_s_axi_split_awaddr->add_mask(3,160,120);
@@ -3921,16 +4091,19 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_awqos->out_port[3](s_axi_split_awqos_out_3);
     mp_s_axi_split_awqos->add_mask(3,16,12);
   
+  mp_s_axi_split_awuser->out_port[3](s_axi_split_awuser_out_3);
+    mp_s_axi_split_awuser->add_mask(3,64,48);
+  
   mp_s_axi_split_awvalid->out_port[3](s_axi_split_awvalid_out_3);
     mp_s_axi_split_awvalid->add_mask(3,4,3);
   mp_s_axi_concat_awready->in_port[3](s_axi_concat_awready_out_3);
   mp_s_axi_concat_awready->offset_port(3, 3);
   
   mp_s_axi_split_wdata->out_port[3](s_axi_split_wdata_out_3);
-    mp_s_axi_split_wdata->add_mask(3,1024,768);
+    mp_s_axi_split_wdata->add_mask(3,512,384);
   
   mp_s_axi_split_wstrb->out_port[3](s_axi_split_wstrb_out_3);
-    mp_s_axi_split_wstrb->add_mask(3,128,96);
+    mp_s_axi_split_wstrb->add_mask(3,64,48);
   
   mp_s_axi_split_wlast->out_port[3](s_axi_split_wlast_out_3);
     mp_s_axi_split_wlast->add_mask(3,4,3);
@@ -3940,7 +4113,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_concat_wready->in_port[3](s_axi_concat_wready_out_3);
   mp_s_axi_concat_wready->offset_port(3, 3);
   mp_s_axi_concat_bid->in_port[3](s_axi_concat_bid_out_3);
-  mp_s_axi_concat_bid->offset_port(3, 6);
+  mp_s_axi_concat_bid->offset_port(3, 54);
   mp_s_axi_concat_bresp->in_port[3](s_axi_concat_bresp_out_3);
   mp_s_axi_concat_bresp->offset_port(3, 6);
   mp_s_axi_concat_bvalid->in_port[3](s_axi_concat_bvalid_out_3);
@@ -3950,7 +4123,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
     mp_s_axi_split_bready->add_mask(3,4,3);
   
   mp_s_axi_split_arid->out_port[3](s_axi_split_arid_out_3);
-    mp_s_axi_split_arid->add_mask(3,8,6);
+    mp_s_axi_split_arid->add_mask(3,72,54);
   
   mp_s_axi_split_araddr->out_port[3](s_axi_split_araddr_out_3);
     mp_s_axi_split_araddr->add_mask(3,160,120);
@@ -3976,14 +4149,17 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_arqos->out_port[3](s_axi_split_arqos_out_3);
     mp_s_axi_split_arqos->add_mask(3,16,12);
   
+  mp_s_axi_split_aruser->out_port[3](s_axi_split_aruser_out_3);
+    mp_s_axi_split_aruser->add_mask(3,64,48);
+  
   mp_s_axi_split_arvalid->out_port[3](s_axi_split_arvalid_out_3);
     mp_s_axi_split_arvalid->add_mask(3,4,3);
   mp_s_axi_concat_arready->in_port[3](s_axi_concat_arready_out_3);
   mp_s_axi_concat_arready->offset_port(3, 3);
   mp_s_axi_concat_rid->in_port[3](s_axi_concat_rid_out_3);
-  mp_s_axi_concat_rid->offset_port(3, 6);
+  mp_s_axi_concat_rid->offset_port(3, 54);
   mp_s_axi_concat_rdata->in_port[3](s_axi_concat_rdata_out_3);
-  mp_s_axi_concat_rdata->offset_port(3, 768);
+  mp_s_axi_concat_rdata->offset_port(3, 384);
   mp_s_axi_concat_rresp->in_port[3](s_axi_concat_rresp_out_3);
   mp_s_axi_concat_rresp->offset_port(3, 6);
   mp_s_axi_concat_rlast->in_port[3](s_axi_concat_rlast_out_3);
@@ -4008,12 +4184,12 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
 
   // 'S00_AXI' transactor parameters
     xsc::common_cpp::properties S00_AXI_transactor_param_props;
-    S00_AXI_transactor_param_props.addLong("DATA_WIDTH", "256");
+    S00_AXI_transactor_param_props.addLong("DATA_WIDTH", "128");
     S00_AXI_transactor_param_props.addLong("FREQ_HZ", "300000000");
-    S00_AXI_transactor_param_props.addLong("ID_WIDTH", "2");
+    S00_AXI_transactor_param_props.addLong("ID_WIDTH", "18");
     S00_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
-    S00_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
-    S00_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "0");
+    S00_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "16");
+    S00_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "16");
     S00_AXI_transactor_param_props.addLong("WUSER_WIDTH", "0");
     S00_AXI_transactor_param_props.addLong("RUSER_WIDTH", "0");
     S00_AXI_transactor_param_props.addLong("BUSER_WIDTH", "0");
@@ -4041,11 +4217,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     S00_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
     S00_AXI_transactor_param_props.addString("CLK_DOMAIN", "DDR4_ddr4_0_0_c0_ddr4_ui_clk");
 
-    mp_S00_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<256,40,2,1,1,1,1,1>("S00_AXI_transactor", S00_AXI_transactor_param_props);
+    mp_S00_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<128,40,18,16,1,1,16,1>("S00_AXI_transactor", S00_AXI_transactor_param_props);
 
     // S00_AXI' transactor ports
 
-    mp_s_axi_awid_converter_0 = new xsc::common::vector2vector_converter<8,2>("s_axi_awid_converter_0");
+    mp_s_axi_awid_converter_0 = new xsc::common::vector2vector_converter<72,18>("s_axi_awid_converter_0");
     mp_s_axi_awid_converter_0->vector_in(s_axi_split_awid_out_0);
     mp_s_axi_awid_converter_0->vector_out(m_s_axi_awid_converter_0_signal);
     mp_S00_AXI_transactor->AWID(m_s_axi_awid_converter_0_signal);
@@ -4081,6 +4257,10 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_awqos_converter_0->vector_in(s_axi_split_awqos_out_0);
     mp_s_axi_awqos_converter_0->vector_out(m_s_axi_awqos_converter_0_signal);
     mp_S00_AXI_transactor->AWQOS(m_s_axi_awqos_converter_0_signal);
+    mp_s_axi_awuser_converter_0 = new xsc::common::vector2vector_converter<64,16>("s_axi_awuser_converter_0");
+    mp_s_axi_awuser_converter_0->vector_in(s_axi_split_awuser_out_0);
+    mp_s_axi_awuser_converter_0->vector_out(m_s_axi_awuser_converter_0_signal);
+    mp_S00_AXI_transactor->AWUSER(m_s_axi_awuser_converter_0_signal);
     mp_s_axi_awvalid_converter_0 = new xsc::common::vectorN2scalar_converter<4>("s_axi_awvalid_converter_0");
     mp_s_axi_awvalid_converter_0->vector_in(s_axi_split_awvalid_out_0);
     mp_s_axi_awvalid_converter_0->scalar_out(m_s_axi_awvalid_converter_0_signal);
@@ -4089,11 +4269,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_awready_converter_0->scalar_in(m_s_axi_awready_converter_0_signal);
     mp_s_axi_awready_converter_0->vector_out(s_axi_concat_awready_out_0);
     mp_S00_AXI_transactor->AWREADY(m_s_axi_awready_converter_0_signal);
-    mp_s_axi_wdata_converter_0 = new xsc::common::vector2vector_converter<1024,256>("s_axi_wdata_converter_0");
+    mp_s_axi_wdata_converter_0 = new xsc::common::vector2vector_converter<512,128>("s_axi_wdata_converter_0");
     mp_s_axi_wdata_converter_0->vector_in(s_axi_split_wdata_out_0);
     mp_s_axi_wdata_converter_0->vector_out(m_s_axi_wdata_converter_0_signal);
     mp_S00_AXI_transactor->WDATA(m_s_axi_wdata_converter_0_signal);
-    mp_s_axi_wstrb_converter_0 = new xsc::common::vector2vector_converter<128,32>("s_axi_wstrb_converter_0");
+    mp_s_axi_wstrb_converter_0 = new xsc::common::vector2vector_converter<64,16>("s_axi_wstrb_converter_0");
     mp_s_axi_wstrb_converter_0->vector_in(s_axi_split_wstrb_out_0);
     mp_s_axi_wstrb_converter_0->vector_out(m_s_axi_wstrb_converter_0_signal);
     mp_S00_AXI_transactor->WSTRB(m_s_axi_wstrb_converter_0_signal);
@@ -4109,7 +4289,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_wready_converter_0->scalar_in(m_s_axi_wready_converter_0_signal);
     mp_s_axi_wready_converter_0->vector_out(s_axi_concat_wready_out_0);
     mp_S00_AXI_transactor->WREADY(m_s_axi_wready_converter_0_signal);
-    mp_s_axi_bid_converter_0 = new xsc::common::vector2vector_converter<2,8>("s_axi_bid_converter_0");
+    mp_s_axi_bid_converter_0 = new xsc::common::vector2vector_converter<18,72>("s_axi_bid_converter_0");
     mp_s_axi_bid_converter_0->vector_in(m_s_axi_bid_converter_0_signal);
     mp_s_axi_bid_converter_0->vector_out(s_axi_concat_bid_out_0);
     mp_S00_AXI_transactor->BID(m_s_axi_bid_converter_0_signal);
@@ -4125,7 +4305,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_bready_converter_0->vector_in(s_axi_split_bready_out_0);
     mp_s_axi_bready_converter_0->scalar_out(m_s_axi_bready_converter_0_signal);
     mp_S00_AXI_transactor->BREADY(m_s_axi_bready_converter_0_signal);
-    mp_s_axi_arid_converter_0 = new xsc::common::vector2vector_converter<8,2>("s_axi_arid_converter_0");
+    mp_s_axi_arid_converter_0 = new xsc::common::vector2vector_converter<72,18>("s_axi_arid_converter_0");
     mp_s_axi_arid_converter_0->vector_in(s_axi_split_arid_out_0);
     mp_s_axi_arid_converter_0->vector_out(m_s_axi_arid_converter_0_signal);
     mp_S00_AXI_transactor->ARID(m_s_axi_arid_converter_0_signal);
@@ -4161,6 +4341,10 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_arqos_converter_0->vector_in(s_axi_split_arqos_out_0);
     mp_s_axi_arqos_converter_0->vector_out(m_s_axi_arqos_converter_0_signal);
     mp_S00_AXI_transactor->ARQOS(m_s_axi_arqos_converter_0_signal);
+    mp_s_axi_aruser_converter_0 = new xsc::common::vector2vector_converter<64,16>("s_axi_aruser_converter_0");
+    mp_s_axi_aruser_converter_0->vector_in(s_axi_split_aruser_out_0);
+    mp_s_axi_aruser_converter_0->vector_out(m_s_axi_aruser_converter_0_signal);
+    mp_S00_AXI_transactor->ARUSER(m_s_axi_aruser_converter_0_signal);
     mp_s_axi_arvalid_converter_0 = new xsc::common::vectorN2scalar_converter<4>("s_axi_arvalid_converter_0");
     mp_s_axi_arvalid_converter_0->vector_in(s_axi_split_arvalid_out_0);
     mp_s_axi_arvalid_converter_0->scalar_out(m_s_axi_arvalid_converter_0_signal);
@@ -4169,11 +4353,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_arready_converter_0->scalar_in(m_s_axi_arready_converter_0_signal);
     mp_s_axi_arready_converter_0->vector_out(s_axi_concat_arready_out_0);
     mp_S00_AXI_transactor->ARREADY(m_s_axi_arready_converter_0_signal);
-    mp_s_axi_rid_converter_0 = new xsc::common::vector2vector_converter<2,8>("s_axi_rid_converter_0");
+    mp_s_axi_rid_converter_0 = new xsc::common::vector2vector_converter<18,72>("s_axi_rid_converter_0");
     mp_s_axi_rid_converter_0->vector_in(m_s_axi_rid_converter_0_signal);
     mp_s_axi_rid_converter_0->vector_out(s_axi_concat_rid_out_0);
     mp_S00_AXI_transactor->RID(m_s_axi_rid_converter_0_signal);
-    mp_s_axi_rdata_converter_0 = new xsc::common::vector2vector_converter<256,1024>("s_axi_rdata_converter_0");
+    mp_s_axi_rdata_converter_0 = new xsc::common::vector2vector_converter<128,512>("s_axi_rdata_converter_0");
     mp_s_axi_rdata_converter_0->vector_in(m_s_axi_rdata_converter_0_signal);
     mp_s_axi_rdata_converter_0->vector_out(s_axi_concat_rdata_out_0);
     mp_S00_AXI_transactor->RDATA(m_s_axi_rdata_converter_0_signal);
@@ -4213,12 +4397,12 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
 
   // 'M00_AXI' transactor parameters
     xsc::common_cpp::properties M00_AXI_transactor_param_props;
-    M00_AXI_transactor_param_props.addLong("DATA_WIDTH", "256");
+    M00_AXI_transactor_param_props.addLong("DATA_WIDTH", "128");
     M00_AXI_transactor_param_props.addLong("FREQ_HZ", "300000000");
-    M00_AXI_transactor_param_props.addLong("ID_WIDTH", "2");
+    M00_AXI_transactor_param_props.addLong("ID_WIDTH", "18");
     M00_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
-    M00_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
-    M00_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "0");
+    M00_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "16");
+    M00_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "16");
     M00_AXI_transactor_param_props.addLong("WUSER_WIDTH", "0");
     M00_AXI_transactor_param_props.addLong("RUSER_WIDTH", "0");
     M00_AXI_transactor_param_props.addLong("BUSER_WIDTH", "0");
@@ -4232,8 +4416,8 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     M00_AXI_transactor_param_props.addLong("HAS_BRESP", "1");
     M00_AXI_transactor_param_props.addLong("HAS_RRESP", "1");
     M00_AXI_transactor_param_props.addLong("SUPPORTS_NARROW_BURST", "1");
-    M00_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "2");
-    M00_AXI_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "2");
+    M00_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "8");
+    M00_AXI_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "8");
     M00_AXI_transactor_param_props.addLong("MAX_BURST_LENGTH", "256");
     M00_AXI_transactor_param_props.addLong("NUM_READ_THREADS", "1");
     M00_AXI_transactor_param_props.addLong("NUM_WRITE_THREADS", "1");
@@ -4246,7 +4430,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     M00_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
     M00_AXI_transactor_param_props.addString("CLK_DOMAIN", "DDR4_ddr4_0_0_c0_ddr4_ui_clk");
 
-    mp_M00_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<256,40,2,1,1,1,1,1>("M00_AXI_transactor", M00_AXI_transactor_param_props);
+    mp_M00_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<128,40,18,16,1,1,16,1>("M00_AXI_transactor", M00_AXI_transactor_param_props);
 
     // M00_AXI' transactor ports
 
@@ -4263,6 +4447,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_M00_AXI_transactor->AWPROT(m_axi_awprot);
     mp_M00_AXI_transactor->AWREGION(m_axi_awregion);
     mp_M00_AXI_transactor->AWQOS(m_axi_awqos);
+    mp_M00_AXI_transactor->AWUSER(m_axi_awuser);
     mp_m_axi_awvalid_converter = new xsc::common::scalar2vectorN_converter<1>("m_axi_awvalid_converter");
     mp_m_axi_awvalid_converter->scalar_in(m_m_axi_awvalid_converter_signal);
     mp_m_axi_awvalid_converter->vector_out(m_axi_awvalid);
@@ -4308,6 +4493,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_M00_AXI_transactor->ARPROT(m_axi_arprot);
     mp_M00_AXI_transactor->ARREGION(m_axi_arregion);
     mp_M00_AXI_transactor->ARQOS(m_axi_arqos);
+    mp_M00_AXI_transactor->ARUSER(m_axi_aruser);
     mp_m_axi_arvalid_converter = new xsc::common::scalar2vectorN_converter<1>("m_axi_arvalid_converter");
     mp_m_axi_arvalid_converter->scalar_in(m_m_axi_arvalid_converter_signal);
     mp_m_axi_arvalid_converter->vector_out(m_axi_arvalid);
@@ -4351,12 +4537,12 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
 
   // 'S01_AXI' transactor parameters
     xsc::common_cpp::properties S01_AXI_transactor_param_props;
-    S01_AXI_transactor_param_props.addLong("DATA_WIDTH", "256");
+    S01_AXI_transactor_param_props.addLong("DATA_WIDTH", "128");
     S01_AXI_transactor_param_props.addLong("FREQ_HZ", "300000000");
-    S01_AXI_transactor_param_props.addLong("ID_WIDTH", "2");
+    S01_AXI_transactor_param_props.addLong("ID_WIDTH", "18");
     S01_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
-    S01_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
-    S01_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "0");
+    S01_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "16");
+    S01_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "16");
     S01_AXI_transactor_param_props.addLong("WUSER_WIDTH", "0");
     S01_AXI_transactor_param_props.addLong("RUSER_WIDTH", "0");
     S01_AXI_transactor_param_props.addLong("BUSER_WIDTH", "0");
@@ -4384,11 +4570,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     S01_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
     S01_AXI_transactor_param_props.addString("CLK_DOMAIN", "DDR4_ddr4_0_0_c0_ddr4_ui_clk");
 
-    mp_S01_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<256,40,2,1,1,1,1,1>("S01_AXI_transactor", S01_AXI_transactor_param_props);
+    mp_S01_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<128,40,18,16,1,1,16,1>("S01_AXI_transactor", S01_AXI_transactor_param_props);
 
     // S01_AXI' transactor ports
 
-    mp_s_axi_awid_converter_1 = new xsc::common::vector2vector_converter<8,2>("s_axi_awid_converter_1");
+    mp_s_axi_awid_converter_1 = new xsc::common::vector2vector_converter<72,18>("s_axi_awid_converter_1");
     mp_s_axi_awid_converter_1->vector_in(s_axi_split_awid_out_1);
     mp_s_axi_awid_converter_1->vector_out(m_s_axi_awid_converter_1_signal);
     mp_S01_AXI_transactor->AWID(m_s_axi_awid_converter_1_signal);
@@ -4424,6 +4610,10 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_awqos_converter_1->vector_in(s_axi_split_awqos_out_1);
     mp_s_axi_awqos_converter_1->vector_out(m_s_axi_awqos_converter_1_signal);
     mp_S01_AXI_transactor->AWQOS(m_s_axi_awqos_converter_1_signal);
+    mp_s_axi_awuser_converter_1 = new xsc::common::vector2vector_converter<64,16>("s_axi_awuser_converter_1");
+    mp_s_axi_awuser_converter_1->vector_in(s_axi_split_awuser_out_1);
+    mp_s_axi_awuser_converter_1->vector_out(m_s_axi_awuser_converter_1_signal);
+    mp_S01_AXI_transactor->AWUSER(m_s_axi_awuser_converter_1_signal);
     mp_s_axi_awvalid_converter_1 = new xsc::common::vectorN2scalar_converter<4>("s_axi_awvalid_converter_1");
     mp_s_axi_awvalid_converter_1->vector_in(s_axi_split_awvalid_out_1);
     mp_s_axi_awvalid_converter_1->scalar_out(m_s_axi_awvalid_converter_1_signal);
@@ -4432,11 +4622,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_awready_converter_1->scalar_in(m_s_axi_awready_converter_1_signal);
     mp_s_axi_awready_converter_1->vector_out(s_axi_concat_awready_out_1);
     mp_S01_AXI_transactor->AWREADY(m_s_axi_awready_converter_1_signal);
-    mp_s_axi_wdata_converter_1 = new xsc::common::vector2vector_converter<1024,256>("s_axi_wdata_converter_1");
+    mp_s_axi_wdata_converter_1 = new xsc::common::vector2vector_converter<512,128>("s_axi_wdata_converter_1");
     mp_s_axi_wdata_converter_1->vector_in(s_axi_split_wdata_out_1);
     mp_s_axi_wdata_converter_1->vector_out(m_s_axi_wdata_converter_1_signal);
     mp_S01_AXI_transactor->WDATA(m_s_axi_wdata_converter_1_signal);
-    mp_s_axi_wstrb_converter_1 = new xsc::common::vector2vector_converter<128,32>("s_axi_wstrb_converter_1");
+    mp_s_axi_wstrb_converter_1 = new xsc::common::vector2vector_converter<64,16>("s_axi_wstrb_converter_1");
     mp_s_axi_wstrb_converter_1->vector_in(s_axi_split_wstrb_out_1);
     mp_s_axi_wstrb_converter_1->vector_out(m_s_axi_wstrb_converter_1_signal);
     mp_S01_AXI_transactor->WSTRB(m_s_axi_wstrb_converter_1_signal);
@@ -4452,7 +4642,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_wready_converter_1->scalar_in(m_s_axi_wready_converter_1_signal);
     mp_s_axi_wready_converter_1->vector_out(s_axi_concat_wready_out_1);
     mp_S01_AXI_transactor->WREADY(m_s_axi_wready_converter_1_signal);
-    mp_s_axi_bid_converter_1 = new xsc::common::vector2vector_converter<2,8>("s_axi_bid_converter_1");
+    mp_s_axi_bid_converter_1 = new xsc::common::vector2vector_converter<18,72>("s_axi_bid_converter_1");
     mp_s_axi_bid_converter_1->vector_in(m_s_axi_bid_converter_1_signal);
     mp_s_axi_bid_converter_1->vector_out(s_axi_concat_bid_out_1);
     mp_S01_AXI_transactor->BID(m_s_axi_bid_converter_1_signal);
@@ -4468,7 +4658,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_bready_converter_1->vector_in(s_axi_split_bready_out_1);
     mp_s_axi_bready_converter_1->scalar_out(m_s_axi_bready_converter_1_signal);
     mp_S01_AXI_transactor->BREADY(m_s_axi_bready_converter_1_signal);
-    mp_s_axi_arid_converter_1 = new xsc::common::vector2vector_converter<8,2>("s_axi_arid_converter_1");
+    mp_s_axi_arid_converter_1 = new xsc::common::vector2vector_converter<72,18>("s_axi_arid_converter_1");
     mp_s_axi_arid_converter_1->vector_in(s_axi_split_arid_out_1);
     mp_s_axi_arid_converter_1->vector_out(m_s_axi_arid_converter_1_signal);
     mp_S01_AXI_transactor->ARID(m_s_axi_arid_converter_1_signal);
@@ -4504,6 +4694,10 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_arqos_converter_1->vector_in(s_axi_split_arqos_out_1);
     mp_s_axi_arqos_converter_1->vector_out(m_s_axi_arqos_converter_1_signal);
     mp_S01_AXI_transactor->ARQOS(m_s_axi_arqos_converter_1_signal);
+    mp_s_axi_aruser_converter_1 = new xsc::common::vector2vector_converter<64,16>("s_axi_aruser_converter_1");
+    mp_s_axi_aruser_converter_1->vector_in(s_axi_split_aruser_out_1);
+    mp_s_axi_aruser_converter_1->vector_out(m_s_axi_aruser_converter_1_signal);
+    mp_S01_AXI_transactor->ARUSER(m_s_axi_aruser_converter_1_signal);
     mp_s_axi_arvalid_converter_1 = new xsc::common::vectorN2scalar_converter<4>("s_axi_arvalid_converter_1");
     mp_s_axi_arvalid_converter_1->vector_in(s_axi_split_arvalid_out_1);
     mp_s_axi_arvalid_converter_1->scalar_out(m_s_axi_arvalid_converter_1_signal);
@@ -4512,11 +4706,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_arready_converter_1->scalar_in(m_s_axi_arready_converter_1_signal);
     mp_s_axi_arready_converter_1->vector_out(s_axi_concat_arready_out_1);
     mp_S01_AXI_transactor->ARREADY(m_s_axi_arready_converter_1_signal);
-    mp_s_axi_rid_converter_1 = new xsc::common::vector2vector_converter<2,8>("s_axi_rid_converter_1");
+    mp_s_axi_rid_converter_1 = new xsc::common::vector2vector_converter<18,72>("s_axi_rid_converter_1");
     mp_s_axi_rid_converter_1->vector_in(m_s_axi_rid_converter_1_signal);
     mp_s_axi_rid_converter_1->vector_out(s_axi_concat_rid_out_1);
     mp_S01_AXI_transactor->RID(m_s_axi_rid_converter_1_signal);
-    mp_s_axi_rdata_converter_1 = new xsc::common::vector2vector_converter<256,1024>("s_axi_rdata_converter_1");
+    mp_s_axi_rdata_converter_1 = new xsc::common::vector2vector_converter<128,512>("s_axi_rdata_converter_1");
     mp_s_axi_rdata_converter_1->vector_in(m_s_axi_rdata_converter_1_signal);
     mp_s_axi_rdata_converter_1->vector_out(s_axi_concat_rdata_out_1);
     mp_S01_AXI_transactor->RDATA(m_s_axi_rdata_converter_1_signal);
@@ -4556,12 +4750,12 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
 
   // 'S02_AXI' transactor parameters
     xsc::common_cpp::properties S02_AXI_transactor_param_props;
-    S02_AXI_transactor_param_props.addLong("DATA_WIDTH", "256");
+    S02_AXI_transactor_param_props.addLong("DATA_WIDTH", "128");
     S02_AXI_transactor_param_props.addLong("FREQ_HZ", "300000000");
-    S02_AXI_transactor_param_props.addLong("ID_WIDTH", "2");
+    S02_AXI_transactor_param_props.addLong("ID_WIDTH", "18");
     S02_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
-    S02_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
-    S02_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "0");
+    S02_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "16");
+    S02_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "16");
     S02_AXI_transactor_param_props.addLong("WUSER_WIDTH", "0");
     S02_AXI_transactor_param_props.addLong("RUSER_WIDTH", "0");
     S02_AXI_transactor_param_props.addLong("BUSER_WIDTH", "0");
@@ -4578,8 +4772,8 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     S02_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "2");
     S02_AXI_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "2");
     S02_AXI_transactor_param_props.addLong("MAX_BURST_LENGTH", "256");
-    S02_AXI_transactor_param_props.addLong("NUM_READ_THREADS", "4");
-    S02_AXI_transactor_param_props.addLong("NUM_WRITE_THREADS", "4");
+    S02_AXI_transactor_param_props.addLong("NUM_READ_THREADS", "1");
+    S02_AXI_transactor_param_props.addLong("NUM_WRITE_THREADS", "1");
     S02_AXI_transactor_param_props.addLong("RUSER_BITS_PER_BYTE", "0");
     S02_AXI_transactor_param_props.addLong("WUSER_BITS_PER_BYTE", "0");
     S02_AXI_transactor_param_props.addLong("HAS_SIZE", "1");
@@ -4589,11 +4783,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     S02_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
     S02_AXI_transactor_param_props.addString("CLK_DOMAIN", "DDR4_ddr4_0_0_c0_ddr4_ui_clk");
 
-    mp_S02_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<256,40,2,1,1,1,1,1>("S02_AXI_transactor", S02_AXI_transactor_param_props);
+    mp_S02_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<128,40,18,16,1,1,16,1>("S02_AXI_transactor", S02_AXI_transactor_param_props);
 
     // S02_AXI' transactor ports
 
-    mp_s_axi_awid_converter_2 = new xsc::common::vector2vector_converter<8,2>("s_axi_awid_converter_2");
+    mp_s_axi_awid_converter_2 = new xsc::common::vector2vector_converter<72,18>("s_axi_awid_converter_2");
     mp_s_axi_awid_converter_2->vector_in(s_axi_split_awid_out_2);
     mp_s_axi_awid_converter_2->vector_out(m_s_axi_awid_converter_2_signal);
     mp_S02_AXI_transactor->AWID(m_s_axi_awid_converter_2_signal);
@@ -4629,6 +4823,10 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_awqos_converter_2->vector_in(s_axi_split_awqos_out_2);
     mp_s_axi_awqos_converter_2->vector_out(m_s_axi_awqos_converter_2_signal);
     mp_S02_AXI_transactor->AWQOS(m_s_axi_awqos_converter_2_signal);
+    mp_s_axi_awuser_converter_2 = new xsc::common::vector2vector_converter<64,16>("s_axi_awuser_converter_2");
+    mp_s_axi_awuser_converter_2->vector_in(s_axi_split_awuser_out_2);
+    mp_s_axi_awuser_converter_2->vector_out(m_s_axi_awuser_converter_2_signal);
+    mp_S02_AXI_transactor->AWUSER(m_s_axi_awuser_converter_2_signal);
     mp_s_axi_awvalid_converter_2 = new xsc::common::vectorN2scalar_converter<4>("s_axi_awvalid_converter_2");
     mp_s_axi_awvalid_converter_2->vector_in(s_axi_split_awvalid_out_2);
     mp_s_axi_awvalid_converter_2->scalar_out(m_s_axi_awvalid_converter_2_signal);
@@ -4637,11 +4835,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_awready_converter_2->scalar_in(m_s_axi_awready_converter_2_signal);
     mp_s_axi_awready_converter_2->vector_out(s_axi_concat_awready_out_2);
     mp_S02_AXI_transactor->AWREADY(m_s_axi_awready_converter_2_signal);
-    mp_s_axi_wdata_converter_2 = new xsc::common::vector2vector_converter<1024,256>("s_axi_wdata_converter_2");
+    mp_s_axi_wdata_converter_2 = new xsc::common::vector2vector_converter<512,128>("s_axi_wdata_converter_2");
     mp_s_axi_wdata_converter_2->vector_in(s_axi_split_wdata_out_2);
     mp_s_axi_wdata_converter_2->vector_out(m_s_axi_wdata_converter_2_signal);
     mp_S02_AXI_transactor->WDATA(m_s_axi_wdata_converter_2_signal);
-    mp_s_axi_wstrb_converter_2 = new xsc::common::vector2vector_converter<128,32>("s_axi_wstrb_converter_2");
+    mp_s_axi_wstrb_converter_2 = new xsc::common::vector2vector_converter<64,16>("s_axi_wstrb_converter_2");
     mp_s_axi_wstrb_converter_2->vector_in(s_axi_split_wstrb_out_2);
     mp_s_axi_wstrb_converter_2->vector_out(m_s_axi_wstrb_converter_2_signal);
     mp_S02_AXI_transactor->WSTRB(m_s_axi_wstrb_converter_2_signal);
@@ -4657,7 +4855,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_wready_converter_2->scalar_in(m_s_axi_wready_converter_2_signal);
     mp_s_axi_wready_converter_2->vector_out(s_axi_concat_wready_out_2);
     mp_S02_AXI_transactor->WREADY(m_s_axi_wready_converter_2_signal);
-    mp_s_axi_bid_converter_2 = new xsc::common::vector2vector_converter<2,8>("s_axi_bid_converter_2");
+    mp_s_axi_bid_converter_2 = new xsc::common::vector2vector_converter<18,72>("s_axi_bid_converter_2");
     mp_s_axi_bid_converter_2->vector_in(m_s_axi_bid_converter_2_signal);
     mp_s_axi_bid_converter_2->vector_out(s_axi_concat_bid_out_2);
     mp_S02_AXI_transactor->BID(m_s_axi_bid_converter_2_signal);
@@ -4673,7 +4871,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_bready_converter_2->vector_in(s_axi_split_bready_out_2);
     mp_s_axi_bready_converter_2->scalar_out(m_s_axi_bready_converter_2_signal);
     mp_S02_AXI_transactor->BREADY(m_s_axi_bready_converter_2_signal);
-    mp_s_axi_arid_converter_2 = new xsc::common::vector2vector_converter<8,2>("s_axi_arid_converter_2");
+    mp_s_axi_arid_converter_2 = new xsc::common::vector2vector_converter<72,18>("s_axi_arid_converter_2");
     mp_s_axi_arid_converter_2->vector_in(s_axi_split_arid_out_2);
     mp_s_axi_arid_converter_2->vector_out(m_s_axi_arid_converter_2_signal);
     mp_S02_AXI_transactor->ARID(m_s_axi_arid_converter_2_signal);
@@ -4709,6 +4907,10 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_arqos_converter_2->vector_in(s_axi_split_arqos_out_2);
     mp_s_axi_arqos_converter_2->vector_out(m_s_axi_arqos_converter_2_signal);
     mp_S02_AXI_transactor->ARQOS(m_s_axi_arqos_converter_2_signal);
+    mp_s_axi_aruser_converter_2 = new xsc::common::vector2vector_converter<64,16>("s_axi_aruser_converter_2");
+    mp_s_axi_aruser_converter_2->vector_in(s_axi_split_aruser_out_2);
+    mp_s_axi_aruser_converter_2->vector_out(m_s_axi_aruser_converter_2_signal);
+    mp_S02_AXI_transactor->ARUSER(m_s_axi_aruser_converter_2_signal);
     mp_s_axi_arvalid_converter_2 = new xsc::common::vectorN2scalar_converter<4>("s_axi_arvalid_converter_2");
     mp_s_axi_arvalid_converter_2->vector_in(s_axi_split_arvalid_out_2);
     mp_s_axi_arvalid_converter_2->scalar_out(m_s_axi_arvalid_converter_2_signal);
@@ -4717,11 +4919,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_arready_converter_2->scalar_in(m_s_axi_arready_converter_2_signal);
     mp_s_axi_arready_converter_2->vector_out(s_axi_concat_arready_out_2);
     mp_S02_AXI_transactor->ARREADY(m_s_axi_arready_converter_2_signal);
-    mp_s_axi_rid_converter_2 = new xsc::common::vector2vector_converter<2,8>("s_axi_rid_converter_2");
+    mp_s_axi_rid_converter_2 = new xsc::common::vector2vector_converter<18,72>("s_axi_rid_converter_2");
     mp_s_axi_rid_converter_2->vector_in(m_s_axi_rid_converter_2_signal);
     mp_s_axi_rid_converter_2->vector_out(s_axi_concat_rid_out_2);
     mp_S02_AXI_transactor->RID(m_s_axi_rid_converter_2_signal);
-    mp_s_axi_rdata_converter_2 = new xsc::common::vector2vector_converter<256,1024>("s_axi_rdata_converter_2");
+    mp_s_axi_rdata_converter_2 = new xsc::common::vector2vector_converter<128,512>("s_axi_rdata_converter_2");
     mp_s_axi_rdata_converter_2->vector_in(m_s_axi_rdata_converter_2_signal);
     mp_s_axi_rdata_converter_2->vector_out(s_axi_concat_rdata_out_2);
     mp_S02_AXI_transactor->RDATA(m_s_axi_rdata_converter_2_signal);
@@ -4761,12 +4963,12 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
 
   // 'S03_AXI' transactor parameters
     xsc::common_cpp::properties S03_AXI_transactor_param_props;
-    S03_AXI_transactor_param_props.addLong("DATA_WIDTH", "256");
+    S03_AXI_transactor_param_props.addLong("DATA_WIDTH", "128");
     S03_AXI_transactor_param_props.addLong("FREQ_HZ", "300000000");
-    S03_AXI_transactor_param_props.addLong("ID_WIDTH", "2");
+    S03_AXI_transactor_param_props.addLong("ID_WIDTH", "18");
     S03_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
-    S03_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
-    S03_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "0");
+    S03_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "16");
+    S03_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "16");
     S03_AXI_transactor_param_props.addLong("WUSER_WIDTH", "0");
     S03_AXI_transactor_param_props.addLong("RUSER_WIDTH", "0");
     S03_AXI_transactor_param_props.addLong("BUSER_WIDTH", "0");
@@ -4794,11 +4996,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     S03_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
     S03_AXI_transactor_param_props.addString("CLK_DOMAIN", "DDR4_ddr4_0_0_c0_ddr4_ui_clk");
 
-    mp_S03_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<256,40,2,1,1,1,1,1>("S03_AXI_transactor", S03_AXI_transactor_param_props);
+    mp_S03_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<128,40,18,16,1,1,16,1>("S03_AXI_transactor", S03_AXI_transactor_param_props);
 
     // S03_AXI' transactor ports
 
-    mp_s_axi_awid_converter_3 = new xsc::common::vector2vector_converter<8,2>("s_axi_awid_converter_3");
+    mp_s_axi_awid_converter_3 = new xsc::common::vector2vector_converter<72,18>("s_axi_awid_converter_3");
     mp_s_axi_awid_converter_3->vector_in(s_axi_split_awid_out_3);
     mp_s_axi_awid_converter_3->vector_out(m_s_axi_awid_converter_3_signal);
     mp_S03_AXI_transactor->AWID(m_s_axi_awid_converter_3_signal);
@@ -4834,6 +5036,10 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_awqos_converter_3->vector_in(s_axi_split_awqos_out_3);
     mp_s_axi_awqos_converter_3->vector_out(m_s_axi_awqos_converter_3_signal);
     mp_S03_AXI_transactor->AWQOS(m_s_axi_awqos_converter_3_signal);
+    mp_s_axi_awuser_converter_3 = new xsc::common::vector2vector_converter<64,16>("s_axi_awuser_converter_3");
+    mp_s_axi_awuser_converter_3->vector_in(s_axi_split_awuser_out_3);
+    mp_s_axi_awuser_converter_3->vector_out(m_s_axi_awuser_converter_3_signal);
+    mp_S03_AXI_transactor->AWUSER(m_s_axi_awuser_converter_3_signal);
     mp_s_axi_awvalid_converter_3 = new xsc::common::vectorN2scalar_converter<4>("s_axi_awvalid_converter_3");
     mp_s_axi_awvalid_converter_3->vector_in(s_axi_split_awvalid_out_3);
     mp_s_axi_awvalid_converter_3->scalar_out(m_s_axi_awvalid_converter_3_signal);
@@ -4842,11 +5048,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_awready_converter_3->scalar_in(m_s_axi_awready_converter_3_signal);
     mp_s_axi_awready_converter_3->vector_out(s_axi_concat_awready_out_3);
     mp_S03_AXI_transactor->AWREADY(m_s_axi_awready_converter_3_signal);
-    mp_s_axi_wdata_converter_3 = new xsc::common::vector2vector_converter<1024,256>("s_axi_wdata_converter_3");
+    mp_s_axi_wdata_converter_3 = new xsc::common::vector2vector_converter<512,128>("s_axi_wdata_converter_3");
     mp_s_axi_wdata_converter_3->vector_in(s_axi_split_wdata_out_3);
     mp_s_axi_wdata_converter_3->vector_out(m_s_axi_wdata_converter_3_signal);
     mp_S03_AXI_transactor->WDATA(m_s_axi_wdata_converter_3_signal);
-    mp_s_axi_wstrb_converter_3 = new xsc::common::vector2vector_converter<128,32>("s_axi_wstrb_converter_3");
+    mp_s_axi_wstrb_converter_3 = new xsc::common::vector2vector_converter<64,16>("s_axi_wstrb_converter_3");
     mp_s_axi_wstrb_converter_3->vector_in(s_axi_split_wstrb_out_3);
     mp_s_axi_wstrb_converter_3->vector_out(m_s_axi_wstrb_converter_3_signal);
     mp_S03_AXI_transactor->WSTRB(m_s_axi_wstrb_converter_3_signal);
@@ -4862,7 +5068,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_wready_converter_3->scalar_in(m_s_axi_wready_converter_3_signal);
     mp_s_axi_wready_converter_3->vector_out(s_axi_concat_wready_out_3);
     mp_S03_AXI_transactor->WREADY(m_s_axi_wready_converter_3_signal);
-    mp_s_axi_bid_converter_3 = new xsc::common::vector2vector_converter<2,8>("s_axi_bid_converter_3");
+    mp_s_axi_bid_converter_3 = new xsc::common::vector2vector_converter<18,72>("s_axi_bid_converter_3");
     mp_s_axi_bid_converter_3->vector_in(m_s_axi_bid_converter_3_signal);
     mp_s_axi_bid_converter_3->vector_out(s_axi_concat_bid_out_3);
     mp_S03_AXI_transactor->BID(m_s_axi_bid_converter_3_signal);
@@ -4878,7 +5084,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_bready_converter_3->vector_in(s_axi_split_bready_out_3);
     mp_s_axi_bready_converter_3->scalar_out(m_s_axi_bready_converter_3_signal);
     mp_S03_AXI_transactor->BREADY(m_s_axi_bready_converter_3_signal);
-    mp_s_axi_arid_converter_3 = new xsc::common::vector2vector_converter<8,2>("s_axi_arid_converter_3");
+    mp_s_axi_arid_converter_3 = new xsc::common::vector2vector_converter<72,18>("s_axi_arid_converter_3");
     mp_s_axi_arid_converter_3->vector_in(s_axi_split_arid_out_3);
     mp_s_axi_arid_converter_3->vector_out(m_s_axi_arid_converter_3_signal);
     mp_S03_AXI_transactor->ARID(m_s_axi_arid_converter_3_signal);
@@ -4914,6 +5120,10 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_arqos_converter_3->vector_in(s_axi_split_arqos_out_3);
     mp_s_axi_arqos_converter_3->vector_out(m_s_axi_arqos_converter_3_signal);
     mp_S03_AXI_transactor->ARQOS(m_s_axi_arqos_converter_3_signal);
+    mp_s_axi_aruser_converter_3 = new xsc::common::vector2vector_converter<64,16>("s_axi_aruser_converter_3");
+    mp_s_axi_aruser_converter_3->vector_in(s_axi_split_aruser_out_3);
+    mp_s_axi_aruser_converter_3->vector_out(m_s_axi_aruser_converter_3_signal);
+    mp_S03_AXI_transactor->ARUSER(m_s_axi_aruser_converter_3_signal);
     mp_s_axi_arvalid_converter_3 = new xsc::common::vectorN2scalar_converter<4>("s_axi_arvalid_converter_3");
     mp_s_axi_arvalid_converter_3->vector_in(s_axi_split_arvalid_out_3);
     mp_s_axi_arvalid_converter_3->scalar_out(m_s_axi_arvalid_converter_3_signal);
@@ -4922,11 +5132,11 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
     mp_s_axi_arready_converter_3->scalar_in(m_s_axi_arready_converter_3_signal);
     mp_s_axi_arready_converter_3->vector_out(s_axi_concat_arready_out_3);
     mp_S03_AXI_transactor->ARREADY(m_s_axi_arready_converter_3_signal);
-    mp_s_axi_rid_converter_3 = new xsc::common::vector2vector_converter<2,8>("s_axi_rid_converter_3");
+    mp_s_axi_rid_converter_3 = new xsc::common::vector2vector_converter<18,72>("s_axi_rid_converter_3");
     mp_s_axi_rid_converter_3->vector_in(m_s_axi_rid_converter_3_signal);
     mp_s_axi_rid_converter_3->vector_out(s_axi_concat_rid_out_3);
     mp_S03_AXI_transactor->RID(m_s_axi_rid_converter_3_signal);
-    mp_s_axi_rdata_converter_3 = new xsc::common::vector2vector_converter<256,1024>("s_axi_rdata_converter_3");
+    mp_s_axi_rdata_converter_3 = new xsc::common::vector2vector_converter<128,512>("s_axi_rdata_converter_3");
     mp_s_axi_rdata_converter_3->vector_in(m_s_axi_rdata_converter_3_signal);
     mp_s_axi_rdata_converter_3->vector_out(s_axi_concat_rdata_out_3);
     mp_S03_AXI_transactor->RDATA(m_s_axi_rdata_converter_3_signal);
@@ -4966,7 +5176,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
 
 
 #ifdef VCSSYSTEMC
-DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_core::sc_module_name& nm) : DDR4_axi_interconnect_0_imp_xbar_0_sc(nm),  aclk("aclk"), aresetn("aresetn"), s_axi_awid("s_axi_awid"), s_axi_awaddr("s_axi_awaddr"), s_axi_awlen("s_axi_awlen"), s_axi_awsize("s_axi_awsize"), s_axi_awburst("s_axi_awburst"), s_axi_awlock("s_axi_awlock"), s_axi_awcache("s_axi_awcache"), s_axi_awprot("s_axi_awprot"), s_axi_awqos("s_axi_awqos"), s_axi_awvalid("s_axi_awvalid"), s_axi_awready("s_axi_awready"), s_axi_wdata("s_axi_wdata"), s_axi_wstrb("s_axi_wstrb"), s_axi_wlast("s_axi_wlast"), s_axi_wvalid("s_axi_wvalid"), s_axi_wready("s_axi_wready"), s_axi_bid("s_axi_bid"), s_axi_bresp("s_axi_bresp"), s_axi_bvalid("s_axi_bvalid"), s_axi_bready("s_axi_bready"), s_axi_arid("s_axi_arid"), s_axi_araddr("s_axi_araddr"), s_axi_arlen("s_axi_arlen"), s_axi_arsize("s_axi_arsize"), s_axi_arburst("s_axi_arburst"), s_axi_arlock("s_axi_arlock"), s_axi_arcache("s_axi_arcache"), s_axi_arprot("s_axi_arprot"), s_axi_arqos("s_axi_arqos"), s_axi_arvalid("s_axi_arvalid"), s_axi_arready("s_axi_arready"), s_axi_rid("s_axi_rid"), s_axi_rdata("s_axi_rdata"), s_axi_rresp("s_axi_rresp"), s_axi_rlast("s_axi_rlast"), s_axi_rvalid("s_axi_rvalid"), s_axi_rready("s_axi_rready"), m_axi_awid("m_axi_awid"), m_axi_awaddr("m_axi_awaddr"), m_axi_awlen("m_axi_awlen"), m_axi_awsize("m_axi_awsize"), m_axi_awburst("m_axi_awburst"), m_axi_awlock("m_axi_awlock"), m_axi_awcache("m_axi_awcache"), m_axi_awprot("m_axi_awprot"), m_axi_awregion("m_axi_awregion"), m_axi_awqos("m_axi_awqos"), m_axi_awvalid("m_axi_awvalid"), m_axi_awready("m_axi_awready"), m_axi_wdata("m_axi_wdata"), m_axi_wstrb("m_axi_wstrb"), m_axi_wlast("m_axi_wlast"), m_axi_wvalid("m_axi_wvalid"), m_axi_wready("m_axi_wready"), m_axi_bid("m_axi_bid"), m_axi_bresp("m_axi_bresp"), m_axi_bvalid("m_axi_bvalid"), m_axi_bready("m_axi_bready"), m_axi_arid("m_axi_arid"), m_axi_araddr("m_axi_araddr"), m_axi_arlen("m_axi_arlen"), m_axi_arsize("m_axi_arsize"), m_axi_arburst("m_axi_arburst"), m_axi_arlock("m_axi_arlock"), m_axi_arcache("m_axi_arcache"), m_axi_arprot("m_axi_arprot"), m_axi_arregion("m_axi_arregion"), m_axi_arqos("m_axi_arqos"), m_axi_arvalid("m_axi_arvalid"), m_axi_arready("m_axi_arready"), m_axi_rid("m_axi_rid"), m_axi_rdata("m_axi_rdata"), m_axi_rresp("m_axi_rresp"), m_axi_rlast("m_axi_rlast"), m_axi_rvalid("m_axi_rvalid"), m_axi_rready("m_axi_rready")
+DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_core::sc_module_name& nm) : DDR4_axi_interconnect_0_imp_xbar_0_sc(nm),  aclk("aclk"), aresetn("aresetn"), s_axi_awid("s_axi_awid"), s_axi_awaddr("s_axi_awaddr"), s_axi_awlen("s_axi_awlen"), s_axi_awsize("s_axi_awsize"), s_axi_awburst("s_axi_awburst"), s_axi_awlock("s_axi_awlock"), s_axi_awcache("s_axi_awcache"), s_axi_awprot("s_axi_awprot"), s_axi_awqos("s_axi_awqos"), s_axi_awuser("s_axi_awuser"), s_axi_awvalid("s_axi_awvalid"), s_axi_awready("s_axi_awready"), s_axi_wdata("s_axi_wdata"), s_axi_wstrb("s_axi_wstrb"), s_axi_wlast("s_axi_wlast"), s_axi_wvalid("s_axi_wvalid"), s_axi_wready("s_axi_wready"), s_axi_bid("s_axi_bid"), s_axi_bresp("s_axi_bresp"), s_axi_bvalid("s_axi_bvalid"), s_axi_bready("s_axi_bready"), s_axi_arid("s_axi_arid"), s_axi_araddr("s_axi_araddr"), s_axi_arlen("s_axi_arlen"), s_axi_arsize("s_axi_arsize"), s_axi_arburst("s_axi_arburst"), s_axi_arlock("s_axi_arlock"), s_axi_arcache("s_axi_arcache"), s_axi_arprot("s_axi_arprot"), s_axi_arqos("s_axi_arqos"), s_axi_aruser("s_axi_aruser"), s_axi_arvalid("s_axi_arvalid"), s_axi_arready("s_axi_arready"), s_axi_rid("s_axi_rid"), s_axi_rdata("s_axi_rdata"), s_axi_rresp("s_axi_rresp"), s_axi_rlast("s_axi_rlast"), s_axi_rvalid("s_axi_rvalid"), s_axi_rready("s_axi_rready"), m_axi_awid("m_axi_awid"), m_axi_awaddr("m_axi_awaddr"), m_axi_awlen("m_axi_awlen"), m_axi_awsize("m_axi_awsize"), m_axi_awburst("m_axi_awburst"), m_axi_awlock("m_axi_awlock"), m_axi_awcache("m_axi_awcache"), m_axi_awprot("m_axi_awprot"), m_axi_awregion("m_axi_awregion"), m_axi_awqos("m_axi_awqos"), m_axi_awuser("m_axi_awuser"), m_axi_awvalid("m_axi_awvalid"), m_axi_awready("m_axi_awready"), m_axi_wdata("m_axi_wdata"), m_axi_wstrb("m_axi_wstrb"), m_axi_wlast("m_axi_wlast"), m_axi_wvalid("m_axi_wvalid"), m_axi_wready("m_axi_wready"), m_axi_bid("m_axi_bid"), m_axi_bresp("m_axi_bresp"), m_axi_bvalid("m_axi_bvalid"), m_axi_bready("m_axi_bready"), m_axi_arid("m_axi_arid"), m_axi_araddr("m_axi_araddr"), m_axi_arlen("m_axi_arlen"), m_axi_arsize("m_axi_arsize"), m_axi_arburst("m_axi_arburst"), m_axi_arlock("m_axi_arlock"), m_axi_arcache("m_axi_arcache"), m_axi_arprot("m_axi_arprot"), m_axi_arregion("m_axi_arregion"), m_axi_arqos("m_axi_arqos"), m_axi_aruser("m_axi_aruser"), m_axi_arvalid("m_axi_arvalid"), m_axi_arready("m_axi_arready"), m_axi_rid("m_axi_rid"), m_axi_rdata("m_axi_rdata"), m_axi_rresp("m_axi_rresp"), m_axi_rlast("m_axi_rlast"), m_axi_rvalid("m_axi_rvalid"), m_axi_rready("m_axi_rready")
 {
   // initialize pins
   mp_impl->aclk(aclk);
@@ -4983,6 +5193,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awcache_converter_0 = NULL;
   mp_s_axi_awprot_converter_0 = NULL;
   mp_s_axi_awqos_converter_0 = NULL;
+  mp_s_axi_awuser_converter_0 = NULL;
   mp_s_axi_awvalid_converter_0 = NULL;
   mp_s_axi_awready_converter_0 = NULL;
   mp_s_axi_wdata_converter_0 = NULL;
@@ -5003,6 +5214,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arcache_converter_0 = NULL;
   mp_s_axi_arprot_converter_0 = NULL;
   mp_s_axi_arqos_converter_0 = NULL;
+  mp_s_axi_aruser_converter_0 = NULL;
   mp_s_axi_arvalid_converter_0 = NULL;
   mp_s_axi_arready_converter_0 = NULL;
   mp_s_axi_rid_converter_0 = NULL;
@@ -5036,6 +5248,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awcache_converter_1 = NULL;
   mp_s_axi_awprot_converter_1 = NULL;
   mp_s_axi_awqos_converter_1 = NULL;
+  mp_s_axi_awuser_converter_1 = NULL;
   mp_s_axi_awvalid_converter_1 = NULL;
   mp_s_axi_awready_converter_1 = NULL;
   mp_s_axi_wdata_converter_1 = NULL;
@@ -5056,6 +5269,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arcache_converter_1 = NULL;
   mp_s_axi_arprot_converter_1 = NULL;
   mp_s_axi_arqos_converter_1 = NULL;
+  mp_s_axi_aruser_converter_1 = NULL;
   mp_s_axi_arvalid_converter_1 = NULL;
   mp_s_axi_arready_converter_1 = NULL;
   mp_s_axi_rid_converter_1 = NULL;
@@ -5074,6 +5288,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awcache_converter_2 = NULL;
   mp_s_axi_awprot_converter_2 = NULL;
   mp_s_axi_awqos_converter_2 = NULL;
+  mp_s_axi_awuser_converter_2 = NULL;
   mp_s_axi_awvalid_converter_2 = NULL;
   mp_s_axi_awready_converter_2 = NULL;
   mp_s_axi_wdata_converter_2 = NULL;
@@ -5094,6 +5309,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arcache_converter_2 = NULL;
   mp_s_axi_arprot_converter_2 = NULL;
   mp_s_axi_arqos_converter_2 = NULL;
+  mp_s_axi_aruser_converter_2 = NULL;
   mp_s_axi_arvalid_converter_2 = NULL;
   mp_s_axi_arready_converter_2 = NULL;
   mp_s_axi_rid_converter_2 = NULL;
@@ -5112,6 +5328,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awcache_converter_3 = NULL;
   mp_s_axi_awprot_converter_3 = NULL;
   mp_s_axi_awqos_converter_3 = NULL;
+  mp_s_axi_awuser_converter_3 = NULL;
   mp_s_axi_awvalid_converter_3 = NULL;
   mp_s_axi_awready_converter_3 = NULL;
   mp_s_axi_wdata_converter_3 = NULL;
@@ -5132,6 +5349,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arcache_converter_3 = NULL;
   mp_s_axi_arprot_converter_3 = NULL;
   mp_s_axi_arqos_converter_3 = NULL;
+  mp_s_axi_aruser_converter_3 = NULL;
   mp_s_axi_arvalid_converter_3 = NULL;
   mp_s_axi_arready_converter_3 = NULL;
   mp_s_axi_rid_converter_3 = NULL;
@@ -5162,6 +5380,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_arprot = NULL;
   mp_s_axi_split_arqos = NULL;
   mp_s_axi_split_arsize = NULL;
+  mp_s_axi_split_aruser = NULL;
   mp_s_axi_split_arvalid = NULL;
   mp_s_axi_split_awaddr = NULL;
   mp_s_axi_split_awburst = NULL;
@@ -5172,6 +5391,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_awprot = NULL;
   mp_s_axi_split_awqos = NULL;
   mp_s_axi_split_awsize = NULL;
+  mp_s_axi_split_awuser = NULL;
   mp_s_axi_split_awvalid = NULL;
   mp_s_axi_split_bready = NULL;
   mp_s_axi_split_rready = NULL;
@@ -5184,12 +5404,12 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
 
   // configure S00_AXI_transactor
     xsc::common_cpp::properties S00_AXI_transactor_param_props;
-    S00_AXI_transactor_param_props.addLong("DATA_WIDTH", "256");
+    S00_AXI_transactor_param_props.addLong("DATA_WIDTH", "128");
     S00_AXI_transactor_param_props.addLong("FREQ_HZ", "300000000");
-    S00_AXI_transactor_param_props.addLong("ID_WIDTH", "2");
+    S00_AXI_transactor_param_props.addLong("ID_WIDTH", "18");
     S00_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
-    S00_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
-    S00_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "0");
+    S00_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "16");
+    S00_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "16");
     S00_AXI_transactor_param_props.addLong("WUSER_WIDTH", "0");
     S00_AXI_transactor_param_props.addLong("RUSER_WIDTH", "0");
     S00_AXI_transactor_param_props.addLong("BUSER_WIDTH", "0");
@@ -5217,12 +5437,12 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
     S00_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
     S00_AXI_transactor_param_props.addString("CLK_DOMAIN", "DDR4_ddr4_0_0_c0_ddr4_ui_clk");
 
-    mp_S00_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<256,40,2,1,1,1,1,1>("S00_AXI_transactor", S00_AXI_transactor_param_props);
-  mp_s_axi_awid_converter_0 = new xsc::common::vector2vector_converter<8,2>("s_axi_awid_converter_0");
-  mp_s_axi_split_awid = new xsc::xsc_split<8, 4>("s_axi_split_awid");
+    mp_S00_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<128,40,18,16,1,1,16,1>("S00_AXI_transactor", S00_AXI_transactor_param_props);
+  mp_s_axi_awid_converter_0 = new xsc::common::vector2vector_converter<72,18>("s_axi_awid_converter_0");
+  mp_s_axi_split_awid = new xsc::xsc_split<72, 4>("s_axi_split_awid");
   mp_s_axi_split_awid->in_port(s_axi_awid);
   mp_s_axi_split_awid->out_port[0](s_axi_split_awid_out_0);
-    mp_s_axi_split_awid->add_mask(0,2,0);
+    mp_s_axi_split_awid->add_mask(0,18,0);
   mp_s_axi_awid_converter_0->vector_in(s_axi_split_awid_out_0);
   mp_s_axi_awid_converter_0->vector_out(m_s_axi_awid_converter_0_signal);
   mp_S00_AXI_transactor->AWID(m_s_axi_awid_converter_0_signal);
@@ -5290,6 +5510,14 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awqos_converter_0->vector_in(s_axi_split_awqos_out_0);
   mp_s_axi_awqos_converter_0->vector_out(m_s_axi_awqos_converter_0_signal);
   mp_S00_AXI_transactor->AWQOS(m_s_axi_awqos_converter_0_signal);
+  mp_s_axi_awuser_converter_0 = new xsc::common::vector2vector_converter<64,16>("s_axi_awuser_converter_0");
+  mp_s_axi_split_awuser = new xsc::xsc_split<64, 4>("s_axi_split_awuser");
+  mp_s_axi_split_awuser->in_port(s_axi_awuser);
+  mp_s_axi_split_awuser->out_port[0](s_axi_split_awuser_out_0);
+    mp_s_axi_split_awuser->add_mask(0,16,0);
+  mp_s_axi_awuser_converter_0->vector_in(s_axi_split_awuser_out_0);
+  mp_s_axi_awuser_converter_0->vector_out(m_s_axi_awuser_converter_0_signal);
+  mp_S00_AXI_transactor->AWUSER(m_s_axi_awuser_converter_0_signal);
   mp_s_axi_awvalid_converter_0 = new xsc::common::vectorN2scalar_converter<4>("s_axi_awvalid_converter_0");
   mp_s_axi_split_awvalid = new xsc::xsc_split<4, 4>("s_axi_split_awvalid");
   mp_s_axi_split_awvalid->in_port(s_axi_awvalid);
@@ -5306,19 +5534,19 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awready_converter_0->scalar_in(m_s_axi_awready_converter_0_signal);
   mp_s_axi_awready_converter_0->vector_out(s_axi_concat_awready_out_0);
   mp_S00_AXI_transactor->AWREADY(m_s_axi_awready_converter_0_signal);
-  mp_s_axi_wdata_converter_0 = new xsc::common::vector2vector_converter<1024,256>("s_axi_wdata_converter_0");
-  mp_s_axi_split_wdata = new xsc::xsc_split<1024, 4>("s_axi_split_wdata");
+  mp_s_axi_wdata_converter_0 = new xsc::common::vector2vector_converter<512,128>("s_axi_wdata_converter_0");
+  mp_s_axi_split_wdata = new xsc::xsc_split<512, 4>("s_axi_split_wdata");
   mp_s_axi_split_wdata->in_port(s_axi_wdata);
   mp_s_axi_split_wdata->out_port[0](s_axi_split_wdata_out_0);
-    mp_s_axi_split_wdata->add_mask(0,256,0);
+    mp_s_axi_split_wdata->add_mask(0,128,0);
   mp_s_axi_wdata_converter_0->vector_in(s_axi_split_wdata_out_0);
   mp_s_axi_wdata_converter_0->vector_out(m_s_axi_wdata_converter_0_signal);
   mp_S00_AXI_transactor->WDATA(m_s_axi_wdata_converter_0_signal);
-  mp_s_axi_wstrb_converter_0 = new xsc::common::vector2vector_converter<128,32>("s_axi_wstrb_converter_0");
-  mp_s_axi_split_wstrb = new xsc::xsc_split<128, 4>("s_axi_split_wstrb");
+  mp_s_axi_wstrb_converter_0 = new xsc::common::vector2vector_converter<64,16>("s_axi_wstrb_converter_0");
+  mp_s_axi_split_wstrb = new xsc::xsc_split<64, 4>("s_axi_split_wstrb");
   mp_s_axi_split_wstrb->in_port(s_axi_wstrb);
   mp_s_axi_split_wstrb->out_port[0](s_axi_split_wstrb_out_0);
-    mp_s_axi_split_wstrb->add_mask(0,32,0);
+    mp_s_axi_split_wstrb->add_mask(0,16,0);
   mp_s_axi_wstrb_converter_0->vector_in(s_axi_split_wstrb_out_0);
   mp_s_axi_wstrb_converter_0->vector_out(m_s_axi_wstrb_converter_0_signal);
   mp_S00_AXI_transactor->WSTRB(m_s_axi_wstrb_converter_0_signal);
@@ -5346,8 +5574,8 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_wready_converter_0->scalar_in(m_s_axi_wready_converter_0_signal);
   mp_s_axi_wready_converter_0->vector_out(s_axi_concat_wready_out_0);
   mp_S00_AXI_transactor->WREADY(m_s_axi_wready_converter_0_signal);
-  mp_s_axi_bid_converter_0 = new xsc::common::vector2vector_converter<2,8>("s_axi_bid_converter_0");
-  mp_s_axi_concat_bid = new xsc::xsc_concatenator<8, 4>("s_axi_concat_bid");
+  mp_s_axi_bid_converter_0 = new xsc::common::vector2vector_converter<18,72>("s_axi_bid_converter_0");
+  mp_s_axi_concat_bid = new xsc::xsc_concatenator<72, 4>("s_axi_concat_bid");
   mp_s_axi_concat_bid->in_port[0](s_axi_concat_bid_out_0);
   mp_s_axi_concat_bid->out_port(s_axi_bid);
     mp_s_axi_concat_bid->offset_port(0, 0);
@@ -5378,11 +5606,11 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_bready_converter_0->vector_in(s_axi_split_bready_out_0);
   mp_s_axi_bready_converter_0->scalar_out(m_s_axi_bready_converter_0_signal);
   mp_S00_AXI_transactor->BREADY(m_s_axi_bready_converter_0_signal);
-  mp_s_axi_arid_converter_0 = new xsc::common::vector2vector_converter<8,2>("s_axi_arid_converter_0");
-  mp_s_axi_split_arid = new xsc::xsc_split<8, 4>("s_axi_split_arid");
+  mp_s_axi_arid_converter_0 = new xsc::common::vector2vector_converter<72,18>("s_axi_arid_converter_0");
+  mp_s_axi_split_arid = new xsc::xsc_split<72, 4>("s_axi_split_arid");
   mp_s_axi_split_arid->in_port(s_axi_arid);
   mp_s_axi_split_arid->out_port[0](s_axi_split_arid_out_0);
-    mp_s_axi_split_arid->add_mask(0,2,0);
+    mp_s_axi_split_arid->add_mask(0,18,0);
   mp_s_axi_arid_converter_0->vector_in(s_axi_split_arid_out_0);
   mp_s_axi_arid_converter_0->vector_out(m_s_axi_arid_converter_0_signal);
   mp_S00_AXI_transactor->ARID(m_s_axi_arid_converter_0_signal);
@@ -5450,6 +5678,14 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arqos_converter_0->vector_in(s_axi_split_arqos_out_0);
   mp_s_axi_arqos_converter_0->vector_out(m_s_axi_arqos_converter_0_signal);
   mp_S00_AXI_transactor->ARQOS(m_s_axi_arqos_converter_0_signal);
+  mp_s_axi_aruser_converter_0 = new xsc::common::vector2vector_converter<64,16>("s_axi_aruser_converter_0");
+  mp_s_axi_split_aruser = new xsc::xsc_split<64, 4>("s_axi_split_aruser");
+  mp_s_axi_split_aruser->in_port(s_axi_aruser);
+  mp_s_axi_split_aruser->out_port[0](s_axi_split_aruser_out_0);
+    mp_s_axi_split_aruser->add_mask(0,16,0);
+  mp_s_axi_aruser_converter_0->vector_in(s_axi_split_aruser_out_0);
+  mp_s_axi_aruser_converter_0->vector_out(m_s_axi_aruser_converter_0_signal);
+  mp_S00_AXI_transactor->ARUSER(m_s_axi_aruser_converter_0_signal);
   mp_s_axi_arvalid_converter_0 = new xsc::common::vectorN2scalar_converter<4>("s_axi_arvalid_converter_0");
   mp_s_axi_split_arvalid = new xsc::xsc_split<4, 4>("s_axi_split_arvalid");
   mp_s_axi_split_arvalid->in_port(s_axi_arvalid);
@@ -5466,16 +5702,16 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arready_converter_0->scalar_in(m_s_axi_arready_converter_0_signal);
   mp_s_axi_arready_converter_0->vector_out(s_axi_concat_arready_out_0);
   mp_S00_AXI_transactor->ARREADY(m_s_axi_arready_converter_0_signal);
-  mp_s_axi_rid_converter_0 = new xsc::common::vector2vector_converter<2,8>("s_axi_rid_converter_0");
-  mp_s_axi_concat_rid = new xsc::xsc_concatenator<8, 4>("s_axi_concat_rid");
+  mp_s_axi_rid_converter_0 = new xsc::common::vector2vector_converter<18,72>("s_axi_rid_converter_0");
+  mp_s_axi_concat_rid = new xsc::xsc_concatenator<72, 4>("s_axi_concat_rid");
   mp_s_axi_concat_rid->in_port[0](s_axi_concat_rid_out_0);
   mp_s_axi_concat_rid->out_port(s_axi_rid);
     mp_s_axi_concat_rid->offset_port(0, 0);
   mp_s_axi_rid_converter_0->vector_in(m_s_axi_rid_converter_0_signal);
   mp_s_axi_rid_converter_0->vector_out(s_axi_concat_rid_out_0);
   mp_S00_AXI_transactor->RID(m_s_axi_rid_converter_0_signal);
-  mp_s_axi_rdata_converter_0 = new xsc::common::vector2vector_converter<256,1024>("s_axi_rdata_converter_0");
-  mp_s_axi_concat_rdata = new xsc::xsc_concatenator<1024, 4>("s_axi_concat_rdata");
+  mp_s_axi_rdata_converter_0 = new xsc::common::vector2vector_converter<128,512>("s_axi_rdata_converter_0");
+  mp_s_axi_concat_rdata = new xsc::xsc_concatenator<512, 4>("s_axi_concat_rdata");
   mp_s_axi_concat_rdata->in_port[0](s_axi_concat_rdata_out_0);
   mp_s_axi_concat_rdata->out_port(s_axi_rdata);
     mp_s_axi_concat_rdata->offset_port(0, 0);
@@ -5518,12 +5754,12 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_S00_AXI_transactor->RST(aresetn);
   // configure M00_AXI_transactor
     xsc::common_cpp::properties M00_AXI_transactor_param_props;
-    M00_AXI_transactor_param_props.addLong("DATA_WIDTH", "256");
+    M00_AXI_transactor_param_props.addLong("DATA_WIDTH", "128");
     M00_AXI_transactor_param_props.addLong("FREQ_HZ", "300000000");
-    M00_AXI_transactor_param_props.addLong("ID_WIDTH", "2");
+    M00_AXI_transactor_param_props.addLong("ID_WIDTH", "18");
     M00_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
-    M00_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
-    M00_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "0");
+    M00_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "16");
+    M00_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "16");
     M00_AXI_transactor_param_props.addLong("WUSER_WIDTH", "0");
     M00_AXI_transactor_param_props.addLong("RUSER_WIDTH", "0");
     M00_AXI_transactor_param_props.addLong("BUSER_WIDTH", "0");
@@ -5537,8 +5773,8 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
     M00_AXI_transactor_param_props.addLong("HAS_BRESP", "1");
     M00_AXI_transactor_param_props.addLong("HAS_RRESP", "1");
     M00_AXI_transactor_param_props.addLong("SUPPORTS_NARROW_BURST", "1");
-    M00_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "2");
-    M00_AXI_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "2");
+    M00_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "8");
+    M00_AXI_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "8");
     M00_AXI_transactor_param_props.addLong("MAX_BURST_LENGTH", "256");
     M00_AXI_transactor_param_props.addLong("NUM_READ_THREADS", "1");
     M00_AXI_transactor_param_props.addLong("NUM_WRITE_THREADS", "1");
@@ -5551,7 +5787,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
     M00_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
     M00_AXI_transactor_param_props.addString("CLK_DOMAIN", "DDR4_ddr4_0_0_c0_ddr4_ui_clk");
 
-    mp_M00_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<256,40,2,1,1,1,1,1>("M00_AXI_transactor", M00_AXI_transactor_param_props);
+    mp_M00_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<128,40,18,16,1,1,16,1>("M00_AXI_transactor", M00_AXI_transactor_param_props);
   mp_M00_AXI_transactor->AWID(m_axi_awid);
   mp_M00_AXI_transactor->AWADDR(m_axi_awaddr);
   mp_M00_AXI_transactor->AWLEN(m_axi_awlen);
@@ -5565,6 +5801,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_M00_AXI_transactor->AWPROT(m_axi_awprot);
   mp_M00_AXI_transactor->AWREGION(m_axi_awregion);
   mp_M00_AXI_transactor->AWQOS(m_axi_awqos);
+  mp_M00_AXI_transactor->AWUSER(m_axi_awuser);
   mp_m_axi_awvalid_converter = new xsc::common::scalar2vectorN_converter<1>("m_axi_awvalid_converter");
   mp_m_axi_awvalid_converter->scalar_in(m_m_axi_awvalid_converter_signal);
   mp_m_axi_awvalid_converter->vector_out(m_axi_awvalid);
@@ -5610,6 +5847,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_M00_AXI_transactor->ARPROT(m_axi_arprot);
   mp_M00_AXI_transactor->ARREGION(m_axi_arregion);
   mp_M00_AXI_transactor->ARQOS(m_axi_arqos);
+  mp_M00_AXI_transactor->ARUSER(m_axi_aruser);
   mp_m_axi_arvalid_converter = new xsc::common::scalar2vectorN_converter<1>("m_axi_arvalid_converter");
   mp_m_axi_arvalid_converter->scalar_in(m_m_axi_arvalid_converter_signal);
   mp_m_axi_arvalid_converter->vector_out(m_axi_arvalid);
@@ -5637,12 +5875,12 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_M00_AXI_transactor->RST(aresetn);
   // configure S01_AXI_transactor
     xsc::common_cpp::properties S01_AXI_transactor_param_props;
-    S01_AXI_transactor_param_props.addLong("DATA_WIDTH", "256");
+    S01_AXI_transactor_param_props.addLong("DATA_WIDTH", "128");
     S01_AXI_transactor_param_props.addLong("FREQ_HZ", "300000000");
-    S01_AXI_transactor_param_props.addLong("ID_WIDTH", "2");
+    S01_AXI_transactor_param_props.addLong("ID_WIDTH", "18");
     S01_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
-    S01_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
-    S01_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "0");
+    S01_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "16");
+    S01_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "16");
     S01_AXI_transactor_param_props.addLong("WUSER_WIDTH", "0");
     S01_AXI_transactor_param_props.addLong("RUSER_WIDTH", "0");
     S01_AXI_transactor_param_props.addLong("BUSER_WIDTH", "0");
@@ -5670,11 +5908,11 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
     S01_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
     S01_AXI_transactor_param_props.addString("CLK_DOMAIN", "DDR4_ddr4_0_0_c0_ddr4_ui_clk");
 
-    mp_S01_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<256,40,2,1,1,1,1,1>("S01_AXI_transactor", S01_AXI_transactor_param_props);
-  mp_s_axi_awid_converter_1 = new xsc::common::vector2vector_converter<8,2>("s_axi_awid_converter_1");
+    mp_S01_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<128,40,18,16,1,1,16,1>("S01_AXI_transactor", S01_AXI_transactor_param_props);
+  mp_s_axi_awid_converter_1 = new xsc::common::vector2vector_converter<72,18>("s_axi_awid_converter_1");
   
   mp_s_axi_split_awid->out_port[1](s_axi_split_awid_out_1);
-    mp_s_axi_split_awid->add_mask(1,4,2);
+    mp_s_axi_split_awid->add_mask(1,36,18);
   mp_s_axi_awid_converter_1->vector_in(s_axi_split_awid_out_1);
   mp_s_axi_awid_converter_1->vector_out(m_s_axi_awid_converter_1_signal);
   mp_S01_AXI_transactor->AWID(m_s_axi_awid_converter_1_signal);
@@ -5734,6 +5972,13 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awqos_converter_1->vector_in(s_axi_split_awqos_out_1);
   mp_s_axi_awqos_converter_1->vector_out(m_s_axi_awqos_converter_1_signal);
   mp_S01_AXI_transactor->AWQOS(m_s_axi_awqos_converter_1_signal);
+  mp_s_axi_awuser_converter_1 = new xsc::common::vector2vector_converter<64,16>("s_axi_awuser_converter_1");
+  
+  mp_s_axi_split_awuser->out_port[1](s_axi_split_awuser_out_1);
+    mp_s_axi_split_awuser->add_mask(1,32,16);
+  mp_s_axi_awuser_converter_1->vector_in(s_axi_split_awuser_out_1);
+  mp_s_axi_awuser_converter_1->vector_out(m_s_axi_awuser_converter_1_signal);
+  mp_S01_AXI_transactor->AWUSER(m_s_axi_awuser_converter_1_signal);
   mp_s_axi_awvalid_converter_1 = new xsc::common::vectorN2scalar_converter<4>("s_axi_awvalid_converter_1");
   
   mp_s_axi_split_awvalid->out_port[1](s_axi_split_awvalid_out_1);
@@ -5747,17 +5992,17 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awready_converter_1->scalar_in(m_s_axi_awready_converter_1_signal);
   mp_s_axi_awready_converter_1->vector_out(s_axi_concat_awready_out_1);
   mp_S01_AXI_transactor->AWREADY(m_s_axi_awready_converter_1_signal);
-  mp_s_axi_wdata_converter_1 = new xsc::common::vector2vector_converter<1024,256>("s_axi_wdata_converter_1");
+  mp_s_axi_wdata_converter_1 = new xsc::common::vector2vector_converter<512,128>("s_axi_wdata_converter_1");
   
   mp_s_axi_split_wdata->out_port[1](s_axi_split_wdata_out_1);
-    mp_s_axi_split_wdata->add_mask(1,512,256);
+    mp_s_axi_split_wdata->add_mask(1,256,128);
   mp_s_axi_wdata_converter_1->vector_in(s_axi_split_wdata_out_1);
   mp_s_axi_wdata_converter_1->vector_out(m_s_axi_wdata_converter_1_signal);
   mp_S01_AXI_transactor->WDATA(m_s_axi_wdata_converter_1_signal);
-  mp_s_axi_wstrb_converter_1 = new xsc::common::vector2vector_converter<128,32>("s_axi_wstrb_converter_1");
+  mp_s_axi_wstrb_converter_1 = new xsc::common::vector2vector_converter<64,16>("s_axi_wstrb_converter_1");
   
   mp_s_axi_split_wstrb->out_port[1](s_axi_split_wstrb_out_1);
-    mp_s_axi_split_wstrb->add_mask(1,64,32);
+    mp_s_axi_split_wstrb->add_mask(1,32,16);
   mp_s_axi_wstrb_converter_1->vector_in(s_axi_split_wstrb_out_1);
   mp_s_axi_wstrb_converter_1->vector_out(m_s_axi_wstrb_converter_1_signal);
   mp_S01_AXI_transactor->WSTRB(m_s_axi_wstrb_converter_1_signal);
@@ -5781,9 +6026,9 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_wready_converter_1->scalar_in(m_s_axi_wready_converter_1_signal);
   mp_s_axi_wready_converter_1->vector_out(s_axi_concat_wready_out_1);
   mp_S01_AXI_transactor->WREADY(m_s_axi_wready_converter_1_signal);
-  mp_s_axi_bid_converter_1 = new xsc::common::vector2vector_converter<2,8>("s_axi_bid_converter_1");
+  mp_s_axi_bid_converter_1 = new xsc::common::vector2vector_converter<18,72>("s_axi_bid_converter_1");
   mp_s_axi_concat_bid->in_port[1](s_axi_concat_bid_out_1);
-  mp_s_axi_concat_bid->offset_port(1, 2);
+  mp_s_axi_concat_bid->offset_port(1, 18);
   mp_s_axi_bid_converter_1->vector_in(m_s_axi_bid_converter_1_signal);
   mp_s_axi_bid_converter_1->vector_out(s_axi_concat_bid_out_1);
   mp_S01_AXI_transactor->BID(m_s_axi_bid_converter_1_signal);
@@ -5806,10 +6051,10 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_bready_converter_1->vector_in(s_axi_split_bready_out_1);
   mp_s_axi_bready_converter_1->scalar_out(m_s_axi_bready_converter_1_signal);
   mp_S01_AXI_transactor->BREADY(m_s_axi_bready_converter_1_signal);
-  mp_s_axi_arid_converter_1 = new xsc::common::vector2vector_converter<8,2>("s_axi_arid_converter_1");
+  mp_s_axi_arid_converter_1 = new xsc::common::vector2vector_converter<72,18>("s_axi_arid_converter_1");
   
   mp_s_axi_split_arid->out_port[1](s_axi_split_arid_out_1);
-    mp_s_axi_split_arid->add_mask(1,4,2);
+    mp_s_axi_split_arid->add_mask(1,36,18);
   mp_s_axi_arid_converter_1->vector_in(s_axi_split_arid_out_1);
   mp_s_axi_arid_converter_1->vector_out(m_s_axi_arid_converter_1_signal);
   mp_S01_AXI_transactor->ARID(m_s_axi_arid_converter_1_signal);
@@ -5869,6 +6114,13 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arqos_converter_1->vector_in(s_axi_split_arqos_out_1);
   mp_s_axi_arqos_converter_1->vector_out(m_s_axi_arqos_converter_1_signal);
   mp_S01_AXI_transactor->ARQOS(m_s_axi_arqos_converter_1_signal);
+  mp_s_axi_aruser_converter_1 = new xsc::common::vector2vector_converter<64,16>("s_axi_aruser_converter_1");
+  
+  mp_s_axi_split_aruser->out_port[1](s_axi_split_aruser_out_1);
+    mp_s_axi_split_aruser->add_mask(1,32,16);
+  mp_s_axi_aruser_converter_1->vector_in(s_axi_split_aruser_out_1);
+  mp_s_axi_aruser_converter_1->vector_out(m_s_axi_aruser_converter_1_signal);
+  mp_S01_AXI_transactor->ARUSER(m_s_axi_aruser_converter_1_signal);
   mp_s_axi_arvalid_converter_1 = new xsc::common::vectorN2scalar_converter<4>("s_axi_arvalid_converter_1");
   
   mp_s_axi_split_arvalid->out_port[1](s_axi_split_arvalid_out_1);
@@ -5882,15 +6134,15 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arready_converter_1->scalar_in(m_s_axi_arready_converter_1_signal);
   mp_s_axi_arready_converter_1->vector_out(s_axi_concat_arready_out_1);
   mp_S01_AXI_transactor->ARREADY(m_s_axi_arready_converter_1_signal);
-  mp_s_axi_rid_converter_1 = new xsc::common::vector2vector_converter<2,8>("s_axi_rid_converter_1");
+  mp_s_axi_rid_converter_1 = new xsc::common::vector2vector_converter<18,72>("s_axi_rid_converter_1");
   mp_s_axi_concat_rid->in_port[1](s_axi_concat_rid_out_1);
-  mp_s_axi_concat_rid->offset_port(1, 2);
+  mp_s_axi_concat_rid->offset_port(1, 18);
   mp_s_axi_rid_converter_1->vector_in(m_s_axi_rid_converter_1_signal);
   mp_s_axi_rid_converter_1->vector_out(s_axi_concat_rid_out_1);
   mp_S01_AXI_transactor->RID(m_s_axi_rid_converter_1_signal);
-  mp_s_axi_rdata_converter_1 = new xsc::common::vector2vector_converter<256,1024>("s_axi_rdata_converter_1");
+  mp_s_axi_rdata_converter_1 = new xsc::common::vector2vector_converter<128,512>("s_axi_rdata_converter_1");
   mp_s_axi_concat_rdata->in_port[1](s_axi_concat_rdata_out_1);
-  mp_s_axi_concat_rdata->offset_port(1, 256);
+  mp_s_axi_concat_rdata->offset_port(1, 128);
   mp_s_axi_rdata_converter_1->vector_in(m_s_axi_rdata_converter_1_signal);
   mp_s_axi_rdata_converter_1->vector_out(s_axi_concat_rdata_out_1);
   mp_S01_AXI_transactor->RDATA(m_s_axi_rdata_converter_1_signal);
@@ -5923,12 +6175,12 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_S01_AXI_transactor->RST(aresetn);
   // configure S02_AXI_transactor
     xsc::common_cpp::properties S02_AXI_transactor_param_props;
-    S02_AXI_transactor_param_props.addLong("DATA_WIDTH", "256");
+    S02_AXI_transactor_param_props.addLong("DATA_WIDTH", "128");
     S02_AXI_transactor_param_props.addLong("FREQ_HZ", "300000000");
-    S02_AXI_transactor_param_props.addLong("ID_WIDTH", "2");
+    S02_AXI_transactor_param_props.addLong("ID_WIDTH", "18");
     S02_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
-    S02_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
-    S02_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "0");
+    S02_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "16");
+    S02_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "16");
     S02_AXI_transactor_param_props.addLong("WUSER_WIDTH", "0");
     S02_AXI_transactor_param_props.addLong("RUSER_WIDTH", "0");
     S02_AXI_transactor_param_props.addLong("BUSER_WIDTH", "0");
@@ -5945,8 +6197,8 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
     S02_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "2");
     S02_AXI_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "2");
     S02_AXI_transactor_param_props.addLong("MAX_BURST_LENGTH", "256");
-    S02_AXI_transactor_param_props.addLong("NUM_READ_THREADS", "4");
-    S02_AXI_transactor_param_props.addLong("NUM_WRITE_THREADS", "4");
+    S02_AXI_transactor_param_props.addLong("NUM_READ_THREADS", "1");
+    S02_AXI_transactor_param_props.addLong("NUM_WRITE_THREADS", "1");
     S02_AXI_transactor_param_props.addLong("RUSER_BITS_PER_BYTE", "0");
     S02_AXI_transactor_param_props.addLong("WUSER_BITS_PER_BYTE", "0");
     S02_AXI_transactor_param_props.addLong("HAS_SIZE", "1");
@@ -5956,11 +6208,11 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
     S02_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
     S02_AXI_transactor_param_props.addString("CLK_DOMAIN", "DDR4_ddr4_0_0_c0_ddr4_ui_clk");
 
-    mp_S02_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<256,40,2,1,1,1,1,1>("S02_AXI_transactor", S02_AXI_transactor_param_props);
-  mp_s_axi_awid_converter_2 = new xsc::common::vector2vector_converter<8,2>("s_axi_awid_converter_2");
+    mp_S02_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<128,40,18,16,1,1,16,1>("S02_AXI_transactor", S02_AXI_transactor_param_props);
+  mp_s_axi_awid_converter_2 = new xsc::common::vector2vector_converter<72,18>("s_axi_awid_converter_2");
   
   mp_s_axi_split_awid->out_port[2](s_axi_split_awid_out_2);
-    mp_s_axi_split_awid->add_mask(2,6,4);
+    mp_s_axi_split_awid->add_mask(2,54,36);
   mp_s_axi_awid_converter_2->vector_in(s_axi_split_awid_out_2);
   mp_s_axi_awid_converter_2->vector_out(m_s_axi_awid_converter_2_signal);
   mp_S02_AXI_transactor->AWID(m_s_axi_awid_converter_2_signal);
@@ -6020,6 +6272,13 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awqos_converter_2->vector_in(s_axi_split_awqos_out_2);
   mp_s_axi_awqos_converter_2->vector_out(m_s_axi_awqos_converter_2_signal);
   mp_S02_AXI_transactor->AWQOS(m_s_axi_awqos_converter_2_signal);
+  mp_s_axi_awuser_converter_2 = new xsc::common::vector2vector_converter<64,16>("s_axi_awuser_converter_2");
+  
+  mp_s_axi_split_awuser->out_port[2](s_axi_split_awuser_out_2);
+    mp_s_axi_split_awuser->add_mask(2,48,32);
+  mp_s_axi_awuser_converter_2->vector_in(s_axi_split_awuser_out_2);
+  mp_s_axi_awuser_converter_2->vector_out(m_s_axi_awuser_converter_2_signal);
+  mp_S02_AXI_transactor->AWUSER(m_s_axi_awuser_converter_2_signal);
   mp_s_axi_awvalid_converter_2 = new xsc::common::vectorN2scalar_converter<4>("s_axi_awvalid_converter_2");
   
   mp_s_axi_split_awvalid->out_port[2](s_axi_split_awvalid_out_2);
@@ -6033,17 +6292,17 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awready_converter_2->scalar_in(m_s_axi_awready_converter_2_signal);
   mp_s_axi_awready_converter_2->vector_out(s_axi_concat_awready_out_2);
   mp_S02_AXI_transactor->AWREADY(m_s_axi_awready_converter_2_signal);
-  mp_s_axi_wdata_converter_2 = new xsc::common::vector2vector_converter<1024,256>("s_axi_wdata_converter_2");
+  mp_s_axi_wdata_converter_2 = new xsc::common::vector2vector_converter<512,128>("s_axi_wdata_converter_2");
   
   mp_s_axi_split_wdata->out_port[2](s_axi_split_wdata_out_2);
-    mp_s_axi_split_wdata->add_mask(2,768,512);
+    mp_s_axi_split_wdata->add_mask(2,384,256);
   mp_s_axi_wdata_converter_2->vector_in(s_axi_split_wdata_out_2);
   mp_s_axi_wdata_converter_2->vector_out(m_s_axi_wdata_converter_2_signal);
   mp_S02_AXI_transactor->WDATA(m_s_axi_wdata_converter_2_signal);
-  mp_s_axi_wstrb_converter_2 = new xsc::common::vector2vector_converter<128,32>("s_axi_wstrb_converter_2");
+  mp_s_axi_wstrb_converter_2 = new xsc::common::vector2vector_converter<64,16>("s_axi_wstrb_converter_2");
   
   mp_s_axi_split_wstrb->out_port[2](s_axi_split_wstrb_out_2);
-    mp_s_axi_split_wstrb->add_mask(2,96,64);
+    mp_s_axi_split_wstrb->add_mask(2,48,32);
   mp_s_axi_wstrb_converter_2->vector_in(s_axi_split_wstrb_out_2);
   mp_s_axi_wstrb_converter_2->vector_out(m_s_axi_wstrb_converter_2_signal);
   mp_S02_AXI_transactor->WSTRB(m_s_axi_wstrb_converter_2_signal);
@@ -6067,9 +6326,9 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_wready_converter_2->scalar_in(m_s_axi_wready_converter_2_signal);
   mp_s_axi_wready_converter_2->vector_out(s_axi_concat_wready_out_2);
   mp_S02_AXI_transactor->WREADY(m_s_axi_wready_converter_2_signal);
-  mp_s_axi_bid_converter_2 = new xsc::common::vector2vector_converter<2,8>("s_axi_bid_converter_2");
+  mp_s_axi_bid_converter_2 = new xsc::common::vector2vector_converter<18,72>("s_axi_bid_converter_2");
   mp_s_axi_concat_bid->in_port[2](s_axi_concat_bid_out_2);
-  mp_s_axi_concat_bid->offset_port(2, 4);
+  mp_s_axi_concat_bid->offset_port(2, 36);
   mp_s_axi_bid_converter_2->vector_in(m_s_axi_bid_converter_2_signal);
   mp_s_axi_bid_converter_2->vector_out(s_axi_concat_bid_out_2);
   mp_S02_AXI_transactor->BID(m_s_axi_bid_converter_2_signal);
@@ -6092,10 +6351,10 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_bready_converter_2->vector_in(s_axi_split_bready_out_2);
   mp_s_axi_bready_converter_2->scalar_out(m_s_axi_bready_converter_2_signal);
   mp_S02_AXI_transactor->BREADY(m_s_axi_bready_converter_2_signal);
-  mp_s_axi_arid_converter_2 = new xsc::common::vector2vector_converter<8,2>("s_axi_arid_converter_2");
+  mp_s_axi_arid_converter_2 = new xsc::common::vector2vector_converter<72,18>("s_axi_arid_converter_2");
   
   mp_s_axi_split_arid->out_port[2](s_axi_split_arid_out_2);
-    mp_s_axi_split_arid->add_mask(2,6,4);
+    mp_s_axi_split_arid->add_mask(2,54,36);
   mp_s_axi_arid_converter_2->vector_in(s_axi_split_arid_out_2);
   mp_s_axi_arid_converter_2->vector_out(m_s_axi_arid_converter_2_signal);
   mp_S02_AXI_transactor->ARID(m_s_axi_arid_converter_2_signal);
@@ -6155,6 +6414,13 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arqos_converter_2->vector_in(s_axi_split_arqos_out_2);
   mp_s_axi_arqos_converter_2->vector_out(m_s_axi_arqos_converter_2_signal);
   mp_S02_AXI_transactor->ARQOS(m_s_axi_arqos_converter_2_signal);
+  mp_s_axi_aruser_converter_2 = new xsc::common::vector2vector_converter<64,16>("s_axi_aruser_converter_2");
+  
+  mp_s_axi_split_aruser->out_port[2](s_axi_split_aruser_out_2);
+    mp_s_axi_split_aruser->add_mask(2,48,32);
+  mp_s_axi_aruser_converter_2->vector_in(s_axi_split_aruser_out_2);
+  mp_s_axi_aruser_converter_2->vector_out(m_s_axi_aruser_converter_2_signal);
+  mp_S02_AXI_transactor->ARUSER(m_s_axi_aruser_converter_2_signal);
   mp_s_axi_arvalid_converter_2 = new xsc::common::vectorN2scalar_converter<4>("s_axi_arvalid_converter_2");
   
   mp_s_axi_split_arvalid->out_port[2](s_axi_split_arvalid_out_2);
@@ -6168,15 +6434,15 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arready_converter_2->scalar_in(m_s_axi_arready_converter_2_signal);
   mp_s_axi_arready_converter_2->vector_out(s_axi_concat_arready_out_2);
   mp_S02_AXI_transactor->ARREADY(m_s_axi_arready_converter_2_signal);
-  mp_s_axi_rid_converter_2 = new xsc::common::vector2vector_converter<2,8>("s_axi_rid_converter_2");
+  mp_s_axi_rid_converter_2 = new xsc::common::vector2vector_converter<18,72>("s_axi_rid_converter_2");
   mp_s_axi_concat_rid->in_port[2](s_axi_concat_rid_out_2);
-  mp_s_axi_concat_rid->offset_port(2, 4);
+  mp_s_axi_concat_rid->offset_port(2, 36);
   mp_s_axi_rid_converter_2->vector_in(m_s_axi_rid_converter_2_signal);
   mp_s_axi_rid_converter_2->vector_out(s_axi_concat_rid_out_2);
   mp_S02_AXI_transactor->RID(m_s_axi_rid_converter_2_signal);
-  mp_s_axi_rdata_converter_2 = new xsc::common::vector2vector_converter<256,1024>("s_axi_rdata_converter_2");
+  mp_s_axi_rdata_converter_2 = new xsc::common::vector2vector_converter<128,512>("s_axi_rdata_converter_2");
   mp_s_axi_concat_rdata->in_port[2](s_axi_concat_rdata_out_2);
-  mp_s_axi_concat_rdata->offset_port(2, 512);
+  mp_s_axi_concat_rdata->offset_port(2, 256);
   mp_s_axi_rdata_converter_2->vector_in(m_s_axi_rdata_converter_2_signal);
   mp_s_axi_rdata_converter_2->vector_out(s_axi_concat_rdata_out_2);
   mp_S02_AXI_transactor->RDATA(m_s_axi_rdata_converter_2_signal);
@@ -6209,12 +6475,12 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_S02_AXI_transactor->RST(aresetn);
   // configure S03_AXI_transactor
     xsc::common_cpp::properties S03_AXI_transactor_param_props;
-    S03_AXI_transactor_param_props.addLong("DATA_WIDTH", "256");
+    S03_AXI_transactor_param_props.addLong("DATA_WIDTH", "128");
     S03_AXI_transactor_param_props.addLong("FREQ_HZ", "300000000");
-    S03_AXI_transactor_param_props.addLong("ID_WIDTH", "2");
+    S03_AXI_transactor_param_props.addLong("ID_WIDTH", "18");
     S03_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
-    S03_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
-    S03_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "0");
+    S03_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "16");
+    S03_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "16");
     S03_AXI_transactor_param_props.addLong("WUSER_WIDTH", "0");
     S03_AXI_transactor_param_props.addLong("RUSER_WIDTH", "0");
     S03_AXI_transactor_param_props.addLong("BUSER_WIDTH", "0");
@@ -6242,11 +6508,11 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
     S03_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
     S03_AXI_transactor_param_props.addString("CLK_DOMAIN", "DDR4_ddr4_0_0_c0_ddr4_ui_clk");
 
-    mp_S03_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<256,40,2,1,1,1,1,1>("S03_AXI_transactor", S03_AXI_transactor_param_props);
-  mp_s_axi_awid_converter_3 = new xsc::common::vector2vector_converter<8,2>("s_axi_awid_converter_3");
+    mp_S03_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<128,40,18,16,1,1,16,1>("S03_AXI_transactor", S03_AXI_transactor_param_props);
+  mp_s_axi_awid_converter_3 = new xsc::common::vector2vector_converter<72,18>("s_axi_awid_converter_3");
   
   mp_s_axi_split_awid->out_port[3](s_axi_split_awid_out_3);
-    mp_s_axi_split_awid->add_mask(3,8,6);
+    mp_s_axi_split_awid->add_mask(3,72,54);
   mp_s_axi_awid_converter_3->vector_in(s_axi_split_awid_out_3);
   mp_s_axi_awid_converter_3->vector_out(m_s_axi_awid_converter_3_signal);
   mp_S03_AXI_transactor->AWID(m_s_axi_awid_converter_3_signal);
@@ -6306,6 +6572,13 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awqos_converter_3->vector_in(s_axi_split_awqos_out_3);
   mp_s_axi_awqos_converter_3->vector_out(m_s_axi_awqos_converter_3_signal);
   mp_S03_AXI_transactor->AWQOS(m_s_axi_awqos_converter_3_signal);
+  mp_s_axi_awuser_converter_3 = new xsc::common::vector2vector_converter<64,16>("s_axi_awuser_converter_3");
+  
+  mp_s_axi_split_awuser->out_port[3](s_axi_split_awuser_out_3);
+    mp_s_axi_split_awuser->add_mask(3,64,48);
+  mp_s_axi_awuser_converter_3->vector_in(s_axi_split_awuser_out_3);
+  mp_s_axi_awuser_converter_3->vector_out(m_s_axi_awuser_converter_3_signal);
+  mp_S03_AXI_transactor->AWUSER(m_s_axi_awuser_converter_3_signal);
   mp_s_axi_awvalid_converter_3 = new xsc::common::vectorN2scalar_converter<4>("s_axi_awvalid_converter_3");
   
   mp_s_axi_split_awvalid->out_port[3](s_axi_split_awvalid_out_3);
@@ -6319,17 +6592,17 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awready_converter_3->scalar_in(m_s_axi_awready_converter_3_signal);
   mp_s_axi_awready_converter_3->vector_out(s_axi_concat_awready_out_3);
   mp_S03_AXI_transactor->AWREADY(m_s_axi_awready_converter_3_signal);
-  mp_s_axi_wdata_converter_3 = new xsc::common::vector2vector_converter<1024,256>("s_axi_wdata_converter_3");
+  mp_s_axi_wdata_converter_3 = new xsc::common::vector2vector_converter<512,128>("s_axi_wdata_converter_3");
   
   mp_s_axi_split_wdata->out_port[3](s_axi_split_wdata_out_3);
-    mp_s_axi_split_wdata->add_mask(3,1024,768);
+    mp_s_axi_split_wdata->add_mask(3,512,384);
   mp_s_axi_wdata_converter_3->vector_in(s_axi_split_wdata_out_3);
   mp_s_axi_wdata_converter_3->vector_out(m_s_axi_wdata_converter_3_signal);
   mp_S03_AXI_transactor->WDATA(m_s_axi_wdata_converter_3_signal);
-  mp_s_axi_wstrb_converter_3 = new xsc::common::vector2vector_converter<128,32>("s_axi_wstrb_converter_3");
+  mp_s_axi_wstrb_converter_3 = new xsc::common::vector2vector_converter<64,16>("s_axi_wstrb_converter_3");
   
   mp_s_axi_split_wstrb->out_port[3](s_axi_split_wstrb_out_3);
-    mp_s_axi_split_wstrb->add_mask(3,128,96);
+    mp_s_axi_split_wstrb->add_mask(3,64,48);
   mp_s_axi_wstrb_converter_3->vector_in(s_axi_split_wstrb_out_3);
   mp_s_axi_wstrb_converter_3->vector_out(m_s_axi_wstrb_converter_3_signal);
   mp_S03_AXI_transactor->WSTRB(m_s_axi_wstrb_converter_3_signal);
@@ -6353,9 +6626,9 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_wready_converter_3->scalar_in(m_s_axi_wready_converter_3_signal);
   mp_s_axi_wready_converter_3->vector_out(s_axi_concat_wready_out_3);
   mp_S03_AXI_transactor->WREADY(m_s_axi_wready_converter_3_signal);
-  mp_s_axi_bid_converter_3 = new xsc::common::vector2vector_converter<2,8>("s_axi_bid_converter_3");
+  mp_s_axi_bid_converter_3 = new xsc::common::vector2vector_converter<18,72>("s_axi_bid_converter_3");
   mp_s_axi_concat_bid->in_port[3](s_axi_concat_bid_out_3);
-  mp_s_axi_concat_bid->offset_port(3, 6);
+  mp_s_axi_concat_bid->offset_port(3, 54);
   mp_s_axi_bid_converter_3->vector_in(m_s_axi_bid_converter_3_signal);
   mp_s_axi_bid_converter_3->vector_out(s_axi_concat_bid_out_3);
   mp_S03_AXI_transactor->BID(m_s_axi_bid_converter_3_signal);
@@ -6378,10 +6651,10 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_bready_converter_3->vector_in(s_axi_split_bready_out_3);
   mp_s_axi_bready_converter_3->scalar_out(m_s_axi_bready_converter_3_signal);
   mp_S03_AXI_transactor->BREADY(m_s_axi_bready_converter_3_signal);
-  mp_s_axi_arid_converter_3 = new xsc::common::vector2vector_converter<8,2>("s_axi_arid_converter_3");
+  mp_s_axi_arid_converter_3 = new xsc::common::vector2vector_converter<72,18>("s_axi_arid_converter_3");
   
   mp_s_axi_split_arid->out_port[3](s_axi_split_arid_out_3);
-    mp_s_axi_split_arid->add_mask(3,8,6);
+    mp_s_axi_split_arid->add_mask(3,72,54);
   mp_s_axi_arid_converter_3->vector_in(s_axi_split_arid_out_3);
   mp_s_axi_arid_converter_3->vector_out(m_s_axi_arid_converter_3_signal);
   mp_S03_AXI_transactor->ARID(m_s_axi_arid_converter_3_signal);
@@ -6441,6 +6714,13 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arqos_converter_3->vector_in(s_axi_split_arqos_out_3);
   mp_s_axi_arqos_converter_3->vector_out(m_s_axi_arqos_converter_3_signal);
   mp_S03_AXI_transactor->ARQOS(m_s_axi_arqos_converter_3_signal);
+  mp_s_axi_aruser_converter_3 = new xsc::common::vector2vector_converter<64,16>("s_axi_aruser_converter_3");
+  
+  mp_s_axi_split_aruser->out_port[3](s_axi_split_aruser_out_3);
+    mp_s_axi_split_aruser->add_mask(3,64,48);
+  mp_s_axi_aruser_converter_3->vector_in(s_axi_split_aruser_out_3);
+  mp_s_axi_aruser_converter_3->vector_out(m_s_axi_aruser_converter_3_signal);
+  mp_S03_AXI_transactor->ARUSER(m_s_axi_aruser_converter_3_signal);
   mp_s_axi_arvalid_converter_3 = new xsc::common::vectorN2scalar_converter<4>("s_axi_arvalid_converter_3");
   
   mp_s_axi_split_arvalid->out_port[3](s_axi_split_arvalid_out_3);
@@ -6454,15 +6734,15 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arready_converter_3->scalar_in(m_s_axi_arready_converter_3_signal);
   mp_s_axi_arready_converter_3->vector_out(s_axi_concat_arready_out_3);
   mp_S03_AXI_transactor->ARREADY(m_s_axi_arready_converter_3_signal);
-  mp_s_axi_rid_converter_3 = new xsc::common::vector2vector_converter<2,8>("s_axi_rid_converter_3");
+  mp_s_axi_rid_converter_3 = new xsc::common::vector2vector_converter<18,72>("s_axi_rid_converter_3");
   mp_s_axi_concat_rid->in_port[3](s_axi_concat_rid_out_3);
-  mp_s_axi_concat_rid->offset_port(3, 6);
+  mp_s_axi_concat_rid->offset_port(3, 54);
   mp_s_axi_rid_converter_3->vector_in(m_s_axi_rid_converter_3_signal);
   mp_s_axi_rid_converter_3->vector_out(s_axi_concat_rid_out_3);
   mp_S03_AXI_transactor->RID(m_s_axi_rid_converter_3_signal);
-  mp_s_axi_rdata_converter_3 = new xsc::common::vector2vector_converter<256,1024>("s_axi_rdata_converter_3");
+  mp_s_axi_rdata_converter_3 = new xsc::common::vector2vector_converter<128,512>("s_axi_rdata_converter_3");
   mp_s_axi_concat_rdata->in_port[3](s_axi_concat_rdata_out_3);
-  mp_s_axi_concat_rdata->offset_port(3, 768);
+  mp_s_axi_concat_rdata->offset_port(3, 384);
   mp_s_axi_rdata_converter_3->vector_in(m_s_axi_rdata_converter_3_signal);
   mp_s_axi_rdata_converter_3->vector_out(s_axi_concat_rdata_out_3);
   mp_S03_AXI_transactor->RDATA(m_s_axi_rdata_converter_3_signal);
@@ -6598,7 +6878,7 @@ void DDR4_axi_interconnect_0_imp_xbar_0::before_end_of_elaboration()
 
 
 #ifdef MTI_SYSTEMC
-DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_core::sc_module_name& nm) : DDR4_axi_interconnect_0_imp_xbar_0_sc(nm),  aclk("aclk"), aresetn("aresetn"), s_axi_awid("s_axi_awid"), s_axi_awaddr("s_axi_awaddr"), s_axi_awlen("s_axi_awlen"), s_axi_awsize("s_axi_awsize"), s_axi_awburst("s_axi_awburst"), s_axi_awlock("s_axi_awlock"), s_axi_awcache("s_axi_awcache"), s_axi_awprot("s_axi_awprot"), s_axi_awqos("s_axi_awqos"), s_axi_awvalid("s_axi_awvalid"), s_axi_awready("s_axi_awready"), s_axi_wdata("s_axi_wdata"), s_axi_wstrb("s_axi_wstrb"), s_axi_wlast("s_axi_wlast"), s_axi_wvalid("s_axi_wvalid"), s_axi_wready("s_axi_wready"), s_axi_bid("s_axi_bid"), s_axi_bresp("s_axi_bresp"), s_axi_bvalid("s_axi_bvalid"), s_axi_bready("s_axi_bready"), s_axi_arid("s_axi_arid"), s_axi_araddr("s_axi_araddr"), s_axi_arlen("s_axi_arlen"), s_axi_arsize("s_axi_arsize"), s_axi_arburst("s_axi_arburst"), s_axi_arlock("s_axi_arlock"), s_axi_arcache("s_axi_arcache"), s_axi_arprot("s_axi_arprot"), s_axi_arqos("s_axi_arqos"), s_axi_arvalid("s_axi_arvalid"), s_axi_arready("s_axi_arready"), s_axi_rid("s_axi_rid"), s_axi_rdata("s_axi_rdata"), s_axi_rresp("s_axi_rresp"), s_axi_rlast("s_axi_rlast"), s_axi_rvalid("s_axi_rvalid"), s_axi_rready("s_axi_rready"), m_axi_awid("m_axi_awid"), m_axi_awaddr("m_axi_awaddr"), m_axi_awlen("m_axi_awlen"), m_axi_awsize("m_axi_awsize"), m_axi_awburst("m_axi_awburst"), m_axi_awlock("m_axi_awlock"), m_axi_awcache("m_axi_awcache"), m_axi_awprot("m_axi_awprot"), m_axi_awregion("m_axi_awregion"), m_axi_awqos("m_axi_awqos"), m_axi_awvalid("m_axi_awvalid"), m_axi_awready("m_axi_awready"), m_axi_wdata("m_axi_wdata"), m_axi_wstrb("m_axi_wstrb"), m_axi_wlast("m_axi_wlast"), m_axi_wvalid("m_axi_wvalid"), m_axi_wready("m_axi_wready"), m_axi_bid("m_axi_bid"), m_axi_bresp("m_axi_bresp"), m_axi_bvalid("m_axi_bvalid"), m_axi_bready("m_axi_bready"), m_axi_arid("m_axi_arid"), m_axi_araddr("m_axi_araddr"), m_axi_arlen("m_axi_arlen"), m_axi_arsize("m_axi_arsize"), m_axi_arburst("m_axi_arburst"), m_axi_arlock("m_axi_arlock"), m_axi_arcache("m_axi_arcache"), m_axi_arprot("m_axi_arprot"), m_axi_arregion("m_axi_arregion"), m_axi_arqos("m_axi_arqos"), m_axi_arvalid("m_axi_arvalid"), m_axi_arready("m_axi_arready"), m_axi_rid("m_axi_rid"), m_axi_rdata("m_axi_rdata"), m_axi_rresp("m_axi_rresp"), m_axi_rlast("m_axi_rlast"), m_axi_rvalid("m_axi_rvalid"), m_axi_rready("m_axi_rready")
+DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_core::sc_module_name& nm) : DDR4_axi_interconnect_0_imp_xbar_0_sc(nm),  aclk("aclk"), aresetn("aresetn"), s_axi_awid("s_axi_awid"), s_axi_awaddr("s_axi_awaddr"), s_axi_awlen("s_axi_awlen"), s_axi_awsize("s_axi_awsize"), s_axi_awburst("s_axi_awburst"), s_axi_awlock("s_axi_awlock"), s_axi_awcache("s_axi_awcache"), s_axi_awprot("s_axi_awprot"), s_axi_awqos("s_axi_awqos"), s_axi_awuser("s_axi_awuser"), s_axi_awvalid("s_axi_awvalid"), s_axi_awready("s_axi_awready"), s_axi_wdata("s_axi_wdata"), s_axi_wstrb("s_axi_wstrb"), s_axi_wlast("s_axi_wlast"), s_axi_wvalid("s_axi_wvalid"), s_axi_wready("s_axi_wready"), s_axi_bid("s_axi_bid"), s_axi_bresp("s_axi_bresp"), s_axi_bvalid("s_axi_bvalid"), s_axi_bready("s_axi_bready"), s_axi_arid("s_axi_arid"), s_axi_araddr("s_axi_araddr"), s_axi_arlen("s_axi_arlen"), s_axi_arsize("s_axi_arsize"), s_axi_arburst("s_axi_arburst"), s_axi_arlock("s_axi_arlock"), s_axi_arcache("s_axi_arcache"), s_axi_arprot("s_axi_arprot"), s_axi_arqos("s_axi_arqos"), s_axi_aruser("s_axi_aruser"), s_axi_arvalid("s_axi_arvalid"), s_axi_arready("s_axi_arready"), s_axi_rid("s_axi_rid"), s_axi_rdata("s_axi_rdata"), s_axi_rresp("s_axi_rresp"), s_axi_rlast("s_axi_rlast"), s_axi_rvalid("s_axi_rvalid"), s_axi_rready("s_axi_rready"), m_axi_awid("m_axi_awid"), m_axi_awaddr("m_axi_awaddr"), m_axi_awlen("m_axi_awlen"), m_axi_awsize("m_axi_awsize"), m_axi_awburst("m_axi_awburst"), m_axi_awlock("m_axi_awlock"), m_axi_awcache("m_axi_awcache"), m_axi_awprot("m_axi_awprot"), m_axi_awregion("m_axi_awregion"), m_axi_awqos("m_axi_awqos"), m_axi_awuser("m_axi_awuser"), m_axi_awvalid("m_axi_awvalid"), m_axi_awready("m_axi_awready"), m_axi_wdata("m_axi_wdata"), m_axi_wstrb("m_axi_wstrb"), m_axi_wlast("m_axi_wlast"), m_axi_wvalid("m_axi_wvalid"), m_axi_wready("m_axi_wready"), m_axi_bid("m_axi_bid"), m_axi_bresp("m_axi_bresp"), m_axi_bvalid("m_axi_bvalid"), m_axi_bready("m_axi_bready"), m_axi_arid("m_axi_arid"), m_axi_araddr("m_axi_araddr"), m_axi_arlen("m_axi_arlen"), m_axi_arsize("m_axi_arsize"), m_axi_arburst("m_axi_arburst"), m_axi_arlock("m_axi_arlock"), m_axi_arcache("m_axi_arcache"), m_axi_arprot("m_axi_arprot"), m_axi_arregion("m_axi_arregion"), m_axi_arqos("m_axi_arqos"), m_axi_aruser("m_axi_aruser"), m_axi_arvalid("m_axi_arvalid"), m_axi_arready("m_axi_arready"), m_axi_rid("m_axi_rid"), m_axi_rdata("m_axi_rdata"), m_axi_rresp("m_axi_rresp"), m_axi_rlast("m_axi_rlast"), m_axi_rvalid("m_axi_rvalid"), m_axi_rready("m_axi_rready")
 {
   // initialize pins
   mp_impl->aclk(aclk);
@@ -6615,6 +6895,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awcache_converter_0 = NULL;
   mp_s_axi_awprot_converter_0 = NULL;
   mp_s_axi_awqos_converter_0 = NULL;
+  mp_s_axi_awuser_converter_0 = NULL;
   mp_s_axi_awvalid_converter_0 = NULL;
   mp_s_axi_awready_converter_0 = NULL;
   mp_s_axi_wdata_converter_0 = NULL;
@@ -6635,6 +6916,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arcache_converter_0 = NULL;
   mp_s_axi_arprot_converter_0 = NULL;
   mp_s_axi_arqos_converter_0 = NULL;
+  mp_s_axi_aruser_converter_0 = NULL;
   mp_s_axi_arvalid_converter_0 = NULL;
   mp_s_axi_arready_converter_0 = NULL;
   mp_s_axi_rid_converter_0 = NULL;
@@ -6668,6 +6950,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awcache_converter_1 = NULL;
   mp_s_axi_awprot_converter_1 = NULL;
   mp_s_axi_awqos_converter_1 = NULL;
+  mp_s_axi_awuser_converter_1 = NULL;
   mp_s_axi_awvalid_converter_1 = NULL;
   mp_s_axi_awready_converter_1 = NULL;
   mp_s_axi_wdata_converter_1 = NULL;
@@ -6688,6 +6971,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arcache_converter_1 = NULL;
   mp_s_axi_arprot_converter_1 = NULL;
   mp_s_axi_arqos_converter_1 = NULL;
+  mp_s_axi_aruser_converter_1 = NULL;
   mp_s_axi_arvalid_converter_1 = NULL;
   mp_s_axi_arready_converter_1 = NULL;
   mp_s_axi_rid_converter_1 = NULL;
@@ -6706,6 +6990,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awcache_converter_2 = NULL;
   mp_s_axi_awprot_converter_2 = NULL;
   mp_s_axi_awqos_converter_2 = NULL;
+  mp_s_axi_awuser_converter_2 = NULL;
   mp_s_axi_awvalid_converter_2 = NULL;
   mp_s_axi_awready_converter_2 = NULL;
   mp_s_axi_wdata_converter_2 = NULL;
@@ -6726,6 +7011,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arcache_converter_2 = NULL;
   mp_s_axi_arprot_converter_2 = NULL;
   mp_s_axi_arqos_converter_2 = NULL;
+  mp_s_axi_aruser_converter_2 = NULL;
   mp_s_axi_arvalid_converter_2 = NULL;
   mp_s_axi_arready_converter_2 = NULL;
   mp_s_axi_rid_converter_2 = NULL;
@@ -6744,6 +7030,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awcache_converter_3 = NULL;
   mp_s_axi_awprot_converter_3 = NULL;
   mp_s_axi_awqos_converter_3 = NULL;
+  mp_s_axi_awuser_converter_3 = NULL;
   mp_s_axi_awvalid_converter_3 = NULL;
   mp_s_axi_awready_converter_3 = NULL;
   mp_s_axi_wdata_converter_3 = NULL;
@@ -6764,6 +7051,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arcache_converter_3 = NULL;
   mp_s_axi_arprot_converter_3 = NULL;
   mp_s_axi_arqos_converter_3 = NULL;
+  mp_s_axi_aruser_converter_3 = NULL;
   mp_s_axi_arvalid_converter_3 = NULL;
   mp_s_axi_arready_converter_3 = NULL;
   mp_s_axi_rid_converter_3 = NULL;
@@ -6794,6 +7082,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_arprot = NULL;
   mp_s_axi_split_arqos = NULL;
   mp_s_axi_split_arsize = NULL;
+  mp_s_axi_split_aruser = NULL;
   mp_s_axi_split_arvalid = NULL;
   mp_s_axi_split_awaddr = NULL;
   mp_s_axi_split_awburst = NULL;
@@ -6804,6 +7093,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_split_awprot = NULL;
   mp_s_axi_split_awqos = NULL;
   mp_s_axi_split_awsize = NULL;
+  mp_s_axi_split_awuser = NULL;
   mp_s_axi_split_awvalid = NULL;
   mp_s_axi_split_bready = NULL;
   mp_s_axi_split_rready = NULL;
@@ -6816,12 +7106,12 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
 
   // configure S00_AXI_transactor
     xsc::common_cpp::properties S00_AXI_transactor_param_props;
-    S00_AXI_transactor_param_props.addLong("DATA_WIDTH", "256");
+    S00_AXI_transactor_param_props.addLong("DATA_WIDTH", "128");
     S00_AXI_transactor_param_props.addLong("FREQ_HZ", "300000000");
-    S00_AXI_transactor_param_props.addLong("ID_WIDTH", "2");
+    S00_AXI_transactor_param_props.addLong("ID_WIDTH", "18");
     S00_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
-    S00_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
-    S00_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "0");
+    S00_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "16");
+    S00_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "16");
     S00_AXI_transactor_param_props.addLong("WUSER_WIDTH", "0");
     S00_AXI_transactor_param_props.addLong("RUSER_WIDTH", "0");
     S00_AXI_transactor_param_props.addLong("BUSER_WIDTH", "0");
@@ -6849,12 +7139,12 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
     S00_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
     S00_AXI_transactor_param_props.addString("CLK_DOMAIN", "DDR4_ddr4_0_0_c0_ddr4_ui_clk");
 
-    mp_S00_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<256,40,2,1,1,1,1,1>("S00_AXI_transactor", S00_AXI_transactor_param_props);
-  mp_s_axi_awid_converter_0 = new xsc::common::vector2vector_converter<8,2>("s_axi_awid_converter_0");
-  mp_s_axi_split_awid = new xsc::xsc_split<8, 4>("s_axi_split_awid");
+    mp_S00_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<128,40,18,16,1,1,16,1>("S00_AXI_transactor", S00_AXI_transactor_param_props);
+  mp_s_axi_awid_converter_0 = new xsc::common::vector2vector_converter<72,18>("s_axi_awid_converter_0");
+  mp_s_axi_split_awid = new xsc::xsc_split<72, 4>("s_axi_split_awid");
   mp_s_axi_split_awid->in_port(s_axi_awid);
   mp_s_axi_split_awid->out_port[0](s_axi_split_awid_out_0);
-    mp_s_axi_split_awid->add_mask(0,2,0);
+    mp_s_axi_split_awid->add_mask(0,18,0);
   mp_s_axi_awid_converter_0->vector_in(s_axi_split_awid_out_0);
   mp_s_axi_awid_converter_0->vector_out(m_s_axi_awid_converter_0_signal);
   mp_S00_AXI_transactor->AWID(m_s_axi_awid_converter_0_signal);
@@ -6922,6 +7212,14 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awqos_converter_0->vector_in(s_axi_split_awqos_out_0);
   mp_s_axi_awqos_converter_0->vector_out(m_s_axi_awqos_converter_0_signal);
   mp_S00_AXI_transactor->AWQOS(m_s_axi_awqos_converter_0_signal);
+  mp_s_axi_awuser_converter_0 = new xsc::common::vector2vector_converter<64,16>("s_axi_awuser_converter_0");
+  mp_s_axi_split_awuser = new xsc::xsc_split<64, 4>("s_axi_split_awuser");
+  mp_s_axi_split_awuser->in_port(s_axi_awuser);
+  mp_s_axi_split_awuser->out_port[0](s_axi_split_awuser_out_0);
+    mp_s_axi_split_awuser->add_mask(0,16,0);
+  mp_s_axi_awuser_converter_0->vector_in(s_axi_split_awuser_out_0);
+  mp_s_axi_awuser_converter_0->vector_out(m_s_axi_awuser_converter_0_signal);
+  mp_S00_AXI_transactor->AWUSER(m_s_axi_awuser_converter_0_signal);
   mp_s_axi_awvalid_converter_0 = new xsc::common::vectorN2scalar_converter<4>("s_axi_awvalid_converter_0");
   mp_s_axi_split_awvalid = new xsc::xsc_split<4, 4>("s_axi_split_awvalid");
   mp_s_axi_split_awvalid->in_port(s_axi_awvalid);
@@ -6938,19 +7236,19 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awready_converter_0->scalar_in(m_s_axi_awready_converter_0_signal);
   mp_s_axi_awready_converter_0->vector_out(s_axi_concat_awready_out_0);
   mp_S00_AXI_transactor->AWREADY(m_s_axi_awready_converter_0_signal);
-  mp_s_axi_wdata_converter_0 = new xsc::common::vector2vector_converter<1024,256>("s_axi_wdata_converter_0");
-  mp_s_axi_split_wdata = new xsc::xsc_split<1024, 4>("s_axi_split_wdata");
+  mp_s_axi_wdata_converter_0 = new xsc::common::vector2vector_converter<512,128>("s_axi_wdata_converter_0");
+  mp_s_axi_split_wdata = new xsc::xsc_split<512, 4>("s_axi_split_wdata");
   mp_s_axi_split_wdata->in_port(s_axi_wdata);
   mp_s_axi_split_wdata->out_port[0](s_axi_split_wdata_out_0);
-    mp_s_axi_split_wdata->add_mask(0,256,0);
+    mp_s_axi_split_wdata->add_mask(0,128,0);
   mp_s_axi_wdata_converter_0->vector_in(s_axi_split_wdata_out_0);
   mp_s_axi_wdata_converter_0->vector_out(m_s_axi_wdata_converter_0_signal);
   mp_S00_AXI_transactor->WDATA(m_s_axi_wdata_converter_0_signal);
-  mp_s_axi_wstrb_converter_0 = new xsc::common::vector2vector_converter<128,32>("s_axi_wstrb_converter_0");
-  mp_s_axi_split_wstrb = new xsc::xsc_split<128, 4>("s_axi_split_wstrb");
+  mp_s_axi_wstrb_converter_0 = new xsc::common::vector2vector_converter<64,16>("s_axi_wstrb_converter_0");
+  mp_s_axi_split_wstrb = new xsc::xsc_split<64, 4>("s_axi_split_wstrb");
   mp_s_axi_split_wstrb->in_port(s_axi_wstrb);
   mp_s_axi_split_wstrb->out_port[0](s_axi_split_wstrb_out_0);
-    mp_s_axi_split_wstrb->add_mask(0,32,0);
+    mp_s_axi_split_wstrb->add_mask(0,16,0);
   mp_s_axi_wstrb_converter_0->vector_in(s_axi_split_wstrb_out_0);
   mp_s_axi_wstrb_converter_0->vector_out(m_s_axi_wstrb_converter_0_signal);
   mp_S00_AXI_transactor->WSTRB(m_s_axi_wstrb_converter_0_signal);
@@ -6978,8 +7276,8 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_wready_converter_0->scalar_in(m_s_axi_wready_converter_0_signal);
   mp_s_axi_wready_converter_0->vector_out(s_axi_concat_wready_out_0);
   mp_S00_AXI_transactor->WREADY(m_s_axi_wready_converter_0_signal);
-  mp_s_axi_bid_converter_0 = new xsc::common::vector2vector_converter<2,8>("s_axi_bid_converter_0");
-  mp_s_axi_concat_bid = new xsc::xsc_concatenator<8, 4>("s_axi_concat_bid");
+  mp_s_axi_bid_converter_0 = new xsc::common::vector2vector_converter<18,72>("s_axi_bid_converter_0");
+  mp_s_axi_concat_bid = new xsc::xsc_concatenator<72, 4>("s_axi_concat_bid");
   mp_s_axi_concat_bid->in_port[0](s_axi_concat_bid_out_0);
   mp_s_axi_concat_bid->out_port(s_axi_bid);
     mp_s_axi_concat_bid->offset_port(0, 0);
@@ -7010,11 +7308,11 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_bready_converter_0->vector_in(s_axi_split_bready_out_0);
   mp_s_axi_bready_converter_0->scalar_out(m_s_axi_bready_converter_0_signal);
   mp_S00_AXI_transactor->BREADY(m_s_axi_bready_converter_0_signal);
-  mp_s_axi_arid_converter_0 = new xsc::common::vector2vector_converter<8,2>("s_axi_arid_converter_0");
-  mp_s_axi_split_arid = new xsc::xsc_split<8, 4>("s_axi_split_arid");
+  mp_s_axi_arid_converter_0 = new xsc::common::vector2vector_converter<72,18>("s_axi_arid_converter_0");
+  mp_s_axi_split_arid = new xsc::xsc_split<72, 4>("s_axi_split_arid");
   mp_s_axi_split_arid->in_port(s_axi_arid);
   mp_s_axi_split_arid->out_port[0](s_axi_split_arid_out_0);
-    mp_s_axi_split_arid->add_mask(0,2,0);
+    mp_s_axi_split_arid->add_mask(0,18,0);
   mp_s_axi_arid_converter_0->vector_in(s_axi_split_arid_out_0);
   mp_s_axi_arid_converter_0->vector_out(m_s_axi_arid_converter_0_signal);
   mp_S00_AXI_transactor->ARID(m_s_axi_arid_converter_0_signal);
@@ -7082,6 +7380,14 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arqos_converter_0->vector_in(s_axi_split_arqos_out_0);
   mp_s_axi_arqos_converter_0->vector_out(m_s_axi_arqos_converter_0_signal);
   mp_S00_AXI_transactor->ARQOS(m_s_axi_arqos_converter_0_signal);
+  mp_s_axi_aruser_converter_0 = new xsc::common::vector2vector_converter<64,16>("s_axi_aruser_converter_0");
+  mp_s_axi_split_aruser = new xsc::xsc_split<64, 4>("s_axi_split_aruser");
+  mp_s_axi_split_aruser->in_port(s_axi_aruser);
+  mp_s_axi_split_aruser->out_port[0](s_axi_split_aruser_out_0);
+    mp_s_axi_split_aruser->add_mask(0,16,0);
+  mp_s_axi_aruser_converter_0->vector_in(s_axi_split_aruser_out_0);
+  mp_s_axi_aruser_converter_0->vector_out(m_s_axi_aruser_converter_0_signal);
+  mp_S00_AXI_transactor->ARUSER(m_s_axi_aruser_converter_0_signal);
   mp_s_axi_arvalid_converter_0 = new xsc::common::vectorN2scalar_converter<4>("s_axi_arvalid_converter_0");
   mp_s_axi_split_arvalid = new xsc::xsc_split<4, 4>("s_axi_split_arvalid");
   mp_s_axi_split_arvalid->in_port(s_axi_arvalid);
@@ -7098,16 +7404,16 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arready_converter_0->scalar_in(m_s_axi_arready_converter_0_signal);
   mp_s_axi_arready_converter_0->vector_out(s_axi_concat_arready_out_0);
   mp_S00_AXI_transactor->ARREADY(m_s_axi_arready_converter_0_signal);
-  mp_s_axi_rid_converter_0 = new xsc::common::vector2vector_converter<2,8>("s_axi_rid_converter_0");
-  mp_s_axi_concat_rid = new xsc::xsc_concatenator<8, 4>("s_axi_concat_rid");
+  mp_s_axi_rid_converter_0 = new xsc::common::vector2vector_converter<18,72>("s_axi_rid_converter_0");
+  mp_s_axi_concat_rid = new xsc::xsc_concatenator<72, 4>("s_axi_concat_rid");
   mp_s_axi_concat_rid->in_port[0](s_axi_concat_rid_out_0);
   mp_s_axi_concat_rid->out_port(s_axi_rid);
     mp_s_axi_concat_rid->offset_port(0, 0);
   mp_s_axi_rid_converter_0->vector_in(m_s_axi_rid_converter_0_signal);
   mp_s_axi_rid_converter_0->vector_out(s_axi_concat_rid_out_0);
   mp_S00_AXI_transactor->RID(m_s_axi_rid_converter_0_signal);
-  mp_s_axi_rdata_converter_0 = new xsc::common::vector2vector_converter<256,1024>("s_axi_rdata_converter_0");
-  mp_s_axi_concat_rdata = new xsc::xsc_concatenator<1024, 4>("s_axi_concat_rdata");
+  mp_s_axi_rdata_converter_0 = new xsc::common::vector2vector_converter<128,512>("s_axi_rdata_converter_0");
+  mp_s_axi_concat_rdata = new xsc::xsc_concatenator<512, 4>("s_axi_concat_rdata");
   mp_s_axi_concat_rdata->in_port[0](s_axi_concat_rdata_out_0);
   mp_s_axi_concat_rdata->out_port(s_axi_rdata);
     mp_s_axi_concat_rdata->offset_port(0, 0);
@@ -7150,12 +7456,12 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_S00_AXI_transactor->RST(aresetn);
   // configure M00_AXI_transactor
     xsc::common_cpp::properties M00_AXI_transactor_param_props;
-    M00_AXI_transactor_param_props.addLong("DATA_WIDTH", "256");
+    M00_AXI_transactor_param_props.addLong("DATA_WIDTH", "128");
     M00_AXI_transactor_param_props.addLong("FREQ_HZ", "300000000");
-    M00_AXI_transactor_param_props.addLong("ID_WIDTH", "2");
+    M00_AXI_transactor_param_props.addLong("ID_WIDTH", "18");
     M00_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
-    M00_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
-    M00_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "0");
+    M00_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "16");
+    M00_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "16");
     M00_AXI_transactor_param_props.addLong("WUSER_WIDTH", "0");
     M00_AXI_transactor_param_props.addLong("RUSER_WIDTH", "0");
     M00_AXI_transactor_param_props.addLong("BUSER_WIDTH", "0");
@@ -7169,8 +7475,8 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
     M00_AXI_transactor_param_props.addLong("HAS_BRESP", "1");
     M00_AXI_transactor_param_props.addLong("HAS_RRESP", "1");
     M00_AXI_transactor_param_props.addLong("SUPPORTS_NARROW_BURST", "1");
-    M00_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "2");
-    M00_AXI_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "2");
+    M00_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "8");
+    M00_AXI_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "8");
     M00_AXI_transactor_param_props.addLong("MAX_BURST_LENGTH", "256");
     M00_AXI_transactor_param_props.addLong("NUM_READ_THREADS", "1");
     M00_AXI_transactor_param_props.addLong("NUM_WRITE_THREADS", "1");
@@ -7183,7 +7489,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
     M00_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
     M00_AXI_transactor_param_props.addString("CLK_DOMAIN", "DDR4_ddr4_0_0_c0_ddr4_ui_clk");
 
-    mp_M00_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<256,40,2,1,1,1,1,1>("M00_AXI_transactor", M00_AXI_transactor_param_props);
+    mp_M00_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<128,40,18,16,1,1,16,1>("M00_AXI_transactor", M00_AXI_transactor_param_props);
   mp_M00_AXI_transactor->AWID(m_axi_awid);
   mp_M00_AXI_transactor->AWADDR(m_axi_awaddr);
   mp_M00_AXI_transactor->AWLEN(m_axi_awlen);
@@ -7197,6 +7503,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_M00_AXI_transactor->AWPROT(m_axi_awprot);
   mp_M00_AXI_transactor->AWREGION(m_axi_awregion);
   mp_M00_AXI_transactor->AWQOS(m_axi_awqos);
+  mp_M00_AXI_transactor->AWUSER(m_axi_awuser);
   mp_m_axi_awvalid_converter = new xsc::common::scalar2vectorN_converter<1>("m_axi_awvalid_converter");
   mp_m_axi_awvalid_converter->scalar_in(m_m_axi_awvalid_converter_signal);
   mp_m_axi_awvalid_converter->vector_out(m_axi_awvalid);
@@ -7242,6 +7549,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_M00_AXI_transactor->ARPROT(m_axi_arprot);
   mp_M00_AXI_transactor->ARREGION(m_axi_arregion);
   mp_M00_AXI_transactor->ARQOS(m_axi_arqos);
+  mp_M00_AXI_transactor->ARUSER(m_axi_aruser);
   mp_m_axi_arvalid_converter = new xsc::common::scalar2vectorN_converter<1>("m_axi_arvalid_converter");
   mp_m_axi_arvalid_converter->scalar_in(m_m_axi_arvalid_converter_signal);
   mp_m_axi_arvalid_converter->vector_out(m_axi_arvalid);
@@ -7269,12 +7577,12 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_M00_AXI_transactor->RST(aresetn);
   // configure S01_AXI_transactor
     xsc::common_cpp::properties S01_AXI_transactor_param_props;
-    S01_AXI_transactor_param_props.addLong("DATA_WIDTH", "256");
+    S01_AXI_transactor_param_props.addLong("DATA_WIDTH", "128");
     S01_AXI_transactor_param_props.addLong("FREQ_HZ", "300000000");
-    S01_AXI_transactor_param_props.addLong("ID_WIDTH", "2");
+    S01_AXI_transactor_param_props.addLong("ID_WIDTH", "18");
     S01_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
-    S01_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
-    S01_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "0");
+    S01_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "16");
+    S01_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "16");
     S01_AXI_transactor_param_props.addLong("WUSER_WIDTH", "0");
     S01_AXI_transactor_param_props.addLong("RUSER_WIDTH", "0");
     S01_AXI_transactor_param_props.addLong("BUSER_WIDTH", "0");
@@ -7302,11 +7610,11 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
     S01_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
     S01_AXI_transactor_param_props.addString("CLK_DOMAIN", "DDR4_ddr4_0_0_c0_ddr4_ui_clk");
 
-    mp_S01_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<256,40,2,1,1,1,1,1>("S01_AXI_transactor", S01_AXI_transactor_param_props);
-  mp_s_axi_awid_converter_1 = new xsc::common::vector2vector_converter<8,2>("s_axi_awid_converter_1");
+    mp_S01_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<128,40,18,16,1,1,16,1>("S01_AXI_transactor", S01_AXI_transactor_param_props);
+  mp_s_axi_awid_converter_1 = new xsc::common::vector2vector_converter<72,18>("s_axi_awid_converter_1");
   
   mp_s_axi_split_awid->out_port[1](s_axi_split_awid_out_1);
-    mp_s_axi_split_awid->add_mask(1,4,2);
+    mp_s_axi_split_awid->add_mask(1,36,18);
   mp_s_axi_awid_converter_1->vector_in(s_axi_split_awid_out_1);
   mp_s_axi_awid_converter_1->vector_out(m_s_axi_awid_converter_1_signal);
   mp_S01_AXI_transactor->AWID(m_s_axi_awid_converter_1_signal);
@@ -7366,6 +7674,13 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awqos_converter_1->vector_in(s_axi_split_awqos_out_1);
   mp_s_axi_awqos_converter_1->vector_out(m_s_axi_awqos_converter_1_signal);
   mp_S01_AXI_transactor->AWQOS(m_s_axi_awqos_converter_1_signal);
+  mp_s_axi_awuser_converter_1 = new xsc::common::vector2vector_converter<64,16>("s_axi_awuser_converter_1");
+  
+  mp_s_axi_split_awuser->out_port[1](s_axi_split_awuser_out_1);
+    mp_s_axi_split_awuser->add_mask(1,32,16);
+  mp_s_axi_awuser_converter_1->vector_in(s_axi_split_awuser_out_1);
+  mp_s_axi_awuser_converter_1->vector_out(m_s_axi_awuser_converter_1_signal);
+  mp_S01_AXI_transactor->AWUSER(m_s_axi_awuser_converter_1_signal);
   mp_s_axi_awvalid_converter_1 = new xsc::common::vectorN2scalar_converter<4>("s_axi_awvalid_converter_1");
   
   mp_s_axi_split_awvalid->out_port[1](s_axi_split_awvalid_out_1);
@@ -7379,17 +7694,17 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awready_converter_1->scalar_in(m_s_axi_awready_converter_1_signal);
   mp_s_axi_awready_converter_1->vector_out(s_axi_concat_awready_out_1);
   mp_S01_AXI_transactor->AWREADY(m_s_axi_awready_converter_1_signal);
-  mp_s_axi_wdata_converter_1 = new xsc::common::vector2vector_converter<1024,256>("s_axi_wdata_converter_1");
+  mp_s_axi_wdata_converter_1 = new xsc::common::vector2vector_converter<512,128>("s_axi_wdata_converter_1");
   
   mp_s_axi_split_wdata->out_port[1](s_axi_split_wdata_out_1);
-    mp_s_axi_split_wdata->add_mask(1,512,256);
+    mp_s_axi_split_wdata->add_mask(1,256,128);
   mp_s_axi_wdata_converter_1->vector_in(s_axi_split_wdata_out_1);
   mp_s_axi_wdata_converter_1->vector_out(m_s_axi_wdata_converter_1_signal);
   mp_S01_AXI_transactor->WDATA(m_s_axi_wdata_converter_1_signal);
-  mp_s_axi_wstrb_converter_1 = new xsc::common::vector2vector_converter<128,32>("s_axi_wstrb_converter_1");
+  mp_s_axi_wstrb_converter_1 = new xsc::common::vector2vector_converter<64,16>("s_axi_wstrb_converter_1");
   
   mp_s_axi_split_wstrb->out_port[1](s_axi_split_wstrb_out_1);
-    mp_s_axi_split_wstrb->add_mask(1,64,32);
+    mp_s_axi_split_wstrb->add_mask(1,32,16);
   mp_s_axi_wstrb_converter_1->vector_in(s_axi_split_wstrb_out_1);
   mp_s_axi_wstrb_converter_1->vector_out(m_s_axi_wstrb_converter_1_signal);
   mp_S01_AXI_transactor->WSTRB(m_s_axi_wstrb_converter_1_signal);
@@ -7413,9 +7728,9 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_wready_converter_1->scalar_in(m_s_axi_wready_converter_1_signal);
   mp_s_axi_wready_converter_1->vector_out(s_axi_concat_wready_out_1);
   mp_S01_AXI_transactor->WREADY(m_s_axi_wready_converter_1_signal);
-  mp_s_axi_bid_converter_1 = new xsc::common::vector2vector_converter<2,8>("s_axi_bid_converter_1");
+  mp_s_axi_bid_converter_1 = new xsc::common::vector2vector_converter<18,72>("s_axi_bid_converter_1");
   mp_s_axi_concat_bid->in_port[1](s_axi_concat_bid_out_1);
-  mp_s_axi_concat_bid->offset_port(1, 2);
+  mp_s_axi_concat_bid->offset_port(1, 18);
   mp_s_axi_bid_converter_1->vector_in(m_s_axi_bid_converter_1_signal);
   mp_s_axi_bid_converter_1->vector_out(s_axi_concat_bid_out_1);
   mp_S01_AXI_transactor->BID(m_s_axi_bid_converter_1_signal);
@@ -7438,10 +7753,10 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_bready_converter_1->vector_in(s_axi_split_bready_out_1);
   mp_s_axi_bready_converter_1->scalar_out(m_s_axi_bready_converter_1_signal);
   mp_S01_AXI_transactor->BREADY(m_s_axi_bready_converter_1_signal);
-  mp_s_axi_arid_converter_1 = new xsc::common::vector2vector_converter<8,2>("s_axi_arid_converter_1");
+  mp_s_axi_arid_converter_1 = new xsc::common::vector2vector_converter<72,18>("s_axi_arid_converter_1");
   
   mp_s_axi_split_arid->out_port[1](s_axi_split_arid_out_1);
-    mp_s_axi_split_arid->add_mask(1,4,2);
+    mp_s_axi_split_arid->add_mask(1,36,18);
   mp_s_axi_arid_converter_1->vector_in(s_axi_split_arid_out_1);
   mp_s_axi_arid_converter_1->vector_out(m_s_axi_arid_converter_1_signal);
   mp_S01_AXI_transactor->ARID(m_s_axi_arid_converter_1_signal);
@@ -7501,6 +7816,13 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arqos_converter_1->vector_in(s_axi_split_arqos_out_1);
   mp_s_axi_arqos_converter_1->vector_out(m_s_axi_arqos_converter_1_signal);
   mp_S01_AXI_transactor->ARQOS(m_s_axi_arqos_converter_1_signal);
+  mp_s_axi_aruser_converter_1 = new xsc::common::vector2vector_converter<64,16>("s_axi_aruser_converter_1");
+  
+  mp_s_axi_split_aruser->out_port[1](s_axi_split_aruser_out_1);
+    mp_s_axi_split_aruser->add_mask(1,32,16);
+  mp_s_axi_aruser_converter_1->vector_in(s_axi_split_aruser_out_1);
+  mp_s_axi_aruser_converter_1->vector_out(m_s_axi_aruser_converter_1_signal);
+  mp_S01_AXI_transactor->ARUSER(m_s_axi_aruser_converter_1_signal);
   mp_s_axi_arvalid_converter_1 = new xsc::common::vectorN2scalar_converter<4>("s_axi_arvalid_converter_1");
   
   mp_s_axi_split_arvalid->out_port[1](s_axi_split_arvalid_out_1);
@@ -7514,15 +7836,15 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arready_converter_1->scalar_in(m_s_axi_arready_converter_1_signal);
   mp_s_axi_arready_converter_1->vector_out(s_axi_concat_arready_out_1);
   mp_S01_AXI_transactor->ARREADY(m_s_axi_arready_converter_1_signal);
-  mp_s_axi_rid_converter_1 = new xsc::common::vector2vector_converter<2,8>("s_axi_rid_converter_1");
+  mp_s_axi_rid_converter_1 = new xsc::common::vector2vector_converter<18,72>("s_axi_rid_converter_1");
   mp_s_axi_concat_rid->in_port[1](s_axi_concat_rid_out_1);
-  mp_s_axi_concat_rid->offset_port(1, 2);
+  mp_s_axi_concat_rid->offset_port(1, 18);
   mp_s_axi_rid_converter_1->vector_in(m_s_axi_rid_converter_1_signal);
   mp_s_axi_rid_converter_1->vector_out(s_axi_concat_rid_out_1);
   mp_S01_AXI_transactor->RID(m_s_axi_rid_converter_1_signal);
-  mp_s_axi_rdata_converter_1 = new xsc::common::vector2vector_converter<256,1024>("s_axi_rdata_converter_1");
+  mp_s_axi_rdata_converter_1 = new xsc::common::vector2vector_converter<128,512>("s_axi_rdata_converter_1");
   mp_s_axi_concat_rdata->in_port[1](s_axi_concat_rdata_out_1);
-  mp_s_axi_concat_rdata->offset_port(1, 256);
+  mp_s_axi_concat_rdata->offset_port(1, 128);
   mp_s_axi_rdata_converter_1->vector_in(m_s_axi_rdata_converter_1_signal);
   mp_s_axi_rdata_converter_1->vector_out(s_axi_concat_rdata_out_1);
   mp_S01_AXI_transactor->RDATA(m_s_axi_rdata_converter_1_signal);
@@ -7555,12 +7877,12 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_S01_AXI_transactor->RST(aresetn);
   // configure S02_AXI_transactor
     xsc::common_cpp::properties S02_AXI_transactor_param_props;
-    S02_AXI_transactor_param_props.addLong("DATA_WIDTH", "256");
+    S02_AXI_transactor_param_props.addLong("DATA_WIDTH", "128");
     S02_AXI_transactor_param_props.addLong("FREQ_HZ", "300000000");
-    S02_AXI_transactor_param_props.addLong("ID_WIDTH", "2");
+    S02_AXI_transactor_param_props.addLong("ID_WIDTH", "18");
     S02_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
-    S02_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
-    S02_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "0");
+    S02_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "16");
+    S02_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "16");
     S02_AXI_transactor_param_props.addLong("WUSER_WIDTH", "0");
     S02_AXI_transactor_param_props.addLong("RUSER_WIDTH", "0");
     S02_AXI_transactor_param_props.addLong("BUSER_WIDTH", "0");
@@ -7577,8 +7899,8 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
     S02_AXI_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "2");
     S02_AXI_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "2");
     S02_AXI_transactor_param_props.addLong("MAX_BURST_LENGTH", "256");
-    S02_AXI_transactor_param_props.addLong("NUM_READ_THREADS", "4");
-    S02_AXI_transactor_param_props.addLong("NUM_WRITE_THREADS", "4");
+    S02_AXI_transactor_param_props.addLong("NUM_READ_THREADS", "1");
+    S02_AXI_transactor_param_props.addLong("NUM_WRITE_THREADS", "1");
     S02_AXI_transactor_param_props.addLong("RUSER_BITS_PER_BYTE", "0");
     S02_AXI_transactor_param_props.addLong("WUSER_BITS_PER_BYTE", "0");
     S02_AXI_transactor_param_props.addLong("HAS_SIZE", "1");
@@ -7588,11 +7910,11 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
     S02_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
     S02_AXI_transactor_param_props.addString("CLK_DOMAIN", "DDR4_ddr4_0_0_c0_ddr4_ui_clk");
 
-    mp_S02_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<256,40,2,1,1,1,1,1>("S02_AXI_transactor", S02_AXI_transactor_param_props);
-  mp_s_axi_awid_converter_2 = new xsc::common::vector2vector_converter<8,2>("s_axi_awid_converter_2");
+    mp_S02_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<128,40,18,16,1,1,16,1>("S02_AXI_transactor", S02_AXI_transactor_param_props);
+  mp_s_axi_awid_converter_2 = new xsc::common::vector2vector_converter<72,18>("s_axi_awid_converter_2");
   
   mp_s_axi_split_awid->out_port[2](s_axi_split_awid_out_2);
-    mp_s_axi_split_awid->add_mask(2,6,4);
+    mp_s_axi_split_awid->add_mask(2,54,36);
   mp_s_axi_awid_converter_2->vector_in(s_axi_split_awid_out_2);
   mp_s_axi_awid_converter_2->vector_out(m_s_axi_awid_converter_2_signal);
   mp_S02_AXI_transactor->AWID(m_s_axi_awid_converter_2_signal);
@@ -7652,6 +7974,13 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awqos_converter_2->vector_in(s_axi_split_awqos_out_2);
   mp_s_axi_awqos_converter_2->vector_out(m_s_axi_awqos_converter_2_signal);
   mp_S02_AXI_transactor->AWQOS(m_s_axi_awqos_converter_2_signal);
+  mp_s_axi_awuser_converter_2 = new xsc::common::vector2vector_converter<64,16>("s_axi_awuser_converter_2");
+  
+  mp_s_axi_split_awuser->out_port[2](s_axi_split_awuser_out_2);
+    mp_s_axi_split_awuser->add_mask(2,48,32);
+  mp_s_axi_awuser_converter_2->vector_in(s_axi_split_awuser_out_2);
+  mp_s_axi_awuser_converter_2->vector_out(m_s_axi_awuser_converter_2_signal);
+  mp_S02_AXI_transactor->AWUSER(m_s_axi_awuser_converter_2_signal);
   mp_s_axi_awvalid_converter_2 = new xsc::common::vectorN2scalar_converter<4>("s_axi_awvalid_converter_2");
   
   mp_s_axi_split_awvalid->out_port[2](s_axi_split_awvalid_out_2);
@@ -7665,17 +7994,17 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awready_converter_2->scalar_in(m_s_axi_awready_converter_2_signal);
   mp_s_axi_awready_converter_2->vector_out(s_axi_concat_awready_out_2);
   mp_S02_AXI_transactor->AWREADY(m_s_axi_awready_converter_2_signal);
-  mp_s_axi_wdata_converter_2 = new xsc::common::vector2vector_converter<1024,256>("s_axi_wdata_converter_2");
+  mp_s_axi_wdata_converter_2 = new xsc::common::vector2vector_converter<512,128>("s_axi_wdata_converter_2");
   
   mp_s_axi_split_wdata->out_port[2](s_axi_split_wdata_out_2);
-    mp_s_axi_split_wdata->add_mask(2,768,512);
+    mp_s_axi_split_wdata->add_mask(2,384,256);
   mp_s_axi_wdata_converter_2->vector_in(s_axi_split_wdata_out_2);
   mp_s_axi_wdata_converter_2->vector_out(m_s_axi_wdata_converter_2_signal);
   mp_S02_AXI_transactor->WDATA(m_s_axi_wdata_converter_2_signal);
-  mp_s_axi_wstrb_converter_2 = new xsc::common::vector2vector_converter<128,32>("s_axi_wstrb_converter_2");
+  mp_s_axi_wstrb_converter_2 = new xsc::common::vector2vector_converter<64,16>("s_axi_wstrb_converter_2");
   
   mp_s_axi_split_wstrb->out_port[2](s_axi_split_wstrb_out_2);
-    mp_s_axi_split_wstrb->add_mask(2,96,64);
+    mp_s_axi_split_wstrb->add_mask(2,48,32);
   mp_s_axi_wstrb_converter_2->vector_in(s_axi_split_wstrb_out_2);
   mp_s_axi_wstrb_converter_2->vector_out(m_s_axi_wstrb_converter_2_signal);
   mp_S02_AXI_transactor->WSTRB(m_s_axi_wstrb_converter_2_signal);
@@ -7699,9 +8028,9 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_wready_converter_2->scalar_in(m_s_axi_wready_converter_2_signal);
   mp_s_axi_wready_converter_2->vector_out(s_axi_concat_wready_out_2);
   mp_S02_AXI_transactor->WREADY(m_s_axi_wready_converter_2_signal);
-  mp_s_axi_bid_converter_2 = new xsc::common::vector2vector_converter<2,8>("s_axi_bid_converter_2");
+  mp_s_axi_bid_converter_2 = new xsc::common::vector2vector_converter<18,72>("s_axi_bid_converter_2");
   mp_s_axi_concat_bid->in_port[2](s_axi_concat_bid_out_2);
-  mp_s_axi_concat_bid->offset_port(2, 4);
+  mp_s_axi_concat_bid->offset_port(2, 36);
   mp_s_axi_bid_converter_2->vector_in(m_s_axi_bid_converter_2_signal);
   mp_s_axi_bid_converter_2->vector_out(s_axi_concat_bid_out_2);
   mp_S02_AXI_transactor->BID(m_s_axi_bid_converter_2_signal);
@@ -7724,10 +8053,10 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_bready_converter_2->vector_in(s_axi_split_bready_out_2);
   mp_s_axi_bready_converter_2->scalar_out(m_s_axi_bready_converter_2_signal);
   mp_S02_AXI_transactor->BREADY(m_s_axi_bready_converter_2_signal);
-  mp_s_axi_arid_converter_2 = new xsc::common::vector2vector_converter<8,2>("s_axi_arid_converter_2");
+  mp_s_axi_arid_converter_2 = new xsc::common::vector2vector_converter<72,18>("s_axi_arid_converter_2");
   
   mp_s_axi_split_arid->out_port[2](s_axi_split_arid_out_2);
-    mp_s_axi_split_arid->add_mask(2,6,4);
+    mp_s_axi_split_arid->add_mask(2,54,36);
   mp_s_axi_arid_converter_2->vector_in(s_axi_split_arid_out_2);
   mp_s_axi_arid_converter_2->vector_out(m_s_axi_arid_converter_2_signal);
   mp_S02_AXI_transactor->ARID(m_s_axi_arid_converter_2_signal);
@@ -7787,6 +8116,13 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arqos_converter_2->vector_in(s_axi_split_arqos_out_2);
   mp_s_axi_arqos_converter_2->vector_out(m_s_axi_arqos_converter_2_signal);
   mp_S02_AXI_transactor->ARQOS(m_s_axi_arqos_converter_2_signal);
+  mp_s_axi_aruser_converter_2 = new xsc::common::vector2vector_converter<64,16>("s_axi_aruser_converter_2");
+  
+  mp_s_axi_split_aruser->out_port[2](s_axi_split_aruser_out_2);
+    mp_s_axi_split_aruser->add_mask(2,48,32);
+  mp_s_axi_aruser_converter_2->vector_in(s_axi_split_aruser_out_2);
+  mp_s_axi_aruser_converter_2->vector_out(m_s_axi_aruser_converter_2_signal);
+  mp_S02_AXI_transactor->ARUSER(m_s_axi_aruser_converter_2_signal);
   mp_s_axi_arvalid_converter_2 = new xsc::common::vectorN2scalar_converter<4>("s_axi_arvalid_converter_2");
   
   mp_s_axi_split_arvalid->out_port[2](s_axi_split_arvalid_out_2);
@@ -7800,15 +8136,15 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arready_converter_2->scalar_in(m_s_axi_arready_converter_2_signal);
   mp_s_axi_arready_converter_2->vector_out(s_axi_concat_arready_out_2);
   mp_S02_AXI_transactor->ARREADY(m_s_axi_arready_converter_2_signal);
-  mp_s_axi_rid_converter_2 = new xsc::common::vector2vector_converter<2,8>("s_axi_rid_converter_2");
+  mp_s_axi_rid_converter_2 = new xsc::common::vector2vector_converter<18,72>("s_axi_rid_converter_2");
   mp_s_axi_concat_rid->in_port[2](s_axi_concat_rid_out_2);
-  mp_s_axi_concat_rid->offset_port(2, 4);
+  mp_s_axi_concat_rid->offset_port(2, 36);
   mp_s_axi_rid_converter_2->vector_in(m_s_axi_rid_converter_2_signal);
   mp_s_axi_rid_converter_2->vector_out(s_axi_concat_rid_out_2);
   mp_S02_AXI_transactor->RID(m_s_axi_rid_converter_2_signal);
-  mp_s_axi_rdata_converter_2 = new xsc::common::vector2vector_converter<256,1024>("s_axi_rdata_converter_2");
+  mp_s_axi_rdata_converter_2 = new xsc::common::vector2vector_converter<128,512>("s_axi_rdata_converter_2");
   mp_s_axi_concat_rdata->in_port[2](s_axi_concat_rdata_out_2);
-  mp_s_axi_concat_rdata->offset_port(2, 512);
+  mp_s_axi_concat_rdata->offset_port(2, 256);
   mp_s_axi_rdata_converter_2->vector_in(m_s_axi_rdata_converter_2_signal);
   mp_s_axi_rdata_converter_2->vector_out(s_axi_concat_rdata_out_2);
   mp_S02_AXI_transactor->RDATA(m_s_axi_rdata_converter_2_signal);
@@ -7841,12 +8177,12 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_S02_AXI_transactor->RST(aresetn);
   // configure S03_AXI_transactor
     xsc::common_cpp::properties S03_AXI_transactor_param_props;
-    S03_AXI_transactor_param_props.addLong("DATA_WIDTH", "256");
+    S03_AXI_transactor_param_props.addLong("DATA_WIDTH", "128");
     S03_AXI_transactor_param_props.addLong("FREQ_HZ", "300000000");
-    S03_AXI_transactor_param_props.addLong("ID_WIDTH", "2");
+    S03_AXI_transactor_param_props.addLong("ID_WIDTH", "18");
     S03_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
-    S03_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
-    S03_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "0");
+    S03_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "16");
+    S03_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "16");
     S03_AXI_transactor_param_props.addLong("WUSER_WIDTH", "0");
     S03_AXI_transactor_param_props.addLong("RUSER_WIDTH", "0");
     S03_AXI_transactor_param_props.addLong("BUSER_WIDTH", "0");
@@ -7874,11 +8210,11 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
     S03_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
     S03_AXI_transactor_param_props.addString("CLK_DOMAIN", "DDR4_ddr4_0_0_c0_ddr4_ui_clk");
 
-    mp_S03_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<256,40,2,1,1,1,1,1>("S03_AXI_transactor", S03_AXI_transactor_param_props);
-  mp_s_axi_awid_converter_3 = new xsc::common::vector2vector_converter<8,2>("s_axi_awid_converter_3");
+    mp_S03_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<128,40,18,16,1,1,16,1>("S03_AXI_transactor", S03_AXI_transactor_param_props);
+  mp_s_axi_awid_converter_3 = new xsc::common::vector2vector_converter<72,18>("s_axi_awid_converter_3");
   
   mp_s_axi_split_awid->out_port[3](s_axi_split_awid_out_3);
-    mp_s_axi_split_awid->add_mask(3,8,6);
+    mp_s_axi_split_awid->add_mask(3,72,54);
   mp_s_axi_awid_converter_3->vector_in(s_axi_split_awid_out_3);
   mp_s_axi_awid_converter_3->vector_out(m_s_axi_awid_converter_3_signal);
   mp_S03_AXI_transactor->AWID(m_s_axi_awid_converter_3_signal);
@@ -7938,6 +8274,13 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awqos_converter_3->vector_in(s_axi_split_awqos_out_3);
   mp_s_axi_awqos_converter_3->vector_out(m_s_axi_awqos_converter_3_signal);
   mp_S03_AXI_transactor->AWQOS(m_s_axi_awqos_converter_3_signal);
+  mp_s_axi_awuser_converter_3 = new xsc::common::vector2vector_converter<64,16>("s_axi_awuser_converter_3");
+  
+  mp_s_axi_split_awuser->out_port[3](s_axi_split_awuser_out_3);
+    mp_s_axi_split_awuser->add_mask(3,64,48);
+  mp_s_axi_awuser_converter_3->vector_in(s_axi_split_awuser_out_3);
+  mp_s_axi_awuser_converter_3->vector_out(m_s_axi_awuser_converter_3_signal);
+  mp_S03_AXI_transactor->AWUSER(m_s_axi_awuser_converter_3_signal);
   mp_s_axi_awvalid_converter_3 = new xsc::common::vectorN2scalar_converter<4>("s_axi_awvalid_converter_3");
   
   mp_s_axi_split_awvalid->out_port[3](s_axi_split_awvalid_out_3);
@@ -7951,17 +8294,17 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_awready_converter_3->scalar_in(m_s_axi_awready_converter_3_signal);
   mp_s_axi_awready_converter_3->vector_out(s_axi_concat_awready_out_3);
   mp_S03_AXI_transactor->AWREADY(m_s_axi_awready_converter_3_signal);
-  mp_s_axi_wdata_converter_3 = new xsc::common::vector2vector_converter<1024,256>("s_axi_wdata_converter_3");
+  mp_s_axi_wdata_converter_3 = new xsc::common::vector2vector_converter<512,128>("s_axi_wdata_converter_3");
   
   mp_s_axi_split_wdata->out_port[3](s_axi_split_wdata_out_3);
-    mp_s_axi_split_wdata->add_mask(3,1024,768);
+    mp_s_axi_split_wdata->add_mask(3,512,384);
   mp_s_axi_wdata_converter_3->vector_in(s_axi_split_wdata_out_3);
   mp_s_axi_wdata_converter_3->vector_out(m_s_axi_wdata_converter_3_signal);
   mp_S03_AXI_transactor->WDATA(m_s_axi_wdata_converter_3_signal);
-  mp_s_axi_wstrb_converter_3 = new xsc::common::vector2vector_converter<128,32>("s_axi_wstrb_converter_3");
+  mp_s_axi_wstrb_converter_3 = new xsc::common::vector2vector_converter<64,16>("s_axi_wstrb_converter_3");
   
   mp_s_axi_split_wstrb->out_port[3](s_axi_split_wstrb_out_3);
-    mp_s_axi_split_wstrb->add_mask(3,128,96);
+    mp_s_axi_split_wstrb->add_mask(3,64,48);
   mp_s_axi_wstrb_converter_3->vector_in(s_axi_split_wstrb_out_3);
   mp_s_axi_wstrb_converter_3->vector_out(m_s_axi_wstrb_converter_3_signal);
   mp_S03_AXI_transactor->WSTRB(m_s_axi_wstrb_converter_3_signal);
@@ -7985,9 +8328,9 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_wready_converter_3->scalar_in(m_s_axi_wready_converter_3_signal);
   mp_s_axi_wready_converter_3->vector_out(s_axi_concat_wready_out_3);
   mp_S03_AXI_transactor->WREADY(m_s_axi_wready_converter_3_signal);
-  mp_s_axi_bid_converter_3 = new xsc::common::vector2vector_converter<2,8>("s_axi_bid_converter_3");
+  mp_s_axi_bid_converter_3 = new xsc::common::vector2vector_converter<18,72>("s_axi_bid_converter_3");
   mp_s_axi_concat_bid->in_port[3](s_axi_concat_bid_out_3);
-  mp_s_axi_concat_bid->offset_port(3, 6);
+  mp_s_axi_concat_bid->offset_port(3, 54);
   mp_s_axi_bid_converter_3->vector_in(m_s_axi_bid_converter_3_signal);
   mp_s_axi_bid_converter_3->vector_out(s_axi_concat_bid_out_3);
   mp_S03_AXI_transactor->BID(m_s_axi_bid_converter_3_signal);
@@ -8010,10 +8353,10 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_bready_converter_3->vector_in(s_axi_split_bready_out_3);
   mp_s_axi_bready_converter_3->scalar_out(m_s_axi_bready_converter_3_signal);
   mp_S03_AXI_transactor->BREADY(m_s_axi_bready_converter_3_signal);
-  mp_s_axi_arid_converter_3 = new xsc::common::vector2vector_converter<8,2>("s_axi_arid_converter_3");
+  mp_s_axi_arid_converter_3 = new xsc::common::vector2vector_converter<72,18>("s_axi_arid_converter_3");
   
   mp_s_axi_split_arid->out_port[3](s_axi_split_arid_out_3);
-    mp_s_axi_split_arid->add_mask(3,8,6);
+    mp_s_axi_split_arid->add_mask(3,72,54);
   mp_s_axi_arid_converter_3->vector_in(s_axi_split_arid_out_3);
   mp_s_axi_arid_converter_3->vector_out(m_s_axi_arid_converter_3_signal);
   mp_S03_AXI_transactor->ARID(m_s_axi_arid_converter_3_signal);
@@ -8073,6 +8416,13 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arqos_converter_3->vector_in(s_axi_split_arqos_out_3);
   mp_s_axi_arqos_converter_3->vector_out(m_s_axi_arqos_converter_3_signal);
   mp_S03_AXI_transactor->ARQOS(m_s_axi_arqos_converter_3_signal);
+  mp_s_axi_aruser_converter_3 = new xsc::common::vector2vector_converter<64,16>("s_axi_aruser_converter_3");
+  
+  mp_s_axi_split_aruser->out_port[3](s_axi_split_aruser_out_3);
+    mp_s_axi_split_aruser->add_mask(3,64,48);
+  mp_s_axi_aruser_converter_3->vector_in(s_axi_split_aruser_out_3);
+  mp_s_axi_aruser_converter_3->vector_out(m_s_axi_aruser_converter_3_signal);
+  mp_S03_AXI_transactor->ARUSER(m_s_axi_aruser_converter_3_signal);
   mp_s_axi_arvalid_converter_3 = new xsc::common::vectorN2scalar_converter<4>("s_axi_arvalid_converter_3");
   
   mp_s_axi_split_arvalid->out_port[3](s_axi_split_arvalid_out_3);
@@ -8086,15 +8436,15 @@ DDR4_axi_interconnect_0_imp_xbar_0::DDR4_axi_interconnect_0_imp_xbar_0(const sc_
   mp_s_axi_arready_converter_3->scalar_in(m_s_axi_arready_converter_3_signal);
   mp_s_axi_arready_converter_3->vector_out(s_axi_concat_arready_out_3);
   mp_S03_AXI_transactor->ARREADY(m_s_axi_arready_converter_3_signal);
-  mp_s_axi_rid_converter_3 = new xsc::common::vector2vector_converter<2,8>("s_axi_rid_converter_3");
+  mp_s_axi_rid_converter_3 = new xsc::common::vector2vector_converter<18,72>("s_axi_rid_converter_3");
   mp_s_axi_concat_rid->in_port[3](s_axi_concat_rid_out_3);
-  mp_s_axi_concat_rid->offset_port(3, 6);
+  mp_s_axi_concat_rid->offset_port(3, 54);
   mp_s_axi_rid_converter_3->vector_in(m_s_axi_rid_converter_3_signal);
   mp_s_axi_rid_converter_3->vector_out(s_axi_concat_rid_out_3);
   mp_S03_AXI_transactor->RID(m_s_axi_rid_converter_3_signal);
-  mp_s_axi_rdata_converter_3 = new xsc::common::vector2vector_converter<256,1024>("s_axi_rdata_converter_3");
+  mp_s_axi_rdata_converter_3 = new xsc::common::vector2vector_converter<128,512>("s_axi_rdata_converter_3");
   mp_s_axi_concat_rdata->in_port[3](s_axi_concat_rdata_out_3);
-  mp_s_axi_concat_rdata->offset_port(3, 768);
+  mp_s_axi_concat_rdata->offset_port(3, 384);
   mp_s_axi_rdata_converter_3->vector_in(m_s_axi_rdata_converter_3_signal);
   mp_s_axi_rdata_converter_3->vector_out(s_axi_concat_rdata_out_3);
   mp_S03_AXI_transactor->RDATA(m_s_axi_rdata_converter_3_signal);
@@ -8241,6 +8591,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::~DDR4_axi_interconnect_0_imp_xbar_0()
   delete mp_s_axi_awcache_converter_0;
   delete mp_s_axi_awprot_converter_0;
   delete mp_s_axi_awqos_converter_0;
+  delete mp_s_axi_awuser_converter_0;
   delete mp_s_axi_awvalid_converter_0;
   delete mp_s_axi_awready_converter_0;
   delete mp_s_axi_wdata_converter_0;
@@ -8261,6 +8612,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::~DDR4_axi_interconnect_0_imp_xbar_0()
   delete mp_s_axi_arcache_converter_0;
   delete mp_s_axi_arprot_converter_0;
   delete mp_s_axi_arqos_converter_0;
+  delete mp_s_axi_aruser_converter_0;
   delete mp_s_axi_arvalid_converter_0;
   delete mp_s_axi_arready_converter_0;
   delete mp_s_axi_rid_converter_0;
@@ -8296,6 +8648,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::~DDR4_axi_interconnect_0_imp_xbar_0()
   delete mp_s_axi_awcache_converter_1;
   delete mp_s_axi_awprot_converter_1;
   delete mp_s_axi_awqos_converter_1;
+  delete mp_s_axi_awuser_converter_1;
   delete mp_s_axi_awvalid_converter_1;
   delete mp_s_axi_awready_converter_1;
   delete mp_s_axi_wdata_converter_1;
@@ -8316,6 +8669,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::~DDR4_axi_interconnect_0_imp_xbar_0()
   delete mp_s_axi_arcache_converter_1;
   delete mp_s_axi_arprot_converter_1;
   delete mp_s_axi_arqos_converter_1;
+  delete mp_s_axi_aruser_converter_1;
   delete mp_s_axi_arvalid_converter_1;
   delete mp_s_axi_arready_converter_1;
   delete mp_s_axi_rid_converter_1;
@@ -8335,6 +8689,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::~DDR4_axi_interconnect_0_imp_xbar_0()
   delete mp_s_axi_awcache_converter_2;
   delete mp_s_axi_awprot_converter_2;
   delete mp_s_axi_awqos_converter_2;
+  delete mp_s_axi_awuser_converter_2;
   delete mp_s_axi_awvalid_converter_2;
   delete mp_s_axi_awready_converter_2;
   delete mp_s_axi_wdata_converter_2;
@@ -8355,6 +8710,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::~DDR4_axi_interconnect_0_imp_xbar_0()
   delete mp_s_axi_arcache_converter_2;
   delete mp_s_axi_arprot_converter_2;
   delete mp_s_axi_arqos_converter_2;
+  delete mp_s_axi_aruser_converter_2;
   delete mp_s_axi_arvalid_converter_2;
   delete mp_s_axi_arready_converter_2;
   delete mp_s_axi_rid_converter_2;
@@ -8374,6 +8730,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::~DDR4_axi_interconnect_0_imp_xbar_0()
   delete mp_s_axi_awcache_converter_3;
   delete mp_s_axi_awprot_converter_3;
   delete mp_s_axi_awqos_converter_3;
+  delete mp_s_axi_awuser_converter_3;
   delete mp_s_axi_awvalid_converter_3;
   delete mp_s_axi_awready_converter_3;
   delete mp_s_axi_wdata_converter_3;
@@ -8394,6 +8751,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::~DDR4_axi_interconnect_0_imp_xbar_0()
   delete mp_s_axi_arcache_converter_3;
   delete mp_s_axi_arprot_converter_3;
   delete mp_s_axi_arqos_converter_3;
+  delete mp_s_axi_aruser_converter_3;
   delete mp_s_axi_arvalid_converter_3;
   delete mp_s_axi_arready_converter_3;
   delete mp_s_axi_rid_converter_3;
@@ -8423,6 +8781,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::~DDR4_axi_interconnect_0_imp_xbar_0()
   delete mp_s_axi_split_arprot;
   delete mp_s_axi_split_arqos;
   delete mp_s_axi_split_arsize;
+  delete mp_s_axi_split_aruser;
   delete mp_s_axi_split_arvalid;
   delete mp_s_axi_split_awaddr;
   delete mp_s_axi_split_awburst;
@@ -8433,6 +8792,7 @@ DDR4_axi_interconnect_0_imp_xbar_0::~DDR4_axi_interconnect_0_imp_xbar_0()
   delete mp_s_axi_split_awprot;
   delete mp_s_axi_split_awqos;
   delete mp_s_axi_split_awsize;
+  delete mp_s_axi_split_awuser;
   delete mp_s_axi_split_awvalid;
   delete mp_s_axi_split_bready;
   delete mp_s_axi_split_rready;
@@ -8452,6 +8812,6 @@ XMSC_MODULE_EXPORT(DDR4_axi_interconnect_0_imp_xbar_0);
 
 #ifdef RIVIERA
 SC_MODULE_EXPORT(DDR4_axi_interconnect_0_imp_xbar_0);
-SC_REGISTER_BV(1024);
+SC_REGISTER_BV(512);
 #endif
 

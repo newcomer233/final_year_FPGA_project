@@ -2,7 +2,7 @@
 -- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2.2 (win64) Build 6060944 Thu Mar 06 19:10:01 MST 2025
--- Date        : Fri Jun 20 16:43:54 2025
+-- Date        : Tue Jul 22 21:35:46 2025
 -- Host        : LAPTOP-VEGJAO5A running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/spi_rx_fifo_16bit/spi_rx_fifo_16bit_stub.vhdl

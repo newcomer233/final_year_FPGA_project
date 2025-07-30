@@ -1,0 +1,1755 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2.2 (win64) Build 6060944 Thu Mar 06 19:10:01 MST 2025
+| Date         : Wed Jul 30 14:17:28 2025
+| Host         : LAPTOP-VEGJAO5A running 64-bit major release  (build 9200)
+| Command      : report_drc -file route_report_drc_0.rpt -pb route_report_drc_0.pb -rpx route_report_drc_0.rpx
+| Design       : TOP
+| Device       : xczu9eg-ffvb1156-2-i
+| Speed File   : -2
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max checks: <unlimited>
+             Checks found: 338
++-----------+----------+--------------------------------------------------+--------+
+| Rule      | Severity | Description                                      | Checks |
++-----------+----------+--------------------------------------------------+--------+
+| AVAL-318  | Warning  | DSP_dynamic_PCIN_tieoff_only_on_bottom_sites     | 64     |
+| DPOP-3    | Warning  | PREG Output pipelining                           | 1      |
+| DPOP-4    | Warning  | MREG Output pipelining                           | 1      |
+| PDCN-1569 | Warning  | LUT equation term check                          | 17     |
+| PDRC-134  | Warning  | SLICE_PairEqSame_B6B5_WARN                       | 16     |
+| PDRC-136  | Warning  | SLICE_PairEqSame_C6C5_WARN                       | 16     |
+| PDRC-138  | Warning  | SLICE_PairEqSame_D6D5_WARN                       | 17     |
+| PDRC-142  | Warning  | SLICE_PairEqSame_B6B5_WARN                       | 22     |
+| PDRC-144  | Warning  | SLICE_PairEqSame_C6C5_WARN                       | 18     |
+| PDRC-146  | Warning  | SLICE_PairEqSame_D6D5_WARN                       | 16     |
+| REQP-1731 | Warning  | DSP_Abus_preadd_amult_sel_A_sign_bit_restriction | 128    |
+| REQP-1857 | Warning  | RAMB18E2_writefirst_collision_advisory           | 5      |
+| REQP-1858 | Warning  | RAMB36E2_writefirst_collision_advisory           | 10     |
+| REQP-1935 | Warning  | RAMB36E2_nochange_collision_advisory             | 6      |
+| RTSTAT-10 | Warning  | No routable loads                                | 1      |
++-----------+----------+--------------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+AVAL-318#1 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[0].gen_pp[0].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#2 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[0].gen_pp[1].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#3 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[0].gen_pp[2].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#4 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[0].gen_pp[3].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#5 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[0].gen_pp[4].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#6 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[0].gen_pp[5].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#7 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[0].gen_pp[6].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#8 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[0].gen_pp[7].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#9 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[1].gen_pp[0].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#10 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[1].gen_pp[1].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#11 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[1].gen_pp[2].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#12 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[1].gen_pp[3].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#13 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[1].gen_pp[4].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#14 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[1].gen_pp[5].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#15 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[1].gen_pp[6].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#16 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[1].gen_pp[7].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#17 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[2].gen_pp[0].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#18 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[2].gen_pp[1].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#19 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[2].gen_pp[2].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#20 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[2].gen_pp[3].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#21 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[2].gen_pp[4].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#22 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[2].gen_pp[5].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#23 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[2].gen_pp[6].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#24 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[2].gen_pp[7].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#25 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[3].gen_pp[0].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#26 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[3].gen_pp[1].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#27 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[3].gen_pp[2].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#28 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[3].gen_pp[3].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#29 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[3].gen_pp[4].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#30 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[3].gen_pp[5].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#31 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[3].gen_pp[6].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#32 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[3].gen_pp[7].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#33 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[4].gen_pp[0].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#34 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[4].gen_pp[1].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#35 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[4].gen_pp[2].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#36 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[4].gen_pp[3].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#37 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[4].gen_pp[4].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#38 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[4].gen_pp[5].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#39 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[4].gen_pp[6].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#40 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[4].gen_pp[7].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#41 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[5].gen_pp[0].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#42 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[5].gen_pp[1].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#43 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[5].gen_pp[2].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#44 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[5].gen_pp[3].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#45 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[5].gen_pp[4].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#46 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[5].gen_pp[5].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#47 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[5].gen_pp[6].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#48 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[5].gen_pp[7].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#49 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[6].gen_pp[0].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#50 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[6].gen_pp[1].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#51 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[6].gen_pp[2].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#52 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[6].gen_pp[3].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#53 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[6].gen_pp[4].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#54 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[6].gen_pp[5].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#55 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[6].gen_pp[6].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#56 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[6].gen_pp[7].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#57 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[7].gen_pp[0].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#58 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[7].gen_pp[1].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#59 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[7].gen_pp[2].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#60 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[7].gen_pp[3].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#61 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[7].gen_pp[4].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#62 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[7].gen_pp[5].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#63 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[7].gen_pp[6].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+AVAL-318#64 Warning
+DSP_dynamic_PCIN_tieoff_only_on_bottom_sites  
+The DSP48E2 DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/u_alu_pe_mult/DSP_1XCLK.gen_cp[7].gen_pp[7].Gen10x10.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2 is not placed on a bottom site of the device, has OPMODE[5:4] driven by active nets (value '01' uses PCIN bus), and ties some or all of its PCIN bus pin(s) to GND, but that connectivity is only available for the bottom DSP site. Care should be taken for the effect on that PCIN if the DSP site below it is used.
+Related violations: <none>
+
+DPOP-3#1 Warning
+PREG Output pipelining  
+DSP DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_buf_writer/u_ddr_reader/u_mult_hp0/u_dsp/GenDsp48E2.u_dsp48e2 output DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_buf_writer/u_ddr_reader/u_mult_hp0/u_dsp/GenDsp48E2.u_dsp48e2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-4#1 Warning
+MREG Output pipelining  
+DSP DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_save_top/u_save_fetch_param/mul_c_reg multiplier stage DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_save_top/u_save_fetch_param/mul_c_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+PDCN-1569#1 Warning
+LUT equation term check  
+Used physical LUT pin 'A1' of cell DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__0 (pin DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__0/I0) is not included in the LUT equation: 'O6=(A2*A4)+(A2*(~A4)*A5)+((~A2)*A6*A5)+((~A2)*(~A6)*A4)+((~A2)*(~A6)*(~A4)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#2 Warning
+LUT equation term check  
+Used physical LUT pin 'A1' of cell DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/s03_couplers/s03_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__0 (pin DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/s03_couplers/s03_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__0/I0) is not included in the LUT equation: 'O6=(A6+~A6)*((A3*A2)+(A3*(~A2)*A4)+((~A3)*A5*A4)+((~A3)*(~A5)*A2)+((~A3)*(~A5)*(~A2)*A4))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#3 Warning
+LUT equation term check  
+Used physical LUT pin 'A1' of cell SENSOR_TOP/IMU_TOP_2/IMU_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin SENSOR_TOP/IMU_TOP_2/IMU_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O5=(A3)+((~A3)*(~A2)*A4)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#4 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/s02_couplers/s02_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__0 (pin DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/s02_couplers/s02_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__0/I0) is not included in the LUT equation: 'O6=(A6+~A6)*((A3*A1)+(A3*(~A1)*A5)+((~A3)*A4*A5)+((~A3)*(~A4)*A1)+((~A3)*(~A4)*(~A1)*A5))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#5 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell SENSOR_TOP/IMU_TOP/IMU_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin SENSOR_TOP/IMU_TOP/IMU_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O5=(A3)+((~A3)*(~A4)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#6 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1/I1) is not included in the LUT equation: 'O5=(A5*A1)+(A5*(~A1)*(~A3))+((~A5))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#7 Warning
+LUT equation term check  
+Used physical LUT pin 'A3' of cell DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I0) is not included in the LUT equation: 'O5=(A1*A5)+((~A1)*A4)+((~A1)*(~A4)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#8 Warning
+LUT equation term check  
+Used physical LUT pin 'A3' of cell DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/s01_couplers/s01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__0 (pin DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/s01_couplers/s01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__0/I0) is not included in the LUT equation: 'O6=(A4*A6)+(A4*(~A6)*A5)+((~A4)*A2*A5)+((~A4)*(~A2)*A6)+((~A4)*(~A2)*(~A6)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#9 Warning
+LUT equation term check  
+Used physical LUT pin 'A3' of cell DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/s02_couplers/s02_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/s02_couplers/s02_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I0) is not included in the LUT equation: 'O5=(A1*A5)+((~A1)*A4)+((~A1)*(~A4)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#10 Warning
+LUT equation term check  
+Used physical LUT pin 'A3' of cell DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/s03_couplers/s03_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__1 (pin DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/s03_couplers/s03_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__1/I0) is not included in the LUT equation: 'O6=(A1*A4*A2*A5)+(A1*A4*A2*(~A5)*A6)+(A1*A4*(~A2)*A6)+(A1*(~A4)*A5)+(A1*(~A4)*(~A5)*A6)+((~A1)*A5)+((~A1)*(~A5)*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#11 Warning
+LUT equation term check  
+Used physical LUT pin 'A3' of cell SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_tx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O5=(A2)+((~A2)*(~A1)*A4)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#12 Warning
+LUT equation term check  
+Used physical LUT pin 'A3' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.id_state[0]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.id_state[0]_i_1/I0) is not included in the LUT equation: 'O6=(A6+~A6)*((A5))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#13 Warning
+LUT equation term check  
+Used physical LUT pin 'A4' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1/I0) is not included in the LUT equation: 'O5=(A5*A1)+(A5*(~A1)*(~A3))+((~A5))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#14 Warning
+LUT equation term check  
+Used physical LUT pin 'A5' of cell DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/s01_couplers/s01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/s01_couplers/s01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I0) is not included in the LUT equation: 'O5=(A1*A3)+((~A1)*A4)+((~A1)*(~A4)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#15 Warning
+LUT equation term check  
+Used physical LUT pin 'A5' of cell DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/s03_couplers/s03_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__2 (pin DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/s03_couplers/s03_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__2/I0) is not included in the LUT equation: 'O6=(A4*A2)+(A4*(~A2)*A3)+((~A4)*A6*A3)+((~A4)*(~A6)*A2)+((~A4)*(~A6)*(~A2)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#16 Warning
+LUT equation term check  
+Used physical LUT pin 'A5' of cell DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/s03_couplers/s03_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/s03_couplers/s03_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I0) is not included in the LUT equation: 'O5=(A1*A3)+((~A1)*A4)+((~A1)*(~A4)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#17 Warning
+LUT equation term check  
+Used physical LUT pin 'A5' of cell SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_rx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin SENSOR_TOP/ADC_TOP/ADC_SPI_LINK/spi_rx_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O5=(A3)+((~A3)*(~A1)*A4)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDRC-134#1 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X59Y181 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#2 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X59Y185 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#3 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X60Y211 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#4 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X66Y204 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#5 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X71Y204 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#6 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X72Y204 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#7 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X72Y206 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#8 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X75Y191 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#9 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X75Y330 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#10 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X78Y192 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#11 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X78Y218 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#12 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X78Y263 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#13 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X78Y316 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#14 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X80Y230 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#15 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X83Y217 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-134#16 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X84Y307 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#1 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X59Y181 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#2 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X60Y211 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#3 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X66Y204 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#4 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X71Y204 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#5 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X71Y244 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#6 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X72Y204 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#7 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X72Y206 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#8 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X75Y191 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#9 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X75Y330 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#10 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X78Y218 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#11 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X78Y263 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#12 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X78Y316 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#13 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X80Y230 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#14 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X83Y217 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#15 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X84Y217 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-136#16 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X84Y307 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#1 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X59Y181 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#2 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X60Y187 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#3 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X60Y211 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#4 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X66Y204 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#5 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X69Y254 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#6 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X69Y305 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#7 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X71Y244 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#8 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X71Y280 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#9 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X72Y204 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#10 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X72Y206 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#11 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X75Y191 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#12 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X75Y330 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#13 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X78Y218 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#14 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X78Y316 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#15 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X80Y230 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#16 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X84Y217 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-138#17 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X84Y307 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-142#1 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X61Y232 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-142#2 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X61Y233 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-142#3 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X62Y203 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-142#4 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X64Y203 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-142#5 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X68Y247 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-142#6 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X68Y252 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-142#7 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X68Y253 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-142#8 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X73Y202 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-142#9 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X73Y255 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-142#10 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X74Y279 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-142#11 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X76Y191 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-142#12 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X76Y282 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-142#13 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X76Y313 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-142#14 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X76Y339 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-142#15 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X77Y188 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-142#16 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X77Y191 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-142#17 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X77Y227 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-142#18 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X79Y216 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-142#19 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X85Y219 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-142#20 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X88Y216 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-142#21 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X88Y218 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-142#22 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X91Y334 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-144#1 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X61Y232 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-144#2 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X61Y233 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-144#3 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X62Y203 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-144#4 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X64Y203 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-144#5 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X68Y253 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-144#6 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X73Y202 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-144#7 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X73Y255 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-144#8 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X74Y279 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-144#9 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X76Y282 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-144#10 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X76Y313 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-144#11 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X76Y339 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-144#12 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X77Y188 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-144#13 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X77Y191 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-144#14 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X77Y227 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-144#15 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X79Y216 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-144#16 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X88Y216 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-144#17 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X88Y218 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-144#18 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X91Y334 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-146#1 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X61Y232 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-146#2 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X61Y233 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-146#3 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X62Y203 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-146#4 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X67Y200 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-146#5 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X68Y253 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-146#6 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X70Y317 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-146#7 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X73Y255 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-146#8 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X74Y279 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-146#9 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X76Y313 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-146#10 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X76Y339 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-146#11 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X77Y188 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-146#12 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X77Y191 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-146#13 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X77Y227 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-146#14 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X79Y216 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-146#15 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X88Y216 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-146#16 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X91Y334 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+REQP-1731#1 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#2 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#3 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[2].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#4 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[3].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#5 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#6 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#7 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[2].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#8 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[3].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#9 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#10 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#11 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[2].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#12 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[3].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#13 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#14 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#15 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[2].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#16 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[0].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[3].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#17 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#18 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#19 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[2].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#20 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[3].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#21 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#22 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#23 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[2].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#24 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[3].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#25 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#26 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#27 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[2].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#28 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[3].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#29 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#30 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#31 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[2].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#32 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[1].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[3].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#33 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#34 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#35 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[2].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#36 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[3].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#37 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#38 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#39 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[2].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#40 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[3].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#41 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#42 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#43 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[2].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#44 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[3].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#45 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#46 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#47 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[2].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#48 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[2].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[3].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#49 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#50 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#51 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[2].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#52 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[3].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#53 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#54 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#55 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[2].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#56 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[3].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#57 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#58 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#59 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[2].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#60 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[3].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#61 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#62 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#63 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[2].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#64 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[0].GenAddCh[3].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[3].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#65 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#66 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#67 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[2].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#68 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[3].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#69 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#70 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#71 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[2].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#72 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[3].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#73 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#74 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#75 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[2].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#76 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[3].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#77 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#78 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#79 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[2].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#80 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[0].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[3].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#81 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#82 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#83 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[2].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#84 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[3].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#85 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#86 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#87 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[2].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#88 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[3].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#89 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#90 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#91 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[2].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#92 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[3].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#93 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#94 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#95 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[2].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#96 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[1].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[3].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#97 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#98 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#99 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[2].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#100 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[3].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#101 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#102 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#103 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[2].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#104 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[3].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#105 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#106 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#107 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[2].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#108 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[3].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#109 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#110 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#111 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[2].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#112 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[2].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[3].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#113 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#114 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#115 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[2].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#116 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[0].u_mult_dsp_tree/GenMultPair[3].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#117 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#118 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#119 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[2].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#120 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[1].u_mult_dsp_tree/GenMultPair[3].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#121 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#122 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#123 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[2].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#124 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[2].u_mult_dsp_tree/GenMultPair[3].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#125 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[0].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#126 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[1].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#127 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[2].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1731#128 Warning
+DSP_Abus_preadd_amult_sel_A_sign_bit_restriction  
+DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_conv_top/inst_pea/u_mults/GenAddGrp[1].GenAddCh[3].GenMultOcp[3].u_mult_dsp_tree/GenMultPair[3].Gen8x8.u_mult_dsp/u_dsp/GenDsp48E2.u_dsp48e2: When using the PreAdder and AMULTSEL is set to 'AD' and PREADDINSEL is set to 'A', the A operand should be restricted to 26 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1857#1 Warning
+RAMB18E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1857#2 Warning
+RAMB18E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/s01_couplers/s01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1857#3 Warning
+RAMB18E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/s02_couplers/s02_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1857#4 Warning
+RAMB18E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/s03_couplers/s03_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1857#5 Warning
+RAMB18E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/s03_couplers/s03_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#1 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#2 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#3 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/s01_couplers/s01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#4 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/s01_couplers/s01_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#5 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/s02_couplers/s02_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#6 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/s02_couplers/s02_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#7 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/s03_couplers/s03_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#8 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/s03_couplers/s03_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#9 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/s03_couplers/s03_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1858#10 Warning
+RAMB36E2_writefirst_collision_advisory  
+Synchronous clocking is detected for BRAM (DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/s03_couplers/s03_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1935#1 Warning
+RAMB36E2_nochange_collision_advisory  
+Synchronous clocking is detected for BRAM (DATA_PROCESS_TOP/DATA_TO_UDP/data_to_udp_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0) in SDP mode with NO_CHANGE write-mode. This is the preferred mode for best power characteristics. However, NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1935#2 Warning
+RAMB36E2_nochange_collision_advisory  
+Synchronous clocking is detected for BRAM (DATA_PROCESS_TOP/DATA_TO_UDP/data_to_udp_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1) in SDP mode with NO_CHANGE write-mode. This is the preferred mode for best power characteristics. However, NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1935#3 Warning
+RAMB36E2_nochange_collision_advisory  
+Synchronous clocking is detected for BRAM (DATA_PROCESS_TOP/DATA_TO_UDP/data_to_udp_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_2) in SDP mode with NO_CHANGE write-mode. This is the preferred mode for best power characteristics. However, NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1935#4 Warning
+RAMB36E2_nochange_collision_advisory  
+Synchronous clocking is detected for BRAM (DATA_PROCESS_TOP/DATA_TO_UDP/data_to_udp_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_3) in SDP mode with NO_CHANGE write-mode. This is the preferred mode for best power characteristics. However, NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1935#5 Warning
+RAMB36E2_nochange_collision_advisory  
+Synchronous clocking is detected for BRAM (DATA_PROCESS_TOP/DATA_TO_UDP/data_to_udp_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_4) in SDP mode with NO_CHANGE write-mode. This is the preferred mode for best power characteristics. However, NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1935#6 Warning
+RAMB36E2_nochange_collision_advisory  
+Synchronous clocking is detected for BRAM (DATA_PROCESS_TOP/DATA_TO_UDP/data_to_udp_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_5) in SDP mode with NO_CHANGE write-mode. This is the preferred mode for best power characteristics. However, NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+522 net(s) have no routable loads. The problem bus(es) and/or net(s) are DDR4_and_ZYNQ_TOP/DDR4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/LMB_CE_riu,
+DDR4_and_ZYNQ_TOP/DDR4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/LMB_UE_riu,
+DDR4_and_ZYNQ_TOP/DDR4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_xsdb_arbiter/Q[12],
+DDR4_and_ZYNQ_TOP/DDR4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_xsdb_arbiter/Q[13],
+DDR4_and_ZYNQ_TOP/DDR4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_xsdb_arbiter/Q[14],
+DDR4_and_ZYNQ_TOP/DDR4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_xsdb_arbiter/Q[15],
+DDR4_and_ZYNQ_TOP/DDR4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_fixdly_rdy_low/SYNC[0].sync_reg[1],
+DDR4_and_ZYNQ_TOP/DDR4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_fixdly_rdy_low/SYNC[1].sync_reg[1],
+DDR4_and_ZYNQ_TOP/DDR4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_fixdly_rdy_upp/SYNC[0].sync_reg[1],
+DDR4_and_ZYNQ_TOP/DDR4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_fixdly_rdy_upp/SYNC[1].sync_reg[1],
+DDR4_and_ZYNQ_TOP/DDR4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_low/SYNC[0].sync_reg[1],
+DDR4_and_ZYNQ_TOP/DDR4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_low/SYNC[1].sync_reg[1],
+DDR4_and_ZYNQ_TOP/DDR4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_low/SYNC[2].sync_reg[1],
+DDR4_and_ZYNQ_TOP/DDR4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_upp/SYNC[0].sync_reg[1],
+DDR4_and_ZYNQ_TOP/DDR4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_upp/SYNC[1].sync_reg[1]
+ (the first 15 of 385 listed nets/buses).
+Related violations: <none>
+
+

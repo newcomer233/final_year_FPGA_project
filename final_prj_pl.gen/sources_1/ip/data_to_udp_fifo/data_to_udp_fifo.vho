@@ -57,13 +57,13 @@ COMPONENT data_to_udp_fifo
     s_axis_aclk : IN STD_LOGIC;
     s_axis_tvalid : IN STD_LOGIC;
     s_axis_tready : OUT STD_LOGIC;
-    s_axis_tdata : IN STD_LOGIC_VECTOR(239 DOWNTO 0);
-    s_axis_tkeep : IN STD_LOGIC_VECTOR(29 DOWNTO 0);
+    s_axis_tdata : IN STD_LOGIC_VECTOR(351 DOWNTO 0);
+    s_axis_tkeep : IN STD_LOGIC_VECTOR(43 DOWNTO 0);
     s_axis_tlast : IN STD_LOGIC;
     m_axis_tvalid : OUT STD_LOGIC;
     m_axis_tready : IN STD_LOGIC;
-    m_axis_tdata : OUT STD_LOGIC_VECTOR(239 DOWNTO 0);
-    m_axis_tkeep : OUT STD_LOGIC_VECTOR(29 DOWNTO 0);
+    m_axis_tdata : OUT STD_LOGIC_VECTOR(351 DOWNTO 0);
+    m_axis_tkeep : OUT STD_LOGIC_VECTOR(43 DOWNTO 0);
     m_axis_tlast : OUT STD_LOGIC;
     prog_empty : OUT STD_LOGIC 
   );

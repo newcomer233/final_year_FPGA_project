@@ -3,8 +3,8 @@
 # SW Build 6060944 on Thu Mar 06 19:10:01 MST 2025
 # IP Build 6050500 on Thu Mar  6 23:33:39 MST 2025
 # SharedData Build 6060542 on Thu Mar 06 10:31:07 MST 2025
-# Start of session at: Wed Jul  2 13:46:11 2025
-# Process ID         : 66976
+# Start of session at: Tue Jul 22 21:37:23 2025
+# Process ID         : 37552
 # Current directory  : E:/final_prj/final_prj_pl/final_prj_pl.runs/RGMII_util_vector_logic_0_1_synth_1
 # Command line       : vivado.exe -log RGMII_util_vector_logic_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RGMII_util_vector_logic_0_1.tcl
 # Log file           : E:/final_prj/final_prj_pl/final_prj_pl.runs/RGMII_util_vector_logic_0_1_synth_1/RGMII_util_vector_logic_0_1.vds
@@ -19,6 +19,6 @@
 # Host memory        : 102673 MB
 # Swap memory        : 6442 MB
 # Total Virtual      : 109116 MB
-# Available Virtual  : 64175 MB
+# Available Virtual  : 42060 MB
 #-----------------------------------------------------------
 source RGMII_util_vector_logic_0_1.tcl -notrace

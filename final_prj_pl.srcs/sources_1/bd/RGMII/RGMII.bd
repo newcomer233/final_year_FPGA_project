@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x4C7919559775B52B",
+      "boundary_crc": "0x4C791955FA0557EC",
       "device": "xczu9eg-ffvb1156-2-i",
       "gen_directory": "../../../../final_prj_pl.gen/sources_1/bd/RGMII",
       "name": "RGMII",
@@ -12,15 +12,15 @@
     },
     "design_tree": {
       "TEMAC": "",
-      "axis_RX_data_fifo": "",
       "util_vector_logic_0": "",
       "util_vector_logic_1": "",
-      "system_ila_0": "",
       "vio": "",
       "axis_TX_data_fifo": "",
-      "rst_TEMAC_125M": "",
       "system_ila_1": "",
-      "system_ila_2": ""
+      "system_ila_TX": "",
+      "axis_RX_data_fifo": "",
+      "system_ila_RX": "",
+      "system_ila_fifo_TX1": ""
     },
     "interface_ports": {
       "s_axi": {
@@ -41,14 +41,14 @@
             "value": "0"
           },
           "CLK_DOMAIN": {
-            "value": "RGMII_axis_clk_0",
+            "value": "RGMII_axis_clk",
             "value_src": "default"
           },
           "DATA_WIDTH": {
             "value": "32"
           },
           "FREQ_HZ": {
-            "value": "200000000"
+            "value": "100000000"
           },
           "HAS_BRESP": {
             "value": "1"
@@ -253,11 +253,11 @@
         "vlnv": "xilinx.com:interface:axis_rtl:1.0",
         "parameters": {
           "CLK_DOMAIN": {
-            "value": "RGMII_axis_clk_0",
+            "value": "RGMII_axis_clk",
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "200000000"
+            "value": "100000000"
           },
           "HAS_TKEEP": {
             "value": "0",
@@ -337,11 +337,11 @@
         "vlnv": "xilinx.com:interface:axis_rtl:1.0",
         "parameters": {
           "CLK_DOMAIN": {
-            "value": "RGMII_axis_clk_0",
+            "value": "RGMII_axis_clk",
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "200000000"
+            "value": "100000000"
           },
           "HAS_TKEEP": {
             "value": "1"
@@ -447,11 +447,11 @@
             "value_src": "default"
           },
           "CLK_DOMAIN": {
-            "value": "RGMII_axis_clk_0",
+            "value": "RGMII_axis_clk",
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "200000000"
+            "value": "100000000"
           },
           "FREQ_TOLERANCE_HZ": {
             "value": "0",
@@ -472,7 +472,7 @@
         "direction": "I",
         "parameters": {
           "CLK_DOMAIN": {
-            "value": "RGMII_gtx_clk_0",
+            "value": "RGMII_gtx_clk_125M",
             "value_src": "default"
           },
           "FREQ_HZ": {
@@ -520,12 +520,11 @@
         "direction": "I",
         "parameters": {
           "CLK_DOMAIN": {
-            "value": "RGMII_refclk_0",
+            "value": "RGMII_refclk_100M",
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
-            "value_src": "default"
+            "value": "333333333"
           },
           "FREQ_TOLERANCE_HZ": {
             "value": "0",
@@ -550,6 +549,9 @@
         "xci_path": "ip\\RGMII_tri_mode_ethernet_mac_0_0\\RGMII_tri_mode_ethernet_mac_0_0.xci",
         "inst_hier_path": "TEMAC",
         "parameters": {
+          "Data_Rate": {
+            "value": "1_Gbps"
+          },
           "Enable_MDIO": {
             "value": "true"
           },
@@ -557,13 +559,13 @@
             "value": "false"
           },
           "MAC_Speed": {
-            "value": "Tri_speed"
+            "value": "1000_Mbps"
           },
           "Make_MDIO_External": {
             "value": "true"
           },
           "Management_Frequency": {
-            "value": "200"
+            "value": "100"
           },
           "Management_Interface": {
             "value": "true"
@@ -576,30 +578,6 @@
           },
           "SupportLevel": {
             "value": "1"
-          }
-        }
-      },
-      "axis_RX_data_fifo": {
-        "vlnv": "xilinx.com:ip:axis_data_fifo:2.0",
-        "ip_revision": "16",
-        "xci_name": "RGMII_axis_TX_data_fifo_0",
-        "xci_path": "ip\\RGMII_axis_TX_data_fifo_0\\RGMII_axis_TX_data_fifo_0.xci",
-        "inst_hier_path": "axis_RX_data_fifo",
-        "parameters": {
-          "FIFO_DEPTH": {
-            "value": "1024"
-          },
-          "IS_ACLK_ASYNC": {
-            "value": "1"
-          }
-        },
-        "interface_ports": {
-          "S_AXIS": {
-            "vlnv": "xilinx.com:interface:axis_rtl:1.0",
-            "mode": "Slave",
-            "bridges": [
-              "M_AXIS"
-            ]
           }
         }
       },
@@ -633,59 +611,6 @@
           }
         }
       },
-      "system_ila_0": {
-        "vlnv": "xilinx.com:ip:system_ila:1.1",
-        "ip_revision": "20",
-        "xci_name": "RGMII_system_ila_0_0",
-        "xci_path": "ip\\RGMII_system_ila_0_0\\RGMII_system_ila_0_0.xci",
-        "inst_hier_path": "system_ila_0",
-        "parameters": {
-          "C_NUM_MONITOR_SLOTS": {
-            "value": "4"
-          },
-          "C_SLOT": {
-            "value": "0"
-          },
-          "C_SLOT_0_INTF_TYPE": {
-            "value": "xilinx.com:interface:axis_rtl:1.0"
-          },
-          "C_SLOT_1_INTF_TYPE": {
-            "value": "xilinx.com:display_tri_mode_ethernet_mac:rgmii_status_rtl:1.0"
-          },
-          "C_SLOT_2_INTF_TYPE": {
-            "value": "xilinx.com:display_tri_mode_ethernet_mac:statistics_rtl:1.0"
-          },
-          "C_SLOT_3_INTF_TYPE": {
-            "value": "xilinx.com:display_tri_mode_ethernet_mac:statistics_rtl:1.0"
-          }
-        },
-        "interface_ports": {
-          "SLOT_0_AXIS": {
-            "mode": "Monitor",
-            "monitor_type": "SlaveType",
-            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
-            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
-          },
-          "SLOT_1_RGMII_STATUS": {
-            "mode": "Monitor",
-            "monitor_type": "SlaveType",
-            "vlnv_bus_definition": "xilinx.com:display_tri_mode_ethernet_mac:rgmii_status:1.0",
-            "vlnv": "xilinx.com:display_tri_mode_ethernet_mac:rgmii_status_rtl:1.0"
-          },
-          "SLOT_2_STATISTICS": {
-            "mode": "Monitor",
-            "monitor_type": "SlaveType",
-            "vlnv_bus_definition": "xilinx.com:display_tri_mode_ethernet_mac:statistics:1.0",
-            "vlnv": "xilinx.com:display_tri_mode_ethernet_mac:statistics_rtl:1.0"
-          },
-          "SLOT_3_STATISTICS": {
-            "mode": "Monitor",
-            "monitor_type": "SlaveType",
-            "vlnv_bus_definition": "xilinx.com:display_tri_mode_ethernet_mac:statistics:1.0",
-            "vlnv": "xilinx.com:display_tri_mode_ethernet_mac:statistics_rtl:1.0"
-          }
-        }
-      },
       "vio": {
         "vlnv": "xilinx.com:ip:vio:3.0",
         "ip_revision": "26",
@@ -694,7 +619,7 @@
         "inst_hier_path": "vio",
         "parameters": {
           "C_NUM_PROBE_IN": {
-            "value": "6"
+            "value": "0"
           },
           "C_NUM_PROBE_OUT": {
             "value": "1"
@@ -709,10 +634,19 @@
         "inst_hier_path": "axis_TX_data_fifo",
         "parameters": {
           "FIFO_DEPTH": {
-            "value": "1024"
+            "value": "512"
+          },
+          "FIFO_MEMORY_TYPE": {
+            "value": "block"
+          },
+          "FIFO_MODE": {
+            "value": "2"
           },
           "IS_ACLK_ASYNC": {
             "value": "1"
+          },
+          "SYNCHRONIZATION_STAGES": {
+            "value": "5"
           }
         },
         "interface_ports": {
@@ -724,13 +658,6 @@
             ]
           }
         }
-      },
-      "rst_TEMAC_125M": {
-        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
-        "ip_revision": "16",
-        "xci_name": "RGMII_rst_TEMAC_125M_0",
-        "xci_path": "ip\\RGMII_rst_TEMAC_125M_0\\RGMII_rst_TEMAC_125M_0.xci",
-        "inst_hier_path": "rst_TEMAC_125M"
       },
       "system_ila_1": {
         "vlnv": "xilinx.com:ip:system_ila:1.1",
@@ -747,30 +674,91 @@
           }
         }
       },
-      "system_ila_2": {
+      "system_ila_TX": {
         "vlnv": "xilinx.com:ip:system_ila:1.1",
         "ip_revision": "20",
-        "xci_name": "RGMII_system_ila_0_1",
-        "xci_path": "ip\\RGMII_system_ila_0_1\\RGMII_system_ila_0_1.xci",
-        "inst_hier_path": "system_ila_2",
+        "xci_name": "RGMII_system_ila_0_2",
+        "xci_path": "ip\\RGMII_system_ila_0_2\\RGMII_system_ila_0_2.xci",
+        "inst_hier_path": "system_ila_TX",
         "parameters": {
-          "C_NUM_MONITOR_SLOTS": {
-            "value": "1"
-          },
-          "C_SLOT": {
-            "value": "0"
+          "C_DATA_DEPTH": {
+            "value": "4096"
           },
           "C_SLOT_0_INTF_TYPE": {
             "value": "xilinx.com:interface:axis_rtl:1.0"
+          }
+        },
+        "interface_ports": {
+          "SLOT_0_AXIS": {
+            "mode": "Monitor",
+            "monitor_type": "SlaveType",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          }
+        }
+      },
+      "axis_RX_data_fifo": {
+        "vlnv": "xilinx.com:ip:axis_data_fifo:2.0",
+        "ip_revision": "16",
+        "xci_name": "RGMII_axis_TX_data_fifo_0",
+        "xci_path": "ip\\RGMII_axis_TX_data_fifo_0\\RGMII_axis_TX_data_fifo_0.xci",
+        "inst_hier_path": "axis_RX_data_fifo",
+        "parameters": {
+          "FIFO_DEPTH": {
+            "value": "1024"
           },
-          "C_SLOT_1_INTF_TYPE": {
-            "value": "xilinx.com:display_tri_mode_ethernet_mac:rgmii_status_rtl:1.0"
+          "FIFO_MEMORY_TYPE": {
+            "value": "block"
           },
-          "C_SLOT_2_INTF_TYPE": {
-            "value": "xilinx.com:display_tri_mode_ethernet_mac:statistics_rtl:1.0"
+          "IS_ACLK_ASYNC": {
+            "value": "1"
+          }
+        },
+        "interface_ports": {
+          "S_AXIS": {
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+            "mode": "Slave",
+            "bridges": [
+              "M_AXIS"
+            ]
+          }
+        }
+      },
+      "system_ila_RX": {
+        "vlnv": "xilinx.com:ip:system_ila:1.1",
+        "ip_revision": "20",
+        "xci_name": "RGMII_system_ila_0_3",
+        "xci_path": "ip\\RGMII_system_ila_0_3\\RGMII_system_ila_0_3.xci",
+        "inst_hier_path": "system_ila_RX",
+        "parameters": {
+          "C_DATA_DEPTH": {
+            "value": "4096"
           },
-          "C_SLOT_3_INTF_TYPE": {
-            "value": "xilinx.com:display_tri_mode_ethernet_mac:statistics_rtl:1.0"
+          "C_SLOT_0_INTF_TYPE": {
+            "value": "xilinx.com:interface:axis_rtl:1.0"
+          }
+        },
+        "interface_ports": {
+          "SLOT_0_AXIS": {
+            "mode": "Monitor",
+            "monitor_type": "SlaveType",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          }
+        }
+      },
+      "system_ila_fifo_TX1": {
+        "vlnv": "xilinx.com:ip:system_ila:1.1",
+        "ip_revision": "20",
+        "xci_name": "RGMII_system_ila_TX_0",
+        "xci_path": "ip\\RGMII_system_ila_TX_0\\RGMII_system_ila_TX_0.xci",
+        "inst_hier_path": "system_ila_fifo_TX1",
+        "parameters": {
+          "C_DATA_DEPTH": {
+            "value": "4096"
+          },
+          "C_SLOT_0_INTF_TYPE": {
+            "value": "xilinx.com:interface:axis_rtl:1.0"
           }
         },
         "interface_ports": {
@@ -786,9 +774,9 @@
     "interface_nets": {
       "TEMAC_m_axis_rx": {
         "interface_ports": [
-          "TEMAC/m_axis_rx",
           "axis_RX_data_fifo/S_AXIS",
-          "system_ila_2/SLOT_0_AXIS"
+          "TEMAC/m_axis_rx",
+          "system_ila_RX/SLOT_0_AXIS"
         ]
       },
       "TEMAC_mdio_external": {
@@ -803,25 +791,7 @@
           "TEMAC/rgmii"
         ]
       },
-      "TEMAC_rgmii_status": {
-        "interface_ports": [
-          "TEMAC/rgmii_status",
-          "system_ila_0/SLOT_1_RGMII_STATUS"
-        ]
-      },
-      "TEMAC_rx_statistics": {
-        "interface_ports": [
-          "TEMAC/rx_statistics",
-          "system_ila_0/SLOT_3_STATISTICS"
-        ]
-      },
-      "TEMAC_tx_statistics": {
-        "interface_ports": [
-          "TEMAC/tx_statistics",
-          "system_ila_0/SLOT_2_STATISTICS"
-        ]
-      },
-      "axis_RX_data_fifo_M_AXIS": {
+      "axis_TX_data_fifo1_M_AXIS": {
         "interface_ports": [
           "m_axis_rxd",
           "axis_RX_data_fifo/M_AXIS"
@@ -831,7 +801,7 @@
         "interface_ports": [
           "TEMAC/s_axis_tx",
           "axis_TX_data_fifo/M_AXIS",
-          "system_ila_0/SLOT_0_AXIS"
+          "system_ila_TX/SLOT_0_AXIS"
         ]
       },
       "s_axi_1": {
@@ -844,51 +814,36 @@
       "s_axis_txd_1": {
         "interface_ports": [
           "s_axis_txd",
-          "axis_TX_data_fifo/S_AXIS"
+          "axis_TX_data_fifo/S_AXIS",
+          "system_ila_fifo_TX1/SLOT_0_AXIS"
         ]
       }
     },
     "nets": {
-      "TEMAC_rx_enable": {
-        "ports": [
-          "TEMAC/rx_enable",
-          "vio/probe_in4"
-        ]
-      },
-      "TEMAC_rx_mac_aclk": {
+      "Net": {
         "ports": [
           "TEMAC/rx_mac_aclk",
-          "axis_RX_data_fifo/s_axis_aclk",
-          "system_ila_2/clk"
+          "system_ila_RX/clk",
+          "axis_RX_data_fifo/s_axis_aclk"
         ]
       },
       "TEMAC_rx_reset": {
         "ports": [
           "TEMAC/rx_reset",
-          "util_vector_logic_1/Op1",
-          "rst_TEMAC_125M/ext_reset_in",
-          "vio/probe_in2"
-        ]
-      },
-      "TEMAC_tx_enable": {
-        "ports": [
-          "TEMAC/tx_enable",
-          "vio/probe_in5"
+          "util_vector_logic_1/Op1"
         ]
       },
       "TEMAC_tx_mac_aclk": {
         "ports": [
           "TEMAC/tx_mac_aclk",
-          "system_ila_0/clk",
           "axis_TX_data_fifo/m_axis_aclk",
-          "rst_TEMAC_125M/slowest_sync_clk"
+          "system_ila_TX/clk"
         ]
       },
       "TEMAC_tx_reset": {
         "ports": [
           "TEMAC/tx_reset",
-          "util_vector_logic_0/Op1",
-          "vio/probe_in3"
+          "util_vector_logic_0/Op1"
         ]
       },
       "axi_txd_arstn_1": {
@@ -898,17 +853,19 @@
           "TEMAC/rx_axi_rstn",
           "TEMAC/tx_axi_rstn",
           "TEMAC/glbl_rstn",
-          "system_ila_1/resetn"
+          "system_ila_1/resetn",
+          "system_ila_fifo_TX1/resetn"
         ]
       },
       "axis_clk_1": {
         "ports": [
           "axis_clk",
-          "axis_RX_data_fifo/m_axis_aclk",
           "TEMAC/s_axi_aclk",
           "vio/clk",
           "axis_TX_data_fifo/s_axis_aclk",
-          "system_ila_1/clk"
+          "system_ila_1/clk",
+          "axis_RX_data_fifo/m_axis_aclk",
+          "system_ila_fifo_TX1/clk"
         ]
       },
       "gtx_clk_125M_1": {
@@ -929,24 +886,6 @@
           "TEMAC/refclk"
         ]
       },
-      "rst_TEMAC_125M_peripheral_aresetn": {
-        "ports": [
-          "rst_TEMAC_125M/peripheral_aresetn",
-          "system_ila_0/resetn"
-        ]
-      },
-      "speedis100": {
-        "ports": [
-          "TEMAC/speedis100",
-          "vio/probe_in0"
-        ]
-      },
-      "speedis10100": {
-        "ports": [
-          "TEMAC/speedis10100",
-          "vio/probe_in1"
-        ]
-      },
       "tx_ifg_delay_0_1": {
         "ports": [
           "tx_ifg_delay",
@@ -956,14 +895,15 @@
       "util_vector_logic_0_Res": {
         "ports": [
           "util_vector_logic_0/Res",
-          "axis_TX_data_fifo/s_axis_aresetn"
+          "axis_TX_data_fifo/s_axis_aresetn",
+          "system_ila_TX/resetn"
         ]
       },
       "util_vector_logic_1_Res": {
         "ports": [
           "util_vector_logic_1/Res",
           "axis_RX_data_fifo/s_axis_aresetn",
-          "system_ila_2/resetn"
+          "system_ila_RX/resetn"
         ]
       }
     },

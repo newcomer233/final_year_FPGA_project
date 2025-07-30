@@ -2,7 +2,7 @@
 -- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2.2 (win64) Build 6060944 Thu Mar 06 19:10:01 MST 2025
--- Date        : Wed Jul  2 13:46:13 2025
+-- Date        : Wed Jul 30 12:18:46 2025
 -- Host        : LAPTOP-VEGJAO5A running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_axis_TX_data_fifo_0/RGMII_axis_TX_data_fifo_0_sim_netlist.vhdl
@@ -5708,7 +5708,7 @@ entity RGMII_axis_TX_data_fifo_0_xpm_memory_base is
   attribute MEMORY_OPTIMIZATION : string;
   attribute MEMORY_OPTIMIZATION of RGMII_axis_TX_data_fifo_0_xpm_memory_base : entity is "true";
   attribute MEMORY_PRIMITIVE : integer;
-  attribute MEMORY_PRIMITIVE of RGMII_axis_TX_data_fifo_0_xpm_memory_base : entity is 0;
+  attribute MEMORY_PRIMITIVE of RGMII_axis_TX_data_fifo_0_xpm_memory_base : entity is 2;
   attribute MEMORY_SIZE : integer;
   attribute MEMORY_SIZE of RGMII_axis_TX_data_fifo_0_xpm_memory_base : entity is 14336;
   attribute MEMORY_TYPE : integer;
@@ -5730,7 +5730,7 @@ entity RGMII_axis_TX_data_fifo_0_xpm_memory_base is
   attribute P_MEMORY_OPT : string;
   attribute P_MEMORY_OPT of RGMII_axis_TX_data_fifo_0_xpm_memory_base : entity is "yes";
   attribute P_MEMORY_PRIMITIVE : string;
-  attribute P_MEMORY_PRIMITIVE of RGMII_axis_TX_data_fifo_0_xpm_memory_base : entity is "auto";
+  attribute P_MEMORY_PRIMITIVE of RGMII_axis_TX_data_fifo_0_xpm_memory_base : entity is "block";
   attribute P_MIN_WIDTH_DATA : integer;
   attribute P_MIN_WIDTH_DATA of RGMII_axis_TX_data_fifo_0_xpm_memory_base : entity is 14;
   attribute P_MIN_WIDTH_DATA_A : integer;
@@ -5756,7 +5756,7 @@ entity RGMII_axis_TX_data_fifo_0_xpm_memory_base is
   attribute P_NUM_ROWS_WRITE_B : integer;
   attribute P_NUM_ROWS_WRITE_B of RGMII_axis_TX_data_fifo_0_xpm_memory_base : entity is 1;
   attribute P_SDP_WRITE_MODE : string;
-  attribute P_SDP_WRITE_MODE of RGMII_axis_TX_data_fifo_0_xpm_memory_base : entity is "yes";
+  attribute P_SDP_WRITE_MODE of RGMII_axis_TX_data_fifo_0_xpm_memory_base : entity is "no";
   attribute P_WIDTH_ADDR_LSB_READ_A : integer;
   attribute P_WIDTH_ADDR_LSB_READ_A of RGMII_axis_TX_data_fifo_0_xpm_memory_base : entity is 0;
   attribute P_WIDTH_ADDR_LSB_READ_B : integer;
@@ -5867,7 +5867,7 @@ architecture STRUCTURE of RGMII_axis_TX_data_fifo_0_xpm_memory_base is
   attribute RTL_RAM_NAME : string;
   attribute RTL_RAM_NAME of \gen_wr_a.gen_word_narrow.mem_reg_bram_0\ : label is "xpm_memory_base/gen_wr_a.gen_word_narrow.mem_reg";
   attribute RTL_RAM_STYLE : string;
-  attribute RTL_RAM_STYLE of \gen_wr_a.gen_word_narrow.mem_reg_bram_0\ : label is "auto";
+  attribute RTL_RAM_STYLE of \gen_wr_a.gen_word_narrow.mem_reg_bram_0\ : label is "block";
   attribute RTL_RAM_TYPE : string;
   attribute RTL_RAM_TYPE of \gen_wr_a.gen_word_narrow.mem_reg_bram_0\ : label is "RAM_SDP";
   attribute ram_addr_begin : integer;
@@ -6004,7 +6004,7 @@ GND: unisim.vcomponents.GND
       SRVAL_A => B"00" & X"0000",
       SRVAL_B => B"00" & X"0000",
       WRITE_MODE_A => "NO_CHANGE",
-      WRITE_MODE_B => "WRITE_FIRST",
+      WRITE_MODE_B => "NO_CHANGE",
       WRITE_WIDTH_A => 18,
       WRITE_WIDTH_B => 18
     )
@@ -6624,9 +6624,9 @@ entity RGMII_axis_TX_data_fifo_0_xpm_fifo_base is
   attribute FG_EQ_ASYM_DOUT : string;
   attribute FG_EQ_ASYM_DOUT of RGMII_axis_TX_data_fifo_0_xpm_fifo_base : entity is "1'b0";
   attribute FIFO_MEMORY_TYPE : integer;
-  attribute FIFO_MEMORY_TYPE of RGMII_axis_TX_data_fifo_0_xpm_fifo_base : entity is 0;
+  attribute FIFO_MEMORY_TYPE of RGMII_axis_TX_data_fifo_0_xpm_fifo_base : entity is 2;
   attribute FIFO_MEM_TYPE : integer;
-  attribute FIFO_MEM_TYPE of RGMII_axis_TX_data_fifo_0_xpm_fifo_base : entity is 0;
+  attribute FIFO_MEM_TYPE of RGMII_axis_TX_data_fifo_0_xpm_fifo_base : entity is 2;
   attribute FIFO_READ_DEPTH : integer;
   attribute FIFO_READ_DEPTH of RGMII_axis_TX_data_fifo_0_xpm_fifo_base : entity is 1024;
   attribute FIFO_READ_LATENCY : integer;
@@ -6893,7 +6893,7 @@ architecture STRUCTURE of RGMII_axis_TX_data_fifo_0_xpm_fifo_base is
   attribute MEMORY_OPTIMIZATION : string;
   attribute MEMORY_OPTIMIZATION of \gen_sdpram.xpm_memory_base_inst\ : label is "true";
   attribute MEMORY_PRIMITIVE : integer;
-  attribute MEMORY_PRIMITIVE of \gen_sdpram.xpm_memory_base_inst\ : label is 0;
+  attribute MEMORY_PRIMITIVE of \gen_sdpram.xpm_memory_base_inst\ : label is 2;
   attribute MEMORY_SIZE : integer;
   attribute MEMORY_SIZE of \gen_sdpram.xpm_memory_base_inst\ : label is 14336;
   attribute MEMORY_TYPE : integer;
@@ -6913,7 +6913,7 @@ architecture STRUCTURE of RGMII_axis_TX_data_fifo_0_xpm_fifo_base is
   attribute P_MEMORY_OPT : string;
   attribute P_MEMORY_OPT of \gen_sdpram.xpm_memory_base_inst\ : label is "yes";
   attribute P_MEMORY_PRIMITIVE : string;
-  attribute P_MEMORY_PRIMITIVE of \gen_sdpram.xpm_memory_base_inst\ : label is "auto";
+  attribute P_MEMORY_PRIMITIVE of \gen_sdpram.xpm_memory_base_inst\ : label is "block";
   attribute P_MIN_WIDTH_DATA : integer;
   attribute P_MIN_WIDTH_DATA of \gen_sdpram.xpm_memory_base_inst\ : label is 14;
   attribute P_MIN_WIDTH_DATA_A : integer;
@@ -6939,7 +6939,7 @@ architecture STRUCTURE of RGMII_axis_TX_data_fifo_0_xpm_fifo_base is
   attribute P_NUM_ROWS_WRITE_B : integer;
   attribute P_NUM_ROWS_WRITE_B of \gen_sdpram.xpm_memory_base_inst\ : label is 1;
   attribute P_SDP_WRITE_MODE : string;
-  attribute P_SDP_WRITE_MODE of \gen_sdpram.xpm_memory_base_inst\ : label is "yes";
+  attribute P_SDP_WRITE_MODE of \gen_sdpram.xpm_memory_base_inst\ : label is "no";
   attribute P_WIDTH_ADDR_LSB_READ_A : integer;
   attribute P_WIDTH_ADDR_LSB_READ_A of \gen_sdpram.xpm_memory_base_inst\ : label is 0;
   attribute P_WIDTH_ADDR_LSB_READ_B : integer;
@@ -7513,7 +7513,7 @@ entity RGMII_axis_TX_data_fifo_0_xpm_fifo_axis is
   attribute FIFO_DEPTH : integer;
   attribute FIFO_DEPTH of RGMII_axis_TX_data_fifo_0_xpm_fifo_axis : entity is 1024;
   attribute FIFO_MEMORY_TYPE : string;
-  attribute FIFO_MEMORY_TYPE of RGMII_axis_TX_data_fifo_0_xpm_fifo_axis : entity is "auto";
+  attribute FIFO_MEMORY_TYPE of RGMII_axis_TX_data_fifo_0_xpm_fifo_axis : entity is "block";
   attribute LOG_DEPTH_AXIS : integer;
   attribute LOG_DEPTH_AXIS of RGMII_axis_TX_data_fifo_0_xpm_fifo_axis : entity is 10;
   attribute ORIG_REF_NAME : string;
@@ -7531,7 +7531,7 @@ entity RGMII_axis_TX_data_fifo_0_xpm_fifo_axis is
   attribute P_ECC_MODE : integer;
   attribute P_ECC_MODE of RGMII_axis_TX_data_fifo_0_xpm_fifo_axis : entity is 0;
   attribute P_FIFO_MEMORY_TYPE : integer;
-  attribute P_FIFO_MEMORY_TYPE of RGMII_axis_TX_data_fifo_0_xpm_fifo_axis : entity is 0;
+  attribute P_FIFO_MEMORY_TYPE of RGMII_axis_TX_data_fifo_0_xpm_fifo_axis : entity is 2;
   attribute P_PKT_MODE : integer;
   attribute P_PKT_MODE of RGMII_axis_TX_data_fifo_0_xpm_fifo_axis : entity is 0;
   attribute RD_DATA_COUNT_WIDTH : integer;
@@ -7647,9 +7647,9 @@ architecture STRUCTURE of RGMII_axis_TX_data_fifo_0_xpm_fifo_axis is
   attribute FG_EQ_ASYM_DOUT : string;
   attribute FG_EQ_ASYM_DOUT of xpm_fifo_base_inst : label is "1'b0";
   attribute FIFO_MEMORY_TYPE_integer : integer;
-  attribute FIFO_MEMORY_TYPE_integer of xpm_fifo_base_inst : label is 0;
+  attribute FIFO_MEMORY_TYPE_integer of xpm_fifo_base_inst : label is 2;
   attribute FIFO_MEM_TYPE : integer;
-  attribute FIFO_MEM_TYPE of xpm_fifo_base_inst : label is 0;
+  attribute FIFO_MEM_TYPE of xpm_fifo_base_inst : label is 2;
   attribute FIFO_READ_DEPTH : integer;
   attribute FIFO_READ_DEPTH of xpm_fifo_base_inst : label is 1024;
   attribute FIFO_READ_LATENCY : integer;
@@ -7882,7 +7882,7 @@ entity RGMII_axis_TX_data_fifo_0_axis_data_fifo_v2_0_16_top is
   attribute C_FIFO_DEPTH : integer;
   attribute C_FIFO_DEPTH of RGMII_axis_TX_data_fifo_0_axis_data_fifo_v2_0_16_top : entity is 1024;
   attribute C_FIFO_MEMORY_TYPE : string;
-  attribute C_FIFO_MEMORY_TYPE of RGMII_axis_TX_data_fifo_0_axis_data_fifo_v2_0_16_top : entity is "auto";
+  attribute C_FIFO_MEMORY_TYPE of RGMII_axis_TX_data_fifo_0_axis_data_fifo_v2_0_16_top : entity is "block";
   attribute C_FIFO_MODE : integer;
   attribute C_FIFO_MODE of RGMII_axis_TX_data_fifo_0_axis_data_fifo_v2_0_16_top : entity is 1;
   attribute C_IS_ACLK_ASYNC : integer;
@@ -7942,7 +7942,7 @@ entity RGMII_axis_TX_data_fifo_0_axis_data_fifo_v2_0_16_top is
   attribute LP_FIFO_DEPTH : integer;
   attribute LP_FIFO_DEPTH of RGMII_axis_TX_data_fifo_0_axis_data_fifo_v2_0_16_top : entity is 1024;
   attribute LP_FIFO_MEMORY_TYPE : string;
-  attribute LP_FIFO_MEMORY_TYPE of RGMII_axis_TX_data_fifo_0_axis_data_fifo_v2_0_16_top : entity is "auto";
+  attribute LP_FIFO_MEMORY_TYPE of RGMII_axis_TX_data_fifo_0_axis_data_fifo_v2_0_16_top : entity is "block";
   attribute LP_M_ACLKEN_CAN_TOGGLE : integer;
   attribute LP_M_ACLKEN_CAN_TOGGLE of RGMII_axis_TX_data_fifo_0_axis_data_fifo_v2_0_16_top : entity is 0;
   attribute LP_PACKET_FIFO : string;
@@ -8050,7 +8050,7 @@ architecture STRUCTURE of RGMII_axis_TX_data_fifo_0_axis_data_fifo_v2_0_16_top i
   attribute P_ECC_MODE : integer;
   attribute P_ECC_MODE of \gen_fifo.xpm_fifo_axis_inst\ : label is 0;
   attribute P_FIFO_MEMORY_TYPE : integer;
-  attribute P_FIFO_MEMORY_TYPE of \gen_fifo.xpm_fifo_axis_inst\ : label is 0;
+  attribute P_FIFO_MEMORY_TYPE of \gen_fifo.xpm_fifo_axis_inst\ : label is 2;
   attribute P_PKT_MODE : integer;
   attribute P_PKT_MODE of \gen_fifo.xpm_fifo_axis_inst\ : label is 0;
   attribute RD_DATA_COUNT_WIDTH : integer;
@@ -8285,7 +8285,7 @@ architecture STRUCTURE of RGMII_axis_TX_data_fifo_0 is
   attribute C_FIFO_DEPTH : integer;
   attribute C_FIFO_DEPTH of inst : label is 1024;
   attribute C_FIFO_MEMORY_TYPE : string;
-  attribute C_FIFO_MEMORY_TYPE of inst : label is "auto";
+  attribute C_FIFO_MEMORY_TYPE of inst : label is "block";
   attribute C_FIFO_MODE : integer;
   attribute C_FIFO_MODE of inst : label is 1;
   attribute C_IS_ACLK_ASYNC : integer;
@@ -8345,7 +8345,7 @@ architecture STRUCTURE of RGMII_axis_TX_data_fifo_0 is
   attribute LP_FIFO_DEPTH : integer;
   attribute LP_FIFO_DEPTH of inst : label is 1024;
   attribute LP_FIFO_MEMORY_TYPE : string;
-  attribute LP_FIFO_MEMORY_TYPE of inst : label is "auto";
+  attribute LP_FIFO_MEMORY_TYPE of inst : label is "block";
   attribute LP_M_ACLKEN_CAN_TOGGLE : integer;
   attribute LP_M_ACLKEN_CAN_TOGGLE of inst : label is 0;
   attribute LP_PACKET_FIFO : string;
@@ -8377,12 +8377,12 @@ architecture STRUCTURE of RGMII_axis_TX_data_fifo_0 is
   attribute X_INTERFACE_MODE : string;
   attribute X_INTERFACE_MODE of m_axis_aclk : signal is "slave";
   attribute X_INTERFACE_PARAMETER : string;
-  attribute X_INTERFACE_PARAMETER of m_axis_aclk : signal is "XIL_INTERFACENAME M_CLKIF, ASSOCIATED_BUSIF M_AXIS, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN RGMII_axis_clk_0, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of m_axis_aclk : signal is "XIL_INTERFACENAME M_CLKIF, ASSOCIATED_BUSIF M_AXIS, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN RGMII_axis_clk, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of m_axis_tlast : signal is "xilinx.com:interface:axis:1.0 M_AXIS TLAST";
   attribute X_INTERFACE_INFO of m_axis_tready : signal is "xilinx.com:interface:axis:1.0 M_AXIS TREADY";
   attribute X_INTERFACE_INFO of m_axis_tvalid : signal is "xilinx.com:interface:axis:1.0 M_AXIS TVALID";
   attribute X_INTERFACE_MODE of m_axis_tvalid : signal is "master";
-  attribute X_INTERFACE_PARAMETER of m_axis_tvalid : signal is "XIL_INTERFACENAME M_AXIS, TDATA_NUM_BYTES 1, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 200000000, PHASE 0.0, CLK_DOMAIN RGMII_axis_clk_0, LAYERED_METADATA undef, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of m_axis_tvalid : signal is "XIL_INTERFACENAME M_AXIS, TDATA_NUM_BYTES 1, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN RGMII_axis_clk, LAYERED_METADATA undef, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of s_axis_aclk : signal is "xilinx.com:signal:clock:1.0 S_CLKIF CLK";
   attribute X_INTERFACE_MODE of s_axis_aclk : signal is "slave";
   attribute X_INTERFACE_PARAMETER of s_axis_aclk : signal is "XIL_INTERFACENAME S_CLKIF, ASSOCIATED_BUSIF S_AXIS, FREQ_HZ 125000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /TEMAC/rx_mac_aclk, ASSOCIATED_RESET s_axis_aresetn, INSERT_VIP 0, ASSOCIATED_CLKEN s_axis_aclken";

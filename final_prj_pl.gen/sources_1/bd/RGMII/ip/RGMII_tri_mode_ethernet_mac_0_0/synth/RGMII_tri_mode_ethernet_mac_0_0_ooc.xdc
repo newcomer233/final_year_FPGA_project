@@ -13,7 +13,7 @@ create_clock -name gtx_clk_ooc -period 8.000 [get_ports gtx_clk]
 ###################################
 # AXI-Lite Clock period Constraints
 ###################################
-create_clock -name cpu_clk_ooc -period 5.000 [get_ports s_axi_aclk]
+create_clock -name cpu_clk_ooc -period 10.000 [get_ports s_axi_aclk]
 
 ###################################
 # IDELAYCTRL reference clock period

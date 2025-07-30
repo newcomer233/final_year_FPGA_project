@@ -2,10 +2,10 @@
 // Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2.2 (win64) Build 6060944 Thu Mar 06 19:10:01 MST 2025
-// Date        : Mon Jul  7 14:48:00 2025
+// Date        : Mon Jul 28 00:30:14 2025
 // Host        : LAPTOP-VEGJAO5A running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim -rename_top DDR4_proc_sys_reset_0_0 -prefix
-//               DDR4_proc_sys_reset_0_0_ DDR4_proc_sys_reset_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim
+//               e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_proc_sys_reset_0_0/DDR4_proc_sys_reset_0_0_sim_netlist.v
 // Design      : DDR4_proc_sys_reset_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -70,6 +70,7 @@ module DDR4_proc_sys_reset_0_0
         .slowest_sync_clk(slowest_sync_clk));
 endmodule
 
+(* ORIG_REF_NAME = "cdc_sync" *) 
 module DDR4_proc_sys_reset_0_0_cdc_sync
    (lpf_asr_reg,
     scndry_out,
@@ -265,6 +266,7 @@ module DDR4_proc_sys_reset_0_0_cdc_sync_0
         .O(lpf_exr_reg));
 endmodule
 
+(* ORIG_REF_NAME = "lpf" *) 
 module DDR4_proc_sys_reset_0_0_lpf
    (lpf_int,
     slowest_sync_clk,
@@ -419,6 +421,7 @@ endmodule
 (* C_AUX_RESET_HIGH = "1'b0" *) (* C_AUX_RST_WIDTH = "4" *) (* C_EXT_RESET_HIGH = "1'b0" *) 
 (* C_EXT_RST_WIDTH = "4" *) (* C_FAMILY = "zynquplus" *) (* C_NUM_BUS_RST = "1" *) 
 (* C_NUM_INTERCONNECT_ARESETN = "1" *) (* C_NUM_PERP_ARESETN = "1" *) (* C_NUM_PERP_RST = "1" *) 
+(* ORIG_REF_NAME = "proc_sys_reset" *) 
 module DDR4_proc_sys_reset_0_0_proc_sys_reset
    (slowest_sync_clk,
     ext_reset_in,
@@ -535,6 +538,7 @@ module DDR4_proc_sys_reset_0_0_proc_sys_reset
         .slowest_sync_clk(slowest_sync_clk));
 endmodule
 
+(* ORIG_REF_NAME = "sequence_psr" *) 
 module DDR4_proc_sys_reset_0_0_sequence_psr
    (MB_out,
     Bsr_out,
@@ -775,6 +779,7 @@ module DDR4_proc_sys_reset_0_0_sequence_psr
         .R(lpf_int));
 endmodule
 
+(* ORIG_REF_NAME = "upcnt_n" *) 
 module DDR4_proc_sys_reset_0_0_upcnt_n
    (Q,
     seq_clr,

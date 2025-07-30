@@ -1,63 +1,55 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.7177",
-   "Default View_TopLeft":"955,-105",
+   "Default View_ScaleFactor":"0.861524",
+   "Default View_TopLeft":"-234,-660",
    "ExpandedHierarchyInLayout":"",
-   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 threadsafe
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
 #  -string -flagsOSRD
 preplace port s_axi -pg 1 -lvl 0 -x -440 -y 40 -defaultsOSRD
-preplace port rgmii -pg 1 -lvl 7 -x 2020 -y 0 -defaultsOSRD
-preplace port m_axis_rxd -pg 1 -lvl 7 -x 2020 -y -190 -defaultsOSRD
+preplace port rgmii -pg 1 -lvl 7 -x 2160 -y 0 -defaultsOSRD
+preplace port m_axis_rxd -pg 1 -lvl 7 -x 2160 -y -190 -defaultsOSRD
 preplace port s_axis_txd -pg 1 -lvl 0 -x -440 -y -190 -defaultsOSRD
-preplace port mdio -pg 1 -lvl 7 -x 2020 -y 90 -defaultsOSRD
-preplace port port-id_axis_clk -pg 1 -lvl 0 -x -440 -y 130 -defaultsOSRD
+preplace port mdio -pg 1 -lvl 7 -x 2160 -y 40 -defaultsOSRD
+preplace port port-id_axis_clk -pg 1 -lvl 0 -x -440 -y -150 -defaultsOSRD
 preplace port port-id_gtx_clk_125M -pg 1 -lvl 0 -x -440 -y 320 -defaultsOSRD
 preplace port port-id_axi_txd_arstn -pg 1 -lvl 0 -x -440 -y 150 -defaultsOSRD
-preplace port port-id_refclk_100M -pg 1 -lvl 0 -x -440 -y 300 -defaultsOSRD
+preplace port port-id_refclk_100M -pg 1 -lvl 0 -x -440 -y 270 -defaultsOSRD
 preplace portBus tx_ifg_delay -pg 1 -lvl 0 -x -440 -y 250 -defaultsOSRD
-preplace portBus phy_rst_n -pg 1 -lvl 7 -x 2020 -y 220 -defaultsOSRD
-preplace inst TEMAC -pg 1 -lvl 4 -x 1040 -y 200 -defaultsOSRD
-preplace inst axis_RX_data_fifo -pg 1 -lvl 5 -x 1500 -y -180 -defaultsOSRD
-preplace inst util_vector_logic_0 -pg 1 -lvl 1 -x 120 -y -70 -defaultsOSRD
-preplace inst util_vector_logic_1 -pg 1 -lvl 5 -x 1500 -y -310 -defaultsOSRD
-preplace inst system_ila_0 -pg 1 -lvl 4 -x 1040 -y -440 -defaultsOSRD
-preplace inst vio -pg 1 -lvl 6 -x 1860 -y 220 -defaultsOSRD
-preplace inst axis_TX_data_fifo -pg 1 -lvl 2 -x 420 -y -150 -defaultsOSRD
-preplace inst rst_TEMAC_125M -pg 1 -lvl 5 -x 1500 -y -470 -defaultsOSRD
+preplace portBus phy_rst_n -pg 1 -lvl 7 -x 2160 -y 220 -defaultsOSRD
+preplace inst TEMAC -pg 1 -lvl 4 -x 1190 -y 150 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 1 -x 110 -y -70 -defaultsOSRD
+preplace inst util_vector_logic_1 -pg 1 -lvl 5 -x 1590 -y -310 -defaultsOSRD
+preplace inst vio -pg 1 -lvl 6 -x 2030 -y 220 -defaultsOSRD
+preplace inst axis_TX_data_fifo -pg 1 -lvl 2 -x 410 -y -140 -defaultsOSRD
 preplace inst system_ila_1 -pg 1 -lvl 3 -x 660 -y -460 -defaultsOSRD
-preplace inst system_ila_2 -pg 1 -lvl 5 -x 1500 -y 10 -defaultsOSRD
-preplace netloc TEMAC_rx_mac_aclk 1 4 1 1290 -170n
-preplace netloc TEMAC_rx_reset 1 4 2 1310 190 1680
-preplace netloc TEMAC_tx_mac_aclk 1 1 4 300 -240 N -240 830 -570 1240
-preplace netloc TEMAC_tx_reset 1 0 6 -30 -130 270J -50 N -50 N -50 1230 240 N
-preplace netloc axi_txd_arstn_1 1 0 4 NJ 150 NJ 150 560 150 820
-preplace netloc axis_clk_1 1 0 6 -420 -140 290 -60 540 -60 830 -60 1320 160 N
-preplace netloc gtx_clk_125M_1 1 0 4 -410J 200 NJ 200 N 200 N
+preplace inst system_ila_TX -pg 1 -lvl 4 -x 1190 -y -340 -defaultsOSRD
+preplace inst axis_RX_data_fifo -pg 1 -lvl 5 -x 1590 -y -120 -defaultsOSRD
+preplace inst system_ila_RX -pg 1 -lvl 5 -x 1590 -y -430 -defaultsOSRD
+preplace inst system_ila_fifo_TX1 -pg 1 -lvl 1 -x 110 -y -400 -defaultsOSRD
+preplace netloc Net 1 4 1 1400 -430n
+preplace netloc TEMAC_rx_reset 1 4 1 1420 -310n
+preplace netloc TEMAC_tx_mac_aclk 1 1 4 290 -240 N -240 1030 -100 1360
+preplace netloc TEMAC_tx_reset 1 0 5 -40 -10 NJ -10 N -10 1010 -40 1350
+preplace netloc axi_txd_arstn_1 1 0 4 -60J -480 NJ -480 540 -330 1000
+preplace netloc axis_clk_1 1 0 6 -50 -180 280 -230 560 -150 990 -90 1430 -210 1740
+preplace netloc gtx_clk_125M_1 1 0 4 -40J 150 NJ 150 N 150 N
 preplace netloc phy_rst_n 1 6 1 NJ 220
-preplace netloc refclk_0_1 1 0 4 NJ 300 NJ 300 NJ 300 N
-preplace netloc rst_TEMAC_125M_peripheral_aresetn 1 3 3 860 -580 NJ -580 1680
-preplace netloc speedis100 1 4 2 1320 180 NJ
-preplace netloc speedis10100 1 4 2 1330 200 NJ
+preplace netloc refclk_0_1 1 0 4 NJ 270 NJ 270 NJ 270 800
 preplace netloc tx_ifg_delay_0_1 1 0 4 NJ 250 NJ 250 N 250 760
-preplace netloc util_vector_logic_0_Res 1 1 1 280J -160n
-preplace netloc util_vector_logic_1_Res 1 4 2 1330 -370 1680
-preplace netloc TEMAC_rx_enable 1 4 2 NJ 210 1670
-preplace netloc TEMAC_tx_enable 1 4 2 NJ 290 1670
-preplace netloc TEMAC_m_axis_rx 1 4 1 1280 -210n
-preplace netloc TEMAC_mdio_external 1 4 3 NJ 90 NJ 90 NJ
-preplace netloc TEMAC_rgmii 1 4 3 1300 -70 1680 0 N
-preplace netloc TEMAC_rgmii_status 1 3 2 850 -70 1200
-preplace netloc TEMAC_rx_statistics 1 3 2 870 -560 1220
-preplace netloc TEMAC_tx_statistics 1 3 2 880 -550 1210
-preplace netloc axis_RX_data_fifo_M_AXIS 1 5 2 1680J -190 NJ
-preplace netloc axis_dwidth_converter_0_M_AXIS 1 2 2 N -150 840
-preplace netloc s_axi_1 1 0 4 NJ 40 NJ 40 550 140 N
-preplace netloc s_axis_txd_1 1 0 2 NJ -190 270J
-levelinfo -pg 1 -440 120 420 660 1040 1500 1860 2020
-pagesize -pg 1 -db -bbox -sgen -620 -590 2560 1210
+preplace netloc util_vector_logic_0_Res 1 1 3 270J -320 N -320 N
+preplace netloc util_vector_logic_1_Res 1 4 2 1440 -250 1740
+preplace netloc TEMAC_m_axis_rx 1 4 1 1390 -450n
+preplace netloc TEMAC_mdio_external 1 4 3 1440J 40 NJ 40 NJ
+preplace netloc TEMAC_rgmii 1 4 3 1410 0 N 0 N
+preplace netloc axis_TX_data_fifo1_M_AXIS 1 5 2 NJ -120 2130
+preplace netloc axis_dwidth_converter_0_M_AXIS 1 2 2 N -140 1020
+preplace netloc s_axi_1 1 0 4 NJ 40 NJ 40 550 90 N
+preplace netloc s_axis_txd_1 1 0 2 -40J -170 NJ
+levelinfo -pg 1 -440 110 410 660 1190 1590 2030 2160
+pagesize -pg 1 -db -bbox -sgen -620 -590 2560 1470
 "
 }
 {
    "da_board_cnt":"3",
-   "da_clkrst_cnt":"5"
+   "da_clkrst_cnt":"7"
 }

@@ -1,4 +1,4 @@
-verilog xil_defaultlib --include "../../../ipstatic" \
+verilog xil_defaultlib --include "D:/Xilinx/Vivado/2024.2/data/xilinx_vip/include" --include "../../../ipstatic" \
 "../../../../final_prj_pl.gen/sources_1/ip/system_clock/system_clock_clk_wiz.v" \
 "../../../../final_prj_pl.gen/sources_1/ip/system_clock/system_clock.v" \
 

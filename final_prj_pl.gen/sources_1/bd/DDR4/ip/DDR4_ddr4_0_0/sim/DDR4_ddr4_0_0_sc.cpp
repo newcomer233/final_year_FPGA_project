@@ -94,9 +94,9 @@ DDR4_ddr4_0_0_sc::DDR4_ddr4_0_0_sc(const sc_core::sc_module_name& nm) : sc_core:
     model_param_props.addLong("CAL_INPUT_CLK_PERIOD", "4998");
     model_param_props.addLong("C0.DDR4_CLKIN_PERIOD", "4998");
     model_param_props.addLong("C0.DDR4_DCI_CASCADE_CUTOFF", "938");
-    model_param_props.addLong("C0.DDR4_AXI_ID_WIDTH", "2");
+    model_param_props.addLong("C0.DDR4_AXI_ID_WIDTH", "18");
     model_param_props.addLong("C0.DDR4_AXI_ADDR_WIDTH", "31");
-    model_param_props.addLong("C0.DDR4_AXI_DATA_WIDTH", "256");
+    model_param_props.addLong("C0.DDR4_AXI_DATA_WIDTH", "128");
     model_param_props.addLong("C0.DDR4_MEM_SIZE", "2147483648");
     model_param_props.addLong("C0.DDR4_Slot", "1");
     model_param_props.addLong("C0.APP_DATA_WIDTH", "256");

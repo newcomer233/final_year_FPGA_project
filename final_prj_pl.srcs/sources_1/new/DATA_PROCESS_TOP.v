@@ -30,6 +30,9 @@ module DATA_PROCESS_TOP(
     //IMU data interface
     input           imu_data_valid,
     input [111:0]   imu_data,
+
+    input           imu_data_valid_2,
+    input [111:0]   imu_data_2,
     //UDP data interface
     output   [7:0]   sensor_data_tdata,
     output           sensor_data_tkeep,
@@ -40,7 +43,51 @@ module DATA_PROCESS_TOP(
 
     output           transmit_enable,
     input            transmit_busy,
-    output  [15:0]   udp_data_length
+    output  [15:0]   udp_data_length,
+    //DDR4 interface
+        //ADC AXI interface
+    output  [31:0]   ADC_AXI_awaddr,
+    input            ADC_AXI_awready,
+    output           ADC_AXI_awvalid,
+
+    input            ADC_AXI_bid,
+    output           ADC_AXI_bready,
+    input   [1:0]    ADC_AXI_bresp,
+    input            ADC_AXI_bvalid,
+
+    output  [127:0]  ADC_AXI_wdata,
+    output           ADC_AXI_wlast,
+    input            ADC_AXI_wready,
+    output           ADC_AXI_wvalid,
+        //IMU AXI interface
+    output [31:0]    IMU_AXI0_awaddr,
+    input            IMU_AXI0_awready,
+    output           IMU_AXI0_awvalid,
+
+    input            IMU_AXI0_bid,
+    output           IMU_AXI0_bready,
+    input   [1:0]    IMU_AXI0_bresp,
+    input            IMU_AXI0_bvalid,
+
+    output  [127:0]  IMU_AXI0_wdata,
+    output           IMU_AXI0_wlast,
+    input            IMU_AXI0_wready,
+    output           IMU_AXI0_wvalid,
+        //IMU AXI interface
+    output [31:0]    IMU_AXI1_awaddr,
+    input            IMU_AXI1_awready,
+    output           IMU_AXI1_awvalid,
+
+    input            IMU_AXI1_bid,
+    output           IMU_AXI1_bready,
+    input   [1:0]    IMU_AXI1_bresp,
+    input            IMU_AXI1_bvalid,
+
+    output  [127:0]  IMU_AXI1_wdata,
+    output           IMU_AXI1_wlast,
+    input            IMU_AXI1_wready,
+    output           IMU_AXI1_wvalid
+
     );
     DATA_TO_UDP DATA_TO_UDP(
     //System clock
@@ -52,6 +99,10 @@ module DATA_PROCESS_TOP(
     //IMU data interface
     .imu_data_valid(imu_data_valid),
     .imu_data(imu_data),
+    
+    .imu_data_valid_2(imu_data_valid_2),
+    .imu_data_2(imu_data_2),
+
     //UDP data interface
     .sensor_data_tdata  (sensor_data_tdata ),
     .sensor_data_tkeep  (sensor_data_tkeep ),
@@ -63,4 +114,64 @@ module DATA_PROCESS_TOP(
     .transmit_busy      (transmit_busy),
     .udp_data_length    (udp_data_length)
     );
+
+
+    DATA_TO_DDR DATA_TO_DDR(
+    //System clock
+    .sysclk_200m(sysclk_200m),
+    .axi_rstn(axi_rstn),
+    //ADC data interface
+    .adc_data(adc_data),
+    .adc_data_valid(adc_data_valid),
+    //IMU data interface
+    .imu_data_valid(imu_data_valid),
+    .imu_data(imu_data),
+
+    .imu_data_valid_2(imu_data_valid_2),
+    .imu_data_2(imu_data_2),
+    //DDR4 interface
+        //ADC AXI interface
+    .ADC_AXI_awaddr  (ADC_AXI_awaddr),
+    .ADC_AXI_awready (ADC_AXI_awready),
+    .ADC_AXI_awvalid (ADC_AXI_awvalid),
+
+    .ADC_AXI_bid     (ADC_AXI_bid),
+    .ADC_AXI_bready  (ADC_AXI_bready),
+    .ADC_AXI_bresp   (ADC_AXI_bresp),
+    .ADC_AXI_bvalid  (ADC_AXI_bvalid),
+
+    .ADC_AXI_wdata   (ADC_AXI_wdata),
+    .ADC_AXI_wlast   (ADC_AXI_wlast),
+    .ADC_AXI_wready  (ADC_AXI_wready),
+    .ADC_AXI_wvalid  (ADC_AXI_wvalid),
+        //IMU AXI interface
+    .IMU_AXI0_awaddr  (IMU_AXI0_awaddr),
+    .IMU_AXI0_awready (IMU_AXI0_awready),
+    .IMU_AXI0_awvalid (IMU_AXI0_awvalid),
+
+    .IMU_AXI0_bid     (IMU_AXI0_bid),
+    .IMU_AXI0_bready  (IMU_AXI0_bready),
+    .IMU_AXI0_bresp   (IMU_AXI0_bresp),
+    .IMU_AXI0_bvalid  (IMU_AXI0_bvalid),
+
+    .IMU_AXI0_wdata   (IMU_AXI0_wdata),
+    .IMU_AXI0_wlast   (IMU_AXI0_wlast),
+    .IMU_AXI0_wready  (IMU_AXI0_wready),
+    .IMU_AXI0_wvalid  (IMU_AXI0_wvalid),
+        //IMU AXI interface
+    .IMU_AXI1_awaddr  (IMU_AXI1_awaddr),
+    .IMU_AXI1_awready (IMU_AXI1_awready),
+    .IMU_AXI1_awvalid (IMU_AXI1_awvalid),
+
+    .IMU_AXI1_bid     (IMU_AXI1_bid),
+    .IMU_AXI1_bready  (IMU_AXI1_bready),
+    .IMU_AXI1_bresp   (IMU_AXI1_bresp),
+    .IMU_AXI1_bvalid  (IMU_AXI1_bvalid),
+
+    .IMU_AXI1_wdata   (IMU_AXI1_wdata),
+    .IMU_AXI1_wlast   (IMU_AXI1_wlast),
+    .IMU_AXI1_wready  (IMU_AXI1_wready),
+    .IMU_AXI1_wvalid  (IMU_AXI1_wvalid)
+    );
+
 endmodule

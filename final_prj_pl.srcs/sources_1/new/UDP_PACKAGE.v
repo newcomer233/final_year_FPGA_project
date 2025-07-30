@@ -54,7 +54,7 @@ module UDP_PACKAGE(
 
 // ================= Payload ====================== //
 wire [15:0] payload_len; // 输入：你的 payload 长度
-assign payload_len=tx_data_length;
+assign payload_len=16'd44;
 // ================= Ethernet Header ================= //
 localparam [47:0] ETH_DST_MAC = 48'hFF_FF_FF_FF_FF_FF;
 localparam [47:0] ETH_SRC_MAC = 48'hAA_BB_CC_DD_EE_FF;
@@ -89,7 +89,8 @@ assign UDP_LENGTH = 16'd8 + payload_len; // 8 bytes for UDP header
 // wire [15:0] sum1_folded = sum1[16] ? (sum1[15:0] + 1) : sum1[15:0];
 // wire [15:0] IPV4_CHECKSUM = ~sum1_folded;
 
-assign IPV4_CHECKSUM = ~(((16'h47D2 + (28 + payload_len)) & 16'hFFFF) + ((16'h47D2 + (28 + payload_len)) >> 16));
+// assign IPV4_CHECKSUM = ~(((16'h47D2 + (28 + payload_len)) & 16'hFFFF) + ((16'h47D2 + (28 + payload_len)) >> 16));
+assign IPV4_CHECKSUM = 16'hB7E5;
 wire [335:0] eth_header;
 assign eth_header = {
     // UDP Header (8 bytes)

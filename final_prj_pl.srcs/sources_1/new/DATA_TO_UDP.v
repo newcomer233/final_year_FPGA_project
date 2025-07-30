@@ -30,6 +30,9 @@ module DATA_TO_UDP(
     //IMU data interface
     input           imu_data_valid,
     input [111:0]   imu_data,
+
+    input           imu_data_valid_2,
+    input [111:0]   imu_data_2,
     //UDP data interface
     output   [7:0]   sensor_data_tdata,
     output           sensor_data_tkeep,
@@ -44,14 +47,17 @@ module DATA_TO_UDP(
     );
     localparam UDP_DATA_LENGTH = 128/8;
     localparam UDP_IMU_DATA_LENGTH = 112/8;
-    assign udp_data_length = UDP_DATA_LENGTH + UDP_IMU_DATA_LENGTH;
+    localparam UDP_IMU_DATA_LENGTH_2 = 112/8;
+    assign udp_data_length = UDP_DATA_LENGTH + UDP_IMU_DATA_LENGTH + UDP_IMU_DATA_LENGTH_2;
     assign sensor_data_tuser = 1'b0; // no error, no last packet
     
     reg [127:0]     udp_adc_data_reg;
     reg             udp_adc_data_valid;
     reg [111:0]     udp_imu_data_reg;
     reg             udp_imu_data_valid;
-    reg [239:0]     udp_data_reg;
+    reg [111:0]     udp_imu_data_reg_2;
+    reg             udp_imu_data_valid_2;
+    reg [351:0]     udp_data_reg;
 
     // change ADC data to UDP liitle endian,
     always@(posedge sysclk_200m or negedge axi_rstn) begin
@@ -93,13 +99,33 @@ module DATA_TO_UDP(
             end
         end
     end
+    // change IMU data 2 to UDP liitle endian,
+    always@(posedge sysclk_200m or negedge axi_rstn) begin
+        if(!axi_rstn) begin 
+            udp_imu_data_reg_2 <= 112'h0;
+            udp_imu_data_valid_2 <= 1'b0;
+        end
+        else begin
+            if (imu_data_valid_2) begin
+                udp_imu_data_reg_2 <= {imu_data_2[7:0], imu_data_2[15:8], imu_data_2[23:16], imu_data_2[31:24],
+                                     imu_data_2[39:32], imu_data_2[47:40], imu_data_2[55:48], imu_data_2[63:56],
+                                     imu_data_2[71:64], imu_data_2[79:72], imu_data_2[87:80], imu_data_2[95:88],
+                                     imu_data_2[103:96], imu_data_2[111:104]};
+                udp_imu_data_valid_2 <= 1'b1;
+            end
+            else begin
+                udp_imu_data_reg_2 <= udp_imu_data_reg_2;
+                udp_imu_data_valid_2 <= 1'b0;
+            end
+        end
+    end
     //UDP data mixing
     // reg UDP_adc_flag;
     // reg UDP_imu_flag;
     reg udp_data_valid;
     always@(posedge sysclk_200m or negedge axi_rstn) begin
         if(!axi_rstn) begin 
-            udp_data_reg <= 238'd0000_0000_0000_0000;
+            udp_data_reg <= 352'd0000_0000_0000_0000_0000_0000_0000_0000;
             udp_data_valid <= 1'b0;
         end
         else begin
@@ -107,10 +133,11 @@ module DATA_TO_UDP(
             else udp_data_reg[127:0] <=128'd0;
             if (udp_imu_data_valid) udp_data_reg[239:128]  <= udp_imu_data_reg;
             else udp_data_reg[239:128] <= 112'd0;
+            if (udp_imu_data_valid_2) udp_data_reg[351:240] <= udp_imu_data_reg_2;
+            else udp_data_reg[351:240] <= 112'd0;
 
-            if (udp_imu_data_valid || udp_adc_data_valid) udp_data_valid <=1'b1;
+            if (udp_imu_data_valid || udp_adc_data_valid || udp_imu_data_valid_2) udp_data_valid <=1'b1;
             else udp_data_valid <= 1'b0;
-
         end
     end
     //UDP data fifo 
@@ -127,14 +154,38 @@ module DATA_TO_UDP(
     //         endcase
     //     end
     // end
+    reg[31:0] gap_counter;
     always @(posedge sysclk_200m) begin
-        if(prog_empty==1'b0 && transmit_busy ==1'b0) transmit_enable <= 1'b1;
-        else transmit_enable <= 1'b0;
+        if(axi_rstn == 1'b0) begin
+            gap_counter <= 32'd0;
+            transmit_enable <= 1'b0;
+        end
+        else begin 
+            if(transmit_busy ==1'b0)
+                if (gap_counter >= 32'd20) begin 
+                    if(prog_empty==1'b0 ) begin 
+                        transmit_enable <= 1'b1;
+                        gap_counter <= 32'd0;
+                    end
+                    else begin 
+                        transmit_enable <= 1'b0;
+                        gap_counter <= gap_counter;
+                    end
+                end
+                else begin
+                    transmit_enable <= 1'b0;
+                    gap_counter <= gap_counter + 'd1;
+                end
+            else begin
+                transmit_enable <= 1'b0;
+                gap_counter <= 32'd0;
+            end
+        end
     end
-    wire [239:0] m_axis_tdata ;
+    wire [351:0] m_axis_tdata ;
     wire m_axis_tvalid;
     wire m_axis_tready;
-    wire [29:0]m_axis_tkeep ;
+    wire [43:0]m_axis_tkeep ;
     wire m_axis_tlast ;
 
     data_to_udp_fifo data_to_udp_fifo(
@@ -144,7 +195,7 @@ module DATA_TO_UDP(
         // data interface
         .s_axis_tdata   (udp_data_reg),
         .s_axis_tvalid  (udp_data_valid),
-        .s_axis_tkeep   (30'h3FFFFFFF), // 30 bytes, all valid
+        .s_axis_tkeep   (44'hFFF_FFFF_FFFF), // 44 bytes, all valid
         .s_axis_tready  (),
         .s_axis_tlast   (1'b1), // all last packet
 

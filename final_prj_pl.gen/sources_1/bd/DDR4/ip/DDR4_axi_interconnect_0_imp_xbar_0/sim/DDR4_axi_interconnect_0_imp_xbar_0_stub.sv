@@ -68,7 +68,7 @@ typedef bit bit_as_bool;
 module DDR4_axi_interconnect_0_imp_xbar_0 (
   input bit_as_bool aclk,
   input bit_as_bool aresetn,
-  input bit [7 : 0] s_axi_awid,
+  input bit [71 : 0] s_axi_awid,
   input bit [159 : 0] s_axi_awaddr,
   input bit [31 : 0] s_axi_awlen,
   input bit [11 : 0] s_axi_awsize,
@@ -77,18 +77,19 @@ module DDR4_axi_interconnect_0_imp_xbar_0 (
   input bit [15 : 0] s_axi_awcache,
   input bit [11 : 0] s_axi_awprot,
   input bit [15 : 0] s_axi_awqos,
+  input bit [63 : 0] s_axi_awuser,
   input bit [3 : 0] s_axi_awvalid,
   output bit [3 : 0] s_axi_awready,
-  input bit [1023 : 0] s_axi_wdata,
-  input bit [127 : 0] s_axi_wstrb,
+  input bit [511 : 0] s_axi_wdata,
+  input bit [63 : 0] s_axi_wstrb,
   input bit [3 : 0] s_axi_wlast,
   input bit [3 : 0] s_axi_wvalid,
   output bit [3 : 0] s_axi_wready,
-  output bit [7 : 0] s_axi_bid,
+  output bit [71 : 0] s_axi_bid,
   output bit [7 : 0] s_axi_bresp,
   output bit [3 : 0] s_axi_bvalid,
   input bit [3 : 0] s_axi_bready,
-  input bit [7 : 0] s_axi_arid,
+  input bit [71 : 0] s_axi_arid,
   input bit [159 : 0] s_axi_araddr,
   input bit [31 : 0] s_axi_arlen,
   input bit [11 : 0] s_axi_arsize,
@@ -97,15 +98,16 @@ module DDR4_axi_interconnect_0_imp_xbar_0 (
   input bit [15 : 0] s_axi_arcache,
   input bit [11 : 0] s_axi_arprot,
   input bit [15 : 0] s_axi_arqos,
+  input bit [63 : 0] s_axi_aruser,
   input bit [3 : 0] s_axi_arvalid,
   output bit [3 : 0] s_axi_arready,
-  output bit [7 : 0] s_axi_rid,
-  output bit [1023 : 0] s_axi_rdata,
+  output bit [71 : 0] s_axi_rid,
+  output bit [511 : 0] s_axi_rdata,
   output bit [7 : 0] s_axi_rresp,
   output bit [3 : 0] s_axi_rlast,
   output bit [3 : 0] s_axi_rvalid,
   input bit [3 : 0] s_axi_rready,
-  output bit [1 : 0] m_axi_awid,
+  output bit [17 : 0] m_axi_awid,
   output bit [39 : 0] m_axi_awaddr,
   output bit [7 : 0] m_axi_awlen,
   output bit [2 : 0] m_axi_awsize,
@@ -115,18 +117,19 @@ module DDR4_axi_interconnect_0_imp_xbar_0 (
   output bit [2 : 0] m_axi_awprot,
   output bit [3 : 0] m_axi_awregion,
   output bit [3 : 0] m_axi_awqos,
+  output bit [15 : 0] m_axi_awuser,
   output bit [0 : 0] m_axi_awvalid,
   input bit [0 : 0] m_axi_awready,
-  output bit [255 : 0] m_axi_wdata,
-  output bit [31 : 0] m_axi_wstrb,
+  output bit [127 : 0] m_axi_wdata,
+  output bit [15 : 0] m_axi_wstrb,
   output bit [0 : 0] m_axi_wlast,
   output bit [0 : 0] m_axi_wvalid,
   input bit [0 : 0] m_axi_wready,
-  input bit [1 : 0] m_axi_bid,
+  input bit [17 : 0] m_axi_bid,
   input bit [1 : 0] m_axi_bresp,
   input bit [0 : 0] m_axi_bvalid,
   output bit [0 : 0] m_axi_bready,
-  output bit [1 : 0] m_axi_arid,
+  output bit [17 : 0] m_axi_arid,
   output bit [39 : 0] m_axi_araddr,
   output bit [7 : 0] m_axi_arlen,
   output bit [2 : 0] m_axi_arsize,
@@ -136,10 +139,11 @@ module DDR4_axi_interconnect_0_imp_xbar_0 (
   output bit [2 : 0] m_axi_arprot,
   output bit [3 : 0] m_axi_arregion,
   output bit [3 : 0] m_axi_arqos,
+  output bit [15 : 0] m_axi_aruser,
   output bit [0 : 0] m_axi_arvalid,
   input bit [0 : 0] m_axi_arready,
-  input bit [1 : 0] m_axi_rid,
-  input bit [255 : 0] m_axi_rdata,
+  input bit [17 : 0] m_axi_rid,
+  input bit [127 : 0] m_axi_rdata,
   input bit [1 : 0] m_axi_rresp,
   input bit [0 : 0] m_axi_rlast,
   input bit [0 : 0] m_axi_rvalid,
@@ -150,12 +154,12 @@ endmodule
 
 `ifdef XCELIUM
 (* XMSC_MODULE_EXPORT *)
-module DDR4_axi_interconnect_0_imp_xbar_0 (aclk,aresetn,s_axi_awid,s_axi_awaddr,s_axi_awlen,s_axi_awsize,s_axi_awburst,s_axi_awlock,s_axi_awcache,s_axi_awprot,s_axi_awqos,s_axi_awvalid,s_axi_awready,s_axi_wdata,s_axi_wstrb,s_axi_wlast,s_axi_wvalid,s_axi_wready,s_axi_bid,s_axi_bresp,s_axi_bvalid,s_axi_bready,s_axi_arid,s_axi_araddr,s_axi_arlen,s_axi_arsize,s_axi_arburst,s_axi_arlock,s_axi_arcache,s_axi_arprot,s_axi_arqos,s_axi_arvalid,s_axi_arready,s_axi_rid,s_axi_rdata,s_axi_rresp,s_axi_rlast,s_axi_rvalid,s_axi_rready,m_axi_awid,m_axi_awaddr,m_axi_awlen,m_axi_awsize,m_axi_awburst,m_axi_awlock,m_axi_awcache,m_axi_awprot,m_axi_awregion,m_axi_awqos,m_axi_awvalid,m_axi_awready,m_axi_wdata,m_axi_wstrb,m_axi_wlast,m_axi_wvalid,m_axi_wready,m_axi_bid,m_axi_bresp,m_axi_bvalid,m_axi_bready,m_axi_arid,m_axi_araddr,m_axi_arlen,m_axi_arsize,m_axi_arburst,m_axi_arlock,m_axi_arcache,m_axi_arprot,m_axi_arregion,m_axi_arqos,m_axi_arvalid,m_axi_arready,m_axi_rid,m_axi_rdata,m_axi_rresp,m_axi_rlast,m_axi_rvalid,m_axi_rready)
+module DDR4_axi_interconnect_0_imp_xbar_0 (aclk,aresetn,s_axi_awid,s_axi_awaddr,s_axi_awlen,s_axi_awsize,s_axi_awburst,s_axi_awlock,s_axi_awcache,s_axi_awprot,s_axi_awqos,s_axi_awuser,s_axi_awvalid,s_axi_awready,s_axi_wdata,s_axi_wstrb,s_axi_wlast,s_axi_wvalid,s_axi_wready,s_axi_bid,s_axi_bresp,s_axi_bvalid,s_axi_bready,s_axi_arid,s_axi_araddr,s_axi_arlen,s_axi_arsize,s_axi_arburst,s_axi_arlock,s_axi_arcache,s_axi_arprot,s_axi_arqos,s_axi_aruser,s_axi_arvalid,s_axi_arready,s_axi_rid,s_axi_rdata,s_axi_rresp,s_axi_rlast,s_axi_rvalid,s_axi_rready,m_axi_awid,m_axi_awaddr,m_axi_awlen,m_axi_awsize,m_axi_awburst,m_axi_awlock,m_axi_awcache,m_axi_awprot,m_axi_awregion,m_axi_awqos,m_axi_awuser,m_axi_awvalid,m_axi_awready,m_axi_wdata,m_axi_wstrb,m_axi_wlast,m_axi_wvalid,m_axi_wready,m_axi_bid,m_axi_bresp,m_axi_bvalid,m_axi_bready,m_axi_arid,m_axi_araddr,m_axi_arlen,m_axi_arsize,m_axi_arburst,m_axi_arlock,m_axi_arcache,m_axi_arprot,m_axi_arregion,m_axi_arqos,m_axi_aruser,m_axi_arvalid,m_axi_arready,m_axi_rid,m_axi_rdata,m_axi_rresp,m_axi_rlast,m_axi_rvalid,m_axi_rready)
 (* integer foreign = "SystemC";
 *);
   input bit aclk;
   input bit aresetn;
-  input bit [7 : 0] s_axi_awid;
+  input bit [71 : 0] s_axi_awid;
   input bit [159 : 0] s_axi_awaddr;
   input bit [31 : 0] s_axi_awlen;
   input bit [11 : 0] s_axi_awsize;
@@ -164,18 +168,19 @@ module DDR4_axi_interconnect_0_imp_xbar_0 (aclk,aresetn,s_axi_awid,s_axi_awaddr,
   input bit [15 : 0] s_axi_awcache;
   input bit [11 : 0] s_axi_awprot;
   input bit [15 : 0] s_axi_awqos;
+  input bit [63 : 0] s_axi_awuser;
   input bit [3 : 0] s_axi_awvalid;
   output wire [3 : 0] s_axi_awready;
-  input bit [1023 : 0] s_axi_wdata;
-  input bit [127 : 0] s_axi_wstrb;
+  input bit [511 : 0] s_axi_wdata;
+  input bit [63 : 0] s_axi_wstrb;
   input bit [3 : 0] s_axi_wlast;
   input bit [3 : 0] s_axi_wvalid;
   output wire [3 : 0] s_axi_wready;
-  output wire [7 : 0] s_axi_bid;
+  output wire [71 : 0] s_axi_bid;
   output wire [7 : 0] s_axi_bresp;
   output wire [3 : 0] s_axi_bvalid;
   input bit [3 : 0] s_axi_bready;
-  input bit [7 : 0] s_axi_arid;
+  input bit [71 : 0] s_axi_arid;
   input bit [159 : 0] s_axi_araddr;
   input bit [31 : 0] s_axi_arlen;
   input bit [11 : 0] s_axi_arsize;
@@ -184,15 +189,16 @@ module DDR4_axi_interconnect_0_imp_xbar_0 (aclk,aresetn,s_axi_awid,s_axi_awaddr,
   input bit [15 : 0] s_axi_arcache;
   input bit [11 : 0] s_axi_arprot;
   input bit [15 : 0] s_axi_arqos;
+  input bit [63 : 0] s_axi_aruser;
   input bit [3 : 0] s_axi_arvalid;
   output wire [3 : 0] s_axi_arready;
-  output wire [7 : 0] s_axi_rid;
-  output wire [1023 : 0] s_axi_rdata;
+  output wire [71 : 0] s_axi_rid;
+  output wire [511 : 0] s_axi_rdata;
   output wire [7 : 0] s_axi_rresp;
   output wire [3 : 0] s_axi_rlast;
   output wire [3 : 0] s_axi_rvalid;
   input bit [3 : 0] s_axi_rready;
-  output wire [1 : 0] m_axi_awid;
+  output wire [17 : 0] m_axi_awid;
   output wire [39 : 0] m_axi_awaddr;
   output wire [7 : 0] m_axi_awlen;
   output wire [2 : 0] m_axi_awsize;
@@ -202,18 +208,19 @@ module DDR4_axi_interconnect_0_imp_xbar_0 (aclk,aresetn,s_axi_awid,s_axi_awaddr,
   output wire [2 : 0] m_axi_awprot;
   output wire [3 : 0] m_axi_awregion;
   output wire [3 : 0] m_axi_awqos;
+  output wire [15 : 0] m_axi_awuser;
   output wire [0 : 0] m_axi_awvalid;
   input bit [0 : 0] m_axi_awready;
-  output wire [255 : 0] m_axi_wdata;
-  output wire [31 : 0] m_axi_wstrb;
+  output wire [127 : 0] m_axi_wdata;
+  output wire [15 : 0] m_axi_wstrb;
   output wire [0 : 0] m_axi_wlast;
   output wire [0 : 0] m_axi_wvalid;
   input bit [0 : 0] m_axi_wready;
-  input bit [1 : 0] m_axi_bid;
+  input bit [17 : 0] m_axi_bid;
   input bit [1 : 0] m_axi_bresp;
   input bit [0 : 0] m_axi_bvalid;
   output wire [0 : 0] m_axi_bready;
-  output wire [1 : 0] m_axi_arid;
+  output wire [17 : 0] m_axi_arid;
   output wire [39 : 0] m_axi_araddr;
   output wire [7 : 0] m_axi_arlen;
   output wire [2 : 0] m_axi_arsize;
@@ -223,10 +230,11 @@ module DDR4_axi_interconnect_0_imp_xbar_0 (aclk,aresetn,s_axi_awid,s_axi_awaddr,
   output wire [2 : 0] m_axi_arprot;
   output wire [3 : 0] m_axi_arregion;
   output wire [3 : 0] m_axi_arqos;
+  output wire [15 : 0] m_axi_aruser;
   output wire [0 : 0] m_axi_arvalid;
   input bit [0 : 0] m_axi_arready;
-  input bit [1 : 0] m_axi_rid;
-  input bit [255 : 0] m_axi_rdata;
+  input bit [17 : 0] m_axi_rid;
+  input bit [127 : 0] m_axi_rdata;
   input bit [1 : 0] m_axi_rresp;
   input bit [0 : 0] m_axi_rlast;
   input bit [0 : 0] m_axi_rvalid;

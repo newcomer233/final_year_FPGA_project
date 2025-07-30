@@ -67,7 +67,7 @@
 //*****************************************************************************
 
 `timescale 1ns/1ps
-(* CORE_GENERATION_INFO = "DDR4_SDRAM, DDR4_SDRAM,{x_ipProduct=Vivado 2017.2.0,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=DDR4_SDRAM,x_ipVersion=2.2, Controller_Type = DDR4_SDRAM, Time_Period = 833, Input_Clock_Period = 4998, Memory_Type = Components, Memory_Part = MT40A512M16HA-083E, Ecc = false, Cas_Latency = 18, Cas_Write_Latency = 12, DQ_Width = 32, Chip_Select = true, Data_Mask = DM_NO_DBI, MEM_ADDR_ORDER = ROW_COLUMN_BANK,  Is_AXI_Enabled = true , Slot_cofiguration =  Single , Clamshell_cofiguration =  false ,IS_FASTER_SPEED_RAM = No, Is_custom_part = false, Memory_Voltage = 1.2V, Phy_Only = Complete_Memory_Controller, Debug_Port = Disable, Burst_Length = 8, System_Clock = No_Buffer, AXI_Selection = true, AXI_Data_Width = 256,  AXI_ArbitrationScheme = RD_PRI_REG, AXI_Narrow_Burst = true, Simulation_Mode = BFM, Debug_Mode = Disable, Example_TG = SIMPLE_TG, Self_Refresh = false, Save_Restore = false, Enable_LVAUX = false,MicroBlaze_ECC = false,  Specify_MandD = false, CLKBOUT_MULT = 15, DIVCLK_DIVIDE = 2, CLKOUT0_DIVIDE = 5}" *) 
+(* CORE_GENERATION_INFO = "DDR4_SDRAM, DDR4_SDRAM,{x_ipProduct=Vivado 2017.2.0,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=DDR4_SDRAM,x_ipVersion=2.2, Controller_Type = DDR4_SDRAM, Time_Period = 833, Input_Clock_Period = 4998, Memory_Type = Components, Memory_Part = MT40A512M16HA-083E, Ecc = false, Cas_Latency = 18, Cas_Write_Latency = 12, DQ_Width = 32, Chip_Select = true, Data_Mask = DM_NO_DBI, MEM_ADDR_ORDER = ROW_COLUMN_BANK,  Is_AXI_Enabled = true , Slot_cofiguration =  Single , Clamshell_cofiguration =  false ,IS_FASTER_SPEED_RAM = No, Is_custom_part = false, Memory_Voltage = 1.2V, Phy_Only = Complete_Memory_Controller, Debug_Port = Disable, Burst_Length = 8, System_Clock = No_Buffer, AXI_Selection = true, AXI_Data_Width = 128,  AXI_ArbitrationScheme = RD_PRI_REG, AXI_Narrow_Burst = true, Simulation_Mode = BFM, Debug_Mode = Disable, Example_TG = SIMPLE_TG, Self_Refresh = false, Save_Restore = false, Enable_LVAUX = false,MicroBlaze_ECC = false,  Specify_MandD = false, CLKBOUT_MULT = 15, DIVCLK_DIVIDE = 2, CLKOUT0_DIVIDE = 5}" *) 
 (* X_CORE_INFO = "ddr4_v2_2_26,Vivado 2024.2.2" *)
 (* dont_touch = "true" *) module DDR4_ddr4_0_0
    (
@@ -97,7 +97,7 @@
 
    // Slave Interface Write Address Ports
    input                 c0_ddr4_aresetn,
-   input  [1:0]      c0_ddr4_s_axi_awid,
+   input  [17:0]      c0_ddr4_s_axi_awid,
    input  [30:0]    c0_ddr4_s_axi_awaddr,
    input  [7:0]                       c0_ddr4_s_axi_awlen,
    input  [2:0]                       c0_ddr4_s_axi_awsize,
@@ -109,18 +109,18 @@
    input                              c0_ddr4_s_axi_awvalid,
    output                             c0_ddr4_s_axi_awready,
    // Slave Interface Write Data Ports
-   input  [255:0]    c0_ddr4_s_axi_wdata,
-   input  [31:0]  c0_ddr4_s_axi_wstrb,
+   input  [127:0]    c0_ddr4_s_axi_wdata,
+   input  [15:0]  c0_ddr4_s_axi_wstrb,
    input                              c0_ddr4_s_axi_wlast,
    input                              c0_ddr4_s_axi_wvalid,
    output                             c0_ddr4_s_axi_wready,
    // Slave Interface Write Response Ports
    input                              c0_ddr4_s_axi_bready,
-   output [1:0]      c0_ddr4_s_axi_bid,
+   output [17:0]      c0_ddr4_s_axi_bid,
    output [1:0]                       c0_ddr4_s_axi_bresp,
    output                             c0_ddr4_s_axi_bvalid,
    // Slave Interface Read Address Ports
-   input  [1:0]      c0_ddr4_s_axi_arid,
+   input  [17:0]      c0_ddr4_s_axi_arid,
    input  [30:0]    c0_ddr4_s_axi_araddr,
    input  [7:0]                       c0_ddr4_s_axi_arlen,
    input  [2:0]                       c0_ddr4_s_axi_arsize,
@@ -133,8 +133,8 @@
    output                             c0_ddr4_s_axi_arready,
    // Slave Interface Read Data Ports
    input                              c0_ddr4_s_axi_rready,
-   output [1:0]      c0_ddr4_s_axi_rid,
-   output [255:0]    c0_ddr4_s_axi_rdata,
+   output [17:0]      c0_ddr4_s_axi_rid,
+   output [127:0]    c0_ddr4_s_axi_rdata,
    output [1:0]                       c0_ddr4_s_axi_rresp,
    output                             c0_ddr4_s_axi_rlast,
    output                             c0_ddr4_s_axi_rvalid,

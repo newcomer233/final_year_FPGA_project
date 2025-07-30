@@ -2,10 +2,10 @@
 -- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2.2 (win64) Build 6060944 Thu Mar 06 19:10:01 MST 2025
--- Date        : Tue Jun 24 14:37:57 2025
+-- Date        : Tue Jul 22 21:35:47 2025
 -- Host        : LAPTOP-VEGJAO5A running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub -rename_top spi_tx_fifo -prefix
---               spi_tx_fifo_ spi_tx_fifo_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub
+--               e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/spi_tx_fifo/spi_tx_fifo_stub.vhdl
 -- Design      : spi_tx_fifo
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xczu9eg-ffvb1156-2-i
@@ -45,7 +45,7 @@ architecture stub of spi_tx_fifo is
   attribute x_interface_mode : string;
   attribute x_interface_mode of s_aclk : signal is "slave slave_aclk";
   attribute x_interface_parameter : string;
-  attribute x_interface_parameter of s_aclk : signal is "XIL_INTERFACENAME slave_aclk, ASSOCIATED_BUSIF S_AXIS:S_AXI, ASSOCIATED_RESET s_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, INSERT_VIP 0";
+  attribute x_interface_parameter of s_aclk : signal is "XIL_INTERFACENAME slave_aclk, ASSOCIATED_BUSIF S_AXIS:S_AXI, ASSOCIATED_RESET s_aresetn, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, INSERT_VIP 0";
   attribute x_interface_info of s_aresetn : signal is "xilinx.com:signal:reset:1.0 slave_aresetn RST";
   attribute x_interface_mode of s_aresetn : signal is "slave slave_aresetn";
   attribute x_interface_parameter of s_aresetn : signal is "XIL_INTERFACENAME slave_aresetn, POLARITY ACTIVE_LOW, INSERT_VIP 0";

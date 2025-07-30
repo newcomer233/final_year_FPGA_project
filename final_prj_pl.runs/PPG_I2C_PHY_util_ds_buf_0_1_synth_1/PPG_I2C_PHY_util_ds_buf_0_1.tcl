@@ -57,9 +57,8 @@ if {$::dispatch::connected} {
 
 OPTRACE "PPG_I2C_PHY_util_ds_buf_0_1_synth_1" START { ROLLUP_AUTO }
 set_param general.maxThreads 16
-set_param chipscope.maxJobs 8
-set_msg_config  -id {[BD 41-1271]}  -suppress 
 set_msg_config  -id {[BD 41-1306]}  -suppress 
+set_msg_config  -id {[BD 41-1271]}  -suppress 
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
@@ -71,14 +70,14 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir E:/final_prj/final_prj_pl/final_prj_pl.cache/wt [current_project]
 set_property parent.project_path E:/final_prj/final_prj_pl/final_prj_pl.xpr [current_project]
-set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_output_repo e:/final_prj/final_prj_pl/final_prj_pl.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet e:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_util_ds_buf_0_1/PPG_I2C_PHY_util_ds_buf_0_1.xci
+read_ip -quiet E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_util_ds_buf_0_1/PPG_I2C_PHY_util_ds_buf_0_1.xci
 set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_util_ds_buf_0_1/PPG_I2C_PHY_util_ds_buf_0_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/PPG_I2C_PHY/ip/PPG_I2C_PHY_util_ds_buf_0_1/PPG_I2C_PHY_util_ds_buf_0_1_board.xdc]
 

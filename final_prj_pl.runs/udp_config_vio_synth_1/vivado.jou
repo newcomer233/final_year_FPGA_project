@@ -3,8 +3,8 @@
 # SW Build 6060944 on Thu Mar 06 19:10:01 MST 2025
 # IP Build 6050500 on Thu Mar  6 23:33:39 MST 2025
 # SharedData Build 6060542 on Thu Mar 06 10:31:07 MST 2025
-# Start of session at: Tue Jul  1 13:23:14 2025
-# Process ID         : 87056
+# Start of session at: Tue Jul 22 21:34:08 2025
+# Process ID         : 42888
 # Current directory  : E:/final_prj/final_prj_pl/final_prj_pl.runs/udp_config_vio_synth_1
 # Command line       : vivado.exe -log udp_config_vio.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source udp_config_vio.tcl
 # Log file           : E:/final_prj/final_prj_pl/final_prj_pl.runs/udp_config_vio_synth_1/udp_config_vio.vds
@@ -19,6 +19,6 @@
 # Host memory        : 102673 MB
 # Swap memory        : 6442 MB
 # Total Virtual      : 109116 MB
-# Available Virtual  : 78456 MB
+# Available Virtual  : 79942 MB
 #-----------------------------------------------------------
 source udp_config_vio.tcl -notrace

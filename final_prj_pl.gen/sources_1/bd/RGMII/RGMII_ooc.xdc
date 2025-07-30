@@ -6,9 +6,9 @@
 # This constraints file is not used in normal top-down synthesis (default flow
 # of Vivado)
 ################################################################################
-create_clock -name axis_clk -period 5 [get_ports axis_clk]
+create_clock -name axis_clk -period 10 [get_ports axis_clk]
 create_clock -name gtx_clk_125M -period 8 [get_ports gtx_clk_125M]
-create_clock -name refclk_100M -period 10 [get_ports refclk_100M]
+create_clock -name refclk_100M -period 3 [get_ports refclk_100M]
 create_clock -name rgmii_rxc -period 10 [get_ports rgmii_rxc]
 
 ################################################################################

@@ -131,7 +131,7 @@ module ADC_SPI_LINK(
         .SPI_enable (1'b1),
         .SPI_master (1'b1),
         .SPI_MODE   (2'b10),
-        .SPI_HZ     (32'd5),
+        .SPI_HZ     (32'd10),
         .bits_len   (bits_len)
         );
 

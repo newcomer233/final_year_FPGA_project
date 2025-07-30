@@ -82,9 +82,6 @@ module RGMII_tri_mode_ethernet_mac_0_0_rgmii_v2_0_if (
     input            mdio_t,
     input            mdc_i,
 
-    // Current operating speed is 10/100
-    input            speedis10100,
-
     // The following ports are the RGMII physical interface: these will be at
     // pins on the FPGA
     output     [3:0] rgmii_txd,
@@ -101,14 +98,10 @@ module RGMII_tri_mode_ethernet_mac_0_0_rgmii_v2_0_if (
 
     // The following ports are the internal GMII connections from IOB logic
     // to the TEMAC core
-    input            phy_tx_enable,
-    input            phy_tx_enable_falling,
     input      [7:0] txd_from_mac,
     input            tx_en_from_mac,
     input            tx_er_from_mac,
     input            tx_clk,
-    input            clk_div5,
-    input            clk_div5_shift,
     output     [7:0] rxd_to_mac,
     output           rx_dv_to_mac,
     output           rx_er_to_mac,
@@ -128,7 +121,7 @@ module RGMII_tri_mode_ethernet_mac_0_0_rgmii_v2_0_if (
   wire   [3:0] rgmii_rxd_ibuf;
   wire         rgmii_rx_ctl_ibuf;
   wire         rgmii_rxc_ibuf;
-  reg    [3:0] gmii_txd_falling;             // gmii_txd signal registered on the falling edge of tx_clk.
+  wire   [3:0] gmii_txd_falling;             // gmii_txd signal registered on the falling edge of tx_clk.
   wire         delay_rgmii_tx_clk_out;
   wire         delay_rgmii_tx_clk_return;
   wire         rgmii_txc_odelay;             // RGMII receiver clock ODDR output.
@@ -140,9 +133,6 @@ module RGMII_tri_mode_ethernet_mac_0_0_rgmii_v2_0_if (
   wire         rx_clk_int;
   wire         rx_clk_iddr;
   wire         rgmii_rx_ctl_reg;             // Internal RGMII receiver control signal.
-  reg          tx_en_to_ddr;
-  wire         tx_en_to_ddr_fall;
-  reg          tx_en_to_ddr_lch;
   wire         gmii_rx_dv_reg;               // gmii_rx_dv registered in IOBs.
   wire         gmii_rx_er_reg;               // gmii_rx_er registered in IOBs.
   wire   [7:0] gmii_rxd_reg;                 // gmii_rxd registered in IOBs.
@@ -238,8 +228,8 @@ module RGMII_tri_mode_ethernet_mac_0_0_rgmii_v2_0_if (
   ) rgmii_txc_ddr (
       .Q             (rgmii_txc_odelay),
       .C             (tx_clk),
-      .D1            (clk_div5_shift),
-      .D2            (clk_div5),
+      .D1            (1'b1),
+      .D2            (1'b0),
       .SR            (tx_reset)
    );
 
@@ -313,13 +303,7 @@ module RGMII_tri_mode_ethernet_mac_0_0_rgmii_v2_0_if (
    // put data and control signals through ODELAY components to
    // provide similiar net delays to those seen on the clk signal.
 
-   always @ (speedis10100, txd_from_mac)
-   begin
-      if (speedis10100 == 1'b0)
-         gmii_txd_falling     <= txd_from_mac[7:4];
-      else
-         gmii_txd_falling     <= txd_from_mac[3:0];
-   end
+   assign gmii_txd_falling = txd_from_mac[7:4];
 
 
    genvar i;
@@ -367,44 +351,6 @@ module RGMII_tri_mode_ethernet_mac_0_0_rgmii_v2_0_if (
 
 
 
-   // when the speed switches to 10/100 tx_clk is running much faster than
-   // txc and therefore the ddr needs to be controlled to prevent updates
-   // occuring at tx_clk rate
-
-   always @(posedge tx_clk)
-   begin
-     if(tx_reset) begin  
-       tx_en_to_ddr_lch <= 1'b0;
-     end  
-     else begin
-       if(phy_tx_enable | clk_div5) begin
-         tx_en_to_ddr_lch <= tx_en_from_mac;
-       end
-       else if(!clk_div5 & clk_div5_shift) begin
-         tx_en_to_ddr_lch <= rgmii_tx_ctl_int;
-       end
-       else begin
-         tx_en_to_ddr_lch <= tx_en_to_ddr_lch;
-       end
-     end   
-   end  
-
-   always @(speedis10100 or phy_tx_enable or clk_div5 or clk_div5_shift or tx_en_from_mac or rgmii_tx_ctl_int or tx_en_to_ddr_lch)
-   begin
-     if( !speedis10100 | (speedis10100 & (phy_tx_enable | clk_div5)))begin
-       tx_en_to_ddr = tx_en_from_mac;
-     end
-     else if( speedis10100 & (!clk_div5 & clk_div5_shift)) begin
-       tx_en_to_ddr = rgmii_tx_ctl_int;
-     end 
-     else begin
-       tx_en_to_ddr = tx_en_to_ddr_lch;
-     end
-   end  
-
-   assign tx_en_to_ddr_fall = speedis10100 ? tx_en_to_ddr :rgmii_tx_ctl_int;
-
-
    ODDRE1 #(
        
       .SRVAL         (1'b0)
@@ -412,8 +358,8 @@ module RGMII_tri_mode_ethernet_mac_0_0_rgmii_v2_0_if (
    ctl_output (
       .Q             (rgmii_tx_ctl_odelay),
       .C             (tx_clk),
-      .D1            (tx_en_to_ddr),
-      .D2            (tx_en_to_ddr_fall),
+      .D1            (tx_en_from_mac),
+      .D2            (rgmii_tx_ctl_int),
       .SR            (tx_reset)
    );
 

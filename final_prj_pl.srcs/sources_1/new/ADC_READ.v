@@ -102,12 +102,12 @@ module ADC_READ(
     reg ADC_CONVST_start_flag=1'b0;
     always@(posedge sysclk_200M) begin
         if(ADC_ENABLE && ADC_config_complete) begin
-            if(waiting_counter>=32'd2000) begin
+            if(waiting_counter>=32'd100_000) begin//original is 32'd2000
                 ADC_CONVST_start_flag <= 1'b1;
-                waiting_counter <= waiting_counter;
+                waiting_counter <= 32'd0;
             end
             else begin
-                waiting_counter <= waiting_counter + 1'b1;
+                waiting_counter <= waiting_counter + 32'd1;
                 ADC_CONVST_start_flag <= 1'b0;
             end
         end
@@ -138,7 +138,7 @@ module ADC_READ(
             end
             START: begin
                 // if(ADC_CONVST_counter>='d200) begin
-                if(ADC_CONVST_counter>='d40_000) begin
+                if(ADC_CONVST_counter>='d20_000) begin
                     ADC_CONVST_state <= WAIT;
                     ADC_CONVST_counter <= 16'd0;
                 end
@@ -146,7 +146,7 @@ module ADC_READ(
                     ADC_CONVST_state <= START;
                     ADC_CONVST_counter <= ADC_CONVST_counter + 1'b1;
                 end
-                if(ADC_CONVST_counter>='d100) ADC_CONVST<=1'b1;
+                if(ADC_CONVST_counter>='d50) ADC_CONVST<=1'b1;
                 else ADC_CONVST<=1'b0; 
                 spi_en <= 1'b0; // Disable SPI after starting ADC conversion
             end
@@ -155,6 +155,7 @@ module ADC_READ(
                 else ADC_CONVST_state <= WAIT;
                 ADC_CONVST_counter <= 16'd0;
                 ADC_CONVST <= 1'b1;
+                spi_en <= 1'b0;
             end
             DONE: begin
                 if(ADC_BUSY==2'b00) ADC_CONVST_state <= IDLE;
@@ -162,11 +163,13 @@ module ADC_READ(
                     
                 ADC_CONVST_counter <= 16'd0;
                 ADC_CONVST <= 1'b1;
+                spi_en <= 1'b0;
             end
             default: begin
                 ADC_CONVST_state <= IDLE;
                 ADC_CONVST <= 1'b1;
                 ADC_CONVST_counter <= 16'd0;
+                spi_en <= 1'b0;
             end
         endcase
     end

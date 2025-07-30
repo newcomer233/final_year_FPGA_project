@@ -56,11 +56,13 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "system_clock_synth_1" START { ROLLUP_AUTO }
+set_param tcl.collectionResultDisplayLimit 0
 set_param general.maxThreads 16
 set_param chipscope.maxJobs 8
-set_param bd.open.in_stealth_mode 1
-set_msg_config  -id {[BD 41-1271]}  -suppress 
+set_param bd.open.in_stealth_mode 3
+set_param xicom.use_bs_reader 1
 set_msg_config  -id {[BD 41-1306]}  -suppress 
+set_msg_config  -id {[BD 41-1271]}  -suppress 
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
@@ -75,11 +77,13 @@ set_property parent.project_path E:/final_prj/final_prj_pl/final_prj_pl.xpr [cur
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
+set_property ip_repo_paths e:/final_prj/dpu_ip [current_project]
+update_ip_catalog
 set_property ip_output_repo e:/final_prj/final_prj_pl/final_prj_pl.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet e:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/system_clock/system_clock.xci
+read_ip -quiet E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/system_clock/system_clock.xci
 set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/system_clock/system_clock_board.xdc]
 set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/system_clock/system_clock.xdc]
 set_property used_in_implementation false [get_files -all e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/system_clock/system_clock_late.xdc]

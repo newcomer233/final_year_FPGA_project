@@ -61,7 +61,7 @@
 // The entity declaration for the block level example design.
 //------------------------------------------------------------------------------
 
-(* CORE_GENERATION_INFO = "RGMII_tri_mode_ethernet_mac_0_0,RGMII_tri_mode_ethernet_mac_0_0_support,{x_ipProduct=Vivado 2024.2.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=tri_mode_ethernet_mac,x_ipVersion=9.0,x_ipCoreRevision=37,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,c_component_name=RGMII_tri_mode_ethernet_mac_0_0,c_physical_interface=RGMII,c_half_duplex=false,c_has_host=true,c_has_mdio=true,c_mdio_external=true,c_axilite_freq=200,c_add_filter=true,c_at_entries=4,c_family=zynquplus,c_mac_speed=TRI_SPEED,c_int_clk_src=User_Clk2,c_int_mode_type=BASEX,c_has_stats=true,c_num_stats=34,c_cntr_rst=true,c_stats_width=64,c_avb=false,c_1588=0,c_tx_inband_cf_enable=false,c_rx_inband_ts_enable=false,c_tx_tuser_width=1,c_rx_vec_width=79,c_tx_vec_width=79,c_addr_width=12,c_pfc=false,c_mii_io=true,c_data_rate=1_Gbps,x_ipLicense=tri_mode_eth_mac@2015.04(bought),x_ipLicense=eth_avb_endpoint@2015.04(bought)}" *)
+(* CORE_GENERATION_INFO = "RGMII_tri_mode_ethernet_mac_0_0,RGMII_tri_mode_ethernet_mac_0_0_support,{x_ipProduct=Vivado 2024.2.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=tri_mode_ethernet_mac,x_ipVersion=9.0,x_ipCoreRevision=37,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,c_component_name=RGMII_tri_mode_ethernet_mac_0_0,c_physical_interface=RGMII,c_half_duplex=false,c_has_host=true,c_has_mdio=true,c_mdio_external=true,c_axilite_freq=100,c_add_filter=true,c_at_entries=4,c_family=zynquplus,c_mac_speed=SPEED_1000_MBPS,c_int_clk_src=User_Clk2,c_int_mode_type=BASEX,c_has_stats=true,c_num_stats=34,c_cntr_rst=true,c_stats_width=64,c_avb=false,c_1588=0,c_tx_inband_cf_enable=false,c_rx_inband_ts_enable=false,c_tx_tuser_width=1,c_rx_vec_width=79,c_tx_vec_width=79,c_addr_width=12,c_pfc=false,c_mii_io=true,c_data_rate=1_Gbps,x_ipLicense=tri_mode_eth_mac@2015.04(bought),x_ipLicense=eth_avb_endpoint@2015.04(bought)}" *)
 (* X_CORE_INFO = "RGMII_tri_mode_ethernet_mac_0_0_support,Vivado 2024.2.2" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
   
@@ -81,8 +81,6 @@
 
       // Receiver Interface
       //--------------------------
-      output               rx_enable,
-
       output      [27:0]   rx_statistics_vector,
       output               rx_statistics_valid,
 
@@ -97,8 +95,6 @@
 
       // Transmitter Interface
       //-----------------------------
-      output               tx_enable,
-
       input       [7:0]    tx_ifg_delay,
       output      [31:0]   tx_statistics_vector,
       output               tx_statistics_valid,
@@ -184,7 +180,6 @@
 
       // Receiver Interface
       //--------------------------
-      .rx_enable                          (rx_enable),
 
       .rx_statistics_vector               (rx_statistics_vector),
       .rx_statistics_valid                (rx_statistics_valid),
@@ -199,7 +194,6 @@
 
       // Transmitter Interface
       //-----------------------------
-      .tx_enable                          (tx_enable),
 
       .tx_ifg_delay                       (tx_ifg_delay),
       .tx_statistics_vector               (tx_statistics_vector),

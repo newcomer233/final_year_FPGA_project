@@ -116,8 +116,8 @@ module ADC_SPI_PHY#(
     wire spi_clk_pos;
     reg  spi_clk_reg;
     always@(posedge sysclk_200m) spi_clk_reg<=SPI_CLK_in;
-    assign spi_clk_pos= (spi_clk_reg!=SPI_CLK_in && SPI_CLK_in==1'b1 ) ? 1'b1 : 1'b0;
-    assign spi_clk_neg= (spi_clk_reg!=SPI_CLK_in && SPI_CLK_in==1'b0 ) ? 1'b1 : 1'b0;
+    assign spi_clk_pos= (spi_clk_reg==1'b0 && SPI_CLK_in==1'b1 ) ? 1'b1 : 1'b0;
+    assign spi_clk_neg= (spi_clk_reg==1'b1 && SPI_CLK_in==1'b0 ) ? 1'b1 : 1'b0;
     //judge which should be sample edge which should writing edge by directly fixing
     wire sample_edge;
     wire write_edge;
@@ -138,7 +138,7 @@ module ADC_SPI_PHY#(
     //SPI transmit control
     reg     [31:0] data_cnt;
     wire    [31:0] pos;
-    reg     [16:0] tx_data_reg='d0;
+(* shreg_extract = "no" *) reg     [16:0] tx_data_reg='d0;
     reg     [15:0] rx_data_reg_a='d0;
     reg     [15:0] rx_data_reg_b='d0;
     reg     [15:0] rx_data_reg_c='d0;
@@ -196,12 +196,8 @@ module ADC_SPI_PHY#(
                 rx_data_reg_h<='d0;
             end
             else begin
-                if(write_edge) begin 
-                    tx_data_reg<={tx_data_reg[15:0],1'b0};
-                end    
-                else begin 
-                    tx_data_reg<=tx_data_reg;
-                end
+                if(write_edge) tx_data_reg<={tx_data_reg[15:0],1'b0};  
+                else tx_data_reg<=tx_data_reg;
                 if(sample_edge) begin 
                     data_cnt<=data_cnt+32'd1;
                     rx_data_reg_a<={rx_data_reg_a[14:0],SPI_DIN_A};
@@ -457,7 +453,8 @@ ila_2 spi_phy_port (
 	.probe18              ( rx_valid             ),// input	wire [0:0] probe11	
 	.probe19              ( spi_busy             ),// input	wire [0:0] probe12	
     .probe20              ( write_edge           ),// input wire [15:0] probe13
-    .probe21              ( sample_edge          )// input wire [15:0] probe14
+    .probe21              ( sample_edge          ),// input wire [15:0] probe14
+    .probe22              ( tx_data_reg          )// input wire [15:0] probe15
 );
 endmodule
  

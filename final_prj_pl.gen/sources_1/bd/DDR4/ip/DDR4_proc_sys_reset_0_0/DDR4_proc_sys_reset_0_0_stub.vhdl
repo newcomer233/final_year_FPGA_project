@@ -2,10 +2,10 @@
 -- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2.2 (win64) Build 6060944 Thu Mar 06 19:10:01 MST 2025
--- Date        : Mon Jul  7 14:48:00 2025
+-- Date        : Mon Jul 28 00:30:14 2025
 -- Host        : LAPTOP-VEGJAO5A running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub -rename_top DDR4_proc_sys_reset_0_0 -prefix
---               DDR4_proc_sys_reset_0_0_ DDR4_proc_sys_reset_0_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub
+--               e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/DDR4/ip/DDR4_proc_sys_reset_0_0/DDR4_proc_sys_reset_0_0_stub.vhdl
 -- Design      : DDR4_proc_sys_reset_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xczu9eg-ffvb1156-2-i

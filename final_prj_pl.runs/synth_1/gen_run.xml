@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xczu9eg-ffvb1156-2-i" LaunchTime="1753102047" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/ADC_TOP_test.dcp">
+<GenRun Id="synth_1" LaunchPart="xczu9eg-ffvb1156-2-i" LaunchTime="1753875703" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/ADC_TOP_test.dcp">
   <File Type="PA-TCL" Name="TOP.tcl"/>
   <File Type="REPORTS-TCL" Name="TOP_reports.tcl"/>
   <File Type="RDS-RDS" Name="TOP.vds"/>
@@ -11,16 +11,6 @@
   <File Type="VDS-TIMING-PB" Name="TOP_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/ip/slave_map/slave_map.xci">
-      <FileInfo>
-        <Attr Name="UserDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../FPGA_or_PL/FXC2024/FXC2024_01151_V6_1025/FXC2024_01151_V6/top.srcs/sources_1/ip/slave_map/slave_map.xci"/>
-        <Attr Name="ImportTime" Val="1635156617"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/ADC_CONFIG.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -155,13 +145,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/ip/IMU_TOP_VIO/IMU_TOP_VIO.xci">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/bd/PPG_I2C_PHY/PPG_I2C_PHY.bd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -170,13 +153,6 @@
       </FileInfo>
     </File>
     <File Path="$PGENDIR/sources_1/bd/PPG_I2C_PHY/hdl/PPG_I2C_PHY_wrapper.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/ip/ila_0/ila_0.xci">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -283,13 +259,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/DATA_ORDER.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/DATA_TO_UDP.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -299,7 +268,20 @@
     </File>
     <File Path="$PSRCDIR/sources_1/bd/DDR4/DDR4.bd">
       <FileInfo>
-        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/DDR4/hdl/DDR4_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DATA_TO_DDR.v">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -314,7 +296,6 @@
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/new/DDR4.xdc">
       <FileInfo>
-        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
@@ -333,6 +314,7 @@
     </File>
     <File Path="$PSRCDIR/constrs_1/new/MAX86916.xdc">
       <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
@@ -344,6 +326,12 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/constrs_1/new/BITSTREAM.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/TIME_CONSTRS.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -368,12 +356,18 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-      <Desc>Vivado Synthesis Defaults</Desc>
+    <StratHandle Name="Flow_PerfOptimized_high" Flow="Vivado Synthesis 2024">
+      <Desc>Higher performance designs, resource sharing is turned off, the global fanout guide is set to a lower number, FSM extraction forced to one-hot, LUT combining is disabled, equivalent registers are preserved, SRL are inferred  with a larger threshold</Desc>
     </StratHandle>
-    <Step Id="synth_design"/>
+    <Step Id="synth_design">
+      <Option Id="Directive">7</Option>
+      <Option Id="FsmExtraction">1</Option>
+      <Option Id="KeepEquivalentRegisters">1</Option>
+      <Option Id="NoCombineLuts">1</Option>
+      <Option Id="ResourceSharing">2</Option>
+      <Option Id="ShregMinSize">5</Option>
+    </Step>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ila_2"/>
   <BlockFileSet Type="BlockSrcs" Name="ADC_READ_ILA"/>
   <BlockFileSet Type="BlockSrcs" Name="spi_tx_fifo"/>
@@ -383,23 +377,39 @@
   <BlockFileSet Type="BlockSrcs" Name="RGMII_util_vector_logic_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="axis_eth_head_convertor"/>
   <BlockFileSet Type="BlockSrcs" Name="spi_rx_fifo_16bit"/>
-  <BlockFileSet Type="BlockSrcs" Name="PPG_I2C_PHY_axi_iic_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="IMU_test_vio"/>
   <BlockFileSet Type="BlockSrcs" Name="imu_read_ila"/>
+  <BlockFileSet Type="BlockSrcs" Name="ila_0"/>
   <BlockFileSet Type="BlockSrcs" Name="IMU_CONFIG_ILA"/>
+  <BlockFileSet Type="BlockSrcs" Name="DDR4_dpuczdx8g_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="PPG_I2C_PHY_util_ds_buf_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="PPG_I2C_PHY_ila_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DDR4_axi_interconnect_0_imp_s00_data_fifo_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="PPG_I2C_PHY_axi_iic_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="PPG_I2C_PHY_util_ds_buf_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="PPG_I2C_PHY_system_ila_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="udp_config_vio"/>
+  <BlockFileSet Type="BlockSrcs" Name="DDR4_axi_interconnect_0_imp_s01_data_fifo_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_clock"/>
   <BlockFileSet Type="BlockSrcs" Name="RGMII_tri_mode_ethernet_mac_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="RGMII_axis_TX_data_fifo_0"/>
   <BlockFileSet Type="BlockSrcs" Name="RGMII_util_vector_logic_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="RGMII_axis_data_fifo_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="RGMII_vio_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="RGMII_system_ila_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="DDR4_axi_interconnect_0_imp_s01_mmu_0"/>
   <BlockFileSet Type="BlockSrcs" Name="top_vio"/>
+  <BlockFileSet Type="BlockSrcs" Name="DDR4_axi_interconnect_0_imp_auto_cc_1"/>
   <BlockFileSet Type="BlockSrcs" Name="data_to_udp_fifo"/>
   <BlockFileSet Type="BlockSrcs" Name="data_to_udp_fifo_widcov"/>
+  <BlockFileSet Type="BlockSrcs" Name="DDR4_util_vector_logic_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="IMU_TOP_VIO"/>
+  <BlockFileSet Type="BlockSrcs" Name="DDR4_ddr4_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DDR4_axi_interconnect_0_imp_s02_mmu_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DDR4_proc_sys_reset_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DDR4_zynq_ultra_ps_e_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="DDR4_axi_interconnect_0_imp_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DDR4_axi_interconnect_0_imp_s00_mmu_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DDR4_axi_interconnect_0_imp_auto_cc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="RGMII_system_ila_TX_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DDR4_axi_interconnect_0_imp_s02_data_fifo_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DDR4_axi_interconnect_0_imp_s03_data_fifo_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DDR4_axi_interconnect_0_imp_auto_cc_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="RGMII_axis_TX_data_fifo_0"/>
 </GenRun>

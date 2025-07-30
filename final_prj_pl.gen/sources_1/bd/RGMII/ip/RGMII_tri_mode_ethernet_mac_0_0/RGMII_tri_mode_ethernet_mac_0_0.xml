@@ -620,7 +620,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>CLK_DOMAIN</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXIS_TX.CLK_DOMAIN">RGMII_gtx_clk_0</spirit:value>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXIS_TX.CLK_DOMAIN">RGMII_gtx_clk_125M</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -1505,7 +1505,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>CLK_DOMAIN</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.TX_MAC_ACLK.CLK_DOMAIN">RGMII_gtx_clk_0</spirit:value>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.TX_MAC_ACLK.CLK_DOMAIN">RGMII_gtx_clk_125M</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -1729,7 +1729,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>CLK_DOMAIN</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.GTX_CLK.CLK_DOMAIN">RGMII_gtx_clk_0</spirit:value>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.GTX_CLK.CLK_DOMAIN">RGMII_gtx_clk_125M</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -2157,7 +2157,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.REF_CLK.FREQ_HZ">100000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.REF_CLK.FREQ_HZ">333333333</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -2184,7 +2184,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>CLK_DOMAIN</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.REF_CLK.CLK_DOMAIN">RGMII_refclk_0</spirit:value>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.REF_CLK.CLK_DOMAIN">RGMII_refclk_100M</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -2435,7 +2435,7 @@
       <spirit:vendorExtensions>
         <xilinx:busInterfaceInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.rx_enable" xilinx:dependency="()()((not (starts_with(id(&apos;MODELPARAM_VALUE.C_PHYSICAL_INTERFACE&apos;), &apos;INTERNAL&apos;))) and ((not (starts_with(id(&apos;MODELPARAM_VALUE.C_MAC_SPEED&apos;), &apos;SPEED_1000_MBPS&apos;))) ))">true</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.rx_enable" xilinx:dependency="()()((not (starts_with(id(&apos;MODELPARAM_VALUE.C_PHYSICAL_INTERFACE&apos;), &apos;INTERNAL&apos;))) and ((not (starts_with(id(&apos;MODELPARAM_VALUE.C_MAC_SPEED&apos;), &apos;SPEED_1000_MBPS&apos;))) ))">false</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:busInterfaceInfo>
       </spirit:vendorExtensions>
@@ -4926,7 +4926,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>CLK_DOMAIN</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXIS_PAUSE.CLK_DOMAIN">RGMII_gtx_clk_0</spirit:value>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXIS_PAUSE.CLK_DOMAIN">RGMII_gtx_clk_125M</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -5110,7 +5110,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.FREQ_HZ">200000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.FREQ_HZ">100000000</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -5317,7 +5317,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>CLK_DOMAIN</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.CLK_DOMAIN">RGMII_axis_clk_0</spirit:value>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.CLK_DOMAIN">RGMII_axis_clk</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -5401,7 +5401,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI_ACLK.FREQ_HZ">200000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI_ACLK.FREQ_HZ">100000000</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -5428,7 +5428,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>CLK_DOMAIN</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI_ACLK.CLK_DOMAIN">RGMII_axis_clk_0</spirit:value>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI_ACLK.CLK_DOMAIN">RGMII_axis_clk</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -5786,11 +5786,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Jul 02 13:24:38 UTC 2025</spirit:value>
+            <spirit:value>Tue Jul 29 20:21:13 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:11630d2d</spirit:value>
+            <spirit:value>9:26214513</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductLicenses</spirit:name>
@@ -5818,11 +5818,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Jul 02 13:24:38 UTC 2025</spirit:value>
+            <spirit:value>Tue Jul 29 20:21:13 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:6e21bc57</spirit:value>
+            <spirit:value>9:e0676304</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductLicenses</spirit:name>
@@ -5837,7 +5837,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:6e21bc57</spirit:value>
+            <spirit:value>9:e0676304</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductLicenses</spirit:name>
@@ -5855,11 +5855,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Jul 02 13:25:43 UTC 2025</spirit:value>
+            <spirit:value>Tue Jul 29 20:22:27 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:6e21bc57</spirit:value>
+            <spirit:value>9:e0676304</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductLicenses</spirit:name>
@@ -5877,11 +5877,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Jul 02 13:24:38 UTC 2025</spirit:value>
+            <spirit:value>Tue Jul 29 20:21:13 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:6e21bc57</spirit:value>
+            <spirit:value>9:e0676304</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductLicenses</spirit:name>
@@ -5896,7 +5896,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:6e21bc57</spirit:value>
+            <spirit:value>9:e0676304</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductLicenses</spirit:name>
@@ -5916,11 +5916,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Jul 02 13:24:38 UTC 2025</spirit:value>
+            <spirit:value>Tue Jul 29 20:21:13 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:11630d2d</spirit:value>
+            <spirit:value>9:26214513</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductLicenses</spirit:name>
@@ -5940,11 +5940,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Jul 02 13:24:38 UTC 2025</spirit:value>
+            <spirit:value>Tue Jul 29 20:21:13 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:6e21bc57</spirit:value>
+            <spirit:value>9:e0676304</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductLicenses</spirit:name>
@@ -6219,7 +6219,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.rx_enable" xilinx:dependency="()()((not (starts_with(id(&apos;MODELPARAM_VALUE.C_PHYSICAL_INTERFACE&apos;), &apos;INTERNAL&apos;))) and ((not (starts_with(id(&apos;MODELPARAM_VALUE.C_MAC_SPEED&apos;), &apos;SPEED_1000_MBPS&apos;))) ))">true</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.rx_enable" xilinx:dependency="()()((not (starts_with(id(&apos;MODELPARAM_VALUE.C_PHYSICAL_INTERFACE&apos;), &apos;INTERNAL&apos;))) and ((not (starts_with(id(&apos;MODELPARAM_VALUE.C_MAC_SPEED&apos;), &apos;SPEED_1000_MBPS&apos;))) ))">false</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -6395,7 +6395,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.tx_enable" xilinx:dependency="()()((not (starts_with(id(&apos;MODELPARAM_VALUE.C_PHYSICAL_INTERFACE&apos;), &apos;INTERNAL&apos;))) and ((not (starts_with(id(&apos;MODELPARAM_VALUE.C_MAC_SPEED&apos;), &apos;SPEED_1000_MBPS&apos;))) ))">true</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.tx_enable" xilinx:dependency="()()((not (starts_with(id(&apos;MODELPARAM_VALUE.C_PHYSICAL_INTERFACE&apos;), &apos;INTERNAL&apos;))) and ((not (starts_with(id(&apos;MODELPARAM_VALUE.C_MAC_SPEED&apos;), &apos;SPEED_1000_MBPS&apos;))) ))">false</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -9115,7 +9115,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="float">
         <spirit:name>c_axilite_freq</spirit:name>
-        <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.c_axilite_freq">200</spirit:value>
+        <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.c_axilite_freq">100</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="boolean">
         <spirit:name>c_add_filter</spirit:name>
@@ -9131,7 +9131,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="string">
         <spirit:name>c_mac_speed</spirit:name>
-        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.c_mac_speed">TRI_SPEED</spirit:value>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.c_mac_speed">SPEED_1000_MBPS</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="string">
         <spirit:name>c_int_clk_src</spirit:name>
@@ -9329,10 +9329,6 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>synth/common/RGMII_tri_mode_ethernet_mac_0_0_block_sync_block.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>synth/RGMII_tri_mode_ethernet_mac_0_0_axi4_lite_ipif_top.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
@@ -9343,10 +9339,6 @@
       <spirit:file>
         <spirit:name>header_files/RGMII_tri_mode_ethernet_mac_0_0_axi4_lite_registers.h</spirit:name>
         <spirit:fileType>cSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>synth/RGMII_tri_mode_ethernet_mac_0_0_clk_en_gen.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>synth/physical/RGMII_tri_mode_ethernet_mac_0_0_rgmii_v2_0_if.v</spirit:name>
@@ -9458,10 +9450,6 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>synth/common/RGMII_tri_mode_ethernet_mac_0_0_block_sync_block.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>synth/RGMII_tri_mode_ethernet_mac_0_0_axi4_lite_ipif_top.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
@@ -9472,10 +9460,6 @@
       <spirit:file>
         <spirit:name>header_files/RGMII_tri_mode_ethernet_mac_0_0_axi4_lite_registers.h</spirit:name>
         <spirit:fileType>cSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>synth/RGMII_tri_mode_ethernet_mac_0_0_clk_en_gen.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>synth/physical/RGMII_tri_mode_ethernet_mac_0_0_rgmii_v2_0_if.v</spirit:name>
@@ -9594,7 +9578,7 @@
     <spirit:parameter>
       <spirit:name>MAC_Speed</spirit:name>
       <spirit:displayName>MAC Speed</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.MAC_Speed" spirit:choiceRef="choice_list_f945896b" spirit:order="8" spirit:configGroups="1 UnGrouped">Tri_speed</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.MAC_Speed" spirit:choiceRef="choice_list_f945896b" spirit:order="8" spirit:configGroups="1 UnGrouped">1000_Mbps</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>Int_Clk_Src</spirit:name>
@@ -9619,7 +9603,7 @@
     <spirit:parameter>
       <spirit:name>Management_Frequency</spirit:name>
       <spirit:displayName>Frequency (MHz)</spirit:displayName>
-      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.Management_Frequency" spirit:order="13" spirit:configGroups="1 UnGrouped" spirit:minimum="10.00" spirit:maximum="300.00">200</spirit:value>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.Management_Frequency" spirit:order="13" spirit:configGroups="1 UnGrouped" spirit:minimum="10.00" spirit:maximum="300.00">100</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>Enable_MDIO</spirit:name>
@@ -9780,7 +9764,7 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.REF_CLK.ASSOCIATED_PORT" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.REF_CLK.ASSOCIATED_RESET" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.REF_CLK.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.REF_CLK.FREQ_HZ" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.REF_CLK.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.REF_CLK.FREQ_TOLERANCE_HZ" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.REF_CLK.PHASE" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.RGMII.BOARD.ASSOCIATED_PARAM" xilinx:valuePermission="bd"/>
@@ -9848,7 +9832,7 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_TX.TDATA_NUM_BYTES" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_TX.TDEST_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_TX.TID_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_TX.TUSER_WIDTH" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_TX.TUSER_WIDTH" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_ACLK.ASSOCIATED_BUSIF" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_ACLK.ASSOCIATED_PORT" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_ACLK.ASSOCIATED_RESET" xilinx:valuePermission="bd"/>
@@ -9867,6 +9851,7 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.TX_MAC_ACLK.FREQ_TOLERANCE_HZ" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.TX_MAC_ACLK.PHASE" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.TX_RESET.POLARITY" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Data_Rate" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Enable_MDIO" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Enable_Priority_Flow_Control" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.MAC_Speed" xilinx:valueSource="user"/>

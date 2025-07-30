@@ -6,7 +6,7 @@
 # This constraints file is not used in normal top-down synthesis (default flow
 # of Vivado)
 ################################################################################
-create_clock -name PL_ACLK -period 5 [get_ports PL_ACLK]
-create_clock -name ddr4_sysclk_200M -period 4.998 [get_ports ddr4_sysclk_200M]
+create_clock -name PL_ACLK -period 10 [get_ports PL_ACLK]
+create_clock -name c0_sys_clk_i -period 4.998 [get_ports c0_sys_clk_i]
 
 ################################################################################

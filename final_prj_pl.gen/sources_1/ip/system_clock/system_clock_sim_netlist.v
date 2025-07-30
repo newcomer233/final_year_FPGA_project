@@ -2,7 +2,7 @@
 // Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2.2 (win64) Build 6060944 Thu Mar 06 19:10:01 MST 2025
-// Date        : Wed Jul  2 14:22:40 2025
+// Date        : Tue Jul 29 14:44:03 2025
 // Host        : LAPTOP-VEGJAO5A running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/system_clock/system_clock_sim_netlist.v
@@ -17,58 +17,50 @@
 module system_clock
    (sysclk_200M,
     eth_125M,
-    refclk_100M,
+    refclk_333M,
     locked,
-    clk_in1_p,
-    clk_in1_n);
+    clk_in1);
   output sysclk_200M;
   output eth_125M;
-  output refclk_100M;
+  output refclk_333M;
   output locked;
-  input clk_in1_p;
-  input clk_in1_n;
+  input clk_in1;
 
-  (* IBUF_LOW_PWR *) wire clk_in1_n;
-  (* IBUF_LOW_PWR *) wire clk_in1_p;
+  wire clk_in1;
   wire eth_125M;
   wire locked;
-  wire refclk_100M;
+  wire refclk_333M;
   wire sysclk_200M;
 
   system_clock_clk_wiz inst
-       (.clk_in1_n(clk_in1_n),
-        .clk_in1_p(clk_in1_p),
+       (.clk_in1(clk_in1),
         .eth_125M(eth_125M),
         .locked(locked),
-        .refclk_100M(refclk_100M),
+        .refclk_333M(refclk_333M),
         .sysclk_200M(sysclk_200M));
 endmodule
 
 module system_clock_clk_wiz
    (sysclk_200M,
     eth_125M,
-    refclk_100M,
+    refclk_333M,
     locked,
-    clk_in1_p,
-    clk_in1_n);
+    clk_in1);
   output sysclk_200M;
   output eth_125M;
-  output refclk_100M;
+  output refclk_333M;
   output locked;
-  input clk_in1_p;
-  input clk_in1_n;
+  input clk_in1;
 
-  wire clk_in1_n;
-  wire clk_in1_p;
-  wire clk_in1_system_clock;
+  wire clk_in1;
   wire clkfbout_system_clock;
   wire eth_125M;
   wire eth_125M_system_clock;
   wire eth_125M_system_clock_en_clk;
   wire locked;
-  wire refclk_100M;
-  wire refclk_100M_system_clock;
-  wire refclk_100M_system_clock_en_clk;
+  wire refclk_333M;
+  wire refclk_333M_system_clock;
+  wire refclk_333M_system_clock_en_clk;
   (* RTL_KEEP = "true" *) (* async_reg = "true" *) wire [7:0]seq_reg1;
   (* RTL_KEEP = "true" *) (* async_reg = "true" *) wire [7:0]seq_reg2;
   (* RTL_KEEP = "true" *) (* async_reg = "true" *) wire [7:0]seq_reg3;
@@ -103,17 +95,6 @@ module system_clock_clk_wiz
        (.CE(1'b1),
         .I(clkfbout_system_clock),
         .O(NLW_clkf_buf_O_UNCONNECTED));
-  (* BOX_TYPE = "PRIMITIVE" *) 
-  (* CAPACITANCE = "DONT_CARE" *) 
-  (* IBUF_DELAY_VALUE = "0" *) 
-  (* IFD_DELAY_VALUE = "AUTO" *) 
-  IBUFDS #(
-    .DIFF_TERM("FALSE"),
-    .IOSTANDARD("DEFAULT")) 
-    clkin1_ibufds
-       (.I(clk_in1_p),
-        .IB(clk_in1_n),
-        .O(clk_in1_system_clock));
   (* BOX_TYPE = "PRIMITIVE" *) 
   BUFGCE #(
     .CE_TYPE("SYNC"),
@@ -167,8 +148,8 @@ module system_clock_clk_wiz
     .STARTUP_SYNC("FALSE")) 
     clkout3_buf
        (.CE(seq_reg3[7]),
-        .I(refclk_100M_system_clock),
-        .O(refclk_100M));
+        .I(refclk_333M_system_clock),
+        .O(refclk_333M));
   (* BOX_TYPE = "PRIMITIVE" *) 
   BUFGCE #(
     .CE_TYPE("SYNC"),
@@ -178,8 +159,8 @@ module system_clock_clk_wiz
     .STARTUP_SYNC("FALSE")) 
     clkout3_buf_en
        (.CE(1'b1),
-        .I(refclk_100M_system_clock),
-        .O(refclk_100M_system_clock_en_clk));
+        .I(refclk_333M_system_clock),
+        .O(refclk_333M_system_clock_en_clk));
   (* BOX_TYPE = "PRIMITIVE" *) 
   (* OPT_MODIFIED = "MLO" *) 
   MMCME4_ADV #(
@@ -189,7 +170,7 @@ module system_clock_clk_wiz
     .CLKFBOUT_USE_FINE_PS("FALSE"),
     .CLKIN1_PERIOD(5.000000),
     .CLKIN2_PERIOD(0.000000),
-    .CLKOUT0_DIVIDE_F(5.000000),
+    .CLKOUT0_DIVIDE_F(10.000000),
     .CLKOUT0_DUTY_CYCLE(0.500000),
     .CLKOUT0_PHASE(0.000000),
     .CLKOUT0_USE_FINE_PS("FALSE"),
@@ -197,7 +178,7 @@ module system_clock_clk_wiz
     .CLKOUT1_DUTY_CYCLE(0.500000),
     .CLKOUT1_PHASE(0.000000),
     .CLKOUT1_USE_FINE_PS("FALSE"),
-    .CLKOUT2_DIVIDE(10),
+    .CLKOUT2_DIVIDE(3),
     .CLKOUT2_DUTY_CYCLE(0.500000),
     .CLKOUT2_PHASE(0.000000),
     .CLKOUT2_USE_FINE_PS("FALSE"),
@@ -241,7 +222,7 @@ module system_clock_clk_wiz
         .CLKFBOUT(clkfbout_system_clock),
         .CLKFBOUTB(NLW_mmcme4_adv_inst_CLKFBOUTB_UNCONNECTED),
         .CLKFBSTOPPED(NLW_mmcme4_adv_inst_CLKFBSTOPPED_UNCONNECTED),
-        .CLKIN1(clk_in1_system_clock),
+        .CLKIN1(clk_in1),
         .CLKIN2(1'b0),
         .CLKINSEL(1'b1),
         .CLKINSTOPPED(NLW_mmcme4_adv_inst_CLKINSTOPPED_UNCONNECTED),
@@ -249,7 +230,7 @@ module system_clock_clk_wiz
         .CLKOUT0B(NLW_mmcme4_adv_inst_CLKOUT0B_UNCONNECTED),
         .CLKOUT1(eth_125M_system_clock),
         .CLKOUT1B(NLW_mmcme4_adv_inst_CLKOUT1B_UNCONNECTED),
-        .CLKOUT2(refclk_100M_system_clock),
+        .CLKOUT2(refclk_333M_system_clock),
         .CLKOUT2B(NLW_mmcme4_adv_inst_CLKOUT2B_UNCONNECTED),
         .CLKOUT3(NLW_mmcme4_adv_inst_CLKOUT3_UNCONNECTED),
         .CLKOUT3B(NLW_mmcme4_adv_inst_CLKOUT3B_UNCONNECTED),
@@ -435,7 +416,7 @@ module system_clock_clk_wiz
   FDRE #(
     .INIT(1'b0)) 
     \seq_reg3_reg[0] 
-       (.C(refclk_100M_system_clock_en_clk),
+       (.C(refclk_333M_system_clock_en_clk),
         .CE(1'b1),
         .D(locked),
         .Q(seq_reg3[0]),
@@ -445,7 +426,7 @@ module system_clock_clk_wiz
   FDRE #(
     .INIT(1'b0)) 
     \seq_reg3_reg[1] 
-       (.C(refclk_100M_system_clock_en_clk),
+       (.C(refclk_333M_system_clock_en_clk),
         .CE(1'b1),
         .D(seq_reg3[0]),
         .Q(seq_reg3[1]),
@@ -455,7 +436,7 @@ module system_clock_clk_wiz
   FDRE #(
     .INIT(1'b0)) 
     \seq_reg3_reg[2] 
-       (.C(refclk_100M_system_clock_en_clk),
+       (.C(refclk_333M_system_clock_en_clk),
         .CE(1'b1),
         .D(seq_reg3[1]),
         .Q(seq_reg3[2]),
@@ -465,7 +446,7 @@ module system_clock_clk_wiz
   FDRE #(
     .INIT(1'b0)) 
     \seq_reg3_reg[3] 
-       (.C(refclk_100M_system_clock_en_clk),
+       (.C(refclk_333M_system_clock_en_clk),
         .CE(1'b1),
         .D(seq_reg3[2]),
         .Q(seq_reg3[3]),
@@ -475,7 +456,7 @@ module system_clock_clk_wiz
   FDRE #(
     .INIT(1'b0)) 
     \seq_reg3_reg[4] 
-       (.C(refclk_100M_system_clock_en_clk),
+       (.C(refclk_333M_system_clock_en_clk),
         .CE(1'b1),
         .D(seq_reg3[3]),
         .Q(seq_reg3[4]),
@@ -485,7 +466,7 @@ module system_clock_clk_wiz
   FDRE #(
     .INIT(1'b0)) 
     \seq_reg3_reg[5] 
-       (.C(refclk_100M_system_clock_en_clk),
+       (.C(refclk_333M_system_clock_en_clk),
         .CE(1'b1),
         .D(seq_reg3[4]),
         .Q(seq_reg3[5]),
@@ -495,7 +476,7 @@ module system_clock_clk_wiz
   FDRE #(
     .INIT(1'b0)) 
     \seq_reg3_reg[6] 
-       (.C(refclk_100M_system_clock_en_clk),
+       (.C(refclk_333M_system_clock_en_clk),
         .CE(1'b1),
         .D(seq_reg3[5]),
         .Q(seq_reg3[6]),
@@ -505,7 +486,7 @@ module system_clock_clk_wiz
   FDRE #(
     .INIT(1'b0)) 
     \seq_reg3_reg[7] 
-       (.C(refclk_100M_system_clock_en_clk),
+       (.C(refclk_333M_system_clock_en_clk),
         .CE(1'b1),
         .D(seq_reg3[6]),
         .Q(seq_reg3[7]),

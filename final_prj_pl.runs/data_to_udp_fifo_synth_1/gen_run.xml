@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="data_to_udp_fifo_synth_1" LaunchPart="xczu9eg-ffvb1156-2-i" LaunchTime="1752500229">
+<GenRun Id="data_to_udp_fifo_synth_1" LaunchPart="xczu9eg-ffvb1156-2-i" LaunchTime="1753874010">
+  <File Type="PA-TCL" Name="data_to_udp_fifo.tcl"/>
   <File Type="REPORTS-TCL" Name="data_to_udp_fifo_reports.tcl"/>
+  <File Type="RDS-RDS" Name="data_to_udp_fifo.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="data_to_udp_fifo_drc_synth.rpt"/>
   <File Type="RDS-UTIL" Name="data_to_udp_fifo_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="data_to_udp_fifo_utilization_synth.pb"/>
-  <File Type="PA-TCL" Name="data_to_udp_fifo.tcl"/>
-  <File Type="RDS-RDS" Name="data_to_udp_fifo.vds"/>
   <File Type="RDS-DCP" Name="data_to_udp_fifo.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="data_to_udp_fifo_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="data_to_udp_fifo_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/data_to_udp_fifo" RelGenDir="$PGENDIR/data_to_udp_fifo">
     <File Path="$PSRCDIR/sources_1/ip/data_to_udp_fifo/data_to_udp_fifo.xci">
       <FileInfo>

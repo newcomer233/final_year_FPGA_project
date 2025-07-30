@@ -10,88 +10,92 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0"></ZoomStartTime>
-      <ZoomEndTime time="1,025"></ZoomEndTime>
+      <ZoomEndTime time="13"></ZoomEndTime>
       <Cursor1Time time="0"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="727"></NameColumnWidth>
+      <NameColumnWidth column_width="301"></NameColumnWidth>
       <ValueColumnWidth column_width="90"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="16" />
-   <wave_markers>
-      <marker time="300" label="" />
-      <marker time="460" label="" />
-      <marker time="620" label="" />
-      <marker time="780" label="" />
-      <marker time="823" label="" />
-   </wave_markers>
-   <wvobject fp_name="IMU_SPI_LINK_inst/IMU_SPI_PHY/bits_len" type="array">
-      <obj_property name="ElementShortName">IMU_SPI_LINK_inst/IMU_SPI_PHY/bits_len[31:0]</obj_property>
-      <obj_property name="ObjectShortName">bits_len[31:0]</obj_property>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="SENSOR_TOP/ADC_TOP/ADC_CONFIG/status" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">SENSOR_TOP/ADC_TOP/ADC_CONFIG/status[3:0]</obj_property>
+      <obj_property name="ObjectShortName">status[3:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="IMU_SPI_LINK_inst/IMU_SPI_PHY/rx_valid" type="logic">
-      <obj_property name="ElementShortName">IMU_SPI_LINK_inst/IMU_SPI_PHY/rx_valid</obj_property>
-      <obj_property name="ObjectShortName">rx_valid</obj_property>
+   <wvobject fp_name="SENSOR_TOP/ADC_TOP/ADC_CONFIG/write_register" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">SENSOR_TOP/ADC_TOP/ADC_CONFIG/write_register[15:0]</obj_property>
+      <obj_property name="ObjectShortName">write_register[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="IMU_SPI_LINK_inst/IMU_SPI_PHY/sample_edge" type="logic">
-      <obj_property name="ElementShortName">IMU_SPI_LINK_inst/IMU_SPI_PHY/sample_edge</obj_property>
-      <obj_property name="ObjectShortName">sample_edge</obj_property>
-   </wvobject>
-   <wvobject fp_name="IMU_SPI_LINK_inst/IMU_SPI_PHY/spi_busy" type="logic">
-      <obj_property name="ElementShortName">IMU_SPI_LINK_inst/IMU_SPI_PHY/spi_busy</obj_property>
+   <wvobject fp_name="SENSOR_TOP/ADC_TOP/ADC_CONFIG/spi_busy" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">SENSOR_TOP/ADC_TOP/ADC_CONFIG/spi_busy</obj_property>
       <obj_property name="ObjectShortName">spi_busy</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="IMU_SPI_LINK_inst/IMU_SPI_PHY/SPI_CLK_in" type="logic">
-      <obj_property name="ElementShortName">IMU_SPI_LINK_inst/IMU_SPI_PHY/SPI_CLK_in</obj_property>
-      <obj_property name="ObjectShortName">SPI_CLK_in</obj_property>
+   <wvobject fp_name="SENSOR_TOP/ADC_TOP/ADC_CONFIG/spi_tx_ready" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">SENSOR_TOP/ADC_TOP/ADC_CONFIG/spi_tx_ready</obj_property>
+      <obj_property name="ObjectShortName">spi_tx_ready</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="IMU_SPI_LINK_inst/IMU_SPI_PHY/SPI_CS_in" type="logic">
-      <obj_property name="ElementShortName">IMU_SPI_LINK_inst/IMU_SPI_PHY/SPI_CS_in</obj_property>
-      <obj_property name="ObjectShortName">SPI_CS_in</obj_property>
+   <wvobject fp_name="SENSOR_TOP/ADC_TOP/ADC_CONFIG/spi_tx_valid" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">SENSOR_TOP/ADC_TOP/ADC_CONFIG/spi_tx_valid</obj_property>
+      <obj_property name="ObjectShortName">spi_tx_valid</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="IMU_SPI_LINK_inst/IMU_SPI_PHY/SPI_DIN" type="logic">
-      <obj_property name="ElementShortName">IMU_SPI_LINK_inst/IMU_SPI_PHY/SPI_DIN</obj_property>
-      <obj_property name="ObjectShortName">SPI_DIN</obj_property>
+   <wvobject fp_name="SENSOR_TOP/ADC_TOP/ADC_CONFIG/spi_tx_begin_cnt" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">SENSOR_TOP/ADC_TOP/ADC_CONFIG/spi_tx_begin_cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">spi_tx_begin_cnt[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="IMU_SPI_LINK_inst/IMU_SPI_PHY/SPI_DOUT" type="logic">
-      <obj_property name="ElementShortName">IMU_SPI_LINK_inst/IMU_SPI_PHY/SPI_DOUT</obj_property>
-      <obj_property name="ObjectShortName">SPI_DOUT</obj_property>
+   <wvobject fp_name="SENSOR_TOP/ADC_TOP/ADC_CONFIG/spi_tx_end_cnt" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">SENSOR_TOP/ADC_TOP/ADC_CONFIG/spi_tx_end_cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">spi_tx_end_cnt[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="IMU_SPI_LINK_inst/IMU_SPI_PHY/spi_en" type="logic">
-      <obj_property name="ElementShortName">IMU_SPI_LINK_inst/IMU_SPI_PHY/spi_en</obj_property>
-      <obj_property name="ObjectShortName">spi_en</obj_property>
+   <wvobject fp_name="SENSOR_TOP/ADC_TOP/ADC_CONFIG/spi_rx_data_buffer" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">SENSOR_TOP/ADC_TOP/ADC_CONFIG/spi_rx_data_buffer[15:0]</obj_property>
+      <obj_property name="ObjectShortName">spi_rx_data_buffer[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="IMU_SPI_LINK_inst/IMU_SPI_PHY/tx_data_ready" type="logic">
-      <obj_property name="ElementShortName">IMU_SPI_LINK_inst/IMU_SPI_PHY/tx_data_ready</obj_property>
-      <obj_property name="ObjectShortName">tx_data_ready</obj_property>
+   <wvobject fp_name="SENSOR_TOP/ADC_TOP/ADC_CONFIG/spi_rx_valid" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">SENSOR_TOP/ADC_TOP/ADC_CONFIG/spi_rx_valid</obj_property>
+      <obj_property name="ObjectShortName">spi_rx_valid</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="IMU_SPI_LINK_inst/IMU_SPI_PHY/tx_data_valid" type="logic">
-      <obj_property name="ElementShortName">IMU_SPI_LINK_inst/IMU_SPI_PHY/tx_data_valid</obj_property>
-      <obj_property name="ObjectShortName">tx_data_valid</obj_property>
-   </wvobject>
-   <wvobject fp_name="IMU_SPI_LINK_inst/IMU_SPI_PHY/write_edge" type="logic">
-      <obj_property name="ElementShortName">IMU_SPI_LINK_inst/IMU_SPI_PHY/write_edge</obj_property>
-      <obj_property name="ObjectShortName">write_edge</obj_property>
-   </wvobject>
-   <wvobject fp_name="IMU_SPI_LINK_inst/IMU_SPI_PHY/data_cnt" type="array">
-      <obj_property name="ElementShortName">IMU_SPI_LINK_inst/IMU_SPI_PHY/data_cnt[31:0]</obj_property>
-      <obj_property name="ObjectShortName">data_cnt[31:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="IMU_SPI_LINK_inst/IMU_SPI_PHY/byte_cnt" type="array">
-      <obj_property name="ElementShortName">IMU_SPI_LINK_inst/IMU_SPI_PHY/byte_cnt[31:0]</obj_property>
-      <obj_property name="ObjectShortName">byte_cnt[31:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="IMU_SPI_LINK_inst/IMU_SPI_PHY/SPI_STAGE" type="array">
-      <obj_property name="ElementShortName">IMU_SPI_LINK_inst/IMU_SPI_PHY/SPI_STAGE[31:0]</obj_property>
-      <obj_property name="ObjectShortName">SPI_STAGE[31:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="IMU_SPI_LINK_inst/IMU_SPI_PHY/tx_data_reg" type="array">
-      <obj_property name="ElementShortName">IMU_SPI_LINK_inst/IMU_SPI_PHY/tx_data_reg[15:0]</obj_property>
-      <obj_property name="ObjectShortName">tx_data_reg[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   <wvobject fp_name="SENSOR_TOP/ADC_TOP/ADC_CONFIG/spi_rx_ready" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">SENSOR_TOP/ADC_TOP/ADC_CONFIG/spi_rx_ready</obj_property>
+      <obj_property name="ObjectShortName">spi_rx_ready</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
 </wave_config>

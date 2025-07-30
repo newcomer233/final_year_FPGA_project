@@ -2,7 +2,7 @@
 -- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2.2 (win64) Build 6060944 Thu Mar 06 19:10:01 MST 2025
--- Date        : Wed Jul  2 14:22:40 2025
+-- Date        : Tue Jul 29 14:44:03 2025
 -- Host        : LAPTOP-VEGJAO5A running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/system_clock/system_clock_stub.vhdl
@@ -17,10 +17,9 @@ entity system_clock is
   Port ( 
     sysclk_200M : out STD_LOGIC;
     eth_125M : out STD_LOGIC;
-    refclk_100M : out STD_LOGIC;
+    refclk_333M : out STD_LOGIC;
     locked : out STD_LOGIC;
-    clk_in1_p : in STD_LOGIC;
-    clk_in1_n : in STD_LOGIC
+    clk_in1 : in STD_LOGIC
   );
 
   attribute CORE_GENERATION_INFO : string;
@@ -31,6 +30,6 @@ architecture stub of system_clock is
   attribute syn_black_box : boolean;
   attribute black_box_pad_pin : string;
   attribute syn_black_box of stub : architecture is true;
-  attribute black_box_pad_pin of stub : architecture is "sysclk_200M,eth_125M,refclk_100M,locked,clk_in1_p,clk_in1_n";
+  attribute black_box_pad_pin of stub : architecture is "sysclk_200M,eth_125M,refclk_333M,locked,clk_in1";
 begin
 end;

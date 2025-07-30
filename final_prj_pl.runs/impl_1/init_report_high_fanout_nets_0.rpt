@@ -1,0 +1,31 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2.2 (win64) Build 6060944 Thu Mar 06 19:10:01 MST 2025
+| Date         : Wed Jul 30 12:45:17 2025
+| Host         : LAPTOP-VEGJAO5A running 64-bit major release  (build 9200)
+| Command      : report_high_fanout_nets -file init_report_high_fanout_nets_0.rpt
+| Design       : TOP
+| Device       : xczu9eg
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+High Fan-out Nets Information
+
+1. Summary
+----------
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Net Name                                                                                                                                                               | Fanout | Driver Type |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------------+
+| DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_pe/nl_tvalid                                                                        |   1861 | FDRE        |
+| DATA_PROCESS_TOP/DATA_TO_UDP/SR[0]                                                                                                                                     |   1315 | LUT1        |
+| DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_buf_writer/dm_write_ctrl/dm_cfg_bridge/rst_n_r_reg                                                |   1199 | LUT1        |
+| DDR4_and_ZYNQ_TOP/DDR4_i/ddr4_0/inst/u_ddr_axi/USE_UPSIZER.upsizer_d2/ARESET                                                                                           |   1015 | FDRE        |
+| DDR4_and_ZYNQ_TOP/DDR4_i/ddr4_0/inst/u_ddr_axi/axi_w_channel_0/wready_d3                                                                                               |    935 | FDRE        |
+| DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_img_reader/pool_pea_tvalid                                                          |    851 | FDRE        |
+| DDR4_and_ZYNQ_TOP/DDR4_i/axi_interconnect_0/xbar/inst/gen_samd.crossbar_samd/gen_slave_slots[3].gen_si_write.si_transactor_aw/gen_multi_thread.arbiter_resp_inst/SR[0] |    699 | LUT1        |
+| DDR4_and_ZYNQ_TOP/DDR4_i/dpuczdx8g_0/inst/GenDpu0.u_dpu0/m_dpu_top/m_alu_top/u_alu_img_reader/inst_ds_fifo_0/pea_tvalid_enable                                         |    641 | LUT3        |
+| DDR4_and_ZYNQ_TOP/DDR4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_mc/rst_r1                                                                                                  |    601 | FDRE        |
+| DDR4_and_ZYNQ_TOP/DDR4_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_ui/u_ddr_ui_wr_data/app_wdf_rdy_r                                                                          |    579 | FDRE        |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------------+
+
+

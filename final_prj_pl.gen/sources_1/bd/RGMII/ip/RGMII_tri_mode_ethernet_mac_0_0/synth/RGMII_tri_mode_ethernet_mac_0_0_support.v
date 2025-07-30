@@ -78,8 +78,6 @@ module RGMII_tri_mode_ethernet_mac_0_0_support
 
       // Receiver Interface
       //--------------------------
-      output               rx_enable,
-
       output      [27:0]   rx_statistics_vector,
       output               rx_statistics_valid,
 
@@ -94,8 +92,6 @@ module RGMII_tri_mode_ethernet_mac_0_0_support
 
       // Transmitter Interface
       //-----------------------------
-      output               tx_enable,
-
       input       [7:0]    tx_ifg_delay,
       output      [31:0]   tx_statistics_vector,
       output               tx_statistics_valid,
@@ -205,7 +201,6 @@ module RGMII_tri_mode_ethernet_mac_0_0_support
 
       // Receiver Interface
       //--------------------------
-      .rx_enable                   (rx_enable),
 
       .rx_statistics_vector        (rx_statistics_vector),
       .rx_statistics_valid         (rx_statistics_valid),
@@ -219,7 +214,6 @@ module RGMII_tri_mode_ethernet_mac_0_0_support
       .rx_axis_filter_tuser        (rx_axis_filter_tuser),
       // Transmitter Interface
       //-----------------------------
-      .tx_enable                   (tx_enable),
 
       .tx_ifg_delay                (tx_ifg_delay),
       .tx_statistics_vector        (tx_statistics_vector),

@@ -1,6 +1,27 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2.2 (win64) Build 6060944 Thu Mar 06 19:10:01 MST 2025
+| Date         : Mon Jul 28 00:26:17 2025
+| Host         : LAPTOP-VEGJAO5A running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu9eg-ffvb1156-2-i
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'slave_map'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of slave_map (xilinx.com:ip:blk_mem_gen:8.4) from (Rev. 4) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2.2 (win64) Build 6060944 Thu Mar 06 19:10:01 MST 2025
 | Date         : Tue Jun 17 00:17:25 2025
 | Host         : LAPTOP-VEGJAO5A running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

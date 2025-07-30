@@ -3,8 +3,8 @@
 # SW Build 6060944 on Thu Mar 06 19:10:01 MST 2025
 # IP Build 6050500 on Thu Mar  6 23:33:39 MST 2025
 # SharedData Build 6060542 on Thu Mar 06 10:31:07 MST 2025
-# Start of session at: Thu Jun 26 14:09:29 2025
-# Process ID         : 804
+# Start of session at: Tue Jul 22 21:34:08 2025
+# Process ID         : 46280
 # Current directory  : E:/final_prj/final_prj_pl/final_prj_pl.runs/imu_read_ila_synth_1
 # Command line       : vivado.exe -log imu_read_ila.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source imu_read_ila.tcl
 # Log file           : E:/final_prj/final_prj_pl/final_prj_pl.runs/imu_read_ila_synth_1/imu_read_ila.vds
@@ -19,6 +19,6 @@
 # Host memory        : 102673 MB
 # Swap memory        : 6442 MB
 # Total Virtual      : 109116 MB
-# Available Virtual  : 82444 MB
+# Available Virtual  : 81409 MB
 #-----------------------------------------------------------
 source imu_read_ila.tcl -notrace

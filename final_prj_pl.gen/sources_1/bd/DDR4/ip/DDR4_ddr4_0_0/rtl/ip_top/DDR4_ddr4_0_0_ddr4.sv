@@ -250,14 +250,14 @@
     parameter         CLKOUTPHY_MODE           = "VCO_2X",
     parameter         C_FAMILY                 = "zynquplus",
 
-    parameter C_S_AXI_ID_WIDTH                = 2,
+    parameter C_S_AXI_ID_WIDTH                = 18,
                                               // Width of all master and slave ID signals.
                                               // # = >= 1.
     parameter C_S_AXI_ADDR_WIDTH              = 31,
                                               // Width of S_AXI_AWADDR, S_AXI_ARADDR, M_AXI_AWADDR and
                                               // M_AXI_ARADDR for all SI/MI slots.
                                               // # = 32.
-    parameter C_S_AXI_DATA_WIDTH              = 256,
+    parameter C_S_AXI_DATA_WIDTH              = 128,
                                               // Width of WDATA and RDATA on SI slot.
                                               // Must be <= APP_DATA_WIDTH.
                                               // # = 32, 64, 128, 256.

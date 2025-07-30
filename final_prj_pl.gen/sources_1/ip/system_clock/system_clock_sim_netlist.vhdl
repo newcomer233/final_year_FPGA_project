@@ -2,7 +2,7 @@
 -- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2.2 (win64) Build 6060944 Thu Mar 06 19:10:01 MST 2025
--- Date        : Wed Jul  2 14:22:40 2025
+-- Date        : Tue Jul 29 14:44:03 2025
 -- Host        : LAPTOP-VEGJAO5A running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/ip/system_clock/system_clock_sim_netlist.vhdl
@@ -19,21 +19,19 @@ entity system_clock_clk_wiz is
   port (
     sysclk_200M : out STD_LOGIC;
     eth_125M : out STD_LOGIC;
-    refclk_100M : out STD_LOGIC;
+    refclk_333M : out STD_LOGIC;
     locked : out STD_LOGIC;
-    clk_in1_p : in STD_LOGIC;
-    clk_in1_n : in STD_LOGIC
+    clk_in1 : in STD_LOGIC
   );
 end system_clock_clk_wiz;
 
 architecture STRUCTURE of system_clock_clk_wiz is
-  signal clk_in1_system_clock : STD_LOGIC;
   signal clkfbout_system_clock : STD_LOGIC;
   signal eth_125M_system_clock : STD_LOGIC;
   signal eth_125M_system_clock_en_clk : STD_LOGIC;
   signal \^locked\ : STD_LOGIC;
-  signal refclk_100M_system_clock : STD_LOGIC;
-  signal refclk_100M_system_clock_en_clk : STD_LOGIC;
+  signal refclk_333M_system_clock : STD_LOGIC;
+  signal refclk_333M_system_clock_en_clk : STD_LOGIC;
   signal seq_reg1 : STD_LOGIC_VECTOR ( 7 downto 0 );
   attribute RTL_KEEP : string;
   attribute RTL_KEEP of seq_reg1 : signal is "true";
@@ -70,13 +68,6 @@ architecture STRUCTURE of system_clock_clk_wiz is
   attribute XILINX_LEGACY_PRIM of clkf_buf : label is "BUFG";
   attribute XILINX_TRANSFORM_PINMAP : string;
   attribute XILINX_TRANSFORM_PINMAP of clkf_buf : label is "VCC:CE";
-  attribute BOX_TYPE of clkin1_ibufds : label is "PRIMITIVE";
-  attribute CAPACITANCE : string;
-  attribute CAPACITANCE of clkin1_ibufds : label is "DONT_CARE";
-  attribute IBUF_DELAY_VALUE : string;
-  attribute IBUF_DELAY_VALUE of clkin1_ibufds : label is "0";
-  attribute IFD_DELAY_VALUE : string;
-  attribute IFD_DELAY_VALUE of clkin1_ibufds : label is "AUTO";
   attribute BOX_TYPE of clkout1_buf : label is "PRIMITIVE";
   attribute BOX_TYPE of clkout1_buf_en : label is "PRIMITIVE";
   attribute BOX_TYPE of clkout2_buf : label is "PRIMITIVE";
@@ -148,16 +139,6 @@ clkf_buf: unisim.vcomponents.BUFGCE
       I => clkfbout_system_clock,
       O => NLW_clkf_buf_O_UNCONNECTED
     );
-clkin1_ibufds: unisim.vcomponents.IBUFDS
-    generic map(
-      DIFF_TERM => false,
-      IOSTANDARD => "DEFAULT"
-    )
-        port map (
-      I => clk_in1_p,
-      IB => clk_in1_n,
-      O => clk_in1_system_clock
-    );
 clkout1_buf: unisim.vcomponents.BUFGCE
     generic map(
       CE_TYPE => "SYNC",
@@ -220,8 +201,8 @@ clkout3_buf: unisim.vcomponents.BUFGCE
     )
         port map (
       CE => seq_reg3(7),
-      I => refclk_100M_system_clock,
-      O => refclk_100M
+      I => refclk_333M_system_clock,
+      O => refclk_333M
     );
 clkout3_buf_en: unisim.vcomponents.BUFGCE
     generic map(
@@ -233,8 +214,8 @@ clkout3_buf_en: unisim.vcomponents.BUFGCE
     )
         port map (
       CE => '1',
-      I => refclk_100M_system_clock,
-      O => refclk_100M_system_clock_en_clk
+      I => refclk_333M_system_clock,
+      O => refclk_333M_system_clock_en_clk
     );
 mmcme4_adv_inst: unisim.vcomponents.MMCME4_ADV
     generic map(
@@ -244,7 +225,7 @@ mmcme4_adv_inst: unisim.vcomponents.MMCME4_ADV
       CLKFBOUT_USE_FINE_PS => "FALSE",
       CLKIN1_PERIOD => 5.000000,
       CLKIN2_PERIOD => 0.000000,
-      CLKOUT0_DIVIDE_F => 5.000000,
+      CLKOUT0_DIVIDE_F => 10.000000,
       CLKOUT0_DUTY_CYCLE => 0.500000,
       CLKOUT0_PHASE => 0.000000,
       CLKOUT0_USE_FINE_PS => "FALSE",
@@ -252,7 +233,7 @@ mmcme4_adv_inst: unisim.vcomponents.MMCME4_ADV
       CLKOUT1_DUTY_CYCLE => 0.500000,
       CLKOUT1_PHASE => 0.000000,
       CLKOUT1_USE_FINE_PS => "FALSE",
-      CLKOUT2_DIVIDE => 10,
+      CLKOUT2_DIVIDE => 3,
       CLKOUT2_DUTY_CYCLE => 0.500000,
       CLKOUT2_PHASE => 0.000000,
       CLKOUT2_USE_FINE_PS => "FALSE",
@@ -297,7 +278,7 @@ mmcme4_adv_inst: unisim.vcomponents.MMCME4_ADV
       CLKFBOUT => clkfbout_system_clock,
       CLKFBOUTB => NLW_mmcme4_adv_inst_CLKFBOUTB_UNCONNECTED,
       CLKFBSTOPPED => NLW_mmcme4_adv_inst_CLKFBSTOPPED_UNCONNECTED,
-      CLKIN1 => clk_in1_system_clock,
+      CLKIN1 => clk_in1,
       CLKIN2 => '0',
       CLKINSEL => '1',
       CLKINSTOPPED => NLW_mmcme4_adv_inst_CLKINSTOPPED_UNCONNECTED,
@@ -305,7 +286,7 @@ mmcme4_adv_inst: unisim.vcomponents.MMCME4_ADV
       CLKOUT0B => NLW_mmcme4_adv_inst_CLKOUT0B_UNCONNECTED,
       CLKOUT1 => eth_125M_system_clock,
       CLKOUT1B => NLW_mmcme4_adv_inst_CLKOUT1B_UNCONNECTED,
-      CLKOUT2 => refclk_100M_system_clock,
+      CLKOUT2 => refclk_333M_system_clock,
       CLKOUT2B => NLW_mmcme4_adv_inst_CLKOUT2B_UNCONNECTED,
       CLKOUT3 => NLW_mmcme4_adv_inst_CLKOUT3_UNCONNECTED,
       CLKOUT3B => NLW_mmcme4_adv_inst_CLKOUT3B_UNCONNECTED,
@@ -508,7 +489,7 @@ mmcme4_adv_inst: unisim.vcomponents.MMCME4_ADV
       INIT => '0'
     )
         port map (
-      C => refclk_100M_system_clock_en_clk,
+      C => refclk_333M_system_clock_en_clk,
       CE => '1',
       D => \^locked\,
       Q => seq_reg3(0),
@@ -519,7 +500,7 @@ mmcme4_adv_inst: unisim.vcomponents.MMCME4_ADV
       INIT => '0'
     )
         port map (
-      C => refclk_100M_system_clock_en_clk,
+      C => refclk_333M_system_clock_en_clk,
       CE => '1',
       D => seq_reg3(0),
       Q => seq_reg3(1),
@@ -530,7 +511,7 @@ mmcme4_adv_inst: unisim.vcomponents.MMCME4_ADV
       INIT => '0'
     )
         port map (
-      C => refclk_100M_system_clock_en_clk,
+      C => refclk_333M_system_clock_en_clk,
       CE => '1',
       D => seq_reg3(1),
       Q => seq_reg3(2),
@@ -541,7 +522,7 @@ mmcme4_adv_inst: unisim.vcomponents.MMCME4_ADV
       INIT => '0'
     )
         port map (
-      C => refclk_100M_system_clock_en_clk,
+      C => refclk_333M_system_clock_en_clk,
       CE => '1',
       D => seq_reg3(2),
       Q => seq_reg3(3),
@@ -552,7 +533,7 @@ mmcme4_adv_inst: unisim.vcomponents.MMCME4_ADV
       INIT => '0'
     )
         port map (
-      C => refclk_100M_system_clock_en_clk,
+      C => refclk_333M_system_clock_en_clk,
       CE => '1',
       D => seq_reg3(3),
       Q => seq_reg3(4),
@@ -563,7 +544,7 @@ mmcme4_adv_inst: unisim.vcomponents.MMCME4_ADV
       INIT => '0'
     )
         port map (
-      C => refclk_100M_system_clock_en_clk,
+      C => refclk_333M_system_clock_en_clk,
       CE => '1',
       D => seq_reg3(4),
       Q => seq_reg3(5),
@@ -574,7 +555,7 @@ mmcme4_adv_inst: unisim.vcomponents.MMCME4_ADV
       INIT => '0'
     )
         port map (
-      C => refclk_100M_system_clock_en_clk,
+      C => refclk_333M_system_clock_en_clk,
       CE => '1',
       D => seq_reg3(5),
       Q => seq_reg3(6),
@@ -585,7 +566,7 @@ mmcme4_adv_inst: unisim.vcomponents.MMCME4_ADV
       INIT => '0'
     )
         port map (
-      C => refclk_100M_system_clock_en_clk,
+      C => refclk_333M_system_clock_en_clk,
       CE => '1',
       D => seq_reg3(6),
       Q => seq_reg3(7),
@@ -600,10 +581,9 @@ entity system_clock is
   port (
     sysclk_200M : out STD_LOGIC;
     eth_125M : out STD_LOGIC;
-    refclk_100M : out STD_LOGIC;
+    refclk_333M : out STD_LOGIC;
     locked : out STD_LOGIC;
-    clk_in1_p : in STD_LOGIC;
-    clk_in1_n : in STD_LOGIC
+    clk_in1 : in STD_LOGIC
   );
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of system_clock : entity is true;
@@ -613,11 +593,10 @@ architecture STRUCTURE of system_clock is
 begin
 inst: entity work.system_clock_clk_wiz
      port map (
-      clk_in1_n => clk_in1_n,
-      clk_in1_p => clk_in1_p,
+      clk_in1 => clk_in1,
       eth_125M => eth_125M,
       locked => locked,
-      refclk_100M => refclk_100M,
+      refclk_333M => refclk_333M,
       sysclk_200M => sysclk_200M
     );
 end STRUCTURE;

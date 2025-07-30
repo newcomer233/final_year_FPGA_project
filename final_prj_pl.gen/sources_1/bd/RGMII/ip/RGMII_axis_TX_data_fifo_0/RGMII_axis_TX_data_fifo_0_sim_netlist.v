@@ -2,7 +2,7 @@
 // Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2.2 (win64) Build 6060944 Thu Mar 06 19:10:01 MST 2025
-// Date        : Wed Jul  2 13:46:13 2025
+// Date        : Wed Jul 30 12:18:46 2025
 // Host        : LAPTOP-VEGJAO5A running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               e:/final_prj/final_prj_pl/final_prj_pl.gen/sources_1/bd/RGMII/ip/RGMII_axis_TX_data_fifo_0/RGMII_axis_TX_data_fifo_0_sim_netlist.v
@@ -36,8 +36,8 @@ module RGMII_axis_TX_data_fifo_0
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TDATA" *) input [7:0]s_axis_tdata;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TLAST" *) input s_axis_tlast;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TUSER" *) input [0:0]s_axis_tuser;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 M_CLKIF CLK" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_CLKIF, ASSOCIATED_BUSIF M_AXIS, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN RGMII_axis_clk_0, INSERT_VIP 0" *) input m_axis_aclk;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TVALID" *) (* X_INTERFACE_MODE = "master" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXIS, TDATA_NUM_BYTES 1, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 200000000, PHASE 0.0, CLK_DOMAIN RGMII_axis_clk_0, LAYERED_METADATA undef, INSERT_VIP 0" *) output m_axis_tvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 M_CLKIF CLK" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_CLKIF, ASSOCIATED_BUSIF M_AXIS, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN RGMII_axis_clk, INSERT_VIP 0" *) input m_axis_aclk;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TVALID" *) (* X_INTERFACE_MODE = "master" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXIS, TDATA_NUM_BYTES 1, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN RGMII_axis_clk, LAYERED_METADATA undef, INSERT_VIP 0" *) output m_axis_tvalid;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TREADY" *) input m_axis_tready;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TDATA" *) output [7:0]m_axis_tdata;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TLAST" *) output m_axis_tlast;
@@ -78,7 +78,7 @@ module RGMII_axis_TX_data_fifo_0
   (* C_ECC_MODE = "0" *) 
   (* C_FAMILY = "zynquplus" *) 
   (* C_FIFO_DEPTH = "1024" *) 
-  (* C_FIFO_MEMORY_TYPE = "auto" *) 
+  (* C_FIFO_MEMORY_TYPE = "block" *) 
   (* C_FIFO_MODE = "1" *) 
   (* C_IS_ACLK_ASYNC = "1" *) 
   (* C_PROG_EMPTY_THRESH = "5" *) 
@@ -108,7 +108,7 @@ module RGMII_axis_TX_data_fifo_0
   (* LP_CLOCKING_MODE = "independent_clock" *) 
   (* LP_ECC_MODE = "no_ecc" *) 
   (* LP_FIFO_DEPTH = "1024" *) 
-  (* LP_FIFO_MEMORY_TYPE = "auto" *) 
+  (* LP_FIFO_MEMORY_TYPE = "block" *) 
   (* LP_M_ACLKEN_CAN_TOGGLE = "0" *) 
   (* LP_PACKET_FIFO = "false" *) 
   (* LP_PROG_EMPTY_THRESH = "5" *) 
@@ -161,7 +161,7 @@ endmodule
 (* C_ACLKEN_CONV_MODE = "0" *) (* C_AXIS_SIGNAL_SET = "147" *) (* C_AXIS_TDATA_WIDTH = "8" *) 
 (* C_AXIS_TDEST_WIDTH = "1" *) (* C_AXIS_TID_WIDTH = "1" *) (* C_AXIS_TUSER_WIDTH = "1" *) 
 (* C_ECC_MODE = "0" *) (* C_FAMILY = "zynquplus" *) (* C_FIFO_DEPTH = "1024" *) 
-(* C_FIFO_MEMORY_TYPE = "auto" *) (* C_FIFO_MODE = "1" *) (* C_IS_ACLK_ASYNC = "1" *) 
+(* C_FIFO_MEMORY_TYPE = "block" *) (* C_FIFO_MODE = "1" *) (* C_IS_ACLK_ASYNC = "1" *) 
 (* C_PROG_EMPTY_THRESH = "5" *) (* C_PROG_FULL_THRESH = "11" *) (* C_SYNCHRONIZER_STAGE = "3" *) 
 (* C_USE_ADV_FEATURES = "825241648" *) (* G_INDX_SS_TDATA = "1" *) (* G_INDX_SS_TDEST = "6" *) 
 (* G_INDX_SS_TID = "5" *) (* G_INDX_SS_TKEEP = "3" *) (* G_INDX_SS_TLAST = "4" *) 
@@ -171,7 +171,7 @@ endmodule
 (* G_MASK_SS_TSTRB = "4" *) (* G_MASK_SS_TUSER = "128" *) (* G_TASK_SEVERITY_ERR = "2" *) 
 (* G_TASK_SEVERITY_INFO = "0" *) (* G_TASK_SEVERITY_WARNING = "1" *) (* LP_CDC_SYNC_STAGES = "3" *) 
 (* LP_CLOCKING_MODE = "independent_clock" *) (* LP_ECC_MODE = "no_ecc" *) (* LP_FIFO_DEPTH = "1024" *) 
-(* LP_FIFO_MEMORY_TYPE = "auto" *) (* LP_M_ACLKEN_CAN_TOGGLE = "0" *) (* LP_PACKET_FIFO = "false" *) 
+(* LP_FIFO_MEMORY_TYPE = "block" *) (* LP_M_ACLKEN_CAN_TOGGLE = "0" *) (* LP_PACKET_FIFO = "false" *) 
 (* LP_PROG_EMPTY_THRESH = "5" *) (* LP_PROG_FULL_THRESH = "11" *) (* LP_RD_DATA_COUNT_WIDTH = "11" *) 
 (* LP_RELATED_CLOCKS = "0" *) (* LP_S_ACLKEN_CAN_TOGGLE = "0" *) (* LP_TDATA_WIDTH = "8" *) 
 (* LP_TDEST_WIDTH = "1" *) (* LP_TID_WIDTH = "1" *) (* LP_TUSER_WIDTH = "1" *) 
@@ -388,7 +388,7 @@ module RGMII_axis_TX_data_fifo_0_axis_data_fifo_v2_0_16_top
   (* PROG_FULL_THRESH = "11" *) 
   (* P_COMMON_CLOCK = "0" *) 
   (* P_ECC_MODE = "0" *) 
-  (* P_FIFO_MEMORY_TYPE = "0" *) 
+  (* P_FIFO_MEMORY_TYPE = "2" *) 
   (* P_PKT_MODE = "0" *) 
   (* RD_DATA_COUNT_WIDTH = "11" *) 
   (* RELATED_CLOCKS = "0" *) 
@@ -4333,10 +4333,10 @@ endmodule
 (* CDC_SYNC_STAGES = "3" *) (* CLOCKING_MODE = "independent_clock" *) (* ECC_MODE = "no_ecc" *) 
 (* EN_ADV_FEATURE_AXIS = "16'b0001000000000000" *) (* EN_ADV_FEATURE_AXIS_INT = "16'b0001000000000000" *) (* EN_ALMOST_EMPTY_INT = "1'b0" *) 
 (* EN_ALMOST_FULL_INT = "1'b0" *) (* EN_DATA_VALID_INT = "1'b1" *) (* EN_SIM_ASSERT_ERR = "warning" *) 
-(* FIFO_DEPTH = "1024" *) (* FIFO_MEMORY_TYPE = "auto" *) (* LOG_DEPTH_AXIS = "10" *) 
+(* FIFO_DEPTH = "1024" *) (* FIFO_MEMORY_TYPE = "block" *) (* LOG_DEPTH_AXIS = "10" *) 
 (* ORIG_REF_NAME = "xpm_fifo_axis" *) (* PACKET_FIFO = "false" *) (* PKT_SIZE_LT8 = "1'b0" *) 
 (* PROG_EMPTY_THRESH = "5" *) (* PROG_FULL_THRESH = "11" *) (* P_COMMON_CLOCK = "0" *) 
-(* P_ECC_MODE = "0" *) (* P_FIFO_MEMORY_TYPE = "0" *) (* P_PKT_MODE = "0" *) 
+(* P_ECC_MODE = "0" *) (* P_FIFO_MEMORY_TYPE = "2" *) (* P_PKT_MODE = "0" *) 
 (* RD_DATA_COUNT_WIDTH = "11" *) (* RELATED_CLOCKS = "0" *) (* SIM_ASSERT_CHK = "0" *) 
 (* TDATA_OFFSET = "8" *) (* TDATA_WIDTH = "8" *) (* TDEST_OFFSET = "12" *) 
 (* TDEST_WIDTH = "1" *) (* TID_OFFSET = "11" *) (* TID_WIDTH = "1" *) 
@@ -4512,8 +4512,8 @@ module RGMII_axis_TX_data_fifo_0_xpm_fifo_axis
   (* EN_WACK = "1'b0" *) 
   (* EN_WDC = "1'b0" *) 
   (* FG_EQ_ASYM_DOUT = "1'b0" *) 
-  (* FIFO_MEMORY_TYPE = "0" *) 
-  (* FIFO_MEM_TYPE = "0" *) 
+  (* FIFO_MEMORY_TYPE = "2" *) 
+  (* FIFO_MEM_TYPE = "2" *) 
   (* FIFO_READ_DEPTH = "1024" *) 
   (* FIFO_READ_LATENCY = "0" *) 
   (* FIFO_SIZE = "14336" *) 
@@ -4598,7 +4598,7 @@ endmodule
 (* EN_DVLD = "1'b1" *) (* EN_OF = "1'b0" *) (* EN_PE = "1'b0" *) 
 (* EN_PF = "1'b0" *) (* EN_RDC = "1'b0" *) (* EN_SIM_ASSERT_ERR = "warning" *) 
 (* EN_UF = "1'b0" *) (* EN_WACK = "1'b0" *) (* EN_WDC = "1'b0" *) 
-(* FG_EQ_ASYM_DOUT = "1'b0" *) (* FIFO_MEMORY_TYPE = "0" *) (* FIFO_MEM_TYPE = "0" *) 
+(* FG_EQ_ASYM_DOUT = "1'b0" *) (* FIFO_MEMORY_TYPE = "2" *) (* FIFO_MEM_TYPE = "2" *) 
 (* FIFO_READ_DEPTH = "1024" *) (* FIFO_READ_LATENCY = "0" *) (* FIFO_SIZE = "14336" *) 
 (* FIFO_WRITE_DEPTH = "1024" *) (* FULL_RESET_VALUE = "1" *) (* FULL_RST_VAL = "1'b1" *) 
 (* ORIG_REF_NAME = "xpm_fifo_base" *) (* PE_THRESH_ADJ = "3" *) (* PE_THRESH_MAX = "1019" *) 
@@ -5012,7 +5012,7 @@ module RGMII_axis_TX_data_fifo_0_xpm_fifo_base
   (* MEMORY_INIT_FILE = "none" *) 
   (* MEMORY_INIT_PARAM = "" *) 
   (* MEMORY_OPTIMIZATION = "true" *) 
-  (* MEMORY_PRIMITIVE = "0" *) 
+  (* MEMORY_PRIMITIVE = "2" *) 
   (* MEMORY_SIZE = "14336" *) 
   (* MEMORY_TYPE = "1" *) 
   (* MESSAGE_CONTROL = "0" *) 
@@ -5022,7 +5022,7 @@ module RGMII_axis_TX_data_fifo_0_xpm_fifo_base
   (* P_ENABLE_BYTE_WRITE_B = "0" *) 
   (* P_MAX_DEPTH_DATA = "1024" *) 
   (* P_MEMORY_OPT = "yes" *) 
-  (* P_MEMORY_PRIMITIVE = "auto" *) 
+  (* P_MEMORY_PRIMITIVE = "block" *) 
   (* P_MIN_WIDTH_DATA = "14" *) 
   (* P_MIN_WIDTH_DATA_A = "14" *) 
   (* P_MIN_WIDTH_DATA_B = "14" *) 
@@ -5035,7 +5035,7 @@ module RGMII_axis_TX_data_fifo_0_xpm_fifo_base
   (* P_NUM_ROWS_READ_B = "1" *) 
   (* P_NUM_ROWS_WRITE_A = "1" *) 
   (* P_NUM_ROWS_WRITE_B = "1" *) 
-  (* P_SDP_WRITE_MODE = "yes" *) 
+  (* P_SDP_WRITE_MODE = "no" *) 
   (* P_WIDTH_ADDR_LSB_READ_A = "0" *) 
   (* P_WIDTH_ADDR_LSB_READ_B = "0" *) 
   (* P_WIDTH_ADDR_LSB_WRITE_A = "0" *) 
@@ -5987,15 +5987,15 @@ endmodule
 (* CLOCKING_MODE = "1" *) (* ECC_BIT_RANGE = "[7:0]" *) (* ECC_MODE = "0" *) 
 (* ECC_TYPE = "NONE" *) (* IGNORE_INIT_SYNTH = "0" *) (* MAX_NUM_CHAR = "0" *) 
 (* MEMORY_INIT_FILE = "none" *) (* MEMORY_INIT_PARAM = "" *) (* MEMORY_OPTIMIZATION = "true" *) 
-(* MEMORY_PRIMITIVE = "0" *) (* MEMORY_SIZE = "14336" *) (* MEMORY_TYPE = "1" *) 
+(* MEMORY_PRIMITIVE = "2" *) (* MEMORY_SIZE = "14336" *) (* MEMORY_TYPE = "1" *) 
 (* MESSAGE_CONTROL = "0" *) (* NUM_CHAR_LOC = "0" *) (* ORIG_REF_NAME = "xpm_memory_base" *) 
 (* P_ECC_MODE = "0" *) (* P_ENABLE_BYTE_WRITE_A = "0" *) (* P_ENABLE_BYTE_WRITE_B = "0" *) 
-(* P_MAX_DEPTH_DATA = "1024" *) (* P_MEMORY_OPT = "yes" *) (* P_MEMORY_PRIMITIVE = "auto" *) 
+(* P_MAX_DEPTH_DATA = "1024" *) (* P_MEMORY_OPT = "yes" *) (* P_MEMORY_PRIMITIVE = "block" *) 
 (* P_MIN_WIDTH_DATA = "14" *) (* P_MIN_WIDTH_DATA_A = "14" *) (* P_MIN_WIDTH_DATA_B = "14" *) 
 (* P_MIN_WIDTH_DATA_ECC = "14" *) (* P_MIN_WIDTH_DATA_LDW = "4" *) (* P_MIN_WIDTH_DATA_SHFT = "14" *) 
 (* P_NUM_COLS_WRITE_A = "1" *) (* P_NUM_COLS_WRITE_B = "1" *) (* P_NUM_ROWS_READ_A = "1" *) 
 (* P_NUM_ROWS_READ_B = "1" *) (* P_NUM_ROWS_WRITE_A = "1" *) (* P_NUM_ROWS_WRITE_B = "1" *) 
-(* P_SDP_WRITE_MODE = "yes" *) (* P_WIDTH_ADDR_LSB_READ_A = "0" *) (* P_WIDTH_ADDR_LSB_READ_B = "0" *) 
+(* P_SDP_WRITE_MODE = "no" *) (* P_WIDTH_ADDR_LSB_READ_A = "0" *) (* P_WIDTH_ADDR_LSB_READ_B = "0" *) 
 (* P_WIDTH_ADDR_LSB_WRITE_A = "0" *) (* P_WIDTH_ADDR_LSB_WRITE_B = "0" *) (* P_WIDTH_ADDR_READ_A = "10" *) 
 (* P_WIDTH_ADDR_READ_B = "10" *) (* P_WIDTH_ADDR_WRITE_A = "10" *) (* P_WIDTH_ADDR_WRITE_B = "10" *) 
 (* P_WIDTH_COL_WRITE_A = "14" *) (* P_WIDTH_COL_WRITE_B = "14" *) (* RAM_DECOMP = "auto" *) 
@@ -6120,7 +6120,7 @@ module RGMII_axis_TX_data_fifo_0_xpm_memory_base
   (* RDADDR_COLLISION_HWCONFIG = "DELAYED_WRITE" *) 
   (* RTL_RAM_BITS = "14336" *) 
   (* RTL_RAM_NAME = "xpm_memory_base/gen_wr_a.gen_word_narrow.mem_reg" *) 
-  (* RTL_RAM_STYLE = "auto" *) 
+  (* RTL_RAM_STYLE = "block" *) 
   (* RTL_RAM_TYPE = "RAM_SDP" *) 
   (* ram_addr_begin = "0" *) 
   (* ram_addr_end = "1023" *) 
@@ -6221,7 +6221,7 @@ module RGMII_axis_TX_data_fifo_0_xpm_memory_base
     .SRVAL_A(18'h00000),
     .SRVAL_B(18'h00000),
     .WRITE_MODE_A("NO_CHANGE"),
-    .WRITE_MODE_B("WRITE_FIRST"),
+    .WRITE_MODE_B("NO_CHANGE"),
     .WRITE_WIDTH_A(18),
     .WRITE_WIDTH_B(18)) 
     \gen_wr_a.gen_word_narrow.mem_reg_bram_0 

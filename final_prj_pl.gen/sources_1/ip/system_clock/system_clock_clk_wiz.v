@@ -53,14 +53,14 @@
 //  Output     Output      Phase    Duty Cycle   Pk-to-Pk     Phase
 //   Clock     Freq (MHz)  (degrees)    (%)     Jitter (ps)  Error (ps)
 //----------------------------------------------------------------------------
-// sysclk_200M__200.00000______0.000______50.0_______98.146_____89.971
+// sysclk_200M__100.00000______0.000______50.0______112.316_____89.971
 // eth_125M__125.00000______0.000______50.0______107.523_____89.971
-// refclk_100M__100.00000______0.000______50.0______112.316_____89.971
+// refclk_333M__333.33333______0.000______50.0_______88.896_____89.971
 //
 //----------------------------------------------------------------------------
 // Input Clock   Freq (MHz)    Input Jitter (UI)
 //----------------------------------------------------------------------------
-// __primary_________200.000____________0.010
+// __primary__________200.00____________0.010
 
 `timescale 1ps/1ps
 
@@ -70,20 +70,16 @@ module system_clock_clk_wiz
   // Clock out ports
   output        sysclk_200M,
   output        eth_125M,
-  output        refclk_100M,
+  output        refclk_333M,
   // Status and control signals
   output        locked,
-  input         clk_in1_p,
-  input         clk_in1_n
+  input         clk_in1
  );
   // Input buffering
   //------------------------------------
 wire clk_in1_system_clock;
 wire clk_in2_system_clock;
-  IBUFDS clkin1_ibufds
-   (.O  (clk_in1_system_clock),
-    .I  (clk_in1_p),
-    .IB (clk_in1_n));
+  assign clk_in1_system_clock = clk_in1;
 
 
 
@@ -97,8 +93,8 @@ wire clk_in2_system_clock;
 
   wire        sysclk_200M_system_clock;
   wire        eth_125M_system_clock;
-  wire        refclk_100M_system_clock;
-  wire        clk_out4_system_clock;
+  wire        refclk_333M_system_clock;
+  wire        ddr4_clk_system_clock;
   wire        clk_out5_system_clock;
   wire        clk_out6_system_clock;
   wire        clk_out7_system_clock;
@@ -130,6 +126,10 @@ wire clk_in2_system_clock;
   (* ASYNC_REG = "TRUE" *)
   reg  [7 :0] seq_reg3 = 0;
 
+ 
+
+// Auto Instantiation//
+
 
   
     MMCME4_ADV
@@ -142,7 +142,7 @@ wire clk_in2_system_clock;
     .CLKFBOUT_MULT_F      (5.000),
     .CLKFBOUT_PHASE       (0.000),
     .CLKFBOUT_USE_FINE_PS ("FALSE"),
-    .CLKOUT0_DIVIDE_F     (5.000),
+    .CLKOUT0_DIVIDE_F     (10.000),
     .CLKOUT0_PHASE        (0.000),
     .CLKOUT0_DUTY_CYCLE   (0.500),
     .CLKOUT0_USE_FINE_PS  ("FALSE"),
@@ -150,22 +150,22 @@ wire clk_in2_system_clock;
     .CLKOUT1_PHASE        (0.000),
     .CLKOUT1_DUTY_CYCLE   (0.500),
     .CLKOUT1_USE_FINE_PS  ("FALSE"),
-    .CLKOUT2_DIVIDE       (10),
+    .CLKOUT2_DIVIDE       (3),
     .CLKOUT2_PHASE        (0.000),
     .CLKOUT2_DUTY_CYCLE   (0.500),
     .CLKOUT2_USE_FINE_PS  ("FALSE"),
     .CLKIN1_PERIOD        (5.000))
   
-  mmcme4_adv_inst
+     mmcme4_adv_inst
     // Output clocks
    (
     .CLKFBOUT            (clkfbout_system_clock),
     .CLKFBOUTB           (clkfboutb_unused),
     .CLKOUT0             (sysclk_200M_system_clock),
     .CLKOUT0B            (clkout0b_unused),
-    .CLKOUT1             (eth_125M_system_clock),
+	.CLKOUT1             (eth_125M_system_clock),
     .CLKOUT1B            (clkout1b_unused),
-    .CLKOUT2             (refclk_100M_system_clock),
+	.CLKOUT2             (refclk_333M_system_clock),
     .CLKOUT2B            (clkout2b_unused),
     .CLKOUT3             (clkout3_unused),
     .CLKOUT3B            (clkout3b_unused),
@@ -199,6 +199,8 @@ wire clk_in2_system_clock;
     .CLKFBSTOPPED        (clkfbstopped_unused),
     .PWRDWN              (1'b0),
     .RST                 (1'b0));
+
+
 
   assign locked = locked_int;
 // Clock Monitor clock assigning
@@ -243,16 +245,16 @@ wire clk_in2_system_clock;
 
 
   BUFGCE clkout3_buf
-   (.O   (refclk_100M),
+   (.O   (refclk_333M),
     .CE  (seq_reg3[7]),
-    .I   (refclk_100M_system_clock));
+    .I   (refclk_333M_system_clock));
  
   BUFGCE clkout3_buf_en
-   (.O   (refclk_100M_system_clock_en_clk),
+   (.O   (refclk_333M_system_clock_en_clk),
     .CE  (1'b1),
-    .I   (refclk_100M_system_clock));
+    .I   (refclk_333M_system_clock));
  
-  always @(posedge refclk_100M_system_clock_en_clk)
+  always @(posedge refclk_333M_system_clock_en_clk)
         seq_reg3 <= {seq_reg3[6:0],locked_int};
 
 

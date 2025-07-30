@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2.2 (win64) Build 6060944 Thu Mar 06 19:10:01 MST 2025
-| Date         : Mon Jul 21 13:48:29 2025
+| Date         : Wed Jul 30 12:42:57 2025
 | Host         : LAPTOP-VEGJAO5A running 64-bit major release  (build 9200)
 | Command      : report_utilization -file TOP_utilization_synth.rpt -pb TOP_utilization_synth.pb
 | Design       : TOP
@@ -32,14 +32,14 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| CLB LUTs*               | 1366 |     0 |          0 |    274080 |  0.50 |
-|   LUT as Logic          | 1366 |     0 |          0 |    274080 |  0.50 |
+| CLB LUTs*               | 2650 |     0 |          0 |    274080 |  0.97 |
+|   LUT as Logic          | 2650 |     0 |          0 |    274080 |  0.97 |
 |   LUT as Memory         |    0 |     0 |          0 |    144000 |  0.00 |
-| CLB Registers           | 1874 |     0 |          0 |    548160 |  0.34 |
-|   Register as Flip Flop | 1874 |     0 |          0 |    548160 |  0.34 |
+| CLB Registers           | 3298 |     0 |          0 |    548160 |  0.60 |
+|   Register as Flip Flop | 3298 |     0 |          0 |    548160 |  0.60 |
 |   Register as Latch     |    0 |     0 |          0 |    548160 |  0.00 |
-| CARRY8                  |   68 |     0 |          0 |     34260 |  0.20 |
-| F7 Muxes                |    1 |     0 |          0 |    137040 | <0.01 |
+| CARRY8                  |  123 |     0 |          0 |     34260 |  0.36 |
+| F7 Muxes                |    0 |     0 |          0 |    137040 |  0.00 |
 | F8 Muxes                |    0 |     0 |          0 |     68520 |  0.00 |
 | F9 Muxes                |    0 |     0 |          0 |     34260 |  0.00 |
 +-------------------------+------+-------+------------+-----------+-------+
@@ -60,10 +60,10 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | 0     |            _ |         Set |            - |
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
-| 0     |          Yes |           - |          Set |
-| 487   |          Yes |           - |        Reset |
-| 1     |          Yes |         Set |            - |
-| 1386  |          Yes |       Reset |            - |
+| 1     |          Yes |           - |          Set |
+| 713   |          Yes |           - |        Reset |
+| 5     |          Yes |         Set |            - |
+| 2579  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -96,7 +96,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +------------+------+-------+------------+-----------+-------+
 |  Site Type | Used | Fixed | Prohibited | Available | Util% |
 +------------+------+-------+------------+-----------+-------+
-| Bonded IOB |   19 |     0 |          0 |       328 |  5.79 |
+| Bonded IOB |   25 |     0 |          0 |       328 |  7.62 |
 +------------+------+-------+------------+-----------+-------+
 
 
@@ -106,7 +106,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +------------+------+-------+------------+-----------+-------+
 |  Site Type | Used | Fixed | Prohibited | Available | Util% |
 +------------+------+-------+------------+-----------+-------+
-| BUFGCE     |    0 |     0 |          0 |       116 |  0.00 |
+| BUFGCE     |    1 |     0 |          0 |       116 |  0.86 |
 | BUFGCE_DIV |    0 |     0 |          0 |        16 |  0.00 |
 | BUFG_GT    |    0 |     0 |          0 |       168 |  0.00 |
 | BUFG_PS    |    0 |     0 |          0 |        72 |  0.00 |
@@ -151,66 +151,82 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 8. Primitives
 -------------
 
-+----------+------+---------------------+
-| Ref Name | Used | Functional Category |
-+----------+------+---------------------+
-| FDRE     | 1386 |            Register |
-| LUT2     |  561 |                 CLB |
-| FDCE     |  487 |            Register |
-| LUT4     |  346 |                 CLB |
-| LUT5     |  264 |                 CLB |
-| LUT6     |  211 |                 CLB |
-| LUT1     |  210 |                 CLB |
-| LUT3     |  106 |                 CLB |
-| CARRY8   |   68 |                 CLB |
-| INBUF    |   14 |                 I/O |
-| IBUFCTRL |   14 |              Others |
-| OBUF     |    5 |                 I/O |
-| OBUFT    |    4 |                 I/O |
-| MUXF7    |    1 |                 CLB |
-| FDSE     |    1 |            Register |
-+----------+------+---------------------+
++-----------+------+---------------------+
+|  Ref Name | Used | Functional Category |
++-----------+------+---------------------+
+| FDRE      | 2579 |            Register |
+| LUT2      |  899 |                 CLB |
+| FDCE      |  713 |            Register |
+| LUT4      |  577 |                 CLB |
+| LUT3      |  541 |                 CLB |
+| LUT6      |  373 |                 CLB |
+| LUT1      |  237 |                 CLB |
+| LUT5      |  208 |                 CLB |
+| CARRY8    |  123 |                 CLB |
+| IBUFCTRL  |   18 |              Others |
+| INBUF     |   17 |                 I/O |
+| OBUFT     |    6 |                 I/O |
+| OBUF      |    6 |                 I/O |
+| FDSE      |    5 |            Register |
+| FDPE      |    1 |            Register |
+| DIFFINBUF |    1 |                 I/O |
+| BUFGCE    |    1 |               Clock |
++-----------+------+---------------------+
 
 
 9. Black Boxes
 --------------
 
-+---------------------------------+------+
-|             Ref Name            | Used |
-+---------------------------------+------+
-| spi_tx_fifo                     |    2 |
-| udp_config_vio                  |    1 |
-| top_vio                         |    1 |
-| system_clock                    |    1 |
-| spi_rx_fifo_16bit               |    1 |
-| spi_rx_fifo                     |    1 |
-| imu_read_ila                    |    1 |
-| ila_2                           |    1 |
-| ila_0                           |    1 |
-| data_to_udp_fifo_widcov         |    1 |
-| data_to_udp_fifo                |    1 |
-| axis_eth_head_convertor         |    1 |
-| RGMII_vio_0_0                   |    1 |
-| RGMII_util_vector_logic_0_1     |    1 |
-| RGMII_util_vector_logic_0_0     |    1 |
-| RGMII_tri_mode_ethernet_mac_0_0 |    1 |
-| RGMII_system_ila_1_0            |    1 |
-| RGMII_system_ila_0_1            |    1 |
-| RGMII_system_ila_0_0            |    1 |
-| RGMII_rst_TEMAC_125M_0          |    1 |
-| RGMII_axis_data_fifo_0_0        |    1 |
-| RGMII_axis_TX_data_fifo_0       |    1 |
-| PPG_I2C_PHY_util_ds_buf_0_1     |    1 |
-| PPG_I2C_PHY_util_ds_buf_0_0     |    1 |
-| PPG_I2C_PHY_system_ila_0_0      |    1 |
-| PPG_I2C_PHY_ila_0_0             |    1 |
-| PPG_I2C_PHY_axi_iic_0_0         |    1 |
-| IMU_TOP_VIO                     |    1 |
-| IMU_CONFIG_ILA                  |    1 |
-| ADC_TOP_VIO                     |    1 |
-| ADC_READ_ILA                    |    1 |
-| ADC_CONFIG_ILA                  |    1 |
-+---------------------------------+------+
++---------------------------------------------+------+
+|                   Ref Name                  | Used |
++---------------------------------------------+------+
+| spi_tx_fifo                                 |    3 |
+| spi_rx_fifo_16bit                           |    2 |
+| imu_read_ila                                |    2 |
+| ila_0                                       |    2 |
+| IMU_TOP_VIO                                 |    2 |
+| IMU_CONFIG_ILA                              |    2 |
+| udp_config_vio                              |    1 |
+| top_vio                                     |    1 |
+| system_clock                                |    1 |
+| spi_rx_fifo                                 |    1 |
+| ila_2                                       |    1 |
+| data_to_udp_fifo_widcov                     |    1 |
+| data_to_udp_fifo                            |    1 |
+| axis_eth_head_convertor                     |    1 |
+| RGMII_vio_0_0                               |    1 |
+| RGMII_util_vector_logic_0_1                 |    1 |
+| RGMII_util_vector_logic_0_0                 |    1 |
+| RGMII_tri_mode_ethernet_mac_0_0             |    1 |
+| RGMII_system_ila_TX_0                       |    1 |
+| RGMII_system_ila_1_0                        |    1 |
+| RGMII_system_ila_0_3                        |    1 |
+| RGMII_system_ila_0_2                        |    1 |
+| RGMII_axis_data_fifo_0_0                    |    1 |
+| RGMII_axis_TX_data_fifo_0                   |    1 |
+| DDR4_zynq_ultra_ps_e_0_1                    |    1 |
+| DDR4_util_vector_logic_1_0                  |    1 |
+| DDR4_util_vector_logic_0_0                  |    1 |
+| DDR4_proc_sys_reset_0_1                     |    1 |
+| DDR4_proc_sys_reset_0_0                     |    1 |
+| DDR4_dpuczdx8g_0_0                          |    1 |
+| DDR4_ddr4_0_0                               |    1 |
+| DDR4_axi_interconnect_0_imp_xbar_0          |    1 |
+| DDR4_axi_interconnect_0_imp_s03_data_fifo_0 |    1 |
+| DDR4_axi_interconnect_0_imp_s02_mmu_0       |    1 |
+| DDR4_axi_interconnect_0_imp_s02_data_fifo_0 |    1 |
+| DDR4_axi_interconnect_0_imp_s01_mmu_0       |    1 |
+| DDR4_axi_interconnect_0_imp_s01_data_fifo_0 |    1 |
+| DDR4_axi_interconnect_0_imp_s00_mmu_0       |    1 |
+| DDR4_axi_interconnect_0_imp_s00_data_fifo_0 |    1 |
+| DDR4_axi_interconnect_0_imp_auto_cc_3       |    1 |
+| DDR4_axi_interconnect_0_imp_auto_cc_2       |    1 |
+| DDR4_axi_interconnect_0_imp_auto_cc_1       |    1 |
+| DDR4_axi_interconnect_0_imp_auto_cc_0       |    1 |
+| ADC_TOP_VIO                                 |    1 |
+| ADC_READ_ILA                                |    1 |
+| ADC_CONFIG_ILA                              |    1 |
++---------------------------------------------+------+
 
 
 10. Instantiated Netlists

@@ -1,36 +1,109 @@
 <?xml version="1.0"?>
 <Runs Version="1" Minor="0">
-	<Run Id="clk_wiz_0_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/clk_wiz_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Run Id="AXI2BRAM_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/AXI2BRAM_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
 	<Run Id="ila_2_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/ila_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Run Id="spi_ram_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/spi_ram_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Run Id="ila_1_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/ila_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Run Id="I2C_FIFO_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/I2C_FIFO_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
 	<Run Id="spi_tx_fifo_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/spi_tx_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
 	<Run Id="spi_rx_fifo_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/spi_rx_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Run Id="ADC_test_vio_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/ADC_test_vio_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ADC_CONFIG_ILA_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/ADC_CONFIG_ILA_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ADC_TOP_VIO_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/ADC_TOP_VIO_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ADC_READ_ILA_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/ADC_READ_ILA_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="spi_rx_fifo_16bit_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/spi_rx_fifo_16bit_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="imu_read_ila_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/imu_read_ila_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="IMU_CONFIG_ILA_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/IMU_CONFIG_ILA_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="PPG_I2C_PHY_util_ds_buf_0_1_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/PPG_I2C_PHY_util_ds_buf_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="PPG_I2C_PHY_ila_0_0_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/PPG_I2C_PHY_ila_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="PPG_I2C_PHY_axi_iic_0_0_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/PPG_I2C_PHY_axi_iic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="PPG_I2C_PHY_util_ds_buf_0_0_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/PPG_I2C_PHY_util_ds_buf_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="PPG_I2C_PHY_util_ds_buf_0_1_synth_1"/>
+	</Run>
+	<Run Id="PPG_I2C_PHY_system_ila_0_0_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/PPG_I2C_PHY_system_ila_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="udp_config_vio_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/udp_config_vio_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="axis_eth_head_convertor_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/axis_eth_head_convertor_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_clock_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/system_clock_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="RGMII_tri_mode_ethernet_mac_0_0_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/RGMII_tri_mode_ethernet_mac_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="RGMII_axis_TX_data_fifo_0_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/RGMII_axis_TX_data_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="RGMII_util_vector_logic_0_0_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/RGMII_util_vector_logic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="RGMII_util_vector_logic_0_1_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/RGMII_util_vector_logic_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="RGMII_util_vector_logic_0_0_synth_1"/>
+	</Run>
+	<Run Id="RGMII_axis_data_fifo_0_0_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/RGMII_axis_data_fifo_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="RGMII_vio_0_0_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/RGMII_vio_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="RGMII_system_ila_0_1_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/RGMII_system_ila_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_vio_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/top_vio_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="data_to_udp_fifo_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/data_to_udp_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="data_to_udp_fifo_widcov_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/data_to_udp_fifo_widcov_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ila_0_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/ila_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="IMU_TOP_VIO_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/IMU_TOP_VIO_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="RGMII_system_ila_0_0_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/RGMII_system_ila_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="RGMII_rst_TEMAC_125M_0_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/RGMII_rst_TEMAC_125M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="RGMII_system_ila_1_0_synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/RGMII_system_ila_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
 	<Run Id="synth_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
-		<Parent Id="clk_wiz_0_synth_1"/>
-		<Parent Id="AXI2BRAM_synth_1"/>
 		<Parent Id="ila_2_synth_1"/>
-		<Parent Id="spi_ram_synth_1"/>
-		<Parent Id="ila_1_synth_1"/>
-		<Parent Id="I2C_FIFO_synth_1"/>
 		<Parent Id="spi_tx_fifo_synth_1"/>
 		<Parent Id="spi_rx_fifo_synth_1"/>
-		<Parent Id="ADC_test_vio_synth_1"/>
+		<Parent Id="ADC_CONFIG_ILA_synth_1"/>
+		<Parent Id="ADC_TOP_VIO_synth_1"/>
+		<Parent Id="ADC_READ_ILA_synth_1"/>
+		<Parent Id="spi_rx_fifo_16bit_synth_1"/>
+		<Parent Id="imu_read_ila_synth_1"/>
+		<Parent Id="IMU_CONFIG_ILA_synth_1"/>
+		<Parent Id="PPG_I2C_PHY_util_ds_buf_0_1_synth_1"/>
+		<Parent Id="PPG_I2C_PHY_ila_0_0_synth_1"/>
+		<Parent Id="PPG_I2C_PHY_axi_iic_0_0_synth_1"/>
+		<Parent Id="PPG_I2C_PHY_util_ds_buf_0_0_synth_1"/>
+		<Parent Id="PPG_I2C_PHY_system_ila_0_0_synth_1"/>
+		<Parent Id="udp_config_vio_synth_1"/>
+		<Parent Id="axis_eth_head_convertor_synth_1"/>
+		<Parent Id="system_clock_synth_1"/>
+		<Parent Id="RGMII_tri_mode_ethernet_mac_0_0_synth_1"/>
+		<Parent Id="RGMII_axis_TX_data_fifo_0_synth_1"/>
+		<Parent Id="RGMII_util_vector_logic_0_0_synth_1"/>
+		<Parent Id="RGMII_util_vector_logic_0_1_synth_1"/>
+		<Parent Id="RGMII_axis_data_fifo_0_0_synth_1"/>
+		<Parent Id="RGMII_vio_0_0_synth_1"/>
+		<Parent Id="RGMII_system_ila_0_1_synth_1"/>
+		<Parent Id="top_vio_synth_1"/>
+		<Parent Id="data_to_udp_fifo_synth_1"/>
+		<Parent Id="data_to_udp_fifo_widcov_synth_1"/>
+		<Parent Id="ila_0_synth_1"/>
+		<Parent Id="IMU_TOP_VIO_synth_1"/>
+		<Parent Id="RGMII_system_ila_0_0_synth_1"/>
+		<Parent Id="RGMII_rst_TEMAC_125M_0_synth_1"/>
+		<Parent Id="RGMII_system_ila_1_0_synth_1"/>
 	</Run>
 	<Run Id="impl_1" LaunchDir="E:/final_prj/final_prj_pl/final_prj_pl.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
 		<Parent Id="synth_1"/>
-		<Parent Id="clk_wiz_0_synth_1"/>
-		<Parent Id="AXI2BRAM_synth_1"/>
 		<Parent Id="ila_2_synth_1"/>
-		<Parent Id="spi_ram_synth_1"/>
-		<Parent Id="ila_1_synth_1"/>
-		<Parent Id="I2C_FIFO_synth_1"/>
 		<Parent Id="spi_tx_fifo_synth_1"/>
 		<Parent Id="spi_rx_fifo_synth_1"/>
-		<Parent Id="ADC_test_vio_synth_1"/>
+		<Parent Id="ADC_CONFIG_ILA_synth_1"/>
+		<Parent Id="ADC_TOP_VIO_synth_1"/>
+		<Parent Id="ADC_READ_ILA_synth_1"/>
+		<Parent Id="spi_rx_fifo_16bit_synth_1"/>
+		<Parent Id="imu_read_ila_synth_1"/>
+		<Parent Id="IMU_CONFIG_ILA_synth_1"/>
+		<Parent Id="PPG_I2C_PHY_util_ds_buf_0_1_synth_1"/>
+		<Parent Id="PPG_I2C_PHY_ila_0_0_synth_1"/>
+		<Parent Id="PPG_I2C_PHY_axi_iic_0_0_synth_1"/>
+		<Parent Id="PPG_I2C_PHY_util_ds_buf_0_0_synth_1"/>
+		<Parent Id="PPG_I2C_PHY_system_ila_0_0_synth_1"/>
+		<Parent Id="udp_config_vio_synth_1"/>
+		<Parent Id="axis_eth_head_convertor_synth_1"/>
+		<Parent Id="system_clock_synth_1"/>
+		<Parent Id="RGMII_tri_mode_ethernet_mac_0_0_synth_1"/>
+		<Parent Id="RGMII_axis_TX_data_fifo_0_synth_1"/>
+		<Parent Id="RGMII_util_vector_logic_0_0_synth_1"/>
+		<Parent Id="RGMII_util_vector_logic_0_1_synth_1"/>
+		<Parent Id="RGMII_axis_data_fifo_0_0_synth_1"/>
+		<Parent Id="RGMII_vio_0_0_synth_1"/>
+		<Parent Id="RGMII_system_ila_0_1_synth_1"/>
+		<Parent Id="top_vio_synth_1"/>
+		<Parent Id="data_to_udp_fifo_synth_1"/>
+		<Parent Id="data_to_udp_fifo_widcov_synth_1"/>
+		<Parent Id="ila_0_synth_1"/>
+		<Parent Id="IMU_TOP_VIO_synth_1"/>
+		<Parent Id="RGMII_system_ila_0_0_synth_1"/>
+		<Parent Id="RGMII_rst_TEMAC_125M_0_synth_1"/>
+		<Parent Id="RGMII_system_ila_1_0_synth_1"/>
 	</Run>
 	<Parameters>
 		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>

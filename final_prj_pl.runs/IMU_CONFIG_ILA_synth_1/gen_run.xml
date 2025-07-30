@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="IMU_CONFIG_ILA_synth_1" LaunchPart="xczu9eg-ffvb1156-2-i" LaunchTime="1753094252">
-  <File Type="PA-TCL" Name="IMU_CONFIG_ILA.tcl"/>
+<GenRun Id="IMU_CONFIG_ILA_synth_1" LaunchPart="xczu9eg-ffvb1156-2-i" LaunchTime="1753660451">
   <File Type="REPORTS-TCL" Name="IMU_CONFIG_ILA_reports.tcl"/>
-  <File Type="RDS-RDS" Name="IMU_CONFIG_ILA.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="IMU_CONFIG_ILA_drc_synth.rpt"/>
   <File Type="RDS-UTIL" Name="IMU_CONFIG_ILA_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="IMU_CONFIG_ILA_utilization_synth.pb"/>
+  <File Type="PA-TCL" Name="IMU_CONFIG_ILA.tcl"/>
+  <File Type="RDS-RDS" Name="IMU_CONFIG_ILA.vds"/>
   <File Type="RDS-DCP" Name="IMU_CONFIG_ILA.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="IMU_CONFIG_ILA_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="IMU_CONFIG_ILA_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/IMU_CONFIG_ILA" RelGenDir="$PGENDIR/IMU_CONFIG_ILA">
     <File Path="$PSRCDIR/sources_1/ip/IMU_CONFIG_ILA/IMU_CONFIG_ILA.xci">
       <FileInfo>

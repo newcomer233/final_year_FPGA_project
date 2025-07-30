@@ -109,10 +109,7 @@ set rc [catch {
   set_param tcl.collectionResultDisplayLimit 0
   set_param general.maxThreads 16
   set_param chipscope.maxJobs 8
-  set_param power.BramSDPPropagationFix 1
-  set_param power.enableUnconnectedCarry8PinPower 1
-  set_param power.enableCarry8RouteBelPower 1
-  set_param power.enableLutRouteBelPower 1
+  set_param bd.open.in_stealth_mode 3
   set_param xicom.use_bs_reader 1
   set_param runs.launchOptions { -jobs 16  }
 OPTRACE "create in-memory project" START { }
@@ -123,6 +120,8 @@ OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir E:/final_prj/final_prj_pl/final_prj_pl.cache/wt [current_project]
   set_property parent.project_path E:/final_prj/final_prj_pl/final_prj_pl.xpr [current_project]
+  set_property ip_repo_paths E:/final_prj/dpu_ip [current_project]
+  update_ip_catalog
   set_property ip_output_repo E:/final_prj/final_prj_pl/final_prj_pl.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
@@ -131,11 +130,9 @@ OPTRACE "add files" START { }
   add_files -quiet E:/final_prj/final_prj_pl/final_prj_pl.runs/synth_1/TOP.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  read_ip -quiet E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/IMU_TOP_VIO/IMU_TOP_VIO.xci
   add_files E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/bd/PPG_I2C_PHY/PPG_I2C_PHY.bd
-  read_ip -quiet E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/ila_0/ila_0.xci
   add_files E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/bd/RGMII/RGMII.bd
-  read_ip -quiet E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+  add_files E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/bd/DDR4/DDR4.bd
   read_ip -quiet E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/ila_2/ila_2.xci
   read_ip -quiet E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/spi_tx_fifo/spi_tx_fifo.xci
   read_ip -quiet E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/spi_rx_fifo/spi_rx_fifo.xci
@@ -143,7 +140,6 @@ OPTRACE "add files" START { }
   read_ip -quiet E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/ADC_TOP_VIO/ADC_TOP_VIO.xci
   read_ip -quiet E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/ADC_READ_ILA/ADC_READ_ILA.xci
   read_ip -quiet E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/spi_rx_fifo_16bit/spi_rx_fifo_16bit.xci
-  read_ip -quiet E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/IMU_test_vio/IMU_test_vio.xci
   read_ip -quiet E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/imu_read_ila/imu_read_ila.xci
   read_ip -quiet E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/IMU_CONFIG_ILA/IMU_CONFIG_ILA.xci
   read_ip -quiet E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/udp_config_vio/udp_config_vio.xci
@@ -152,13 +148,16 @@ OPTRACE "add files" START { }
   read_ip -quiet E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/top_vio/top_vio.xci
   read_ip -quiet E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/data_to_udp_fifo/data_to_udp_fifo.xci
   read_ip -quiet E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/data_to_udp_fifo_widcov/data_to_udp_fifo_widcov.xci
+  read_ip -quiet E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/ila_0/ila_0.xci
+  read_ip -quiet E:/final_prj/final_prj_pl/final_prj_pl.srcs/sources_1/ip/IMU_TOP_VIO/IMU_TOP_VIO.xci
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
+  read_xdc E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/DDR4.xdc
   read_xdc E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/AD7606.xdc
   read_xdc E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/ICM42688.xdc
-  read_xdc E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/MAX86916.xdc
   read_xdc E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/ETH_PHY.xdc
   read_xdc E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/BITSTREAM.xdc
+  read_xdc E:/final_prj/final_prj_pl/final_prj_pl.srcs/constrs_1/new/TIME_CONSTRS.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }
@@ -171,6 +170,9 @@ OPTRACE "link_design" END { }
 OPTRACE "gray box cells" START { }
 OPTRACE "gray box cells" END { }
 OPTRACE "init_design_reports" START { REPORT }
+  set_param project.isImplRun true
+  generate_parallel_reports -reports { "report_timing_summary -max_paths 10 -report_unconstrained -file init_report_timing_summary_0.rpt -pb init_report_timing_summary_0.pb -rpx init_report_timing_summary_0.rpx" "report_utilization -file init_report_utilization_0.rpt -pb init_report_utilization_0.pb" "report_high_fanout_nets -file init_report_high_fanout_nets_0.rpt" "report_control_sets -file init_report_control_sets_0.rpt"  }
+  set_param project.isImplRun false
 OPTRACE "init_design_reports" END { }
 OPTRACE "init_design_write_hwdef" START { }
 OPTRACE "init_design_write_hwdef" END { }
@@ -199,7 +201,7 @@ OPTRACE "read constraints: opt_design_post" START { }
 OPTRACE "read constraints: opt_design_post" END { }
 OPTRACE "opt_design reports" START { REPORT }
   set_param project.isImplRun true
-  generate_parallel_reports -reports { "report_drc -file TOP_drc_opted.rpt -pb TOP_drc_opted.pb -rpx TOP_drc_opted.rpx"  }
+  generate_parallel_reports -reports { "report_drc -file opt_report_drc_0.rpt -pb opt_report_drc_0.pb -rpx opt_report_drc_0.rpx" "report_utilization -file opt_report_utilization_0.rpt -pb opt_report_utilization_0.pb" "report_methodology -file opt_report_methodology_0.rpt -pb opt_report_methodology_0.pb -rpx opt_report_methodology_0.rpx" "report_timing_summary -max_paths 10 -report_unconstrained -file opt_report_timing_summary_0.rpt -pb opt_report_timing_summary_0.pb -rpx opt_report_timing_summary_0.rpx" "report_high_fanout_nets -file opt_report_high_fanout_nets_0.rpt" "report_control_sets -verbose -file opt_report_control_sets_0.rpt" "report_design_analysis -logic_level_distribution -file opt_report_design_analysis_0.rpt"  }
   set_param project.isImplRun false
 OPTRACE "opt_design reports" END { }
 OPTRACE "Opt Design: write_checkpoint" START { CHECKPOINT }
@@ -235,7 +237,7 @@ OPTRACE "read constraints: place_design_post" START { }
 OPTRACE "read constraints: place_design_post" END { }
 OPTRACE "place_design reports" START { REPORT }
   set_param project.isImplRun true
-  generate_parallel_reports -reports { "report_io -file TOP_io_placed.rpt" "report_utilization -file TOP_utilization_placed.rpt -pb TOP_utilization_placed.pb" "report_control_sets -verbose -file TOP_control_sets_placed.rpt"  }
+  generate_parallel_reports -reports { "report_io -file place_report_io_0.rpt" "report_utilization -file place_report_utilization_0.rpt -pb place_report_utilization_0.pb" "report_incremental_reuse -file place_report_incremental_reuse_0.rpt" "report_timing_summary -max_paths 10 -report_unconstrained -file place_report_timing_summary_0.rpt -pb place_report_timing_summary_0.pb -rpx place_report_timing_summary_0.rpx"  }
   set_param project.isImplRun false
 OPTRACE "place_design reports" END { }
 OPTRACE "Place Design: write_checkpoint" START { CHECKPOINT }
@@ -265,6 +267,9 @@ OPTRACE "phys_opt_design" END { }
 OPTRACE "read constraints: phys_opt_design_post" START { }
 OPTRACE "read constraints: phys_opt_design_post" END { }
 OPTRACE "phys_opt_design report" START { REPORT }
+  set_param project.isImplRun true
+  generate_parallel_reports -reports { "report_timing_summary -max_paths 10 -report_unconstrained -file phys_opt_report_timing_summary_0.rpt -pb phys_opt_report_timing_summary_0.pb -rpx phys_opt_report_timing_summary_0.rpx"  }
+  set_param project.isImplRun false
 OPTRACE "phys_opt_design report" END { }
 OPTRACE "Post-Place Phys Opt Design: write_checkpoint" START { CHECKPOINT }
   write_checkpoint -force TOP_physopt.dcp
@@ -294,7 +299,7 @@ OPTRACE "read constraints: route_design_post" START { }
 OPTRACE "read constraints: route_design_post" END { }
 OPTRACE "route_design reports" START { REPORT }
   set_param project.isImplRun true
-  generate_parallel_reports -reports { "report_drc -file TOP_drc_routed.rpt -pb TOP_drc_routed.pb -rpx TOP_drc_routed.rpx" "report_methodology -file TOP_methodology_drc_routed.rpt -pb TOP_methodology_drc_routed.pb -rpx TOP_methodology_drc_routed.rpx" "report_power -file TOP_power_routed.rpt -pb TOP_power_summary_routed.pb -rpx TOP_power_routed.rpx" "report_route_status -file TOP_route_status.rpt -pb TOP_route_status.pb" "report_timing_summary -max_paths 10 -report_unconstrained -file TOP_timing_summary_routed.rpt -pb TOP_timing_summary_routed.pb -rpx TOP_timing_summary_routed.rpx -warn_on_violation " "report_incremental_reuse -file TOP_incremental_reuse_routed.rpt" "report_clock_utilization -file TOP_clock_utilization_routed.rpt" "report_bus_skew -warn_on_violation -file TOP_bus_skew_routed.rpt -pb TOP_bus_skew_routed.pb -rpx TOP_bus_skew_routed.rpx"  }
+  generate_parallel_reports -reports { "report_clock_utilization -file route_report_clock_utilization_0.rpt" "report_drc -file route_report_drc_0.rpt -pb route_report_drc_0.pb -rpx route_report_drc_0.rpx" "report_power -file route_report_power_0.rpt -pb route_report_power_summary_0.pb -rpx route_report_power_0.rpx" "report_route_status -file route_report_route_status_0.rpt -pb route_report_route_status_0.pb" "report_timing_summary -max_paths 10 -report_unconstrained -warn_on_violation -file route_report_timing_summary_0.rpt -pb route_report_timing_summary_0.pb -rpx route_report_timing_summary_0.rpx" "report_incremental_reuse -file route_report_incremental_reuse_0.rpt" "report_bus_skew -warn_on_violation -file route_report_bus_skew_0.rpt -pb route_report_bus_skew_0.pb -rpx route_report_bus_skew_0.rpx"  }
   set_param project.isImplRun false
 OPTRACE "route_design reports" END { }
 OPTRACE "Route Design: write_checkpoint" START { CHECKPOINT }

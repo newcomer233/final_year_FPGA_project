@@ -1,60 +1,10 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Xu" Host="LAPTOP-VEGJAO5A" Pid="20332" HostCore="32" HostMemory="0102673879040">
+    <Process Command="vivado.bat" Owner="Xu" Host="LAPTOP-VEGJAO5A" Pid="9716" HostCore="32" HostMemory="0102673879040">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Xu" Host="LAPTOP-VEGJAO5A" Pid="35868" HostCore="32" HostMemory="0102673879040">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Xu" Host="LAPTOP-VEGJAO5A" Pid="37692" HostCore="32" HostMemory="0102673879040">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Xu" Host="LAPTOP-VEGJAO5A" Pid="3080" HostCore="32" HostMemory="0102673879040">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Xu" Host="LAPTOP-VEGJAO5A" Pid="21724" HostCore="32" HostMemory="0102673879040">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Xu" Host="LAPTOP-VEGJAO5A" Pid="30980" HostCore="32" HostMemory="0102673879040">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Xu" Host="LAPTOP-VEGJAO5A" Pid="14240" HostCore="32" HostMemory="0102673879040">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Xu" Host="LAPTOP-VEGJAO5A" Pid="24876" HostCore="32" HostMemory="0102673879040">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Xu" Host="LAPTOP-VEGJAO5A" Pid="22120" HostCore="32" HostMemory="0102673879040">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Xu" Host="LAPTOP-VEGJAO5A" Pid="33264" HostCore="32" HostMemory="0102673879040">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Xu" Host="LAPTOP-VEGJAO5A" Pid="31956" HostCore="32" HostMemory="0102673879040">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Xu" Host="LAPTOP-VEGJAO5A" Pid="2696" HostCore="32" HostMemory="0102673879040">
+    <Process Command="vivado.bat" Owner="Xu" Host="LAPTOP-VEGJAO5A" Pid="44488" HostCore="32" HostMemory="0102673879040">
     </Process>
 </ProcessHandle>
