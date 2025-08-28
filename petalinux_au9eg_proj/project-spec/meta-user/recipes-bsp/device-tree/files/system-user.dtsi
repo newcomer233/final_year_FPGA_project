@@ -1,0 +1,38 @@
+/* system-user.dtsi */
+#include "system-conf.dtsi"
+
+/ {
+    /* Reserved Memory Regions */
+    reserved-memory {
+        #address-cells = <2>;
+        #size-cells = <2>;
+        ranges;
+
+        /* PL DDR4 at 0xA0000000 (256MB) */
+        pl_ddr4: buffer@a0000000 {
+            no-map;
+            reg = <0x0 0xa0000000 0x0 0x10000000>; /* 256MB */
+        };
+    };
+};
+
+&amba {
+    pl_ddr4_uio: uio@a0000000 {
+        compatible = "generic-uio";
+        reg = <0x0 0xa0000000 0x0 0x10000000>; /* 256MB */
+    };
+};
+
+/* SD */
+&sdhci1 {
+    disable-wp;
+    no-1-8-v;
+    status = "okay";
+};
+
+/* USB */
+&dwc3_0 {
+    status = "okay";
+    dr_mode = "host";
+};
+

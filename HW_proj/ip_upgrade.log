@@ -1,0 +1,147 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2.2 (win64) Build 6060944 Thu Mar 06 19:10:01 MST 2025
+| Date         : Mon Jul 28 00:26:17 2025
+| Host         : LAPTOP-VEGJAO5A running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu9eg-ffvb1156-2-i
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'slave_map'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of slave_map (xilinx.com:ip:blk_mem_gen:8.4) from (Rev. 4) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2.2 (win64) Build 6060944 Thu Mar 06 19:10:01 MST 2025
+| Date         : Tue Jun 17 00:17:25 2025
+| Host         : LAPTOP-VEGJAO5A running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu9eg-ffvb1156-2-i
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'I2C_FIFO'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of I2C_FIFO (xilinx.com:ip:fifo_generator:13.2) from (Rev. 5) to (Rev. 12)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2.2 (win64) Build 6060944 Thu Mar 06 19:10:01 MST 2025
+| Date         : Tue Jun 17 00:17:08 2025
+| Host         : LAPTOP-VEGJAO5A running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu9eg-ffvb1156-2-i
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ila_1 (xilinx.com:ip:ila:6.2) from (Rev. 8) to (Rev. 17)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2.2 (win64) Build 6060944 Thu Mar 06 19:10:01 MST 2025
+| Date         : Tue Jun 17 00:16:58 2025
+| Host         : LAPTOP-VEGJAO5A running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu9eg-ffvb1156-2-i
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'spi_ram'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of spi_ram (xilinx.com:ip:blk_mem_gen:8.4) from (Rev. 4) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2.2 (win64) Build 6060944 Thu Mar 06 19:10:01 MST 2025
+| Date         : Tue Jun 17 00:16:43 2025
+| Host         : LAPTOP-VEGJAO5A running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu9eg-ffvb1156-2-i
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ila_2 (xilinx.com:ip:ila:6.2) from (Rev. 11) to (Rev. 17)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2.2 (win64) Build 6060944 Thu Mar 06 19:10:01 MST 2025
+| Date         : Tue Jun 17 00:16:26 2025
+| Host         : LAPTOP-VEGJAO5A running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu9eg-ffvb1156-2-i
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'spi_trans_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of spi_trans_fifo (xilinx.com:ip:fifo_generator:13.2) from (Rev. 5) to (Rev. 12)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2.2 (win64) Build 6060944 Thu Mar 06 19:10:01 MST 2025
+| Date         : Tue Jun 17 00:16:07 2025
+| Host         : LAPTOP-VEGJAO5A running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu9eg-ffvb1156-2-i
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'AXI2BRAM'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of AXI2BRAM (xilinx.com:ip:axi_bram_ctrl:4.1) from (Rev. 5) to (Rev. 12)
+
+2. Upgrade messages
+-------------------
+
+WARNING: upgrade cannot remove parameter C_SELECT_XPM : there is no parameter called C_SELECT_XPM in axi_bram_ctrl_v4_1
+
